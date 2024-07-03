@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexFit_desktop_UI", "ApexFit_desktop_UI\ApexFit_desktop_UI.csproj", "{EF6B8453-1BF2-43A1-99ED-987319299063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLayer", "SecurityLayer\SecurityLayer.csproj", "{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingsComponent", "TrainingsComponent\TrainingsComponent.csproj", "{415510B7-9FF0-4377-98A8-C4E7CCE59A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfileComponent", "UserProfileComponent\UserProfileComponent.csproj", "{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodsOrRecipesComponent", "FoodsOrRecipesComponent\FoodsOrRecipesComponent.csproj", "{93088371-6C28-47AB-A785-25637E7683EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreComponent", "CoreComponent\CoreComponent.csproj", "{27A7B09F-5CDC-4720-B373-C7628B9ED421}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF6B8453-1BF2-43A1-99ED-987319299063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6B8453-1BF2-43A1-99ED-987319299063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6B8453-1BF2-43A1-99ED-987319299063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6B8453-1BF2-43A1-99ED-987319299063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93088371-6C28-47AB-A785-25637E7683EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93088371-6C28-47AB-A785-25637E7683EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93088371-6C28-47AB-A785-25637E7683EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93088371-6C28-47AB-A785-25637E7683EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B193439B-0103-409E-ABF2-1E94C5D92A0D}
+	EndGlobalSection
+EndGlobal
