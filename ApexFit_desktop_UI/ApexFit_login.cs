@@ -5,10 +5,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserProfileComponent;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ApexFit_desktop_UI
 {
@@ -20,12 +23,94 @@ namespace ApexFit_desktop_UI
         public ApexFit_login()
         {
             InitializeComponent();
-            pnlCreateAccount2.Visible = false;
+            ResetForm();
+            pnlCreateAccount2.Visible = true;
             pnlCreateAccount1.Visible = false;
             pnlForgotPassword2.Visible = false;
             pnlForgotPassword1.Visible = false;
-            pnlLogin.Visible = true;
+            pnlLogin.Visible = false;
         }
+        private void ResetForm()
+        {
+            ClearControls(this);
+            ComboboxReset();
+            TextboxReset();
+        }
+        private void ComboboxReset()
+
+        {
+            for (int index = 12; index < 100; index++)
+            {
+                cmbCreateAccountUserAge.Items.Add(index);
+            }
+            cmbCreateAccountUserAge.SelectedItem = 20;
+
+            for (int index = 140; index < 210; index++)
+            {
+                cmbCreateAccountUserHeight.Items.Add(index);
+            }
+            cmbCreateAccountUserHeight.SelectedItem = 176;
+
+            for (int index = 25; index < 200; index++)
+            {
+                cmbCreateAccountUserWeight.Items.Add(index);
+            }
+            cmbCreateAccountUserWeight.SelectedItem = 75;
+
+            List<string> securityQuestions = SecurityLayer.GetSecurityQuestions();
+            foreach (string question in securityQuestions)
+            {
+                cmbCreateAccountSecurityQuestion.Items.Add(question);
+            }
+            cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
+        }
+
+        public void ClearControls(Control parentControl)
+        {
+            foreach (Control ctrl in parentControl.Controls)
+            {
+                if (ctrl is System.Windows.Forms.TextBox)
+                {
+                    ((System.Windows.Forms.TextBox)ctrl).Text = "";
+                }
+                else if (ctrl is System.Windows.Forms.ComboBox)
+                {
+                    ((System.Windows.Forms.ComboBox)ctrl).SelectedIndex = -1;
+                }
+                else if (ctrl is CheckBox)
+                {
+                    ((CheckBox)ctrl).Checked = false;
+                }
+                else if (ctrl is RadioButton)
+                {
+                    ((RadioButton)ctrl).Checked = false;
+                }
+                else if (ctrl is ListBox)
+                {
+                    ((ListBox)ctrl).Items.Clear();
+                }
+                else if (ctrl is Panel)
+                {
+                    ClearControls(ctrl);
+                }
+            }
+        }
+
+        private void TextboxReset()
+        {
+            txtLoginUsername.Text = "Kasutajanimi";
+            txtLoginPassword.Text = "Salasõna";
+            txtCreateAccountFirstname.Text = "Eesnimi";
+            txtCreateAccountEmail.Text = "Meiliaadress";
+            txtCreateAccountPassword1.Text = "Salasõna";
+            txtCreateAccountPassword2.Text = "Korda salasõna";
+            txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
+            txtForgotPasswordUserEmail.Text = "Meiliaadress";
+            txtForgotPasswordSecurityAnswer.Text = "Turvaküsimuse vastus;";
+            txtForgotPassword2Password.Text = "Salasõna";
+            txtForgotPassword2Password2.Text = "Korda salasõna";
+        }
+
 
         private void txtLoginUsername_Enter(object sender, EventArgs e)
         {

@@ -10,7 +10,7 @@ using MySql.Data.MySqlClient;
 
 namespace SecurityLayer
 {
-    public class CSecurity:ISecurity
+    public class CSecurity : ISecurity
     {
         private CoreComponent.ICore Core;
 
@@ -31,29 +31,52 @@ namespace SecurityLayer
                     connection.Open();
                     object result = command.ExecuteScalar();
 
-                    if (result != null) // Check if a password_hash was returned
+                    if (result != null)
                     {
                         string storedPasswordHash = result.ToString();
-
-                        // For simplicity, assuming password comparison (should use hashed passwords)
                         if (storedPasswordHash.Equals(password))
                         {
-                            return true; // Password matches
+                            return true;
                         }
                     }
-
-                    return false; // Password does not match or user not found
+                    return false;
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine("Error: " + ex.Message);
-                    return false; // Return false on error
+                    return false;
                 }
             }
         }
 
+        public List<string> GetSecurityQuestions()
+        {
+            List<string> securityQuestions = new List<string>();
 
-    public string GenerateHash(string input)
+            CoreComponent.ICore Core = new CoreComponent.CCore();
+            string connectionString = Core.GetConnectionString();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT recovery_question FROM recovery_questions";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string question = reader["recovery_question"].ToString();
+                    securityQuestions.Add(question);
+                }
+
+                reader.Close();
+            }
+            return securityQuestions;
+        }
+
+
+        public string GenerateHash(string input)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {
@@ -67,7 +90,6 @@ namespace SecurityLayer
                 return builder.ToString();
             }
         }
-
     }
-    }
+}
 

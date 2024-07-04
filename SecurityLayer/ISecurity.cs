@@ -9,6 +9,7 @@ namespace SecurityLayer
     public interface ISecurity
     {
         bool LoginAttempt(string username, string password);
+        List<string> GetSecurityQuestions();
         string GenerateHash(string input);
     }
 }
