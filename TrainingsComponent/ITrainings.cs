@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrainingsComponent
 {
-    internal interface ITrainings
+    public interface ITrainings
     {
     }
 }

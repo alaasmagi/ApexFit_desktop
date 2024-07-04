@@ -9,6 +9,7 @@ namespace CoreComponent
     public interface ICore
     {
         int DateToInt(DateTime inputDate);
+        string GetConnectionString();
         DateTime IntToDate(int inputInt);
     }
 }

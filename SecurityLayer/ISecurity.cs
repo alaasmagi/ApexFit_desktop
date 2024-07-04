@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SecurityLayer
 {
-    internal interface ISecurity
+    public interface ISecurity
     {
         bool LoginAttempt(string username, string password);
         string GenerateHash(string input);

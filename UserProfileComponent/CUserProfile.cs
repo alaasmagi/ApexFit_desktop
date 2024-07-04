@@ -12,23 +12,22 @@ namespace UserProfileComponent
 {
     public class CUserProfile:IUserProfile
     {
-        CoreComponent.ICore Core;
-        string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private CoreComponent.ICore Core;
+        private string connectionString;
         public bool IsValidEmailAddress(string emailAddress)
         {
             string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
-
             return Regex.IsMatch(emailAddress, pattern);
         }
 
         public int GenerateUserId()
         {
-            Core = new CoreComponent.CCore;
+            Core = new CoreComponent.CCore();
             Random randomInt = new Random();
             int userId = Core.DateToInt(DateTime.Today) * 10000 + randomInt.Next(1000, 10000);
             return userId;
         }
-
-        public bool CreateUserAccount(string )
+        
+        //public bool CreateUserProfile(string firstName, string email, )
     }
 }

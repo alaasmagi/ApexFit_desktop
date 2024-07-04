@@ -16,6 +16,7 @@ namespace ApexFit_desktop_UI
     {
         private static CSecurity SecurityLayer = new CSecurity();
         private static CUserProfile UserProfileComponent = new CUserProfile();
+        //private string dbConnection = Program.GetConnectionString();
         public ApexFit_login()
         {
             InitializeComponent();
@@ -66,12 +67,17 @@ namespace ApexFit_desktop_UI
 
         private void btnLogiSisse_Click(object sender, EventArgs e)
         {
-            if (SecurityLayer.LoginAttempt(txtLoginUsername.Text, txtLoginPassword.Text) == true)
-            {
+            string username = txtLoginUsername.Text;
+            string password = txtLoginPassword.Text;
 
+            if (SecurityLayer.LoginAttempt(username, password) == true)
+            {
+                pnlLogin.Visible = false;
+                pnlForgotPassword2.Visible = true;
             }
             else
             {
+                pnlLogin.Visible = true;
                 MessageBox.Show("Kasutajanime ja/või parooli viga", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -299,35 +305,8 @@ namespace ApexFit_desktop_UI
             
         }
 
-    private void btnCreateAccount1_Click(object sender, EventArgs e)
-    {
-            if (string.IsNullOrEmpty(txtCreateAccountFirstname.Text))
-            {
-                MessageBox.Show("Eesnimi on vigane", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!UserProfileComponent.IsValidEmailAddress(txtCreateAccountEmail.Text))
-            {
-                MessageBox.Show("Meiliaadress on vigane", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (txtCreateAccountPassword1.Text.Length < 8 || string.IsNullOrEmpty(txtCreateAccountPassword1.Text))
-            {
-                MessageBox.Show("Salasõna(d) on vigane/vigased", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (txtCreateAccountPassword1.Text != txtCreateAccountPassword2.Text)
-            {
-                MessageBox.Show("Salasõnad ei klapi", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                pnlCreateAccount1.Visible = false;
-                pnlCreateAccount2.Visible = true;
-            }
-        }
-
         private void btnCreateAccount1_Click_1(object sender, EventArgs e)
         {
-
-
             if (txtCreateAccountFirstname.Text == "Eesnimi")
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);

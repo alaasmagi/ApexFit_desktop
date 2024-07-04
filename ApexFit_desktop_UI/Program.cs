@@ -3,11 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace ApexFit_desktop_UI
 {
-    internal static class Program
+    internal class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -19,5 +20,6 @@ namespace ApexFit_desktop_UI
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ApexFit_login());            
         }
+        
     }
 }

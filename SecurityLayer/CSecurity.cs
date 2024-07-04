@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,32 +12,48 @@ namespace SecurityLayer
 {
     public class CSecurity:ISecurity
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private CoreComponent.ICore Core;
+
         public bool LoginAttempt(string username, string password)
         {
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
-            {
-                string query = "SELECT COUNT(*) FROM user_data WHERE username = @username AND password = @password";
+            CoreComponent.ICore Core = new CoreComponent.CCore();
+            string connectionString = Core.GetConnectionString();
 
-                MySqlCommand command = new MySqlCommand(query, connection);
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT password_hash FROM user_data WHERE username_hash = @username";
+
+                SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@username", username);
-                command.Parameters.AddWithValue("@password", password);
 
                 try
                 {
                     connection.Open();
-                    int count = Convert.ToInt32(command.ExecuteScalar());
-                    return count > 0;
+                    object result = command.ExecuteScalar();
+
+                    if (result != null) // Check if a password_hash was returned
+                    {
+                        string storedPasswordHash = result.ToString();
+
+                        // For simplicity, assuming password comparison (should use hashed passwords)
+                        if (storedPasswordHash.Equals(password))
+                        {
+                            return true; // Password matches
+                        }
+                    }
+
+                    return false; // Password does not match or user not found
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine("Error: " + ex.Message);
-                    return false;
+                    return false; // Return false on error
                 }
             }
         }
 
-        static string GenerateHash(string input)
+
+    public string GenerateHash(string input)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {
