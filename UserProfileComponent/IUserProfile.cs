@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserProfileComponent
 {
-    internal interface IUserProfile
+    public interface IUserProfile
     {
         bool IsValidEmailAddress(string emailAddress);
         int GenerateUserId();

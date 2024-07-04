@@ -35,10 +35,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 619);
+            this.ClientSize = new System.Drawing.Size(1224, 691);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ApexFit_mainWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ApexFit Desktop";
+            this.Load += new System.EventHandler(this.ApexFit_mainWindow_Load);
             this.ResumeLayout(false);
 
         }

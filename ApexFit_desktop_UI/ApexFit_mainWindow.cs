@@ -12,9 +12,15 @@ namespace ApexFit_desktop_UI
 {
     public partial class ApexFit_mainWindow : Form
     {
-        public ApexFit_mainWindow()
+        public ApexFit_mainWindow(int userId)
         {
             InitializeComponent();
+            
+        }
+
+        private void ApexFit_mainWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

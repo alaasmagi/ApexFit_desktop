@@ -17,9 +17,11 @@ namespace ApexFit_desktop_UI
 {
     public partial class ApexFit_login : Form
     {
-        private static CSecurity SecurityLayer = new CSecurity();
-        private static CUserProfile UserProfileComponent = new CUserProfile();
-        //private string dbConnection = Program.GetConnectionString();
+        private SecurityLayer.ISecurity Security;
+        private UserProfileComponent.IUserProfile UserProfile;
+
+        private int userId = 0;
+        private int userSex = 0;
         public ApexFit_login()
         {
             InitializeComponent();
@@ -37,8 +39,8 @@ namespace ApexFit_desktop_UI
             TextboxReset();
         }
         private void ComboboxReset()
-
         {
+            Security = new SecurityLayer.CSecurity();
             for (int index = 12; index < 100; index++)
             {
                 cmbCreateAccountUserAge.Items.Add(index);
@@ -57,7 +59,7 @@ namespace ApexFit_desktop_UI
             }
             cmbCreateAccountUserWeight.SelectedItem = 75;
 
-            List<string> securityQuestions = SecurityLayer.GetSecurityQuestions();
+            List<string> securityQuestions = Security.GetSecurityQuestions();
             foreach (string question in securityQuestions)
             {
                 cmbCreateAccountSecurityQuestion.Items.Add(question);
@@ -155,10 +157,14 @@ namespace ApexFit_desktop_UI
             string username = txtLoginUsername.Text;
             string password = txtLoginPassword.Text;
 
-            if (SecurityLayer.LoginAttempt(username, password) == true)
+            if (Security.LoginAttempt(Security.EncryptString(username), Security.GenerateHash(password)) == true)
             {
                 pnlLogin.Visible = false;
                 pnlForgotPassword2.Visible = true;
+                this.Hide();
+                ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
+                ResetForm();
+                main_window.Show();
             }
             else
             {
@@ -387,7 +393,30 @@ namespace ApexFit_desktop_UI
 
         private void btnCreateAccount2_Click(object sender, EventArgs e)
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
+            if (rdbCreateAccountMale.Checked == true)
+            {
+                userSex = 0;
+            }
+            else
+            {
+                userSex = 1;
+            }
+
+            if (txtCreateAccount2SecurityQuestionAnswer.Text.Length <= 0)
+            {
+
+            }
+            else if (rdbCreateAccountFemale.Checked == false && rdbCreateAccountMale.Checked == false)
+            {
+                MessageBox.Show("Viga soo valikul", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                UserProfile.
+            }
             
+
         }
 
         private void btnCreateAccount1_Click_1(object sender, EventArgs e)
@@ -396,7 +425,7 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!UserProfileComponent.IsValidEmailAddress(txtCreateAccountEmail.Text))
+            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text))
             {
                 MessageBox.Show("Viga meiliaadressis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

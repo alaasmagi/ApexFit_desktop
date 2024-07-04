@@ -7,6 +7,8 @@ using System.Text.RegularExpressions;
 using System.Configuration;
 using System.Threading.Tasks;
 using CoreComponent;
+using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace UserProfileComponent
 {
@@ -28,6 +30,28 @@ namespace UserProfileComponent
             return userId;
         }
         
-        // public bool CreateUserProfile(string firstName, string email, )
-    }
+        public bool CreateUserProfile(string firstName_enc, string email_enc, string password_hash, )
+        { 
+            string query = "INSERT INTO Users (user_id, usename_enc, user_email_enc, password_hash, firstname_hash, recovery_question, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal)" +
+                "VALUES (@Id, @Name, @Email)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@Name", name);
+                command.Parameters.AddWithValue("@Email", email);
+
+                try
+                {
+                    await connection.OpenAsync();
+                    await command.ExecuteNonQueryAsync();
+                    Console.WriteLine("Row inserted successfully.");
+                }
+                catch (SqlException e)
+                {
+                    Console.WriteLine("Error inserting row: " + e.Message);
+                }
+            }
+        }
 }

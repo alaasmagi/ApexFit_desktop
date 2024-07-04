@@ -21,10 +21,10 @@ namespace SecurityLayer
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT password_hash FROM user_data WHERE username_hash = @username";
+                string query = "SELECT password_hash FROM user_data WHERE username_enc = @username";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@username_enc", username);
 
                 try
                 {
@@ -75,7 +75,6 @@ namespace SecurityLayer
             return securityQuestions;
         }
 
-
         public string GenerateHash(string input)
         {
             using (SHA256 sha256Hash = SHA256.Create())
@@ -89,6 +88,58 @@ namespace SecurityLayer
                 }
                 return builder.ToString();
             }
+        }
+
+        public string EncryptString(string input)
+        {
+            StringBuilder ouput = new StringBuilder();
+
+            foreach (char taht in input)
+            {
+                if (taht == 'z')
+                {
+                    ouput.Append('a');
+                }
+                else if (taht == 'Z')
+                {
+                    ouput.Append('A');
+                }
+                else if (char.IsLetter(taht))
+                {
+                    ouput.Append((char)(taht + 1));
+                }
+                else
+                {
+                    ouput.Append(taht);
+                }
+            }
+            return ouput.ToString();
+        }
+
+        public string DecryptString(string input)
+        {
+            StringBuilder ouput = new StringBuilder();
+
+            foreach (char taht in input)
+            {
+                if (taht == 'a')
+                {
+                    ouput.Append('z');
+                }
+                else if (taht == 'A')
+                {
+                    ouput.Append('Z');
+                }
+                else if (char.IsLetter(taht))
+                {
+                    ouput.Append((char)(taht - 1));
+                }
+                else
+                {
+                    ouput.Append(taht);
+                }
+            }
+            return ouput.ToString();
         }
     }
 }
