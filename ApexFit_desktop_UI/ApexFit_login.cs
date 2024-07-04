@@ -413,7 +413,7 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                UserProfile.
+                UserProfile.CreateUserProfile(UserProfile.UserNameCreation(txtCreateAccountEmail.Text), txtCreateAccountEmail.Text, 
             }
             
 
@@ -425,7 +425,8 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text))
+            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text) || 
+                        UserProfile.UserProfileExists(Security.EncryptString(txtCreateAccountEmail.Text)))
             {
                 MessageBox.Show("Viga meiliaadressis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
