@@ -26,11 +26,11 @@ namespace ApexFit_desktop_UI
         {
             InitializeComponent();
             ResetForm();
-            pnlCreateAccount2.Visible = true;
+            pnlCreateAccount2.Visible = false;
             pnlCreateAccount1.Visible = false;
             pnlForgotPassword2.Visible = false;
             pnlForgotPassword1.Visible = false;
-            pnlLogin.Visible = false;
+            pnlLogin.Visible = true;
         }
         private void ResetForm()
         {
@@ -403,9 +403,9 @@ namespace ApexFit_desktop_UI
                 userSex = 1;
             }
 
-            if (txtCreateAccount2SecurityQuestionAnswer.Text.Length <= 0)
+            if (txtCreateAccount2SecurityQuestionAnswer.Text == "Turvaküsimuse vastus")
             {
-
+                MessageBox.Show("Viga turvaküsimuse vastuses", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (rdbCreateAccountFemale.Checked == false && rdbCreateAccountMale.Checked == false)
             {
@@ -413,22 +413,24 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                UserProfile.CreateUserProfile(UserProfile.UserNameCreation(txtCreateAccountEmail.Text), txtCreateAccountEmail.Text, 
+                UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), Security.GenerateHash(txtCreateAccountPassword1.Text), 
+                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex, Security.GenerateHash(txtCreateAccount2SecurityQuestionAnswer.Text), Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
+                    Convert.ToInt32(cmbCreateAccountUserWeight.SelectedItem), userSex, Convert.ToInt32(cmbCreateAccountUserAge.SelectedItem));
             }
-            
-
         }
 
         private void btnCreateAccount1_Click_1(object sender, EventArgs e)
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
+
             if (txtCreateAccountFirstname.Text == "Eesnimi")
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text) || 
-                        UserProfile.UserProfileExists(Security.EncryptString(txtCreateAccountEmail.Text)))
+            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text) ||
+                     UserProfile.UserProfileExists(Security.EncryptString(txtCreateAccountEmail.Text)))
             {
-                MessageBox.Show("Viga meiliaadressis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Meiliaadress on kasutusel või on vales formaadis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (txtCreateAccountPassword1.Text.Length < 8 || txtCreateAccountPassword1.Text == "Salasõna")
             {

@@ -12,7 +12,7 @@ using System.Xml.Linq;
 
 namespace UserProfileComponent
 {
-    public class CUserProfile:IUserProfile
+    public class CUserProfile : IUserProfile
     {
         private CoreComponent.ICore Core;
         private SecurityLayer.ISecurity Security;
@@ -40,67 +40,54 @@ namespace UserProfileComponent
         public bool UserProfileExists(string userEmail)
         {
             Core = new CoreComponent.CCore();
-
-            int userId = 0;
             connectionString = Core.GetConnectionString();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT user_id FROM user_data WHERE user_email_enc = @userEmail";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@username_enc", userEmail);
+                command.Parameters.AddWithValue("@userEmail", userEmail);
 
                 connection.Open();
                 object result = command.ExecuteScalar();
 
-                if (result != null)
+                if (result != null && int.TryParse(result.ToString(), out int userId))
                 {
-                    userId = Convert.ToInt32(result);
+                    return userId != 0;
                 }
-
-                if (userId != 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
-
         }
+
         public bool CreateUserProfile(string usernameEnc, string emailEnc, string passwordHash, string firstNameEnc, int recoveryQuestion, string recoveryAnswerHash, int height, int weight, int sex, int age)
         {
             int userId = GenerateUserId();
+            connectionString = Core.GetConnectionString();
 
-            string query = "INSERT INTO user_data (user_id, usename_enc, user_email_enc, password_hash, firstname_hash, recovery_question, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal)" +
-                "VALUES (@userId, @username_enc, @user_email_enc, @password_hash, @firstname_hash, @recovery_question, @recovery_answer_hash, @height, @weight, @sex, @age, @calorie_limit, @weight_goal)";
+            string query = "INSERT INTO user_data (username_enc, user_email_enc, password_hash, firstname_enc, recovery_question_id, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal) " +
+                           "VALUES (@usernameEnc, @userEmailEnc, @passwordHash, @firstNameEnc, @recoveryQuestion, @recoveryAnswerHash, @height, @weight, @sex, @age, @calorieLimit, @weightGoal)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@userId", userId);
-                command.Parameters.AddWithValue("@username_enc", usernameEnc);
-                command.Parameters.AddWithValue("@user_email_enc", emailEnc);
-                command.Parameters.AddWithValue("@password_hash", passwordHash);
-                command.Parameters.AddWithValue("@firstname_hash", firstNameEnc);
-                command.Parameters.AddWithValue("@recovery_question", recoveryQuestion);
-                command.Parameters.AddWithValue("@recovery_answer_hash", recoveryAnswerHash);
+               // command.Parameters.AddWithValue("@userId", userId);
+                command.Parameters.AddWithValue("@usernameEnc", usernameEnc);
+                command.Parameters.AddWithValue("@userEmailEnc", emailEnc);
+                command.Parameters.AddWithValue("@passwordHash", passwordHash);
+                command.Parameters.AddWithValue("@firstNameEnc", firstNameEnc);
+                command.Parameters.AddWithValue("@recoveryQuestion", recoveryQuestion);
+                command.Parameters.AddWithValue("@recoveryAnswerHash", recoveryAnswerHash);
                 command.Parameters.AddWithValue("@height", height);
                 command.Parameters.AddWithValue("@weight", weight);
                 command.Parameters.AddWithValue("@sex", sex);
                 command.Parameters.AddWithValue("@age", age);
-                command.Parameters.AddWithValue("@calorie_limit", weight);
-                command.Parameters.AddWithValue("@weight_goal", 0);
+                command.Parameters.AddWithValue("@calorieLimit", weight);
+                command.Parameters.AddWithValue("@weightGoal", 0); 
 
-                try
-                {
-                    await connection.OpenAsync();
-                    await command.ExecuteNonQueryAsync();
-                }
-                catch (SqlException e)
-                {
-                }
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+                return result > 0;
             }
         }
+    }
 }
