@@ -123,7 +123,7 @@
             this.txtLoginUsername.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtLoginUsername.Name = "txtLoginUsername";
             this.txtLoginUsername.Size = new System.Drawing.Size(312, 27);
-            this.txtLoginUsername.TabIndex = 1;
+            this.txtLoginUsername.TabIndex = 80;
             this.txtLoginUsername.Text = "Kasutajanimi";
             this.txtLoginUsername.Enter += new System.EventHandler(this.txtLoginUsername_Enter);
             this.txtLoginUsername.Leave += new System.EventHandler(this.txtLoginUsername_Leave);
@@ -136,7 +136,7 @@
             this.txtLoginPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtLoginPassword.Name = "txtLoginPassword";
             this.txtLoginPassword.Size = new System.Drawing.Size(312, 27);
-            this.txtLoginPassword.TabIndex = 2;
+            this.txtLoginPassword.TabIndex = 81;
             this.txtLoginPassword.Text = "Salasõna";
             this.txtLoginPassword.Enter += new System.EventHandler(this.txtLoginPassword_Enter);
             this.txtLoginPassword.Leave += new System.EventHandler(this.txtLoginPassword_Leave);
@@ -166,7 +166,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(312, 50);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 82;
             this.btnLogin.Text = "Logi sisse";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogiSisse_Click);
@@ -197,7 +197,7 @@
             this.btnCreateAccount1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnCreateAccount1.Name = "btnCreateAccount1";
             this.btnCreateAccount1.Size = new System.Drawing.Size(312, 50);
-            this.btnCreateAccount1.TabIndex = 8;
+            this.btnCreateAccount1.TabIndex = 64;
             this.btnCreateAccount1.Text = "Edasi";
             this.btnCreateAccount1.UseVisualStyleBackColor = false;
             this.btnCreateAccount1.Click += new System.EventHandler(this.btnCreateAccount1_Click_1);
@@ -222,7 +222,7 @@
             this.txtCreateAccountPassword2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtCreateAccountPassword2.Name = "txtCreateAccountPassword2";
             this.txtCreateAccountPassword2.Size = new System.Drawing.Size(312, 27);
-            this.txtCreateAccountPassword2.TabIndex = 7;
+            this.txtCreateAccountPassword2.TabIndex = 63;
             this.txtCreateAccountPassword2.Text = "Korda salasõna";
             this.txtCreateAccountPassword2.Enter += new System.EventHandler(this.txtCreateAccountPassword2_Enter);
             this.txtCreateAccountPassword2.Leave += new System.EventHandler(this.txtCreateAccountPassword2_Leave);
@@ -235,7 +235,7 @@
             this.txtCreateAccountEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtCreateAccountEmail.Name = "txtCreateAccountEmail";
             this.txtCreateAccountEmail.Size = new System.Drawing.Size(312, 27);
-            this.txtCreateAccountEmail.TabIndex = 5;
+            this.txtCreateAccountEmail.TabIndex = 61;
             this.txtCreateAccountEmail.Text = "Meiliaadress";
             this.txtCreateAccountEmail.Enter += new System.EventHandler(this.txtCreateAccountEmail_Enter);
             this.txtCreateAccountEmail.Leave += new System.EventHandler(this.txtCreateAccountEmail_Leave);
@@ -261,7 +261,7 @@
             this.txtCreateAccountFirstname.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtCreateAccountFirstname.Name = "txtCreateAccountFirstname";
             this.txtCreateAccountFirstname.Size = new System.Drawing.Size(312, 27);
-            this.txtCreateAccountFirstname.TabIndex = 4;
+            this.txtCreateAccountFirstname.TabIndex = 60;
             this.txtCreateAccountFirstname.Text = "Eesnimi";
             this.txtCreateAccountFirstname.Enter += new System.EventHandler(this.txtCreateAccountFirstname_Enter);
             this.txtCreateAccountFirstname.Leave += new System.EventHandler(this.txtCreateAccountFirstname_Leave);
@@ -274,7 +274,7 @@
             this.txtCreateAccountPassword1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtCreateAccountPassword1.Name = "txtCreateAccountPassword1";
             this.txtCreateAccountPassword1.Size = new System.Drawing.Size(312, 27);
-            this.txtCreateAccountPassword1.TabIndex = 6;
+            this.txtCreateAccountPassword1.TabIndex = 62;
             this.txtCreateAccountPassword1.Text = "Salasõna";
             this.txtCreateAccountPassword1.Enter += new System.EventHandler(this.txtCreateAccountPassword1_Enter);
             this.txtCreateAccountPassword1.Leave += new System.EventHandler(this.txtCreateAccountPassword1_Leave);
@@ -369,7 +369,7 @@
             this.rdbCreateAccountFemale.Location = new System.Drawing.Point(381, 203);
             this.rdbCreateAccountFemale.Name = "rdbCreateAccountFemale";
             this.rdbCreateAccountFemale.Size = new System.Drawing.Size(74, 23);
-            this.rdbCreateAccountFemale.TabIndex = 15;
+            this.rdbCreateAccountFemale.TabIndex = 126;
             this.rdbCreateAccountFemale.TabStop = true;
             this.rdbCreateAccountFemale.Text = "Naine";
             this.rdbCreateAccountFemale.UseVisualStyleBackColor = true;
@@ -380,7 +380,7 @@
             this.rdbCreateAccountMale.Location = new System.Drawing.Point(381, 170);
             this.rdbCreateAccountMale.Name = "rdbCreateAccountMale";
             this.rdbCreateAccountMale.Size = new System.Drawing.Size(68, 23);
-            this.rdbCreateAccountMale.TabIndex = 14;
+            this.rdbCreateAccountMale.TabIndex = 125;
             this.rdbCreateAccountMale.TabStop = true;
             this.rdbCreateAccountMale.Text = "Mees";
             this.rdbCreateAccountMale.UseVisualStyleBackColor = true;
@@ -395,7 +395,7 @@
             this.cmbCreateAccountSecurityQuestion.Location = new System.Drawing.Point(143, 67);
             this.cmbCreateAccountSecurityQuestion.Name = "cmbCreateAccountSecurityQuestion";
             this.cmbCreateAccountSecurityQuestion.Size = new System.Drawing.Size(312, 26);
-            this.cmbCreateAccountSecurityQuestion.TabIndex = 9;
+            this.cmbCreateAccountSecurityQuestion.TabIndex = 120;
             // 
             // cmbCreateAccountUserWeight
             // 
@@ -407,7 +407,7 @@
             this.cmbCreateAccountUserWeight.Location = new System.Drawing.Point(267, 208);
             this.cmbCreateAccountUserWeight.Name = "cmbCreateAccountUserWeight";
             this.cmbCreateAccountUserWeight.Size = new System.Drawing.Size(75, 26);
-            this.cmbCreateAccountUserWeight.TabIndex = 13;
+            this.cmbCreateAccountUserWeight.TabIndex = 124;
             // 
             // cmbCreateAccountUserHeight
             // 
@@ -419,7 +419,7 @@
             this.cmbCreateAccountUserHeight.Location = new System.Drawing.Point(267, 175);
             this.cmbCreateAccountUserHeight.Name = "cmbCreateAccountUserHeight";
             this.cmbCreateAccountUserHeight.Size = new System.Drawing.Size(75, 26);
-            this.cmbCreateAccountUserHeight.TabIndex = 12;
+            this.cmbCreateAccountUserHeight.TabIndex = 123;
             // 
             // cmbCreateAccountUserAge
             // 
@@ -432,7 +432,7 @@
             this.cmbCreateAccountUserAge.Location = new System.Drawing.Point(267, 142);
             this.cmbCreateAccountUserAge.Name = "cmbCreateAccountUserAge";
             this.cmbCreateAccountUserAge.Size = new System.Drawing.Size(75, 26);
-            this.cmbCreateAccountUserAge.TabIndex = 11;
+            this.cmbCreateAccountUserAge.TabIndex = 122;
             // 
             // txtCreateAccount2SecurityQuestionAnswer
             // 
@@ -442,7 +442,7 @@
             this.txtCreateAccount2SecurityQuestionAnswer.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtCreateAccount2SecurityQuestionAnswer.Name = "txtCreateAccount2SecurityQuestionAnswer";
             this.txtCreateAccount2SecurityQuestionAnswer.Size = new System.Drawing.Size(312, 27);
-            this.txtCreateAccount2SecurityQuestionAnswer.TabIndex = 10;
+            this.txtCreateAccount2SecurityQuestionAnswer.TabIndex = 121;
             this.txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
             this.txtCreateAccount2SecurityQuestionAnswer.Enter += new System.EventHandler(this.txtCreateAccount2SecurityQuestionAnswer_Enter);
             this.txtCreateAccount2SecurityQuestionAnswer.Leave += new System.EventHandler(this.txtCreateAccount2SecurityQuestionAnswer_Leave);
@@ -459,7 +459,7 @@
             this.btnCreateAccount2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnCreateAccount2.Name = "btnCreateAccount2";
             this.btnCreateAccount2.Size = new System.Drawing.Size(312, 50);
-            this.btnCreateAccount2.TabIndex = 16;
+            this.btnCreateAccount2.TabIndex = 127;
             this.btnCreateAccount2.Text = "Loo konto";
             this.btnCreateAccount2.UseVisualStyleBackColor = false;
             this.btnCreateAccount2.Click += new System.EventHandler(this.btnCreateAccount2_Click);
@@ -502,7 +502,7 @@
             this.btnForgotPasswordChechSecurityAnswer.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnForgotPasswordChechSecurityAnswer.Name = "btnForgotPasswordChechSecurityAnswer";
             this.btnForgotPasswordChechSecurityAnswer.Size = new System.Drawing.Size(312, 50);
-            this.btnForgotPasswordChechSecurityAnswer.TabIndex = 20;
+            this.btnForgotPasswordChechSecurityAnswer.TabIndex = 143;
             this.btnForgotPasswordChechSecurityAnswer.Text = "Edasi";
             this.btnForgotPasswordChechSecurityAnswer.UseVisualStyleBackColor = false;
             this.btnForgotPasswordChechSecurityAnswer.Click += new System.EventHandler(this.btnForgotPasswordChechSecurityAnswer_Click);
@@ -515,7 +515,7 @@
             this.txtForgotPasswordSecurityAnswer.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtForgotPasswordSecurityAnswer.Name = "txtForgotPasswordSecurityAnswer";
             this.txtForgotPasswordSecurityAnswer.Size = new System.Drawing.Size(312, 27);
-            this.txtForgotPasswordSecurityAnswer.TabIndex = 19;
+            this.txtForgotPasswordSecurityAnswer.TabIndex = 142;
             this.txtForgotPasswordSecurityAnswer.Text = "Turvaküsimuse vastus";
             this.txtForgotPasswordSecurityAnswer.Enter += new System.EventHandler(this.txtForgotPasswordSecurityAnswer_Enter);
             this.txtForgotPasswordSecurityAnswer.Leave += new System.EventHandler(this.txtForgotPasswordSecurityAnswer_Leave);
@@ -532,7 +532,7 @@
             this.btnForgotPasswordShowQuestion.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnForgotPasswordShowQuestion.Name = "btnForgotPasswordShowQuestion";
             this.btnForgotPasswordShowQuestion.Size = new System.Drawing.Size(312, 50);
-            this.btnForgotPasswordShowQuestion.TabIndex = 18;
+            this.btnForgotPasswordShowQuestion.TabIndex = 141;
             this.btnForgotPasswordShowQuestion.Text = "Näita turvaküsimust";
             this.btnForgotPasswordShowQuestion.UseVisualStyleBackColor = false;
             this.btnForgotPasswordShowQuestion.Click += new System.EventHandler(this.btnForgotPasswordShowQuestion_Click);
@@ -555,7 +555,7 @@
             this.txtForgotPasswordUserEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtForgotPasswordUserEmail.Name = "txtForgotPasswordUserEmail";
             this.txtForgotPasswordUserEmail.Size = new System.Drawing.Size(312, 27);
-            this.txtForgotPasswordUserEmail.TabIndex = 17;
+            this.txtForgotPasswordUserEmail.TabIndex = 140;
             this.txtForgotPasswordUserEmail.Text = "Meiliaadress";
             this.txtForgotPasswordUserEmail.Enter += new System.EventHandler(this.txtForgotPasswordUserEmail_Enter);
             this.txtForgotPasswordUserEmail.Leave += new System.EventHandler(this.txtForgotPasswordUserEmail_Leave);
@@ -615,7 +615,7 @@
             this.txtForgotPassword2Password2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtForgotPassword2Password2.Name = "txtForgotPassword2Password2";
             this.txtForgotPassword2Password2.Size = new System.Drawing.Size(312, 27);
-            this.txtForgotPassword2Password2.TabIndex = 22;
+            this.txtForgotPassword2Password2.TabIndex = 161;
             this.txtForgotPassword2Password2.Text = "Korda salasõna";
             this.txtForgotPassword2Password2.Enter += new System.EventHandler(this.txtForgotPassword2Password2_Enter);
             this.txtForgotPassword2Password2.Leave += new System.EventHandler(this.txtForgotPassword2Password2_Leave);
@@ -628,7 +628,7 @@
             this.txtForgotPassword2Password.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtForgotPassword2Password.Name = "txtForgotPassword2Password";
             this.txtForgotPassword2Password.Size = new System.Drawing.Size(312, 27);
-            this.txtForgotPassword2Password.TabIndex = 21;
+            this.txtForgotPassword2Password.TabIndex = 160;
             this.txtForgotPassword2Password.Text = "Salasõna";
             this.txtForgotPassword2Password.Enter += new System.EventHandler(this.txtForgotPassword2Password_Enter);
             this.txtForgotPassword2Password.Leave += new System.EventHandler(this.txtForgotPassword2Password_Leave);
@@ -645,7 +645,7 @@
             this.btnForgotPasswordChangePass.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnForgotPasswordChangePass.Name = "btnForgotPasswordChangePass";
             this.btnForgotPasswordChangePass.Size = new System.Drawing.Size(312, 50);
-            this.btnForgotPasswordChangePass.TabIndex = 23;
+            this.btnForgotPasswordChangePass.TabIndex = 162;
             this.btnForgotPasswordChangePass.Text = "Kinnita uus salasõna";
             this.btnForgotPasswordChangePass.UseVisualStyleBackColor = false;
             // 
@@ -656,11 +656,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
+            this.Controls.Add(this.pnlCreateAccount1);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlForgotPassword1);
             this.Controls.Add(this.pnlCreateAccount2);
-            this.Controls.Add(this.pnlCreateAccount1);
-            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlLoginLogo);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

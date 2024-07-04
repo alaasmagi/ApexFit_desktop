@@ -37,6 +37,7 @@ namespace ApexFit_desktop_UI
             ClearControls(this);
             ComboboxReset();
             TextboxReset();
+            btnLogin.Select();
         }
         private void ComboboxReset()
         {
@@ -168,7 +169,6 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                pnlLogin.Visible = true;
                 MessageBox.Show("Kasutajanime ja/või parooli viga", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -259,6 +259,7 @@ namespace ApexFit_desktop_UI
         private void lblCreateAccountBack_Click(object sender, EventArgs e)
         {
             pnlCreateAccount1.Visible = false;
+            btnLogin.Select();
             pnlLogin.Visible = true;
         }
 
@@ -300,6 +301,7 @@ namespace ApexFit_desktop_UI
         private void lblForgotPassword1GoBack_Click(object sender, EventArgs e)
         {
             pnlForgotPassword1.Visible = false;
+            btnLogin.Select();
             pnlLogin.Visible = true;
         }
 
@@ -311,7 +313,8 @@ namespace ApexFit_desktop_UI
 
         private void lblForgotPassword2GoBack_Click(object sender, EventArgs e)
         {
-            pnlForgotPassword2.Visible = false;
+            pnlForgotPassword2.Visible = false; 
+            btnLogin.Select();
             pnlLogin.Visible = true;
         }
 
