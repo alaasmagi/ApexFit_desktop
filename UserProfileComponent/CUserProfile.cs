@@ -37,32 +37,39 @@ namespace UserProfileComponent
             return userEmail.Substring(0, atIndex);
         }
 
-        public bool UserProfileExists(string userEmail)
+        public int UserProfileExists(string userNameEnc)
         {
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
+            int userIdOutput= 0;
+
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT user_id FROM user_data WHERE user_email_enc = @userEmail";
+                string query = "SELECT user_id FROM user_data WHERE username_enc = @userNameEnc";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@userEmail", userEmail);
+                command.Parameters.AddWithValue("@userNameEnc", userNameEnc);
 
                 connection.Open();
                 object result = command.ExecuteScalar();
-
-                if (result != null && int.TryParse(result.ToString(), out int userId))
+               
+                if (result != null)
                 {
-                    return userId != 0;
+                    int.TryParse(result.ToString(), out userIdOutput);
+                    return userIdOutput;
                 }
-                return false;
+                else
+                {
+                    return userIdOutput;
+                }
             }
         }
 
-        public bool CreateUserProfile(string usernameEnc, string emailEnc, string passwordHash, string firstNameEnc, int recoveryQuestion, string recoveryAnswerHash, int height, int weight, int sex, int age)
+        public int CreateUserProfile(string usernameEnc, string userEmailEnc, string passwordHash, string firstNameEnc, int recoveryQuestion, string recoveryAnswerHash, int height, int weight, int sex, int age)
         {
-            int userId = GenerateUserId();
+            Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
+            int userIdOutput = 0;
 
             string query = "INSERT INTO user_data (username_enc, user_email_enc, password_hash, firstname_enc, recovery_question_id, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal) " +
                            "VALUES (@usernameEnc, @userEmailEnc, @passwordHash, @firstNameEnc, @recoveryQuestion, @recoveryAnswerHash, @height, @weight, @sex, @age, @calorieLimit, @weightGoal)";
@@ -70,9 +77,8 @@ namespace UserProfileComponent
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
-               // command.Parameters.AddWithValue("@userId", userId);
                 command.Parameters.AddWithValue("@usernameEnc", usernameEnc);
-                command.Parameters.AddWithValue("@userEmailEnc", emailEnc);
+                command.Parameters.AddWithValue("@userEmailEnc", userEmailEnc);
                 command.Parameters.AddWithValue("@passwordHash", passwordHash);
                 command.Parameters.AddWithValue("@firstNameEnc", firstNameEnc);
                 command.Parameters.AddWithValue("@recoveryQuestion", recoveryQuestion);
@@ -85,9 +91,73 @@ namespace UserProfileComponent
                 command.Parameters.AddWithValue("@weightGoal", 0); 
 
                 connection.Open();
-                int result = command.ExecuteNonQuery();
-                return result > 0;
+                command.ExecuteNonQuery();
+
+                userIdOutput = UserProfileExists(userEmailEnc);
+
+                return userIdOutput;
             }
+        }
+
+        public int GetIntegerFromUserData(int userId, string columnName)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+            int resultOutput = 0;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT {columnName} FROM user_data WHERE user_id = @userId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+
+                connection.Open();
+                object result = command.ExecuteScalar();
+
+                int.TryParse(result.ToString(), out resultOutput);
+
+                return resultOutput;
+            }
+        }
+
+        public string GetStringFromUserData(int userId, string columnName)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+            string resultOutput = null;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT {columnName} FROM user_data WHERE user_id = @userId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+
+                connection.Open();
+                object result = command.ExecuteScalar();
+
+                if (result != null)
+                {
+                    resultOutput = result.ToString();
+                }
+
+                return resultOutput;
+            }
+        }
+
+        public bool SecurityAnswerApproval(int userId, string securityAnswerHash)
+        {
+            Security = new SecurityLayer.CSecurity();
+            string userSecurityAnswer = GetStringFromUserData(userId, "recovery_answer_hash");
+
+            if (userSecurityAnswer == securityAnswerHash)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
     }
 }

@@ -60,7 +60,7 @@ namespace ApexFit_desktop_UI
             }
             cmbCreateAccountUserWeight.SelectedItem = 75;
 
-            List<string> securityQuestions = Security.GetSecurityQuestions();
+            List<string> securityQuestions = Security.GetAllSecurityQuestions();
             foreach (string question in securityQuestions)
             {
                 cmbCreateAccountSecurityQuestion.Items.Add(question);
@@ -102,18 +102,35 @@ namespace ApexFit_desktop_UI
         private void TextboxReset()
         {
             txtLoginUsername.Text = "Kasutajanimi";
+            txtLoginUsername.ForeColor = Color.DarkGray;
             txtLoginPassword.Text = "Salasõna";
+            txtLoginPassword.UseSystemPasswordChar = false;
+            txtLoginPassword.ForeColor = Color.DarkGray;
             txtCreateAccountFirstname.Text = "Eesnimi";
+            txtCreateAccountFirstname.ForeColor = Color.DarkGray;
             txtCreateAccountEmail.Text = "Meiliaadress";
+            txtCreateAccountEmail.ForeColor = Color.DarkGray;
             txtCreateAccountPassword1.Text = "Salasõna";
+            txtCreateAccountPassword1.UseSystemPasswordChar = false;
+            txtCreateAccountPassword1.ForeColor = Color.DarkGray;
             txtCreateAccountPassword2.Text = "Korda salasõna";
+            txtCreateAccountPassword2.UseSystemPasswordChar = false;
+            txtCreateAccountPassword2.ForeColor = Color.DarkGray;
             txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
+            txtCreateAccount2SecurityQuestionAnswer.ForeColor = Color.DarkGray;
             txtForgotPasswordUserEmail.Text = "Meiliaadress";
-            txtForgotPasswordSecurityAnswer.Text = "Turvaküsimuse vastus;";
+            txtForgotPasswordUserEmail.ForeColor = Color.DarkGray;
+            txtForgotPasswordSecurityAnswer.Text = "Turvaküsimuse vastus";
+            txtForgotPasswordSecurityAnswer.ForeColor = Color.DarkGray;
             txtForgotPassword2Password.Text = "Salasõna";
+            txtForgotPassword2Password.UseSystemPasswordChar = false;
+            txtForgotPassword2Password.ForeColor = Color.DarkGray;
             txtForgotPassword2Password2.Text = "Korda salasõna";
+            txtForgotPassword2Password2.UseSystemPasswordChar = false;
+            txtForgotPassword2Password2.ForeColor = Color.DarkGray;
+            lblCreateAccountSecurityQuestion.Visible = false;
+            lblForgotPassword2Username.Visible = false;
         }
-
 
         private void txtLoginUsername_Enter(object sender, EventArgs e)
         {
@@ -153,15 +170,17 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void btnLogiSisse_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtLoginUsername.Text;
-            string password = txtLoginPassword.Text;
+            UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
 
-            if (Security.LoginAttempt(Security.EncryptString(username), Security.GenerateHash(password)) == true)
+            int userIdTemp = UserProfile.UserProfileExists(Security.EncryptString(txtLoginUsername.Text));
+            if (userIdTemp != 0 && Security.LoginAttempt(Security.EncryptString(txtLoginUsername.Text), Security.GenerateHash(txtLoginPassword.Text)) == true)
             {
                 pnlLogin.Visible = false;
                 pnlForgotPassword2.Visible = true;
+                userId = userIdTemp;
                 this.Hide();
                 ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
                 ResetForm();
@@ -252,12 +271,14 @@ namespace ApexFit_desktop_UI
 
         private void lblNoAccount_Click(object sender, EventArgs e)
         {
+            TextboxReset();
             pnlLogin.Visible = false;
             pnlCreateAccount1.Visible = true;
         }
 
         private void lblCreateAccountBack_Click(object sender, EventArgs e)
         {
+            TextboxReset();
             pnlCreateAccount1.Visible = false;
             btnLogin.Select();
             pnlLogin.Visible = true;
@@ -289,30 +310,77 @@ namespace ApexFit_desktop_UI
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
+            TextboxReset();
             pnlLogin.Visible = false;
             pnlForgotPassword1.Visible = true;
         }
 
         private void btnForgotPasswordShowQuestion_Click(object sender, EventArgs e)
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
 
+            userId = UserProfile.UserProfileExists(Security.EncryptString(UserProfile.UserNameCreation(txtForgotPasswordUserEmail.Text)));
+
+            if (userId == 0)
+            {
+                MessageBox.Show("Sisestatud meiliaadressiga kontot ei eksisteeri", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                lblForgotPasswordSecurityQuestion.Text = Security.GetSecurityQuestion(UserProfile.GetIntegerFromUserData(userId, "recovery_question_id"));
+            }
         }
 
         private void lblForgotPassword1GoBack_Click(object sender, EventArgs e)
         {
+            TextboxReset();
             pnlForgotPassword1.Visible = false;
             btnLogin.Select();
             pnlLogin.Visible = true;
         }
 
-        private void btnForgotPasswordChechSecurityAnswer_Click(object sender, EventArgs e)
+        private void btnForgotPasswordCheckSecurityAnswer_Click(object sender, EventArgs e)
         {
-            pnlForgotPassword1.Visible = false;
-            pnlForgotPassword2.Visible = true;
+            UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
+            
+            if (UserProfile.SecurityAnswerApproval(userId, Security.GenerateHash(txtForgotPasswordSecurityAnswer.Text)) == false)
+            {
+                MessageBox.Show("Viga turvaküsimuse vastuses", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                lblForgotPassword2Username.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "username_enc"));
+                pnlForgotPassword1.Visible = false;
+                pnlForgotPassword2.Visible = true;
+            }
+        }
+        private void btnForgotPasswordChangePass_Click(object sender, EventArgs e)
+        {
+            if (txtForgotPassword2Password.Text.Length < 8 || txtForgotPassword2Password.Text == "Salasõna")
+            {
+                MessageBox.Show("Viga salasõna(des)", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (txtForgotPassword2Password.Text != txtForgotPassword2Password2.Text || txtForgotPassword2Password2.Text == "Korda salasõna")
+            {
+                MessageBox.Show("Salasõnad ei klapi", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Security.ChangeUserPassword(userId, Security.GenerateHash(txtForgotPassword2Password.Text)) == false)
+            {
+                MessageBox.Show("Salasõna vahetamine ebaõnnestus", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                TextboxReset();
+                pnlForgotPassword2.Visible = false;
+                pnlLogin.Visible = true;
+            }
         }
 
         private void lblForgotPassword2GoBack_Click(object sender, EventArgs e)
         {
+            TextboxReset();
             pnlForgotPassword2.Visible = false; 
             btnLogin.Select();
             pnlLogin.Visible = true;
@@ -397,6 +465,9 @@ namespace ApexFit_desktop_UI
         private void btnCreateAccount2_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
+
+            int userIdTemp = 0;
             if (rdbCreateAccountMale.Checked == true)
             {
                 userSex = 0;
@@ -416,22 +487,27 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), Security.GenerateHash(txtCreateAccountPassword1.Text), 
-                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex, Security.GenerateHash(txtCreateAccount2SecurityQuestionAnswer.Text), Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
+                userIdTemp = UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), Security.GenerateHash(txtCreateAccountPassword1.Text), 
+                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex + 1, Security.GenerateHash(txtCreateAccount2SecurityQuestionAnswer.Text), Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
                     Convert.ToInt32(cmbCreateAccountUserWeight.SelectedItem), userSex, Convert.ToInt32(cmbCreateAccountUserAge.SelectedItem));
+                ComboboxReset();
+                TextboxReset();
+                pnlCreateAccount2.Visible = false;
+                pnlLogin.Visible = true;
             }
         }
 
         private void btnCreateAccount1_Click_1(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
 
             if (txtCreateAccountFirstname.Text == "Eesnimi")
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text) ||
-                     UserProfile.UserProfileExists(Security.EncryptString(txtCreateAccountEmail.Text)))
+                     UserProfile.UserProfileExists(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text))) != 0)
             {
                 MessageBox.Show("Meiliaadress on kasutusel või on vales formaadis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -449,5 +525,6 @@ namespace ApexFit_desktop_UI
                 pnlCreateAccount2.Visible = true;
             }
         }
+
     }
 }

@@ -61,7 +61,7 @@
             this.btnCreateAccount2 = new System.Windows.Forms.Button();
             this.pnlForgotPassword1 = new System.Windows.Forms.Panel();
             this.lblForgotPassword1GoBack = new System.Windows.Forms.Label();
-            this.btnForgotPasswordChechSecurityAnswer = new System.Windows.Forms.Button();
+            this.btnForgotPasswordCheckSecurityAnswer = new System.Windows.Forms.Button();
             this.txtForgotPasswordSecurityAnswer = new System.Windows.Forms.TextBox();
             this.btnForgotPasswordShowQuestion = new System.Windows.Forms.Button();
             this.lblForgotPasswordSecurityQuestion = new System.Windows.Forms.Label();
@@ -169,7 +169,7 @@
             this.btnLogin.TabIndex = 82;
             this.btnLogin.Text = "Logi sisse";
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogiSisse_Click);
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pnlCreateAccount1
             // 
@@ -426,7 +426,7 @@
             this.cmbCreateAccountUserAge.DropDownHeight = 100;
             this.cmbCreateAccountUserAge.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCreateAccountUserAge.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCreateAccountUserAge.ForeColor = System.Drawing.Color.DarkGray;
+            this.cmbCreateAccountUserAge.ForeColor = System.Drawing.Color.Black;
             this.cmbCreateAccountUserAge.FormattingEnabled = true;
             this.cmbCreateAccountUserAge.IntegralHeight = false;
             this.cmbCreateAccountUserAge.Location = new System.Drawing.Point(267, 142);
@@ -467,7 +467,7 @@
             // pnlForgotPassword1
             // 
             this.pnlForgotPassword1.Controls.Add(this.lblForgotPassword1GoBack);
-            this.pnlForgotPassword1.Controls.Add(this.btnForgotPasswordChechSecurityAnswer);
+            this.pnlForgotPassword1.Controls.Add(this.btnForgotPasswordCheckSecurityAnswer);
             this.pnlForgotPassword1.Controls.Add(this.txtForgotPasswordSecurityAnswer);
             this.pnlForgotPassword1.Controls.Add(this.btnForgotPasswordShowQuestion);
             this.pnlForgotPassword1.Controls.Add(this.lblForgotPasswordSecurityQuestion);
@@ -490,22 +490,22 @@
             this.lblForgotPassword1GoBack.Text = "Salasõna meenus? Logi sisse";
             this.lblForgotPassword1GoBack.Click += new System.EventHandler(this.lblForgotPassword1GoBack_Click);
             // 
-            // btnForgotPasswordChechSecurityAnswer
+            // btnForgotPasswordCheckSecurityAnswer
             // 
-            this.btnForgotPasswordChechSecurityAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnForgotPasswordChechSecurityAnswer.FlatAppearance.BorderSize = 0;
-            this.btnForgotPasswordChechSecurityAnswer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnForgotPasswordChechSecurityAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForgotPasswordChechSecurityAnswer.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgotPasswordChechSecurityAnswer.ForeColor = System.Drawing.Color.White;
-            this.btnForgotPasswordChechSecurityAnswer.Location = new System.Drawing.Point(143, 245);
-            this.btnForgotPasswordChechSecurityAnswer.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnForgotPasswordChechSecurityAnswer.Name = "btnForgotPasswordChechSecurityAnswer";
-            this.btnForgotPasswordChechSecurityAnswer.Size = new System.Drawing.Size(312, 50);
-            this.btnForgotPasswordChechSecurityAnswer.TabIndex = 143;
-            this.btnForgotPasswordChechSecurityAnswer.Text = "Edasi";
-            this.btnForgotPasswordChechSecurityAnswer.UseVisualStyleBackColor = false;
-            this.btnForgotPasswordChechSecurityAnswer.Click += new System.EventHandler(this.btnForgotPasswordChechSecurityAnswer_Click);
+            this.btnForgotPasswordCheckSecurityAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnForgotPasswordCheckSecurityAnswer.FlatAppearance.BorderSize = 0;
+            this.btnForgotPasswordCheckSecurityAnswer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnForgotPasswordCheckSecurityAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForgotPasswordCheckSecurityAnswer.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgotPasswordCheckSecurityAnswer.ForeColor = System.Drawing.Color.White;
+            this.btnForgotPasswordCheckSecurityAnswer.Location = new System.Drawing.Point(143, 245);
+            this.btnForgotPasswordCheckSecurityAnswer.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnForgotPasswordCheckSecurityAnswer.Name = "btnForgotPasswordCheckSecurityAnswer";
+            this.btnForgotPasswordCheckSecurityAnswer.Size = new System.Drawing.Size(312, 50);
+            this.btnForgotPasswordCheckSecurityAnswer.TabIndex = 143;
+            this.btnForgotPasswordCheckSecurityAnswer.Text = "Edasi";
+            this.btnForgotPasswordCheckSecurityAnswer.UseVisualStyleBackColor = false;
+            this.btnForgotPasswordCheckSecurityAnswer.Click += new System.EventHandler(this.btnForgotPasswordCheckSecurityAnswer_Click);
             // 
             // txtForgotPasswordSecurityAnswer
             // 
@@ -648,6 +648,7 @@
             this.btnForgotPasswordChangePass.TabIndex = 162;
             this.btnForgotPasswordChangePass.Text = "Kinnita uus salasõna";
             this.btnForgotPasswordChangePass.UseVisualStyleBackColor = false;
+            this.btnForgotPasswordChangePass.Click += new System.EventHandler(this.btnForgotPasswordChangePass_Click);
             // 
             // ApexFit_login
             // 
@@ -656,8 +657,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
-            this.Controls.Add(this.pnlCreateAccount1);
             this.Controls.Add(this.pnlLogin);
+            this.Controls.Add(this.pnlCreateAccount1);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlForgotPassword1);
             this.Controls.Add(this.pnlCreateAccount2);
@@ -722,7 +723,7 @@
         internal System.Windows.Forms.Button btnCreateAccount1;
         internal System.Windows.Forms.Button btnForgotPasswordShowQuestion;
         internal System.Windows.Forms.TextBox txtForgotPasswordSecurityAnswer;
-        internal System.Windows.Forms.Button btnForgotPasswordChechSecurityAnswer;
+        internal System.Windows.Forms.Button btnForgotPasswordCheckSecurityAnswer;
         private System.Windows.Forms.Panel pnlForgotPassword2;
         internal System.Windows.Forms.Button btnForgotPasswordChangePass;
         internal System.Windows.Forms.TextBox txtForgotPassword2Password2;

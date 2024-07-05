@@ -13,48 +13,42 @@ namespace SecurityLayer
     public class CSecurity : ISecurity
     {
         private CoreComponent.ICore Core;
+        string connectionString;
 
         public bool LoginAttempt(string username, string password)
         {
             CoreComponent.ICore Core = new CoreComponent.CCore();
-            string connectionString = Core.GetConnectionString();
+            connectionString = Core.GetConnectionString();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT password_hash FROM user_data WHERE username_enc = @username";
+                string query = "SELECT password_hash FROM user_data WHERE username_enc = @username_enc";
 
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@username_enc", username);
 
-                try
-                {
-                    connection.Open();
-                    object result = command.ExecuteScalar();
+                connection.Open();
+                object result = command.ExecuteScalar();
 
-                    if (result != null)
-                    {
-                        string storedPasswordHash = result.ToString();
-                        if (storedPasswordHash.Equals(password))
-                        {
-                            return true;
-                        }
-                    }
-                    return false;
-                }
-                catch (Exception ex)
+                string storedPasswordHash = result.ToString();
+
+                if (storedPasswordHash == password)
                 {
-                    Console.WriteLine("Error: " + ex.Message);
+                    return true;
+                }
+                else
+                {
                     return false;
                 }
             }
         }
 
-        public List<string> GetSecurityQuestions()
+        public List<string> GetAllSecurityQuestions()
         {
             List<string> securityQuestions = new List<string>();
 
             CoreComponent.ICore Core = new CoreComponent.CCore();
-            string connectionString = Core.GetConnectionString();
+            connectionString = Core.GetConnectionString();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "SELECT recovery_question FROM recovery_questions";
@@ -140,6 +134,57 @@ namespace SecurityLayer
                 }
             }
             return ouput.ToString();
+        }
+
+        public string GetSecurityQuestion(int recoveryQuestionId)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+            string securityQuestion = null;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT recovery_question FROM recovery_questions WHERE recovery_question_id = @recoveryQuestionId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@recoveryQuestionId", recoveryQuestionId);
+
+                connection.Open();
+                object result = command.ExecuteScalar();
+
+                if (result != null)
+                {
+                    securityQuestion = result.ToString();
+                }
+                return securityQuestion;
+            }
+        }
+
+        public bool ChangeUserPassword(int userId, string passwordHash)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString(); // Replace with your method to get the connection string
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "UPDATE user_data SET password_hash = @passwordHash WHERE user_id = @userId";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@passwordHash", passwordHash);
+                    cmd.Parameters.AddWithValue("@userId", userId);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
         }
     }
 }
