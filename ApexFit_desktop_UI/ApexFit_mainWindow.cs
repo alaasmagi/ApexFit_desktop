@@ -18,9 +18,6 @@ namespace ApexFit_desktop_UI
             
         }
 
-        private void ApexFit_mainWindow_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
