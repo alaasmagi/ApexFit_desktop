@@ -24,8 +24,11 @@ namespace ApexFit_desktop_UI
 
         private int userId = 0;
         private int userSex = 0;
+
+
         public ApexFit_login()
         {
+            Security = new SecurityLayer.CSecurity();
             InitializeComponent();
             ResetForm();
             pnlCreateAccount2.Visible = false;
@@ -33,6 +36,16 @@ namespace ApexFit_desktop_UI
             pnlForgotPassword2.Visible = false;
             pnlForgotPassword1.Visible = false;
             pnlLogin.Visible = true;
+
+            int userIdTemp = Security.LoginWithToken();
+            if (userIdTemp != 0)
+            {
+                userId = userIdTemp;
+                this.Hide();
+                ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
+                ResetForm();
+                main_window.Show();
+            }
         }
         private void ResetForm()
         {
@@ -178,10 +191,12 @@ namespace ApexFit_desktop_UI
             Security = new SecurityLayer.CSecurity();
 
             int userIdTemp = UserProfile.UserProfileExists(Security.EncryptString(txtLoginUsername.Text));
-            if (userIdTemp != 0 && Security.LoginAttempt(Security.EncryptString(txtLoginUsername.Text), Security.GenerateHash(txtLoginPassword.Text)) == true)
+            if (userIdTemp != 0 && Security.LoginAttempt(userIdTemp, txtLoginPassword.Text) == true)
             {
-                pnlLogin.Visible = false;
-                pnlForgotPassword2.Visible = true;
+                if (chbStayLoggedIn.Checked == true)
+                {
+                    Security.CreateLoginToken(userIdTemp);
+                }
                 userId = userIdTemp;
                 this.Hide();
                 ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
@@ -347,7 +362,7 @@ namespace ApexFit_desktop_UI
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
             
-            if (UserProfile.SecurityAnswerApproval(userId, Security.GenerateHash(txtForgotPasswordSecurityAnswer.Text)) == false)
+            if (UserProfile.SecurityAnswerApproval(userId, txtForgotPasswordSecurityAnswer.Text) == false)
             {
                 MessageBox.Show("Viga turvaküsimuse vastuses", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -368,7 +383,7 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Salasõnad ei klapi", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (Security.ChangeUserPassword(userId, Security.GenerateHash(txtForgotPassword2Password.Text)) == false)
+            else if (Security.ChangeUserPassword(userId, txtForgotPassword2Password.Text) == false)
             {
                 MessageBox.Show("Salasõna vahetamine ebaõnnestus", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -489,8 +504,8 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                userIdTemp = UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), Security.GenerateHash(txtCreateAccountPassword1.Text), 
-                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex + 1, Security.GenerateHash(txtCreateAccount2SecurityQuestionAnswer.Text), Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
+                userIdTemp = UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), txtCreateAccountPassword1.Text, 
+                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex + 1, txtCreateAccount2SecurityQuestionAnswer.Text, Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
                     Convert.ToInt32(cmbCreateAccountUserWeight.SelectedItem), userSex, Convert.ToInt32(cmbCreateAccountUserAge.SelectedItem));
                 ComboboxReset();
                 TextboxReset();
@@ -527,6 +542,5 @@ namespace ApexFit_desktop_UI
                 pnlCreateAccount2.Visible = true;
             }
         }
-
     }
 }

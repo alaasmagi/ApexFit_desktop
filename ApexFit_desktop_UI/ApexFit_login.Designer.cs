@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_login));
             this.pnlLoginLogo = new System.Windows.Forms.Panel();
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.chbStayLoggedIn = new System.Windows.Forms.CheckBox();
             this.lblNoAccount = new System.Windows.Forms.Label();
             this.txtLoginUsername = new System.Windows.Forms.TextBox();
             this.txtLoginPassword = new System.Windows.Forms.TextBox();
@@ -92,6 +93,7 @@
             // 
             // pnlLogin
             // 
+            this.pnlLogin.Controls.Add(this.chbStayLoggedIn);
             this.pnlLogin.Controls.Add(this.lblNoAccount);
             this.pnlLogin.Controls.Add(this.txtLoginUsername);
             this.pnlLogin.Controls.Add(this.txtLoginPassword);
@@ -102,12 +104,22 @@
             this.pnlLogin.Size = new System.Drawing.Size(584, 386);
             this.pnlLogin.TabIndex = 1;
             // 
+            // chbStayLoggedIn
+            // 
+            this.chbStayLoggedIn.AutoSize = true;
+            this.chbStayLoggedIn.Location = new System.Drawing.Point(145, 215);
+            this.chbStayLoggedIn.Name = "chbStayLoggedIn";
+            this.chbStayLoggedIn.Size = new System.Drawing.Size(153, 23);
+            this.chbStayLoggedIn.TabIndex = 83;
+            this.chbStayLoggedIn.Text = "Jää sisselogituks";
+            this.chbStayLoggedIn.UseVisualStyleBackColor = true;
+            // 
             // lblNoAccount
             // 
             this.lblNoAccount.AutoSize = true;
             this.lblNoAccount.Font = new System.Drawing.Font("Century Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
-            this.lblNoAccount.Location = new System.Drawing.Point(214, 299);
+            this.lblNoAccount.Location = new System.Drawing.Point(217, 299);
             this.lblNoAccount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNoAccount.Name = "lblNoAccount";
             this.lblNoAccount.Size = new System.Drawing.Size(163, 16);
@@ -660,8 +672,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
-            this.Controls.Add(this.pnlCreateAccount1);
             this.Controls.Add(this.pnlLogin);
+            this.Controls.Add(this.pnlCreateAccount1);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlForgotPassword1);
             this.Controls.Add(this.pnlCreateAccount2);
@@ -735,6 +747,7 @@
         internal System.Windows.Forms.Label lblForgotPassword2UserName2;
         internal System.Windows.Forms.Label lblForgotPassword2Username;
         internal System.Windows.Forms.Label lblForgotPassword2GoBack;
+        private System.Windows.Forms.CheckBox chbStayLoggedIn;
     }
 }
 

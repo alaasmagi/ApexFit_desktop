@@ -13,7 +13,7 @@ using System.Xml.Linq;
 namespace UserProfileComponent
 {
     public class CUserProfile : IUserProfile
-    {
+    { 
         private CoreComponent.ICore Core;
         private SecurityLayer.ISecurity Security;
         private string connectionString;
@@ -23,19 +23,21 @@ namespace UserProfileComponent
             return Regex.IsMatch(emailAddress, pattern);
         }
 
-        public int GenerateUserId()
-        {
-            Core = new CoreComponent.CCore();
-            Random randomInt = new Random();
-            int userId = Core.DateToInt(DateTime.Today) * 10000 + randomInt.Next(1000, 10000);
-            return userId;
-        }
-
         public string UserNameCreation(string userEmail)
         {
             int atIndex = userEmail.IndexOf('@');
             return userEmail.Substring(0, atIndex);
         }
+
+        public int GenerateUserId()
+        {
+            Core = new CoreComponent.CCore();
+            Random random = new Random();
+
+            int userIdOutput = (Core.DateToInt(DateTime.Now) * 10000) + random.Next(0, 9999);
+            return userIdOutput;
+        }
+
 
         public int UserProfileExists(string userNameEnc)
         {
@@ -65,21 +67,29 @@ namespace UserProfileComponent
             }
         }
 
-        public int CreateUserProfile(string usernameEnc, string userEmailEnc, string passwordHash, string firstNameEnc, int recoveryQuestion, string recoveryAnswerHash, int height, int weight, int sex, int age)
+        public int CreateUserProfile(string usernameEnc, string userEmailEnc, string password, string firstNameEnc, int recoveryQuestion, string recoveryAnswer, int height, int weight, int sex, int age)
         {
             Core = new CoreComponent.CCore();
+            Security = new SecurityLayer.CSecurity();
             connectionString = Core.GetConnectionString();
-            int userIdOutput = 0;
+            int userId = GenerateUserId();
 
-            string query = "INSERT INTO user_data (username_enc, user_email_enc, password_hash, firstname_enc, recovery_question_id, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal) " +
-                           "VALUES (@usernameEnc, @userEmailEnc, @passwordHash, @firstNameEnc, @recoveryQuestion, @recoveryAnswerHash, @height, @weight, @sex, @age, @calorieLimit, @weightGoal)";
+            string salt = Security.GenerateSalt();
+            string passwordHash = Security.GenerateHash(password, salt);
+            string recoveryAnswerHash = Security.GenerateHash(recoveryAnswer, salt);
+
+            string query = "INSERT INTO user_data (user_id, username_enc, user_email_enc, password_hash, salt, premium_unlocked, firstname_enc, recovery_question_id, recovery_answer_hash, height, weight, sex, age, calorie_limit, weight_goal) " +
+                           "VALUES (@userId, @usernameEnc, @userEmailEnc, @passwordHash, @salt, @premiumUnlocked, @firstNameEnc, @recoveryQuestion, @recoveryAnswerHash, @height, @weight, @sex, @age, @calorieLimit, @weightGoal)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
                 command.Parameters.AddWithValue("@usernameEnc", usernameEnc);
                 command.Parameters.AddWithValue("@userEmailEnc", userEmailEnc);
                 command.Parameters.AddWithValue("@passwordHash", passwordHash);
+                command.Parameters.AddWithValue("@salt", salt);
+                command.Parameters.AddWithValue("@premiumUnlocked", 0);
                 command.Parameters.AddWithValue("@firstNameEnc", firstNameEnc);
                 command.Parameters.AddWithValue("@recoveryQuestion", recoveryQuestion);
                 command.Parameters.AddWithValue("@recoveryAnswerHash", recoveryAnswerHash);
@@ -93,9 +103,7 @@ namespace UserProfileComponent
                 connection.Open();
                 command.ExecuteNonQuery();
 
-                userIdOutput = UserProfileExists(userEmailEnc);
-
-                return userIdOutput;
+                return userId;
             }
         }
 
@@ -144,10 +152,13 @@ namespace UserProfileComponent
             }
         }
 
-        public bool SecurityAnswerApproval(int userId, string securityAnswerHash)
+        public bool SecurityAnswerApproval(int userId, string securityAnswer)
         {
             Security = new SecurityLayer.CSecurity();
             string userSecurityAnswer = GetStringFromUserData(userId, "recovery_answer_hash");
+
+            string salt = Security.GetUserSalt(userId);
+            string securityAnswerHash = Security.GenerateHash(securityAnswer, salt);
 
             if (userSecurityAnswer == securityAnswerHash)
             {
@@ -157,7 +168,7 @@ namespace UserProfileComponent
             {
                 return false;
             }
-
         }
+
     }
 }
