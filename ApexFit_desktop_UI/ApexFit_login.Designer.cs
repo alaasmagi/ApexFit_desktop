@@ -162,12 +162,15 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
             this.btnLogin.Location = new System.Drawing.Point(143, 245);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(312, 50);
             this.btnLogin.TabIndex = 82;
-            this.btnLogin.Text = "Logi sisse";
+            this.btnLogin.Text = " Logi sisse";
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -657,8 +660,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
-            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlCreateAccount1);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlForgotPassword1);
             this.Controls.Add(this.pnlCreateAccount2);

@@ -44,7 +44,8 @@
             this.btnProfileSettings = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
-            this.lblEesnimi = new System.Windows.Forms.Label();
+            this.lblFirstname = new System.Windows.Forms.Label();
+            this.pnlHomePage = new System.Windows.Forms.Panel();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -216,7 +217,7 @@
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
-            this.pnlTopBar.Controls.Add(this.lblEesnimi);
+            this.pnlTopBar.Controls.Add(this.lblFirstname);
             this.pnlTopBar.Controls.Add(this.pbTopBarProfile);
             this.pnlTopBar.Controls.Add(this.btnProfileSettings);
             this.pnlTopBar.Controls.Add(this.btnLogout);
@@ -245,12 +246,15 @@
             this.btnProfileSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfileSettings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfileSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnProfileSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileSettings.Image")));
             this.btnProfileSettings.Location = new System.Drawing.Point(683, 0);
             this.btnProfileSettings.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfileSettings.Name = "btnProfileSettings";
             this.btnProfileSettings.Size = new System.Drawing.Size(178, 100);
             this.btnProfileSettings.TabIndex = 4;
-            this.btnProfileSettings.Text = "Profiili seaded";
+            this.btnProfileSettings.Text = " Profiili seaded";
+            this.btnProfileSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProfileSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfileSettings.UseVisualStyleBackColor = false;
             // 
             // btnLogout
@@ -283,28 +287,33 @@
             this.pbPremiumFeatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbPremiumFeatures.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbPremiumFeatures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.pbPremiumFeatures.Image = ((System.Drawing.Image)(resources.GetObject("pbPremiumFeatures.Image")));
             this.pbPremiumFeatures.Location = new System.Drawing.Point(0, 350);
             this.pbPremiumFeatures.Margin = new System.Windows.Forms.Padding(2);
             this.pbPremiumFeatures.Name = "pbPremiumFeatures";
             this.pbPremiumFeatures.Size = new System.Drawing.Size(225, 50);
             this.pbPremiumFeatures.TabIndex = 15;
             this.pbPremiumFeatures.Text = " PRO-versioon:";
-            this.pbPremiumFeatures.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.pbPremiumFeatures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.pbPremiumFeatures.UseVisualStyleBackColor = false;
             // 
-            // lblEesnimi
+            // lblFirstname
             // 
-            this.lblEesnimi.AutoSize = true;
-            this.lblEesnimi.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEesnimi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lblEesnimi.Location = new System.Drawing.Point(80, 40);
-            this.lblEesnimi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEesnimi.Name = "lblEesnimi";
-            this.lblEesnimi.Size = new System.Drawing.Size(68, 21);
-            this.lblEesnimi.TabIndex = 3;
-            this.lblEesnimi.Text = "Eesnimi";
+            this.lblFirstname.AutoSize = true;
+            this.lblFirstname.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lblFirstname.Location = new System.Drawing.Point(80, 40);
+            this.lblFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFirstname.Name = "lblFirstname";
+            this.lblFirstname.Size = new System.Drawing.Size(68, 21);
+            this.lblFirstname.TabIndex = 3;
+            this.lblFirstname.Text = "Eesnimi";
+            // 
+            // pnlHomePage
+            // 
+            this.pnlHomePage.Location = new System.Drawing.Point(225, 100);
+            this.pnlHomePage.Name = "pnlHomePage";
+            this.pnlHomePage.Size = new System.Drawing.Size(1039, 581);
+            this.pnlHomePage.TabIndex = 2;
             // 
             // ApexFit_mainWindow
             // 
@@ -312,6 +321,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,6 +360,7 @@
         internal System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Panel pnlBackBar2;
         internal System.Windows.Forms.Button pbPremiumFeatures;
-        internal System.Windows.Forms.Label lblEesnimi;
+        internal System.Windows.Forms.Label lblFirstname;
+        private System.Windows.Forms.Panel pnlHomePage;
     }
 }

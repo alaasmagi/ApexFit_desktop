@@ -9055,6 +9055,39 @@
   <metadata name="btnLogin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="lblNoAccount.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtLoginUsername.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtLoginPassword.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblForgotPassword.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnLogin.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAupJREFUSEvt
+        Vl9oUlEY17U26mlrT4nYi0FzvTfqIcF/OZXyIULFEmSEbyGL+eJYjz3E9rSIHnrqRUQq29ig96ARI9hi
+        pE6dbup0jrb59/45ne96z7iOOfLqGEQ/+HHvPZ7v97vfd75zvJL/aBNSzAunsAfz3AAv1zVwYhqNZkhv
+        Mt02Go2jx6nVGkctFssIN7tLIBn0FYr7ayxCqEaxqE6jJlbrDP4FVb8ur7zk53ecOQgAL678WH2f2Ext
+        RGLxX9F4IipkLJGMxJOpOjZnTSbrMBfZzTWXyWSX5XL5JULyrFAoBsEcMtfpdHf46dBwoiHs1tPK1w+Z
+        47Kz+rGxW/xYR8YEQnMhYVwKmfPGCJoNjwFEGXPCc3NvHvh8Pn1j6EQhmCeBcosxFmYAhACp2WxWQKvW
+        KMRMTb14hMcAvfyVQLQxF9gKa2vrrzPZPMI9A+Y2fljYraKMj0w9Hs+gy+UaIHS73VfgOjPzbmD/oBzc
+        TGcQxSDa75+28yFNDdeOMQRIYRus/lxfomhUPCzXC+UqXWyQKlZrzN7u3kFhO7dTyO7ssqmtLIOPCcpm
+        s91tSDQaC27aNZYYDIareBkzB6UKg80oTJqwUqNpvC+ZXL5YyuQKbHo7R9H46JqYnLzPKfC9ADeimstq
+        tQ49GR8fsblcN5xO5zChw+FQ2d3ua5GNxFswhlMRl/oZHya61ARcYCu8mp19Wij+rtawoMBUKCg+YwwI
+        hgwIYcv0YAE5bCcQ808fmcJvwpftyLgVekKh0ITX633MP58kdCbGQpA1PY4zM4ZgIgBXMBISXqirZ3Vb
+        UKvVvbF4Moq3H6vtojGXWSAQfL6VzYfxV8BHbPIJGEkkw9x9IvU5nkwfQjPiD4GbjbCWy/NXICXt2y9V
+        UlDKUpVC+HRrYqkCHx8IfVv+HlSpVH18TMfgRPC/1fVweNE+P79oD4eXHIQLC18cgcAHu9X68J5Sqezn
+        IrpkfO6ANSNd3or/RqYdQiL5AxN8A7nJ8NJLAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="btnCreateAccount1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -9139,6 +9172,48 @@
   <metadata name="btnCreateAccount2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="lblCreateAccountSecurityQuestion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblCreateAccount2Bodyweight.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblCreateAccount2Height.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblCreateAccount2Age.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblCreateAccount2Back.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblCreateAccount2Sex.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rdbCreateAccountFemale.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="rdbCreateAccountMale.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cmbCreateAccountSecurityQuestion.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cmbCreateAccountUserWeight.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cmbCreateAccountUserHeight.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cmbCreateAccountUserAge.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtCreateAccount2SecurityQuestionAnswer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnCreateAccount2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="lblForgotPassword1GoBack.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -9167,6 +9242,24 @@
     <value>True</value>
   </metadata>
   <metadata name="txtForgotPasswordUserEmail.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblForgotPassword2UserName2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblForgotPassword2Username.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblForgotPassword2GoBack.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtForgotPassword2Password2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtForgotPassword2Password.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnForgotPasswordChangePass.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="lblForgotPassword2UserName2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
