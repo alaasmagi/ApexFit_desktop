@@ -41,11 +41,13 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlAppLogo = new System.Windows.Forms.Panel();
             this.pnlTopBar = new System.Windows.Forms.Panel();
-            this.lblFirstname = new System.Windows.Forms.Label();
-            this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.btnProfileSettings = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnCloseApplication = new System.Windows.Forms.Button();
+            this.lblFirstname = new System.Windows.Forms.Label();
+            this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.pnlHomePage = new System.Windows.Forms.Panel();
+            this.pnlFoods = new System.Windows.Forms.Panel();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -235,15 +237,80 @@
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
-            this.pnlTopBar.Controls.Add(this.lblFirstname);
-            this.pnlTopBar.Controls.Add(this.pbTopBarProfile);
             this.pnlTopBar.Controls.Add(this.btnProfileSettings);
             this.pnlTopBar.Controls.Add(this.btnLogout);
+            this.pnlTopBar.Controls.Add(this.btnCloseApplication);
+            this.pnlTopBar.Controls.Add(this.lblFirstname);
+            this.pnlTopBar.Controls.Add(this.pbTopBarProfile);
             this.pnlTopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopBar.Location = new System.Drawing.Point(225, 0);
             this.pnlTopBar.Name = "pnlTopBar";
             this.pnlTopBar.Size = new System.Drawing.Size(1039, 100);
             this.pnlTopBar.TabIndex = 1;
+            // 
+            // btnProfileSettings
+            // 
+            this.btnProfileSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.btnProfileSettings.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnProfileSettings.FlatAppearance.BorderSize = 0;
+            this.btnProfileSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
+            this.btnProfileSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfileSettings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfileSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnProfileSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileSettings.Image")));
+            this.btnProfileSettings.Location = new System.Drawing.Point(625, 0);
+            this.btnProfileSettings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProfileSettings.Name = "btnProfileSettings";
+            this.btnProfileSettings.Size = new System.Drawing.Size(167, 100);
+            this.btnProfileSettings.TabIndex = 4;
+            this.btnProfileSettings.Text = " Profiili seaded";
+            this.btnProfileSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProfileSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProfileSettings.UseVisualStyleBackColor = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(152)))), ((int)(((byte)(76)))));
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(122)))), ((int)(((byte)(25)))));
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(792, 0);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(140, 100);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = " Logi välja";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnCloseApplication
+            // 
+            this.btnCloseApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.btnCloseApplication.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCloseApplication.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCloseApplication.FlatAppearance.BorderSize = 0;
+            this.btnCloseApplication.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
+            this.btnCloseApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseApplication.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseApplication.ForeColor = System.Drawing.Color.White;
+            this.btnCloseApplication.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseApplication.Image")));
+            this.btnCloseApplication.Location = new System.Drawing.Point(932, 0);
+            this.btnCloseApplication.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCloseApplication.Name = "btnCloseApplication";
+            this.btnCloseApplication.Size = new System.Drawing.Size(107, 100);
+            this.btnCloseApplication.TabIndex = 5;
+            this.btnCloseApplication.Text = " Sulge";
+            this.btnCloseApplication.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCloseApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCloseApplication.UseVisualStyleBackColor = false;
+            this.btnCloseApplication.Click += new System.EventHandler(this.btnCloseApplication_Click);
             // 
             // lblFirstname
             // 
@@ -267,54 +334,19 @@
             this.pbTopBarProfile.TabIndex = 2;
             this.pbTopBarProfile.TabStop = false;
             // 
-            // btnProfileSettings
-            // 
-            this.btnProfileSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
-            this.btnProfileSettings.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnProfileSettings.FlatAppearance.BorderSize = 0;
-            this.btnProfileSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
-            this.btnProfileSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfileSettings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfileSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.btnProfileSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnProfileSettings.Image")));
-            this.btnProfileSettings.Location = new System.Drawing.Point(683, 0);
-            this.btnProfileSettings.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProfileSettings.Name = "btnProfileSettings";
-            this.btnProfileSettings.Size = new System.Drawing.Size(178, 100);
-            this.btnProfileSettings.TabIndex = 4;
-            this.btnProfileSettings.Text = " Profiili seaded";
-            this.btnProfileSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProfileSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProfileSettings.UseVisualStyleBackColor = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(152)))), ((int)(((byte)(76)))));
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(122)))), ((int)(((byte)(25)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(861, 0);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(178, 100);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = " Logi välja";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // pnlHomePage
             // 
             this.pnlHomePage.Location = new System.Drawing.Point(225, 100);
             this.pnlHomePage.Name = "pnlHomePage";
             this.pnlHomePage.Size = new System.Drawing.Size(1039, 581);
             this.pnlHomePage.TabIndex = 2;
+            // 
+            // pnlFoods
+            // 
+            this.pnlFoods.Location = new System.Drawing.Point(225, 100);
+            this.pnlFoods.Name = "pnlFoods";
+            this.pnlFoods.Size = new System.Drawing.Size(1039, 581);
+            this.pnlFoods.TabIndex = 0;
             // 
             // ApexFit_mainWindow
             // 
@@ -323,6 +355,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnlHomePage);
+            this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,5 +396,7 @@
         internal System.Windows.Forms.Button pbPremiumFeatures;
         internal System.Windows.Forms.Label lblFirstname;
         private System.Windows.Forms.Panel pnlHomePage;
+        private System.Windows.Forms.Panel pnlFoods;
+        internal System.Windows.Forms.Button btnCloseApplication;
     }
 }

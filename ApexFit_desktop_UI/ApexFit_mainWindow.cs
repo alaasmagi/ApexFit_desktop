@@ -21,11 +21,32 @@ namespace ApexFit_desktop_UI
             InitializeComponent();
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
-
             userId = _userId;
+
             lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));     
         }
 
+        private void ResetForm()
+        {
+
+        }
+
+        private void ResetControls()
+        {
+
+        }
+        private void TextboxReset()
+        {
+
+        }
+        private void ComboboxReset()
+        {
+
+        }
+        private void MenuButtonsDefaultColor()
+        {
+
+        }
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Security = new SecurityLayer.CSecurity();
@@ -35,6 +56,11 @@ namespace ApexFit_desktop_UI
             ApexFit_login login = new ApexFit_login();
            // ResetForm();
             login.Show();
+        }
+
+        private void btnCloseApplication_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
