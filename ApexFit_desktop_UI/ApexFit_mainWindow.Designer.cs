@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_mainWindow));
             this.pnlLeftBar = new System.Windows.Forms.Panel();
+            this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
             this.btnGoals = new System.Windows.Forms.Button();
             this.btnHistory = new System.Windows.Forms.Button();
@@ -40,11 +41,10 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlAppLogo = new System.Windows.Forms.Panel();
             this.pnlTopBar = new System.Windows.Forms.Panel();
+            this.lblFirstname = new System.Windows.Forms.Label();
             this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.btnProfileSettings = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.pbPremiumFeatures = new System.Windows.Forms.Button();
-            this.lblFirstname = new System.Windows.Forms.Label();
             this.pnlHomePage = new System.Windows.Forms.Panel();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
@@ -69,6 +69,24 @@
             this.pnlLeftBar.Name = "pnlLeftBar";
             this.pnlLeftBar.Size = new System.Drawing.Size(225, 681);
             this.pnlLeftBar.TabIndex = 0;
+            // 
+            // pbPremiumFeatures
+            // 
+            this.pbPremiumFeatures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.pbPremiumFeatures.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.pbPremiumFeatures.FlatAppearance.BorderSize = 0;
+            this.pbPremiumFeatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.pbPremiumFeatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pbPremiumFeatures.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pbPremiumFeatures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.pbPremiumFeatures.Location = new System.Drawing.Point(0, 350);
+            this.pbPremiumFeatures.Margin = new System.Windows.Forms.Padding(2);
+            this.pbPremiumFeatures.Name = "pbPremiumFeatures";
+            this.pbPremiumFeatures.Size = new System.Drawing.Size(225, 50);
+            this.pbPremiumFeatures.TabIndex = 15;
+            this.pbPremiumFeatures.Text = " PRO-versioon:";
+            this.pbPremiumFeatures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.pbPremiumFeatures.UseVisualStyleBackColor = false;
             // 
             // btnSleep
             // 
@@ -227,6 +245,18 @@
             this.pnlTopBar.Size = new System.Drawing.Size(1039, 100);
             this.pnlTopBar.TabIndex = 1;
             // 
+            // lblFirstname
+            // 
+            this.lblFirstname.AutoSize = true;
+            this.lblFirstname.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lblFirstname.Location = new System.Drawing.Point(80, 40);
+            this.lblFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFirstname.Name = "lblFirstname";
+            this.lblFirstname.Size = new System.Drawing.Size(68, 21);
+            this.lblFirstname.TabIndex = 3;
+            this.lblFirstname.Text = "Eesnimi";
+            // 
             // pbTopBarProfile
             // 
             this.pbTopBarProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbTopBarProfile.BackgroundImage")));
@@ -277,36 +307,7 @@
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = false;
-            // 
-            // pbPremiumFeatures
-            // 
-            this.pbPremiumFeatures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
-            this.pbPremiumFeatures.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.pbPremiumFeatures.FlatAppearance.BorderSize = 0;
-            this.pbPremiumFeatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.pbPremiumFeatures.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pbPremiumFeatures.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbPremiumFeatures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.pbPremiumFeatures.Location = new System.Drawing.Point(0, 350);
-            this.pbPremiumFeatures.Margin = new System.Windows.Forms.Padding(2);
-            this.pbPremiumFeatures.Name = "pbPremiumFeatures";
-            this.pbPremiumFeatures.Size = new System.Drawing.Size(225, 50);
-            this.pbPremiumFeatures.TabIndex = 15;
-            this.pbPremiumFeatures.Text = " PRO-versioon:";
-            this.pbPremiumFeatures.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.pbPremiumFeatures.UseVisualStyleBackColor = false;
-            // 
-            // lblFirstname
-            // 
-            this.lblFirstname.AutoSize = true;
-            this.lblFirstname.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lblFirstname.Location = new System.Drawing.Point(80, 40);
-            this.lblFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFirstname.Name = "lblFirstname";
-            this.lblFirstname.Size = new System.Drawing.Size(68, 21);
-            this.lblFirstname.TabIndex = 3;
-            this.lblFirstname.Text = "Eesnimi";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pnlHomePage
             // 

@@ -23,7 +23,7 @@ namespace SecurityLayer
             connectionString = Core.GetConnectionString();
 
             string salt = GetUserSalt(userId);
-            string tempPasswordHash = GenerateHash(password, salt); 
+            string tempPasswordHash = GenerateHash(password, salt);
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -123,7 +123,7 @@ namespace SecurityLayer
             }
         }
 
-            public string EncryptString(string input)
+        public string EncryptString(string input)
         {
             StringBuilder ouput = new StringBuilder();
 
@@ -203,7 +203,7 @@ namespace SecurityLayer
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
 
-            string tokenEnc = EncryptString(GetMacAddress());
+            string tokenEnc = GenerateHash(EncryptString(GetMacAddress()), "LoginToken");
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "UPDATE user_data SET token_enc = @tokenEnc WHERE user_id = @userId";
@@ -268,7 +268,7 @@ namespace SecurityLayer
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
 
-            string tokenEnc = EncryptString(GetMacAddress());
+            string tokenEnc = GenerateHash(EncryptString(GetMacAddress()), "LoginToken");
 
             int userIdOutput = 0;
 
@@ -290,6 +290,22 @@ namespace SecurityLayer
                 {
                     return userIdOutput;
                 }
+            }
+        }
+
+        public void RemoveToken(int userId)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "UPDATE user_data SET token_enc = @tokenEnc WHERE user_id = @userId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@tokenEnc", 0);
+                command.Parameters.AddWithValue("@userId", userId);
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

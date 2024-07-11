@@ -12,12 +12,29 @@ namespace ApexFit_desktop_UI
 {
     public partial class ApexFit_mainWindow : Form
     {
-        public ApexFit_mainWindow(int userId)
+        private SecurityLayer.ISecurity Security;
+        private UserProfileComponent.IUserProfile UserProfile;
+
+        private int userId;
+        public ApexFit_mainWindow(int _userId)
         {
             InitializeComponent();
-            
+            UserProfile = new UserProfileComponent.CUserProfile();
+            Security = new SecurityLayer.CSecurity();
+
+            userId = _userId;
+            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));     
         }
 
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Security = new SecurityLayer.CSecurity();
 
+            Security.RemoveToken(userId);
+            this.Hide();
+            ApexFit_login login = new ApexFit_login();
+           // ResetForm();
+            login.Show();
+        }
     }
 }

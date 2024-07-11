@@ -36,16 +36,7 @@ namespace ApexFit_desktop_UI
             pnlForgotPassword2.Visible = false;
             pnlForgotPassword1.Visible = false;
             pnlLogin.Visible = true;
-
-            int userIdTemp = Security.LoginWithToken();
-            if (userIdTemp != 0)
-            {
-                userId = userIdTemp;
-                this.Hide();
-                ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
-                ResetForm();
-                main_window.Show();
-            }
+            TryLoginWithToken();
         }
         private void ResetForm()
         {
@@ -147,6 +138,12 @@ namespace ApexFit_desktop_UI
             lblForgotPassword2Username.Visible = false;
         }
 
+        public int TryLoginWithToken()
+        {
+            Security = new SecurityLayer.CSecurity();
+            int userIdTemp = Security.LoginWithToken();
+            return userIdTemp;
+        }
         private void txtLoginUsername_Enter(object sender, EventArgs e)
         {
             if (txtLoginUsername.Text == "Kasutajanimi")
