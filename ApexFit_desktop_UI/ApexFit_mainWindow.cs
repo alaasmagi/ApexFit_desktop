@@ -22,13 +22,14 @@ namespace ApexFit_desktop_UI
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
             userId = _userId;
-
+            ResetForm();
             lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));     
         }
 
         private void ResetForm()
         {
-
+            MenuButtonsDefaultColor();
+            btnHome.BackColor = Color.FromArgb(205, 234, 231);
         }
 
         private void ResetControls()
@@ -45,7 +46,13 @@ namespace ApexFit_desktop_UI
         }
         private void MenuButtonsDefaultColor()
         {
-
+            btnFood.BackColor = Color.FromArgb(188, 227, 224);
+            btnTraining.BackColor = Color.FromArgb(188, 227, 224);
+            btnHistory.BackColor = Color.FromArgb(188, 227, 224);
+            btnHome.BackColor = Color.FromArgb(188, 227, 224);
+            btnProfileSettings.BackColor = Color.FromArgb(188, 227, 224);
+            btnGoals.BackColor = Color.FromArgb(188, 227, 224);
+            btnSleep.BackColor = Color.FromArgb(188, 227, 224);
         }
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -61,6 +68,48 @@ namespace ApexFit_desktop_UI
         private void btnCloseApplication_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnFood.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnTraining_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnTraining.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnHistory.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnGoals_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnGoals.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnSleep_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnSleep.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnHome.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnProfileSettings_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            btnProfileSettings.BackColor = Color.FromArgb(205, 234, 231);
         }
     }
 }

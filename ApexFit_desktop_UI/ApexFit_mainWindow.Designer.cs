@@ -75,6 +75,7 @@
             // pbPremiumFeatures
             // 
             this.pbPremiumFeatures.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.pbPremiumFeatures.Enabled = false;
             this.pbPremiumFeatures.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.pbPremiumFeatures.FlatAppearance.BorderSize = 0;
             this.pbPremiumFeatures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -109,6 +110,7 @@
             this.btnSleep.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSleep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSleep.UseVisualStyleBackColor = false;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
             // 
             // btnGoals
             // 
@@ -129,6 +131,7 @@
             this.btnGoals.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGoals.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGoals.UseVisualStyleBackColor = false;
+            this.btnGoals.Click += new System.EventHandler(this.btnGoals_Click);
             // 
             // btnHistory
             // 
@@ -149,6 +152,7 @@
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnTraining
             // 
@@ -169,6 +173,7 @@
             this.btnTraining.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTraining.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTraining.UseVisualStyleBackColor = false;
+            this.btnTraining.Click += new System.EventHandler(this.btnTraining_Click);
             // 
             // btnFood
             // 
@@ -189,6 +194,7 @@
             this.btnFood.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFood.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFood.UseVisualStyleBackColor = false;
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // pnlBackBar2
             // 
@@ -223,6 +229,7 @@
             this.btnHome.Size = new System.Drawing.Size(225, 103);
             this.btnHome.TabIndex = 8;
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnlAppLogo
             // 
@@ -267,6 +274,7 @@
             this.btnProfileSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProfileSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProfileSettings.UseVisualStyleBackColor = false;
+            this.btnProfileSettings.Click += new System.EventHandler(this.btnProfileSettings_Click);
             // 
             // btnLogout
             // 
