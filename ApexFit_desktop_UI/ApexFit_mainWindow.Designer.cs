@@ -33,7 +33,7 @@
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
             this.btnGoals = new System.Windows.Forms.Button();
-            this.btnHistory = new System.Windows.Forms.Button();
+            this.btnAnalysis = new System.Windows.Forms.Button();
             this.btnTraining = new System.Windows.Forms.Button();
             this.btnFood = new System.Windows.Forms.Button();
             this.pnlBackBar2 = new System.Windows.Forms.Panel();
@@ -47,10 +47,30 @@
             this.lblFirstname = new System.Windows.Forms.Label();
             this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.pnlHomePage = new System.Windows.Forms.Panel();
+            this.lblHomeTitleName = new System.Windows.Forms.Label();
             this.pnlFoods = new System.Windows.Forms.Panel();
+            this.lblFoodsTitle = new System.Windows.Forms.Label();
+            this.pnlTrainings = new System.Windows.Forms.Panel();
+            this.lblTrainingsTitle = new System.Windows.Forms.Label();
+            this.pnlAnalysis = new System.Windows.Forms.Panel();
+            this.lblAnalysisTitle = new System.Windows.Forms.Label();
+            this.pnlGoals = new System.Windows.Forms.Panel();
+            this.lblGoalsTitle = new System.Windows.Forms.Label();
+            this.pnlSleep = new System.Windows.Forms.Panel();
+            this.lblSleepTitle = new System.Windows.Forms.Label();
+            this.pnlProfileSettings = new System.Windows.Forms.Panel();
+            this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
+            this.pnlHomePage.SuspendLayout();
+            this.pnlFoods.SuspendLayout();
+            this.pnlTrainings.SuspendLayout();
+            this.pnlAnalysis.SuspendLayout();
+            this.pnlGoals.SuspendLayout();
+            this.pnlSleep.SuspendLayout();
+            this.pnlProfileSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -59,7 +79,7 @@
             this.pnlLeftBar.Controls.Add(this.pbPremiumFeatures);
             this.pnlLeftBar.Controls.Add(this.btnSleep);
             this.pnlLeftBar.Controls.Add(this.btnGoals);
-            this.pnlLeftBar.Controls.Add(this.btnHistory);
+            this.pnlLeftBar.Controls.Add(this.btnAnalysis);
             this.pnlLeftBar.Controls.Add(this.btnTraining);
             this.pnlLeftBar.Controls.Add(this.btnFood);
             this.pnlLeftBar.Controls.Add(this.pnlBackBar2);
@@ -133,26 +153,26 @@
             this.btnGoals.UseVisualStyleBackColor = false;
             this.btnGoals.Click += new System.EventHandler(this.btnGoals_Click);
             // 
-            // btnHistory
+            // btnAnalysis
             // 
-            this.btnHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
-            this.btnHistory.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
-            this.btnHistory.Location = new System.Drawing.Point(0, 252);
-            this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(225, 75);
-            this.btnHistory.TabIndex = 12;
-            this.btnHistory.Text = " Analüüs";
-            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHistory.UseVisualStyleBackColor = false;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            this.btnAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.btnAnalysis.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAnalysis.FlatAppearance.BorderSize = 0;
+            this.btnAnalysis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
+            this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysis.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalysis.Image")));
+            this.btnAnalysis.Location = new System.Drawing.Point(0, 252);
+            this.btnAnalysis.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalysis.Name = "btnAnalysis";
+            this.btnAnalysis.Size = new System.Drawing.Size(225, 75);
+            this.btnAnalysis.TabIndex = 12;
+            this.btnAnalysis.Text = " Analüüs";
+            this.btnAnalysis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAnalysis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalysis.UseVisualStyleBackColor = false;
+            this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
             // 
             // btnTraining
             // 
@@ -344,17 +364,153 @@
             // 
             // pnlHomePage
             // 
+            this.pnlHomePage.Controls.Add(this.lblHomeTitleName);
             this.pnlHomePage.Location = new System.Drawing.Point(225, 100);
             this.pnlHomePage.Name = "pnlHomePage";
             this.pnlHomePage.Size = new System.Drawing.Size(1039, 581);
             this.pnlHomePage.TabIndex = 2;
             // 
+            // lblHomeTitleName
+            // 
+            this.lblHomeTitleName.AutoSize = true;
+            this.lblHomeTitleName.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomeTitleName.ForeColor = System.Drawing.Color.Black;
+            this.lblHomeTitleName.Location = new System.Drawing.Point(25, 25);
+            this.lblHomeTitleName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHomeTitleName.Name = "lblHomeTitleName";
+            this.lblHomeTitleName.Size = new System.Drawing.Size(136, 30);
+            this.lblHomeTitleName.TabIndex = 5;
+            this.lblHomeTitleName.Text = "Eesmärgid";
+            // 
             // pnlFoods
             // 
+            this.pnlFoods.Controls.Add(this.lblFoodsTitle);
             this.pnlFoods.Location = new System.Drawing.Point(225, 100);
             this.pnlFoods.Name = "pnlFoods";
             this.pnlFoods.Size = new System.Drawing.Size(1039, 581);
             this.pnlFoods.TabIndex = 0;
+            // 
+            // lblFoodsTitle
+            // 
+            this.lblFoodsTitle.AutoSize = true;
+            this.lblFoodsTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodsTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblFoodsTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblFoodsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFoodsTitle.Name = "lblFoodsTitle";
+            this.lblFoodsTitle.Size = new System.Drawing.Size(123, 30);
+            this.lblFoodsTitle.TabIndex = 5;
+            this.lblFoodsTitle.Text = "Toitumine";
+            // 
+            // pnlTrainings
+            // 
+            this.pnlTrainings.Controls.Add(this.lblTrainingsTitle);
+            this.pnlTrainings.Location = new System.Drawing.Point(225, 100);
+            this.pnlTrainings.Name = "pnlTrainings";
+            this.pnlTrainings.Size = new System.Drawing.Size(1039, 581);
+            this.pnlTrainings.TabIndex = 3;
+            // 
+            // lblTrainingsTitle
+            // 
+            this.lblTrainingsTitle.AutoSize = true;
+            this.lblTrainingsTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrainingsTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTrainingsTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblTrainingsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTrainingsTitle.Name = "lblTrainingsTitle";
+            this.lblTrainingsTitle.Size = new System.Drawing.Size(141, 30);
+            this.lblTrainingsTitle.TabIndex = 5;
+            this.lblTrainingsTitle.Text = "Treeningud";
+            // 
+            // pnlAnalysis
+            // 
+            this.pnlAnalysis.Controls.Add(this.lblAnalysisTitle);
+            this.pnlAnalysis.Location = new System.Drawing.Point(225, 100);
+            this.pnlAnalysis.Name = "pnlAnalysis";
+            this.pnlAnalysis.Size = new System.Drawing.Size(1039, 581);
+            this.pnlAnalysis.TabIndex = 4;
+            // 
+            // lblAnalysisTitle
+            // 
+            this.lblAnalysisTitle.AutoSize = true;
+            this.lblAnalysisTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblAnalysisTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTitle.Name = "lblAnalysisTitle";
+            this.lblAnalysisTitle.Size = new System.Drawing.Size(106, 30);
+            this.lblAnalysisTitle.TabIndex = 5;
+            this.lblAnalysisTitle.Text = "Analüüs";
+            // 
+            // pnlGoals
+            // 
+            this.pnlGoals.Controls.Add(this.lblGoalsTitle);
+            this.pnlGoals.Location = new System.Drawing.Point(225, 100);
+            this.pnlGoals.Name = "pnlGoals";
+            this.pnlGoals.Size = new System.Drawing.Size(1039, 581);
+            this.pnlGoals.TabIndex = 5;
+            // 
+            // lblGoalsTitle
+            // 
+            this.lblGoalsTitle.AutoSize = true;
+            this.lblGoalsTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGoalsTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblGoalsTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblGoalsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGoalsTitle.Name = "lblGoalsTitle";
+            this.lblGoalsTitle.Size = new System.Drawing.Size(136, 30);
+            this.lblGoalsTitle.TabIndex = 4;
+            this.lblGoalsTitle.Text = "Eesmärgid";
+            // 
+            // pnlSleep
+            // 
+            this.pnlSleep.Controls.Add(this.lblSleepTitle);
+            this.pnlSleep.Location = new System.Drawing.Point(225, 100);
+            this.pnlSleep.Name = "pnlSleep";
+            this.pnlSleep.Size = new System.Drawing.Size(1039, 581);
+            this.pnlSleep.TabIndex = 5;
+            // 
+            // lblSleepTitle
+            // 
+            this.lblSleepTitle.AutoSize = true;
+            this.lblSleepTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSleepTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblSleepTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblSleepTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSleepTitle.Name = "lblSleepTitle";
+            this.lblSleepTitle.Size = new System.Drawing.Size(48, 30);
+            this.lblSleepTitle.TabIndex = 5;
+            this.lblSleepTitle.Text = "Uni";
+            // 
+            // pnlProfileSettings
+            // 
+            this.pnlProfileSettings.Controls.Add(this.groupBox1);
+            this.pnlProfileSettings.Controls.Add(this.lblProfileSettingsTitle);
+            this.pnlProfileSettings.Location = new System.Drawing.Point(225, 100);
+            this.pnlProfileSettings.Name = "pnlProfileSettings";
+            this.pnlProfileSettings.Size = new System.Drawing.Size(1039, 581);
+            this.pnlProfileSettings.TabIndex = 6;
+            // 
+            // lblProfileSettingsTitle
+            // 
+            this.lblProfileSettingsTitle.AutoSize = true;
+            this.lblProfileSettingsTitle.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileSettingsTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileSettingsTitle.Location = new System.Drawing.Point(25, 25);
+            this.lblProfileSettingsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileSettingsTitle.Name = "lblProfileSettingsTitle";
+            this.lblProfileSettingsTitle.Size = new System.Drawing.Size(176, 30);
+            this.lblProfileSettingsTitle.TabIndex = 5;
+            this.lblProfileSettingsTitle.Text = "Profiili seaded";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(792, 299);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(235, 270);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // ApexFit_mainWindow
             // 
@@ -362,8 +518,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlFoods);
+            this.Controls.Add(this.pnlAnalysis);
+            this.Controls.Add(this.pnlTrainings);
+            this.Controls.Add(this.pnlSleep);
+            this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,6 +542,20 @@
             this.pnlTopBar.ResumeLayout(false);
             this.pnlTopBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).EndInit();
+            this.pnlHomePage.ResumeLayout(false);
+            this.pnlHomePage.PerformLayout();
+            this.pnlFoods.ResumeLayout(false);
+            this.pnlFoods.PerformLayout();
+            this.pnlTrainings.ResumeLayout(false);
+            this.pnlTrainings.PerformLayout();
+            this.pnlAnalysis.ResumeLayout(false);
+            this.pnlAnalysis.PerformLayout();
+            this.pnlGoals.ResumeLayout(false);
+            this.pnlGoals.PerformLayout();
+            this.pnlSleep.ResumeLayout(false);
+            this.pnlSleep.PerformLayout();
+            this.pnlProfileSettings.ResumeLayout(false);
+            this.pnlProfileSettings.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -397,7 +572,7 @@
         private System.Windows.Forms.Panel pnlBackBar;
         internal System.Windows.Forms.Button btnFood;
         internal System.Windows.Forms.Button btnTraining;
-        internal System.Windows.Forms.Button btnHistory;
+        internal System.Windows.Forms.Button btnAnalysis;
         internal System.Windows.Forms.Button btnGoals;
         internal System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Panel pnlBackBar2;
@@ -406,5 +581,18 @@
         private System.Windows.Forms.Panel pnlHomePage;
         private System.Windows.Forms.Panel pnlFoods;
         internal System.Windows.Forms.Button btnCloseApplication;
+        private System.Windows.Forms.Panel pnlTrainings;
+        private System.Windows.Forms.Panel pnlAnalysis;
+        private System.Windows.Forms.Panel pnlGoals;
+        internal System.Windows.Forms.Label lblGoalsTitle;
+        private System.Windows.Forms.Panel pnlSleep;
+        internal System.Windows.Forms.Label lblSleepTitle;
+        internal System.Windows.Forms.Label lblHomeTitleName;
+        internal System.Windows.Forms.Label lblFoodsTitle;
+        internal System.Windows.Forms.Label lblTrainingsTitle;
+        internal System.Windows.Forms.Label lblAnalysisTitle;
+        private System.Windows.Forms.Panel pnlProfileSettings;
+        internal System.Windows.Forms.Label lblProfileSettingsTitle;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

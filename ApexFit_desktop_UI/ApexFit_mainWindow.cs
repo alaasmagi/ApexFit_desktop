@@ -23,13 +23,17 @@ namespace ApexFit_desktop_UI
             Security = new SecurityLayer.CSecurity();
             userId = _userId;
             ResetForm();
-            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));     
+            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));
+            lblHomeTitleName.Text = "Tere, " + lblFirstname.Text + "!";
         }
 
         private void ResetForm()
         {
             MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlHomePage.Visible = true;
             btnHome.BackColor = Color.FromArgb(205, 234, 231);
+
         }
 
         private void ResetControls()
@@ -48,7 +52,7 @@ namespace ApexFit_desktop_UI
         {
             btnFood.BackColor = Color.FromArgb(188, 227, 224);
             btnTraining.BackColor = Color.FromArgb(188, 227, 224);
-            btnHistory.BackColor = Color.FromArgb(188, 227, 224);
+            btnAnalysis.BackColor = Color.FromArgb(188, 227, 224);
             btnHome.BackColor = Color.FromArgb(188, 227, 224);
             btnProfileSettings.BackColor = Color.FromArgb(188, 227, 224);
             btnGoals.BackColor = Color.FromArgb(188, 227, 224);
@@ -65,6 +69,17 @@ namespace ApexFit_desktop_UI
             login.Show();
         }
 
+        private void HideAllPanels()
+        {
+            pnlAnalysis.Visible = false;
+            pnlFoods.Visible = false;
+            pnlGoals.Visible = false;
+            pnlProfileSettings.Visible = false;
+            pnlTrainings.Visible = false;
+            pnlSleep.Visible = false;
+            pnlHomePage.Visible = false;
+        }
+
         private void btnCloseApplication_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -73,43 +88,82 @@ namespace ApexFit_desktop_UI
         private void btnFood_Click(object sender, EventArgs e)
         {
             MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlFoods.Visible = true;
             btnFood.BackColor = Color.FromArgb(205, 234, 231);
         }
 
         private void btnTraining_Click(object sender, EventArgs e)
         {
             MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlTrainings.Visible = true;
             btnTraining.BackColor = Color.FromArgb(205, 234, 231);
-        }
-
-        private void btnHistory_Click(object sender, EventArgs e)
-        {
-            MenuButtonsDefaultColor();
-            btnHistory.BackColor = Color.FromArgb(205, 234, 231);
         }
 
         private void btnGoals_Click(object sender, EventArgs e)
         {
-            MenuButtonsDefaultColor();
-            btnGoals.BackColor = Color.FromArgb(205, 234, 231);
+            UserProfile = new UserProfileComponent.CUserProfile();
+
+            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 0)
+            {
+                MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MenuButtonsDefaultColor();
+                HideAllPanels();
+                pnlHomePage.Visible = true;
+                btnHome.BackColor = Color.FromArgb(205, 234, 231);
+            }
+            else
+            {
+                MenuButtonsDefaultColor();
+                HideAllPanels();
+                pnlGoals.Visible = true;
+                btnGoals.BackColor = Color.FromArgb(205, 234, 231);
+            }
+            
         }
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
-            MenuButtonsDefaultColor();
-            btnSleep.BackColor = Color.FromArgb(205, 234, 231);
+            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 0)
+            {
+                MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MenuButtonsDefaultColor();
+                HideAllPanels();
+                pnlHomePage.Visible = true;
+                btnHome.BackColor = Color.FromArgb(205, 234, 231);
+            }
+            else
+            {
+                MenuButtonsDefaultColor();
+                HideAllPanels();
+                pnlSleep.Visible = true;
+                btnSleep.BackColor = Color.FromArgb(205, 234, 231);
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlHomePage.Visible = true;
             btnHome.BackColor = Color.FromArgb(205, 234, 231);
         }
 
         private void btnProfileSettings_Click(object sender, EventArgs e)
         {
             MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlProfileSettings.Visible = true;
             btnProfileSettings.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnAnalysis_Click(object sender, EventArgs e)
+        {
+            MenuButtonsDefaultColor();
+            HideAllPanels();
+            pnlAnalysis.Visible = true;
+            btnAnalysis.BackColor = Color.FromArgb(205, 234, 231);
         }
     }
 }
