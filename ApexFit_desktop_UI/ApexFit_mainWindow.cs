@@ -42,7 +42,38 @@ namespace ApexFit_desktop_UI
         }
         private void TextboxReset()
         {
+           /* txtLoginUsername.Text = "Kasutajanimi";
+            txtLoginUsername.ForeColor = Color.DarkGray;*/
+            txtCurrentUserPassword.Text = "Praegune salasõna";
+            txtCurrentUserPassword.UseSystemPasswordChar = false;
+            txtCurrentUserPassword.ForeColor = Color.DarkGray;
+            txtNewUserPassword.Text = "Uus salasõna";
+            txtNewUserPassword.UseSystemPasswordChar = false;
+            txtNewUserPassword.ForeColor = Color.DarkGray;
+            txtNewUserPassword2.Text = "Korda uut salasõna";
+            txtNewUserPassword2.UseSystemPasswordChar = false;
+            txtNewUserPassword2.ForeColor = Color.DarkGray;
+            txtCurrentEmail.Text = "Praegune meiliaadress";
+            txtCurrentEmail.ForeColor = Color.DarkGray;
+            txtNewEmail.Text = "Uus meiliaadress";
+            txtNewEmail.ForeColor = Color.DarkGray;
+            txtConfirmEmailChangePassword.Text = "Salasõna";
+            txtConfirmEmailChangePassword.UseSystemPasswordChar = false;
+            txtConfirmEmailChangePassword.ForeColor = Color.DarkGray;
 
+
+           /* txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
+            txtCreateAccount2SecurityQuestionAnswer.ForeColor = Color.DarkGray;
+            txtForgotPasswordUserEmail.Text = "Meiliaadress";
+            txtForgotPasswordUserEmail.ForeColor = Color.DarkGray;
+            txtForgotPasswordSecurityAnswer.Text = "Turvaküsimuse vastus";
+            txtForgotPasswordSecurityAnswer.ForeColor = Color.DarkGray;
+
+            txtForgotPassword2Password2.Text = "Korda salasõna";
+            txtForgotPassword2Password2.UseSystemPasswordChar = false;
+            txtForgotPassword2Password2.ForeColor = Color.DarkGray;
+            lblCreateAccountSecurityQuestion.Visible = false;
+            lblForgotPassword2Username.Visible = false;*/
         }
         private void ComboboxReset()
         {

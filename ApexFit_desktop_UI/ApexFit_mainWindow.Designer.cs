@@ -59,8 +59,41 @@
             this.pnlSleep = new System.Windows.Forms.Panel();
             this.lblSleepTitle = new System.Windows.Forms.Label();
             this.pnlProfileSettings = new System.Windows.Forms.Panel();
+            this.gbChangeUserPassword = new System.Windows.Forms.GroupBox();
+            this.pbUserPasswordChangeSuccessful = new System.Windows.Forms.PictureBox();
+            this.txtCurrentUserPassword = new System.Windows.Forms.TextBox();
+            this.btnChangeUserPassword = new System.Windows.Forms.Button();
+            this.txtNewUserPassword = new System.Windows.Forms.TextBox();
+            this.txtNewUserPassword2 = new System.Windows.Forms.TextBox();
+            this.gbProVersionPurchase = new System.Windows.Forms.GroupBox();
+            this.lblProfiilKehakaalSama = new System.Windows.Forms.Label();
+            this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbChangeEmail = new System.Windows.Forms.GroupBox();
+            this.pbChangeEmailSuccessfull = new System.Windows.Forms.PictureBox();
+            this.txtCurrentEmail = new System.Windows.Forms.TextBox();
+            this.btnChangeEmail = new System.Windows.Forms.Button();
+            this.txtNewEmail = new System.Windows.Forms.TextBox();
+            this.txtConfirmEmailChangePassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbUserAge = new System.Windows.Forms.GroupBox();
+            this.cmbMuudaVanust = new System.Windows.Forms.ComboBox();
+            this.btnMuudaVanust = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbUserHeight = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.gbDeleteUserAccount = new System.Windows.Forms.GroupBox();
+            this.btnDeleteUserAccount = new System.Windows.Forms.Button();
+            this.txtDeleteUserAccountPassword = new System.Windows.Forms.TextBox();
+            this.lblUserProfileFirstname = new System.Windows.Forms.Label();
+            this.lblUserProfileUsername = new System.Windows.Forms.Label();
+            this.gbUserProfileDataOverview = new System.Windows.Forms.GroupBox();
+            this.pbUserProfileDataOverviewIcon = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -71,6 +104,18 @@
             this.pnlGoals.SuspendLayout();
             this.pnlSleep.SuspendLayout();
             this.pnlProfileSettings.SuspendLayout();
+            this.gbChangeUserPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).BeginInit();
+            this.gbProVersionPurchase.SuspendLayout();
+            this.gbChangeEmail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).BeginInit();
+            this.gbUserAge.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbUserHeight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.gbDeleteUserAccount.SuspendLayout();
+            this.gbUserProfileDataOverview.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -484,12 +529,140 @@
             // 
             // pnlProfileSettings
             // 
-            this.pnlProfileSettings.Controls.Add(this.groupBox1);
+            this.pnlProfileSettings.Controls.Add(this.gbUserProfileDataOverview);
+            this.pnlProfileSettings.Controls.Add(this.gbDeleteUserAccount);
+            this.pnlProfileSettings.Controls.Add(this.gbUserHeight);
+            this.pnlProfileSettings.Controls.Add(this.gbUserAge);
+            this.pnlProfileSettings.Controls.Add(this.gbChangeEmail);
+            this.pnlProfileSettings.Controls.Add(this.gbChangeUserPassword);
+            this.pnlProfileSettings.Controls.Add(this.gbProVersionPurchase);
             this.pnlProfileSettings.Controls.Add(this.lblProfileSettingsTitle);
             this.pnlProfileSettings.Location = new System.Drawing.Point(225, 100);
             this.pnlProfileSettings.Name = "pnlProfileSettings";
             this.pnlProfileSettings.Size = new System.Drawing.Size(1039, 581);
             this.pnlProfileSettings.TabIndex = 6;
+            // 
+            // gbChangeUserPassword
+            // 
+            this.gbChangeUserPassword.Controls.Add(this.pbUserPasswordChangeSuccessful);
+            this.gbChangeUserPassword.Controls.Add(this.txtCurrentUserPassword);
+            this.gbChangeUserPassword.Controls.Add(this.btnChangeUserPassword);
+            this.gbChangeUserPassword.Controls.Add(this.txtNewUserPassword);
+            this.gbChangeUserPassword.Controls.Add(this.txtNewUserPassword2);
+            this.gbChangeUserPassword.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChangeUserPassword.ForeColor = System.Drawing.Color.Black;
+            this.gbChangeUserPassword.Location = new System.Drawing.Point(399, 304);
+            this.gbChangeUserPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.gbChangeUserPassword.Name = "gbChangeUserPassword";
+            this.gbChangeUserPassword.Padding = new System.Windows.Forms.Padding(2);
+            this.gbChangeUserPassword.Size = new System.Drawing.Size(351, 266);
+            this.gbChangeUserPassword.TabIndex = 16;
+            this.gbChangeUserPassword.TabStop = false;
+            this.gbChangeUserPassword.Text = "Salasõna muutmine";
+            // 
+            // pbUserPasswordChangeSuccessful
+            // 
+            this.pbUserPasswordChangeSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbUserPasswordChangeSuccessful.BackgroundImage")));
+            this.pbUserPasswordChangeSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbUserPasswordChangeSuccessful.Location = new System.Drawing.Point(277, 185);
+            this.pbUserPasswordChangeSuccessful.Name = "pbUserPasswordChangeSuccessful";
+            this.pbUserPasswordChangeSuccessful.Size = new System.Drawing.Size(50, 50);
+            this.pbUserPasswordChangeSuccessful.TabIndex = 40;
+            this.pbUserPasswordChangeSuccessful.TabStop = false;
+            this.pbUserPasswordChangeSuccessful.Visible = false;
+            // 
+            // txtCurrentUserPassword
+            // 
+            this.txtCurrentUserPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentUserPassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCurrentUserPassword.Location = new System.Drawing.Point(15, 62);
+            this.txtCurrentUserPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtCurrentUserPassword.Name = "txtCurrentUserPassword";
+            this.txtCurrentUserPassword.Size = new System.Drawing.Size(312, 27);
+            this.txtCurrentUserPassword.TabIndex = 26;
+            this.txtCurrentUserPassword.Text = "Praegune salasõna";
+            // 
+            // btnChangeUserPassword
+            // 
+            this.btnChangeUserPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnChangeUserPassword.FlatAppearance.BorderSize = 0;
+            this.btnChangeUserPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnChangeUserPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeUserPassword.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeUserPassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangeUserPassword.Location = new System.Drawing.Point(15, 185);
+            this.btnChangeUserPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnChangeUserPassword.Name = "btnChangeUserPassword";
+            this.btnChangeUserPassword.Size = new System.Drawing.Size(242, 50);
+            this.btnChangeUserPassword.TabIndex = 22;
+            this.btnChangeUserPassword.Text = "Kinnita uus salasõna";
+            this.btnChangeUserPassword.UseVisualStyleBackColor = false;
+            // 
+            // txtNewUserPassword
+            // 
+            this.txtNewUserPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewUserPassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNewUserPassword.Location = new System.Drawing.Point(15, 97);
+            this.txtNewUserPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtNewUserPassword.Name = "txtNewUserPassword";
+            this.txtNewUserPassword.Size = new System.Drawing.Size(312, 27);
+            this.txtNewUserPassword.TabIndex = 20;
+            this.txtNewUserPassword.Text = "Uus salasõna";
+            // 
+            // txtNewUserPassword2
+            // 
+            this.txtNewUserPassword2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewUserPassword2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNewUserPassword2.Location = new System.Drawing.Point(15, 132);
+            this.txtNewUserPassword2.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtNewUserPassword2.Name = "txtNewUserPassword2";
+            this.txtNewUserPassword2.Size = new System.Drawing.Size(312, 27);
+            this.txtNewUserPassword2.TabIndex = 21;
+            this.txtNewUserPassword2.Text = "Korda uut salasõna";
+            // 
+            // gbProVersionPurchase
+            // 
+            this.gbProVersionPurchase.Controls.Add(this.lblProfiilKehakaalSama);
+            this.gbProVersionPurchase.Controls.Add(this.btnPurchaseProVersion);
+            this.gbProVersionPurchase.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbProVersionPurchase.Location = new System.Drawing.Point(770, 304);
+            this.gbProVersionPurchase.Name = "gbProVersionPurchase";
+            this.gbProVersionPurchase.Size = new System.Drawing.Size(257, 265);
+            this.gbProVersionPurchase.TabIndex = 6;
+            this.gbProVersionPurchase.TabStop = false;
+            this.gbProVersionPurchase.Text = "PRO-versioon";
+            // 
+            // lblProfiilKehakaalSama
+            // 
+            this.lblProfiilKehakaalSama.AutoSize = true;
+            this.lblProfiilKehakaalSama.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfiilKehakaalSama.ForeColor = System.Drawing.Color.Black;
+            this.lblProfiilKehakaalSama.Location = new System.Drawing.Point(17, 37);
+            this.lblProfiilKehakaalSama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfiilKehakaalSama.Name = "lblProfiilKehakaalSama";
+            this.lblProfiilKehakaalSama.Size = new System.Drawing.Size(220, 80);
+            this.lblProfiilKehakaalSama.TabIndex = 34;
+            this.lblProfiilKehakaalSama.Text = "- 9.99€ ühekordne tasu\r\n- Eesmärkide seadmine\r\n- Une jälgimine\r\n- Veelgi detailse" +
+    "m treeningute ja \r\n  toitumise analüüs\r\n";
+            // 
+            // btnPurchaseProVersion
+            // 
+            this.btnPurchaseProVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.btnPurchaseProVersion.FlatAppearance.BorderSize = 0;
+            this.btnPurchaseProVersion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
+            this.btnPurchaseProVersion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseProVersion.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseProVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnPurchaseProVersion.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchaseProVersion.Image")));
+            this.btnPurchaseProVersion.Location = new System.Drawing.Point(20, 135);
+            this.btnPurchaseProVersion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPurchaseProVersion.Name = "btnPurchaseProVersion";
+            this.btnPurchaseProVersion.Size = new System.Drawing.Size(217, 100);
+            this.btnPurchaseProVersion.TabIndex = 5;
+            this.btnPurchaseProVersion.Text = " Maksmine";
+            this.btnPurchaseProVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPurchaseProVersion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPurchaseProVersion.UseVisualStyleBackColor = false;
             // 
             // lblProfileSettingsTitle
             // 
@@ -503,14 +676,338 @@
             this.lblProfileSettingsTitle.TabIndex = 5;
             this.lblProfileSettingsTitle.Text = "Profiili seaded";
             // 
-            // groupBox1
+            // gbChangeEmail
             // 
-            this.groupBox1.Location = new System.Drawing.Point(792, 299);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 270);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.gbChangeEmail.Controls.Add(this.label1);
+            this.gbChangeEmail.Controls.Add(this.pbChangeEmailSuccessfull);
+            this.gbChangeEmail.Controls.Add(this.txtCurrentEmail);
+            this.gbChangeEmail.Controls.Add(this.btnChangeEmail);
+            this.gbChangeEmail.Controls.Add(this.txtNewEmail);
+            this.gbChangeEmail.Controls.Add(this.txtConfirmEmailChangePassword);
+            this.gbChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChangeEmail.ForeColor = System.Drawing.Color.Black;
+            this.gbChangeEmail.Location = new System.Drawing.Point(30, 152);
+            this.gbChangeEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.gbChangeEmail.Name = "gbChangeEmail";
+            this.gbChangeEmail.Padding = new System.Windows.Forms.Padding(2);
+            this.gbChangeEmail.Size = new System.Drawing.Size(351, 266);
+            this.gbChangeEmail.TabIndex = 41;
+            this.gbChangeEmail.TabStop = false;
+            this.gbChangeEmail.Text = "Meiliaadressi muutmine";
+            // 
+            // pbChangeEmailSuccessfull
+            // 
+            this.pbChangeEmailSuccessfull.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbChangeEmailSuccessfull.BackgroundImage")));
+            this.pbChangeEmailSuccessfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbChangeEmailSuccessfull.Location = new System.Drawing.Point(277, 185);
+            this.pbChangeEmailSuccessfull.Name = "pbChangeEmailSuccessfull";
+            this.pbChangeEmailSuccessfull.Size = new System.Drawing.Size(50, 50);
+            this.pbChangeEmailSuccessfull.TabIndex = 40;
+            this.pbChangeEmailSuccessfull.TabStop = false;
+            this.pbChangeEmailSuccessfull.Visible = false;
+            // 
+            // txtCurrentEmail
+            // 
+            this.txtCurrentEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCurrentEmail.Location = new System.Drawing.Point(15, 62);
+            this.txtCurrentEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtCurrentEmail.Name = "txtCurrentEmail";
+            this.txtCurrentEmail.Size = new System.Drawing.Size(312, 27);
+            this.txtCurrentEmail.TabIndex = 26;
+            this.txtCurrentEmail.Text = "Praegune meiliaadress";
+            // 
+            // btnChangeEmail
+            // 
+            this.btnChangeEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnChangeEmail.FlatAppearance.BorderSize = 0;
+            this.btnChangeEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnChangeEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeEmail.ForeColor = System.Drawing.Color.White;
+            this.btnChangeEmail.Location = new System.Drawing.Point(15, 185);
+            this.btnChangeEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnChangeEmail.Name = "btnChangeEmail";
+            this.btnChangeEmail.Size = new System.Drawing.Size(242, 50);
+            this.btnChangeEmail.TabIndex = 22;
+            this.btnChangeEmail.Text = "Kinnita uus meiliaadress";
+            this.btnChangeEmail.UseVisualStyleBackColor = false;
+            // 
+            // txtNewEmail
+            // 
+            this.txtNewEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNewEmail.Location = new System.Drawing.Point(15, 97);
+            this.txtNewEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtNewEmail.Name = "txtNewEmail";
+            this.txtNewEmail.Size = new System.Drawing.Size(312, 27);
+            this.txtNewEmail.TabIndex = 20;
+            this.txtNewEmail.Text = "Uus meiliaadress";
+            // 
+            // txtConfirmEmailChangePassword
+            // 
+            this.txtConfirmEmailChangePassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmEmailChangePassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtConfirmEmailChangePassword.Location = new System.Drawing.Point(15, 132);
+            this.txtConfirmEmailChangePassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtConfirmEmailChangePassword.Name = "txtConfirmEmailChangePassword";
+            this.txtConfirmEmailChangePassword.Size = new System.Drawing.Size(312, 27);
+            this.txtConfirmEmailChangePassword.TabIndex = 21;
+            this.txtConfirmEmailChangePassword.Text = "Salasõna";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(4, 239);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(339, 16);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Meiliaadressi muutmisega muutub ka kasutajanimi.";
+            // 
+            // gbUserAge
+            // 
+            this.gbUserAge.Controls.Add(this.pictureBox1);
+            this.gbUserAge.Controls.Add(this.cmbMuudaVanust);
+            this.gbUserAge.Controls.Add(this.btnMuudaVanust);
+            this.gbUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserAge.ForeColor = System.Drawing.Color.Black;
+            this.gbUserAge.Location = new System.Drawing.Point(399, 205);
+            this.gbUserAge.Margin = new System.Windows.Forms.Padding(2);
+            this.gbUserAge.Name = "gbUserAge";
+            this.gbUserAge.Padding = new System.Windows.Forms.Padding(2);
+            this.gbUserAge.Size = new System.Drawing.Size(267, 84);
+            this.gbUserAge.TabIndex = 42;
+            this.gbUserAge.TabStop = false;
+            this.gbUserAge.Text = "Vanus";
+            // 
+            // cmbMuudaVanust
+            // 
+            this.cmbMuudaVanust.DropDownHeight = 100;
+            this.cmbMuudaVanust.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMuudaVanust.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMuudaVanust.FormattingEnabled = true;
+            this.cmbMuudaVanust.IntegralHeight = false;
+            this.cmbMuudaVanust.ItemHeight = 19;
+            this.cmbMuudaVanust.Location = new System.Drawing.Point(15, 34);
+            this.cmbMuudaVanust.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbMuudaVanust.Name = "cmbMuudaVanust";
+            this.cmbMuudaVanust.Size = new System.Drawing.Size(74, 27);
+            this.cmbMuudaVanust.TabIndex = 23;
+            // 
+            // btnMuudaVanust
+            // 
+            this.btnMuudaVanust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnMuudaVanust.FlatAppearance.BorderSize = 0;
+            this.btnMuudaVanust.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnMuudaVanust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMuudaVanust.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMuudaVanust.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnMuudaVanust.Location = new System.Drawing.Point(109, 25);
+            this.btnMuudaVanust.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnMuudaVanust.Name = "btnMuudaVanust";
+            this.btnMuudaVanust.Size = new System.Drawing.Size(86, 42);
+            this.btnMuudaVanust.TabIndex = 22;
+            this.btnMuudaVanust.Text = "Muuda";
+            this.btnMuudaVanust.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(204, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 42);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // gbUserHeight
+            // 
+            this.gbUserHeight.Controls.Add(this.pictureBox2);
+            this.gbUserHeight.Controls.Add(this.comboBox1);
+            this.gbUserHeight.Controls.Add(this.button1);
+            this.gbUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserHeight.ForeColor = System.Drawing.Color.Black;
+            this.gbUserHeight.Location = new System.Drawing.Point(399, 107);
+            this.gbUserHeight.Margin = new System.Windows.Forms.Padding(2);
+            this.gbUserHeight.Name = "gbUserHeight";
+            this.gbUserHeight.Padding = new System.Windows.Forms.Padding(2);
+            this.gbUserHeight.Size = new System.Drawing.Size(267, 84);
+            this.gbUserHeight.TabIndex = 43;
+            this.gbUserHeight.TabStop = false;
+            this.gbUserHeight.Text = "Pikkus";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(204, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 42);
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownHeight = 100;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.ItemHeight = 19;
+            this.comboBox1.Location = new System.Drawing.Point(15, 34);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(74, 27);
+            this.comboBox1.TabIndex = 23;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(109, 25);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 42);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Muuda";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // gbDeleteUserAccount
+            // 
+            this.gbDeleteUserAccount.Controls.Add(this.txtDeleteUserAccountPassword);
+            this.gbDeleteUserAccount.Controls.Add(this.btnDeleteUserAccount);
+            this.gbDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDeleteUserAccount.ForeColor = System.Drawing.Color.Black;
+            this.gbDeleteUserAccount.Location = new System.Drawing.Point(30, 432);
+            this.gbDeleteUserAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.gbDeleteUserAccount.Name = "gbDeleteUserAccount";
+            this.gbDeleteUserAccount.Padding = new System.Windows.Forms.Padding(2);
+            this.gbDeleteUserAccount.Size = new System.Drawing.Size(351, 138);
+            this.gbDeleteUserAccount.TabIndex = 44;
+            this.gbDeleteUserAccount.TabStop = false;
+            this.gbDeleteUserAccount.Text = "Konto kustutamine";
+            // 
+            // btnDeleteUserAccount
+            // 
+            this.btnDeleteUserAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnDeleteUserAccount.FlatAppearance.BorderSize = 0;
+            this.btnDeleteUserAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnDeleteUserAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteUserAccount.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnDeleteUserAccount.Location = new System.Drawing.Point(15, 72);
+            this.btnDeleteUserAccount.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnDeleteUserAccount.Name = "btnDeleteUserAccount";
+            this.btnDeleteUserAccount.Size = new System.Drawing.Size(312, 42);
+            this.btnDeleteUserAccount.TabIndex = 22;
+            this.btnDeleteUserAccount.Text = "Kustuta konto";
+            this.btnDeleteUserAccount.UseVisualStyleBackColor = false;
+            // 
+            // txtDeleteUserAccountPassword
+            // 
+            this.txtDeleteUserAccountPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeleteUserAccountPassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDeleteUserAccountPassword.Location = new System.Drawing.Point(15, 35);
+            this.txtDeleteUserAccountPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtDeleteUserAccountPassword.Name = "txtDeleteUserAccountPassword";
+            this.txtDeleteUserAccountPassword.Size = new System.Drawing.Size(312, 27);
+            this.txtDeleteUserAccountPassword.TabIndex = 27;
+            this.txtDeleteUserAccountPassword.Text = "Salasõna";
+            // 
+            // lblUserProfileFirstname
+            // 
+            this.lblUserProfileFirstname.AutoSize = true;
+            this.lblUserProfileFirstname.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserProfileFirstname.ForeColor = System.Drawing.Color.Black;
+            this.lblUserProfileFirstname.Location = new System.Drawing.Point(143, 44);
+            this.lblUserProfileFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserProfileFirstname.Name = "lblUserProfileFirstname";
+            this.lblUserProfileFirstname.Size = new System.Drawing.Size(79, 23);
+            this.lblUserProfileFirstname.TabIndex = 46;
+            this.lblUserProfileFirstname.Text = "Eesnimi";
+            // 
+            // lblUserProfileUsername
+            // 
+            this.lblUserProfileUsername.AutoSize = true;
+            this.lblUserProfileUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserProfileUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUserProfileUsername.Location = new System.Drawing.Point(143, 72);
+            this.lblUserProfileUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserProfileUsername.Name = "lblUserProfileUsername";
+            this.lblUserProfileUsername.Size = new System.Drawing.Size(112, 19);
+            this.lblUserProfileUsername.TabIndex = 47;
+            this.lblUserProfileUsername.Text = "Kasutajanimi";
+            // 
+            // gbUserProfileDataOverview
+            // 
+            this.gbUserProfileDataOverview.Controls.Add(this.label4);
+            this.gbUserProfileDataOverview.Controls.Add(this.label3);
+            this.gbUserProfileDataOverview.Controls.Add(this.label2);
+            this.gbUserProfileDataOverview.Controls.Add(this.pbUserProfileDataOverviewIcon);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileFirstname);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileUsername);
+            this.gbUserProfileDataOverview.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserProfileDataOverview.Location = new System.Drawing.Point(676, 76);
+            this.gbUserProfileDataOverview.Name = "gbUserProfileDataOverview";
+            this.gbUserProfileDataOverview.Size = new System.Drawing.Size(351, 213);
+            this.gbUserProfileDataOverview.TabIndex = 48;
+            this.gbUserProfileDataOverview.TabStop = false;
+            this.gbUserProfileDataOverview.Text = "Üldandmed";
+            // 
+            // pbUserProfileDataOverviewIcon
+            // 
+            this.pbUserProfileDataOverviewIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbUserProfileDataOverviewIcon.BackgroundImage")));
+            this.pbUserProfileDataOverviewIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbUserProfileDataOverviewIcon.Location = new System.Drawing.Point(21, 44);
+            this.pbUserProfileDataOverviewIcon.Name = "pbUserProfileDataOverviewIcon";
+            this.pbUserProfileDataOverviewIcon.Size = new System.Drawing.Size(106, 152);
+            this.pbUserProfileDataOverviewIcon.TabIndex = 6;
+            this.pbUserProfileDataOverviewIcon.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(144, 113);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 19);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Vanus";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(144, 132);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 19);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "Pikkus";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(144, 151);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 19);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Kaal";
             // 
             // ApexFit_mainWindow
             // 
@@ -556,6 +1053,23 @@
             this.pnlSleep.PerformLayout();
             this.pnlProfileSettings.ResumeLayout(false);
             this.pnlProfileSettings.PerformLayout();
+            this.gbChangeUserPassword.ResumeLayout(false);
+            this.gbChangeUserPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).EndInit();
+            this.gbProVersionPurchase.ResumeLayout(false);
+            this.gbProVersionPurchase.PerformLayout();
+            this.gbChangeEmail.ResumeLayout(false);
+            this.gbChangeEmail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).EndInit();
+            this.gbUserAge.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbUserHeight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.gbDeleteUserAccount.ResumeLayout(false);
+            this.gbDeleteUserAccount.PerformLayout();
+            this.gbUserProfileDataOverview.ResumeLayout(false);
+            this.gbUserProfileDataOverview.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -593,6 +1107,39 @@
         internal System.Windows.Forms.Label lblAnalysisTitle;
         private System.Windows.Forms.Panel pnlProfileSettings;
         internal System.Windows.Forms.Label lblProfileSettingsTitle;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbProVersionPurchase;
+        internal System.Windows.Forms.Button btnPurchaseProVersion;
+        internal System.Windows.Forms.Label lblProfiilKehakaalSama;
+        internal System.Windows.Forms.GroupBox gbChangeUserPassword;
+        internal System.Windows.Forms.PictureBox pbUserPasswordChangeSuccessful;
+        internal System.Windows.Forms.TextBox txtCurrentUserPassword;
+        internal System.Windows.Forms.Button btnChangeUserPassword;
+        internal System.Windows.Forms.TextBox txtNewUserPassword;
+        internal System.Windows.Forms.TextBox txtNewUserPassword2;
+        internal System.Windows.Forms.GroupBox gbChangeEmail;
+        internal System.Windows.Forms.PictureBox pbChangeEmailSuccessfull;
+        internal System.Windows.Forms.TextBox txtCurrentEmail;
+        internal System.Windows.Forms.Button btnChangeEmail;
+        internal System.Windows.Forms.TextBox txtNewEmail;
+        internal System.Windows.Forms.TextBox txtConfirmEmailChangePassword;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.GroupBox gbUserAge;
+        internal System.Windows.Forms.PictureBox pictureBox1;
+        internal System.Windows.Forms.ComboBox cmbMuudaVanust;
+        internal System.Windows.Forms.Button btnMuudaVanust;
+        internal System.Windows.Forms.GroupBox gbUserHeight;
+        internal System.Windows.Forms.PictureBox pictureBox2;
+        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.GroupBox gbDeleteUserAccount;
+        internal System.Windows.Forms.Button btnDeleteUserAccount;
+        internal System.Windows.Forms.TextBox txtDeleteUserAccountPassword;
+        internal System.Windows.Forms.Label lblUserProfileUsername;
+        internal System.Windows.Forms.Label lblUserProfileFirstname;
+        private System.Windows.Forms.GroupBox gbUserProfileDataOverview;
+        private System.Windows.Forms.PictureBox pbUserProfileDataOverviewIcon;
+        internal System.Windows.Forms.Label label4;
+        internal System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.Label label2;
     }
 }
