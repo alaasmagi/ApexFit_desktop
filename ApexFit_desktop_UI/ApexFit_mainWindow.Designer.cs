@@ -608,6 +608,7 @@
             this.btnSetCalorieLimit.TabIndex = 22;
             this.btnSetCalorieLimit.Text = "Muuda";
             this.btnSetCalorieLimit.UseVisualStyleBackColor = false;
+            this.btnSetCalorieLimit.Click += new System.EventHandler(this.btnSetCalorieLimit_Click);
             // 
             // gbUserProfileDataOverview
             // 
@@ -951,6 +952,7 @@
             this.btnChangeEmail.TabIndex = 22;
             this.btnChangeEmail.Text = "Kinnita uus meiliaadress";
             this.btnChangeEmail.UseVisualStyleBackColor = false;
+            this.btnChangeEmail.Click += new System.EventHandler(this.btnChangeEmail_Click);
             // 
             // txtNewEmail
             // 

@@ -418,5 +418,53 @@ namespace ApexFit_desktop_UI
                 txtNewUserPassword2.ForeColor = Color.DarkGray;
             }
         }
+
+        private void btnSetCalorieLimit_Click(object sender, EventArgs e)
+        {
+            int temp;
+            UserProfile = new UserProfileComponent.CUserProfile();
+
+            if (int.TryParse(txtChangeCalorieLimitCalories.Text, out temp))
+            {
+                UserProfile.UpdateUserData(userId, txtChangeCalorieLimitCalories.Text, "calorie_limit");
+                pbCalorieLimitSetSuccessful.Visible = true;
+                UserDataLoad();
+                TextboxReset();
+                successPbTimer.Start();
+            }
+            else if (!(int.TryParse(txtChangeCalorieLimitCalories.Text, out temp)) && txtChangeCalorieLimitCalories.Text != "kcal")
+            {
+                MessageBox.Show("Viga kaloraaži sisestuses!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            }
+        }
+
+        private void btnChangeEmail_Click(object sender, EventArgs e)
+        {
+            Security = new SecurityLayer.CSecurity();
+            Core = new CoreComponent.CCore();
+            UserProfile = new UserProfileComponent.CUserProfile();
+
+            if (txtCurrentEmail.Text != Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "user_email_enc")))
+            {
+                MessageBox.Show("Viga kehtivas meiliaadressis!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Core.CheckEmailRequirements(txtNewEmail.Text) == false)
+            {
+                MessageBox.Show("Viga uue meiliaadressi formaadis!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Security.LoginAttempt(userId, txtConfirmEmailChangePassword.Text) == false)
+            {
+                MessageBox.Show("Viga salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                UserProfile.UpdateUserData(userId, Security.EncryptString(txtNewEmail.Text), "user_email_enc");
+                UserProfile.UpdateUserData(userId, Security.EncryptString(UserProfile.UserNameCreation(txtNewEmail.Text)), "username_enc");
+                pbChangeEmailSuccessfull.Visible = true;
+                UserDataLoad();
+                TextboxReset();
+                successPbTimer.Start();
+            }
+        }
     }
 }
