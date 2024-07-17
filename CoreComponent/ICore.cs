@@ -11,5 +11,7 @@ namespace CoreComponent
         int DateToInt(DateTime inputDate);
         string GetConnectionString();
         DateTime IntToDate(int inputInt);
+        bool CheckPasswordRequirements(string password1, string password2);
+        bool CheckEmailRequirements(string email);
     }
 }

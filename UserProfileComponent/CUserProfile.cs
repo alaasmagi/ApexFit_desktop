@@ -17,11 +17,8 @@ namespace UserProfileComponent
         private CoreComponent.ICore Core;
         private SecurityLayer.ISecurity Security;
         private string connectionString;
-        public bool IsValidEmailAddress(string emailAddress)
-        {
-            string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
-            return Regex.IsMatch(emailAddress, pattern);
-        }
+
+       
 
         public string UserNameCreation(string userEmail)
         {
@@ -107,11 +104,10 @@ namespace UserProfileComponent
             }
         }
 
-        public int GetIntegerFromUserData(int userId, string columnName)
+        public object GetDataFromUserData(int userId, string columnName)
         {
             Core = new CoreComponent.CCore();
-            connectionString = Core.GetConnectionString();
-            int resultOutput = 0;
+            connectionString = Core.GetConnectionString();;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -121,41 +117,35 @@ namespace UserProfileComponent
 
                 connection.Open();
                 object result = command.ExecuteScalar();
-
-                int.TryParse(result.ToString(), out resultOutput);
-
-                return resultOutput;
+                
+                if (result == null)
+                {
+                    return null;
+                }
+                return result;  
             }
         }
 
-        public string GetStringFromUserData(int userId, string columnName)
+        public void UpdateUserData(int userId, object input, string columnName)
         {
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
-            string resultOutput = null;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = $"SELECT {columnName} FROM user_data WHERE user_id = @userId";
+                string query = $"UPDATE user_data SET {columnName} = @input WHERE user_id = @userId";
                 SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@input", input);
                 command.Parameters.AddWithValue("@userId", userId);
-
                 connection.Open();
-                object result = command.ExecuteScalar();
-
-                if (result != null)
-                {
-                    resultOutput = result.ToString();
-                }
-
-                return resultOutput;
+                command.ExecuteNonQuery();
             }
         }
 
         public bool SecurityAnswerApproval(int userId, string securityAnswer)
         {
             Security = new SecurityLayer.CSecurity();
-            string userSecurityAnswer = GetStringFromUserData(userId, "recovery_answer_hash");
+            string userSecurityAnswer = (string)GetDataFromUserData(userId, "recovery_answer_hash");
 
             string salt = Security.GetUserSalt(userId);
             string securityAnswerHash = Security.GenerateHash(securityAnswer, salt);

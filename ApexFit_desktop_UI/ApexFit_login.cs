@@ -21,6 +21,7 @@ namespace ApexFit_desktop_UI
     {
         private SecurityLayer.ISecurity Security;
         private UserProfileComponent.IUserProfile UserProfile;
+        private CoreComponent.ICore Core;
 
         private int userId = 0;
         private int userSex = 0;
@@ -342,7 +343,7 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                lblForgotPasswordSecurityQuestion.Text = Security.GetSecurityQuestion(UserProfile.GetIntegerFromUserData(userId, "recovery_question_id"));
+                lblForgotPasswordSecurityQuestion.Text = Security.GetSecurityQuestion((int)UserProfile.GetDataFromUserData(userId, "recovery_question_id"));
             }
         }
 
@@ -365,20 +366,18 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                lblForgotPassword2Username.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "username_enc"));
+                lblForgotPassword2Username.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "username_enc"));
                 pnlForgotPassword1.Visible = false;
                 pnlForgotPassword2.Visible = true;
             }
         }
         private void btnForgotPasswordChangePass_Click(object sender, EventArgs e)
         {
-            if (txtForgotPassword2Password.Text.Length < 8 || txtForgotPassword2Password.Text == "Salasõna")
+            Core = new CoreComponent.CCore();
+
+            if (!(Core.CheckPasswordRequirements(txtForgotPassword2Password.Text, txtForgotPassword2Password2.Text)))
             {
                 MessageBox.Show("Viga salasõna(des)", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (txtForgotPassword2Password.Text != txtForgotPassword2Password2.Text || txtForgotPassword2Password2.Text == "Korda salasõna")
-            {
-                MessageBox.Show("Salasõnad ei klapi", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (Security.ChangeUserPassword(userId, txtForgotPassword2Password.Text) == false)
             {
@@ -515,23 +514,20 @@ namespace ApexFit_desktop_UI
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
+            Core = new CoreComponent.CCore();
 
             if (txtCreateAccountFirstname.Text == "Eesnimi")
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!UserProfile.IsValidEmailAddress(txtCreateAccountEmail.Text) ||
+            else if (!Core.CheckEmailRequirements(txtCreateAccountEmail.Text) ||
                      UserProfile.UserProfileExists(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text))) != 0)
             {
                 MessageBox.Show("Meiliaadress on kasutusel või on vales formaadis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (txtCreateAccountPassword1.Text.Length < 8 || txtCreateAccountPassword1.Text == "Salasõna")
+            else if (!(Core.CheckPasswordRequirements(txtCreateAccountPassword1.Text, txtCreateAccountPassword2.Text)))
             {
                 MessageBox.Show("Viga salasõna(des)", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (txtCreateAccountPassword1.Text != txtCreateAccountPassword2.Text || txtCreateAccountPassword2.Text == "Korda salasõna")
-            {
-                MessageBox.Show("Salasõnad ei klapi", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

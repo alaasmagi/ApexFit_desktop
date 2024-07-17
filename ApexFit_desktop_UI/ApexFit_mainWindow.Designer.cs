@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_mainWindow));
             this.pnlLeftBar = new System.Windows.Forms.Panel();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
@@ -59,7 +60,13 @@
             this.pnlSleep = new System.Windows.Forms.Panel();
             this.lblSleepTitle = new System.Windows.Forms.Label();
             this.pnlProfileSettings = new System.Windows.Forms.Panel();
+            this.gbChangeCalorieLimit = new System.Windows.Forms.GroupBox();
+            this.txtChangeCalorieLimitCalories = new System.Windows.Forms.TextBox();
+            this.pbCalorieLimitSetSuccessful = new System.Windows.Forms.PictureBox();
+            this.btnSetCalorieLimit = new System.Windows.Forms.Button();
             this.gbUserProfileDataOverview = new System.Windows.Forms.GroupBox();
+            this.lblProfileWeightGoal = new System.Windows.Forms.Label();
+            this.lblProfileCalorieLimit = new System.Windows.Forms.Label();
             this.lblProfileUserWeight = new System.Windows.Forms.Label();
             this.lblProfileUserHeight = new System.Windows.Forms.Label();
             this.lblProfileUserAge = new System.Windows.Forms.Label();
@@ -94,12 +101,7 @@
             this.lblProductPurchaseInfo = new System.Windows.Forms.Label();
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
-            this.gbChangeCalorieLimit = new System.Windows.Forms.GroupBox();
-            this.pbCalorieLimitSetSuccessful = new System.Windows.Forms.PictureBox();
-            this.btnSetCalorieLimit = new System.Windows.Forms.Button();
-            this.txtChangeCalorieLimitCalories = new System.Windows.Forms.TextBox();
-            this.lblProfileCalorieLimit = new System.Windows.Forms.Label();
-            this.lblProfileWeightGoal = new System.Windows.Forms.Label();
+            this.successPbTimer = new System.Windows.Forms.Timer(this.components);
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -110,6 +112,8 @@
             this.pnlGoals.SuspendLayout();
             this.pnlSleep.SuspendLayout();
             this.pnlProfileSettings.SuspendLayout();
+            this.gbChangeCalorieLimit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).BeginInit();
             this.gbUserProfileDataOverview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).BeginInit();
             this.gbDeleteUserAccount.SuspendLayout();
@@ -122,8 +126,6 @@
             this.gbChangeUserPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).BeginInit();
             this.gbProVersionPurchase.SuspendLayout();
-            this.gbChangeCalorieLimit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -551,6 +553,62 @@
             this.pnlProfileSettings.Size = new System.Drawing.Size(1039, 581);
             this.pnlProfileSettings.TabIndex = 6;
             // 
+            // gbChangeCalorieLimit
+            // 
+            this.gbChangeCalorieLimit.Controls.Add(this.txtChangeCalorieLimitCalories);
+            this.gbChangeCalorieLimit.Controls.Add(this.pbCalorieLimitSetSuccessful);
+            this.gbChangeCalorieLimit.Controls.Add(this.btnSetCalorieLimit);
+            this.gbChangeCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChangeCalorieLimit.ForeColor = System.Drawing.Color.Black;
+            this.gbChangeCalorieLimit.Location = new System.Drawing.Point(399, 49);
+            this.gbChangeCalorieLimit.Margin = new System.Windows.Forms.Padding(2);
+            this.gbChangeCalorieLimit.Name = "gbChangeCalorieLimit";
+            this.gbChangeCalorieLimit.Padding = new System.Windows.Forms.Padding(2);
+            this.gbChangeCalorieLimit.Size = new System.Drawing.Size(267, 84);
+            this.gbChangeCalorieLimit.TabIndex = 44;
+            this.gbChangeCalorieLimit.TabStop = false;
+            this.gbChangeCalorieLimit.Text = "Kalorilimiidi seadmine";
+            // 
+            // txtChangeCalorieLimitCalories
+            // 
+            this.txtChangeCalorieLimitCalories.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChangeCalorieLimitCalories.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtChangeCalorieLimitCalories.Location = new System.Drawing.Point(15, 36);
+            this.txtChangeCalorieLimitCalories.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtChangeCalorieLimitCalories.Name = "txtChangeCalorieLimitCalories";
+            this.txtChangeCalorieLimitCalories.Size = new System.Drawing.Size(74, 27);
+            this.txtChangeCalorieLimitCalories.TabIndex = 41;
+            this.txtChangeCalorieLimitCalories.Text = "kcal";
+            this.txtChangeCalorieLimitCalories.Enter += new System.EventHandler(this.txtChangeCalorieLimitCalories_Enter);
+            this.txtChangeCalorieLimitCalories.Leave += new System.EventHandler(this.txtChangeCalorieLimitCalories_Leave);
+            // 
+            // pbCalorieLimitSetSuccessful
+            // 
+            this.pbCalorieLimitSetSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCalorieLimitSetSuccessful.BackgroundImage")));
+            this.pbCalorieLimitSetSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbCalorieLimitSetSuccessful.Location = new System.Drawing.Point(204, 27);
+            this.pbCalorieLimitSetSuccessful.Name = "pbCalorieLimitSetSuccessful";
+            this.pbCalorieLimitSetSuccessful.Size = new System.Drawing.Size(39, 42);
+            this.pbCalorieLimitSetSuccessful.TabIndex = 41;
+            this.pbCalorieLimitSetSuccessful.TabStop = false;
+            this.pbCalorieLimitSetSuccessful.Visible = false;
+            // 
+            // btnSetCalorieLimit
+            // 
+            this.btnSetCalorieLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnSetCalorieLimit.FlatAppearance.BorderSize = 0;
+            this.btnSetCalorieLimit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnSetCalorieLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetCalorieLimit.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSetCalorieLimit.Location = new System.Drawing.Point(109, 27);
+            this.btnSetCalorieLimit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnSetCalorieLimit.Name = "btnSetCalorieLimit";
+            this.btnSetCalorieLimit.Size = new System.Drawing.Size(86, 42);
+            this.btnSetCalorieLimit.TabIndex = 22;
+            this.btnSetCalorieLimit.Text = "Muuda";
+            this.btnSetCalorieLimit.UseVisualStyleBackColor = false;
+            // 
             // gbUserProfileDataOverview
             // 
             this.gbUserProfileDataOverview.Controls.Add(this.lblProfileWeightGoal);
@@ -568,6 +626,30 @@
             this.gbUserProfileDataOverview.TabIndex = 48;
             this.gbUserProfileDataOverview.TabStop = false;
             this.gbUserProfileDataOverview.Text = "Üldandmed";
+            // 
+            // lblProfileWeightGoal
+            // 
+            this.lblProfileWeightGoal.AutoSize = true;
+            this.lblProfileWeightGoal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileWeightGoal.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileWeightGoal.Location = new System.Drawing.Point(140, 221);
+            this.lblProfileWeightGoal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileWeightGoal.Name = "lblProfileWeightGoal";
+            this.lblProfileWeightGoal.Size = new System.Drawing.Size(73, 19);
+            this.lblProfileWeightGoal.TabIndex = 52;
+            this.lblProfileWeightGoal.Text = "Sihtkaal";
+            // 
+            // lblProfileCalorieLimit
+            // 
+            this.lblProfileCalorieLimit.AutoSize = true;
+            this.lblProfileCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileCalorieLimit.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileCalorieLimit.Location = new System.Drawing.Point(141, 199);
+            this.lblProfileCalorieLimit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileCalorieLimit.Name = "lblProfileCalorieLimit";
+            this.lblProfileCalorieLimit.Size = new System.Drawing.Size(92, 19);
+            this.lblProfileCalorieLimit.TabIndex = 51;
+            this.lblProfileCalorieLimit.Text = "Kalorilimiit";
             // 
             // lblProfileUserWeight
             // 
@@ -664,6 +746,8 @@
             this.txtDeleteUserAccountPassword.Size = new System.Drawing.Size(312, 27);
             this.txtDeleteUserAccountPassword.TabIndex = 27;
             this.txtDeleteUserAccountPassword.Text = "Salasõna";
+            this.txtDeleteUserAccountPassword.Enter += new System.EventHandler(this.txtDeleteUserAccountPassword_Enter);
+            this.txtDeleteUserAccountPassword.Leave += new System.EventHandler(this.txtDeleteUserAccountPassword_Leave);
             // 
             // btnDeleteUserAccount
             // 
@@ -849,6 +933,8 @@
             this.txtCurrentEmail.Size = new System.Drawing.Size(312, 27);
             this.txtCurrentEmail.TabIndex = 26;
             this.txtCurrentEmail.Text = "Praegune meiliaadress";
+            this.txtCurrentEmail.Enter += new System.EventHandler(this.txtCurrentEmail_Enter);
+            this.txtCurrentEmail.Leave += new System.EventHandler(this.txtCurrentEmail_Leave);
             // 
             // btnChangeEmail
             // 
@@ -876,6 +962,8 @@
             this.txtNewEmail.Size = new System.Drawing.Size(312, 27);
             this.txtNewEmail.TabIndex = 20;
             this.txtNewEmail.Text = "Uus meiliaadress";
+            this.txtNewEmail.Enter += new System.EventHandler(this.txtNewEmail_Enter);
+            this.txtNewEmail.Leave += new System.EventHandler(this.txtNewEmail_Leave);
             // 
             // txtConfirmEmailChangePassword
             // 
@@ -887,6 +975,8 @@
             this.txtConfirmEmailChangePassword.Size = new System.Drawing.Size(312, 27);
             this.txtConfirmEmailChangePassword.TabIndex = 21;
             this.txtConfirmEmailChangePassword.Text = "Salasõna";
+            this.txtConfirmEmailChangePassword.Enter += new System.EventHandler(this.txtConfirmEmailChangePassword_Enter);
+            this.txtConfirmEmailChangePassword.Leave += new System.EventHandler(this.txtConfirmEmailChangePassword_Leave);
             // 
             // gbChangeUserPassword
             // 
@@ -927,6 +1017,8 @@
             this.txtCurrentUserPassword.Size = new System.Drawing.Size(312, 27);
             this.txtCurrentUserPassword.TabIndex = 26;
             this.txtCurrentUserPassword.Text = "Praegune salasõna";
+            this.txtCurrentUserPassword.Enter += new System.EventHandler(this.txtCurrentUserPassword_Enter);
+            this.txtCurrentUserPassword.Leave += new System.EventHandler(this.txtCurrentUserPassword_Leave);
             // 
             // btnChangeUserPassword
             // 
@@ -954,6 +1046,8 @@
             this.txtNewUserPassword.Size = new System.Drawing.Size(312, 27);
             this.txtNewUserPassword.TabIndex = 20;
             this.txtNewUserPassword.Text = "Uus salasõna";
+            this.txtNewUserPassword.Enter += new System.EventHandler(this.txtNewUserPassword_Enter);
+            this.txtNewUserPassword.Leave += new System.EventHandler(this.txtNewUserPassword_Leave);
             // 
             // txtNewUserPassword2
             // 
@@ -965,6 +1059,8 @@
             this.txtNewUserPassword2.Size = new System.Drawing.Size(312, 27);
             this.txtNewUserPassword2.TabIndex = 21;
             this.txtNewUserPassword2.Text = "Korda uut salasõna";
+            this.txtNewUserPassword2.Enter += new System.EventHandler(this.txtNewUserPassword2_Enter);
+            this.txtNewUserPassword2.Leave += new System.EventHandler(this.txtNewUserPassword2_Leave);
             // 
             // gbProVersionPurchase
             // 
@@ -1022,83 +1118,10 @@
             this.lblProfileSettingsTitle.TabIndex = 5;
             this.lblProfileSettingsTitle.Text = "Profiili seaded";
             // 
-            // gbChangeCalorieLimit
+            // successPbTimer
             // 
-            this.gbChangeCalorieLimit.Controls.Add(this.txtChangeCalorieLimitCalories);
-            this.gbChangeCalorieLimit.Controls.Add(this.pbCalorieLimitSetSuccessful);
-            this.gbChangeCalorieLimit.Controls.Add(this.btnSetCalorieLimit);
-            this.gbChangeCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbChangeCalorieLimit.ForeColor = System.Drawing.Color.Black;
-            this.gbChangeCalorieLimit.Location = new System.Drawing.Point(399, 49);
-            this.gbChangeCalorieLimit.Margin = new System.Windows.Forms.Padding(2);
-            this.gbChangeCalorieLimit.Name = "gbChangeCalorieLimit";
-            this.gbChangeCalorieLimit.Padding = new System.Windows.Forms.Padding(2);
-            this.gbChangeCalorieLimit.Size = new System.Drawing.Size(267, 84);
-            this.gbChangeCalorieLimit.TabIndex = 44;
-            this.gbChangeCalorieLimit.TabStop = false;
-            this.gbChangeCalorieLimit.Text = "Kalorilimiidi seadmine";
-            // 
-            // pbCalorieLimitSetSuccessful
-            // 
-            this.pbCalorieLimitSetSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCalorieLimitSetSuccessful.BackgroundImage")));
-            this.pbCalorieLimitSetSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbCalorieLimitSetSuccessful.Location = new System.Drawing.Point(204, 27);
-            this.pbCalorieLimitSetSuccessful.Name = "pbCalorieLimitSetSuccessful";
-            this.pbCalorieLimitSetSuccessful.Size = new System.Drawing.Size(39, 42);
-            this.pbCalorieLimitSetSuccessful.TabIndex = 41;
-            this.pbCalorieLimitSetSuccessful.TabStop = false;
-            this.pbCalorieLimitSetSuccessful.Visible = false;
-            // 
-            // btnSetCalorieLimit
-            // 
-            this.btnSetCalorieLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnSetCalorieLimit.FlatAppearance.BorderSize = 0;
-            this.btnSetCalorieLimit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnSetCalorieLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetCalorieLimit.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSetCalorieLimit.Location = new System.Drawing.Point(109, 27);
-            this.btnSetCalorieLimit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnSetCalorieLimit.Name = "btnSetCalorieLimit";
-            this.btnSetCalorieLimit.Size = new System.Drawing.Size(86, 42);
-            this.btnSetCalorieLimit.TabIndex = 22;
-            this.btnSetCalorieLimit.Text = "Muuda";
-            this.btnSetCalorieLimit.UseVisualStyleBackColor = false;
-            // 
-            // txtChangeCalorieLimitCalories
-            // 
-            this.txtChangeCalorieLimitCalories.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeCalorieLimitCalories.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtChangeCalorieLimitCalories.Location = new System.Drawing.Point(15, 36);
-            this.txtChangeCalorieLimitCalories.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtChangeCalorieLimitCalories.Name = "txtChangeCalorieLimitCalories";
-            this.txtChangeCalorieLimitCalories.Size = new System.Drawing.Size(74, 27);
-            this.txtChangeCalorieLimitCalories.TabIndex = 41;
-            this.txtChangeCalorieLimitCalories.Text = "kcal";
-            // 
-            // lblProfileCalorieLimit
-            // 
-            this.lblProfileCalorieLimit.AutoSize = true;
-            this.lblProfileCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileCalorieLimit.ForeColor = System.Drawing.Color.Black;
-            this.lblProfileCalorieLimit.Location = new System.Drawing.Point(141, 199);
-            this.lblProfileCalorieLimit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProfileCalorieLimit.Name = "lblProfileCalorieLimit";
-            this.lblProfileCalorieLimit.Size = new System.Drawing.Size(92, 19);
-            this.lblProfileCalorieLimit.TabIndex = 51;
-            this.lblProfileCalorieLimit.Text = "Kalorilimiit";
-            // 
-            // lblProfileWeightGoal
-            // 
-            this.lblProfileWeightGoal.AutoSize = true;
-            this.lblProfileWeightGoal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileWeightGoal.ForeColor = System.Drawing.Color.Black;
-            this.lblProfileWeightGoal.Location = new System.Drawing.Point(140, 221);
-            this.lblProfileWeightGoal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProfileWeightGoal.Name = "lblProfileWeightGoal";
-            this.lblProfileWeightGoal.Size = new System.Drawing.Size(73, 19);
-            this.lblProfileWeightGoal.TabIndex = 52;
-            this.lblProfileWeightGoal.Text = "Sihtkaal";
+            this.successPbTimer.Interval = 1000;
+            this.successPbTimer.Tick += new System.EventHandler(this.successPbTimer_Tick);
             // 
             // ApexFit_mainWindow
             // 
@@ -1144,6 +1167,9 @@
             this.pnlSleep.PerformLayout();
             this.pnlProfileSettings.ResumeLayout(false);
             this.pnlProfileSettings.PerformLayout();
+            this.gbChangeCalorieLimit.ResumeLayout(false);
+            this.gbChangeCalorieLimit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).EndInit();
             this.gbUserProfileDataOverview.ResumeLayout(false);
             this.gbUserProfileDataOverview.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).EndInit();
@@ -1161,9 +1187,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).EndInit();
             this.gbProVersionPurchase.ResumeLayout(false);
             this.gbProVersionPurchase.PerformLayout();
-            this.gbChangeCalorieLimit.ResumeLayout(false);
-            this.gbChangeCalorieLimit.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1241,5 +1264,6 @@
         internal System.Windows.Forms.TextBox txtChangeCalorieLimitCalories;
         internal System.Windows.Forms.Label lblProfileCalorieLimit;
         internal System.Windows.Forms.Label lblProfileWeightGoal;
+        internal System.Windows.Forms.Timer successPbTimer;
     }
 }

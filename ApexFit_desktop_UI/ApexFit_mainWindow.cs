@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace ApexFit_desktop_UI
 {
@@ -14,6 +15,7 @@ namespace ApexFit_desktop_UI
     {
         private SecurityLayer.ISecurity Security;
         private UserProfileComponent.IUserProfile UserProfile;
+        private CoreComponent.ICore Core;
 
         private int userId;
         public ApexFit_mainWindow(int _userId)
@@ -59,6 +61,11 @@ namespace ApexFit_desktop_UI
             txtConfirmEmailChangePassword.Text = "Salasõna";
             txtConfirmEmailChangePassword.UseSystemPasswordChar = false;
             txtConfirmEmailChangePassword.ForeColor = Color.DarkGray;
+            txtDeleteUserAccountPassword.Text = "Salasõna";
+            txtDeleteUserAccountPassword.UseSystemPasswordChar = false;
+            txtDeleteUserAccountPassword.ForeColor = Color.DarkGray;
+            txtChangeCalorieLimitCalories.Text = "kcal";
+            txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
 
 
            /* txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
@@ -81,17 +88,17 @@ namespace ApexFit_desktop_UI
             UserProfile = new UserProfileComponent.CUserProfile();
 
             lblProfileWeightGoal.Visible = false;
-            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));
+            lblFirstname.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "firstname_enc"));
             lblHomeTitleName.Text = "Tere, " + lblFirstname.Text + "!";
             lblUserProfileFirstname.Text = lblFirstname.Text;
-            lblUserProfileUsername.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "username_enc"));
-            lblProfileUserAge.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "age") + "-aastane";
-            lblProfileUserHeight.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "height") + "cm";
-            lblProfileUserWeight.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "weight") + "kg";
-            lblProfileCalorieLimit.Text = "-  " + "Kalorilimiit: " + UserProfile.GetIntegerFromUserData(userId, "calorie_limit") + "kcal";
-            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 1)
+            lblUserProfileUsername.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "username_enc"));
+            lblProfileUserAge.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "age") + "-aastane";
+            lblProfileUserHeight.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "height") + "cm";
+            lblProfileUserWeight.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "weight") + "kg";
+            lblProfileCalorieLimit.Text = "-  " + "Kalorilimiit: " + (int)UserProfile.GetDataFromUserData(userId, "calorie_limit") + "kcal";
+            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 1)
             {
-                lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + UserProfile.GetIntegerFromUserData(userId, "weight_goal") + "kg";
+                lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + (int)UserProfile.GetDataFromUserData(userId, "weight_goal") + "kg";
                 lblProfileWeightGoal.Visible = true;
             }
         }
@@ -103,13 +110,13 @@ namespace ApexFit_desktop_UI
             {
                 cmbUserAgeSelection.Items.Add(index);
             }
-            cmbUserAgeSelection.SelectedItem = UserProfile.GetIntegerFromUserData(userId, "age");
+            cmbUserAgeSelection.SelectedItem = (int)UserProfile.GetDataFromUserData(userId, "age");
 
             for (int index = 140; index < 210; index++)
             {
                 cmbUserHeightSelection.Items.Add(index);
             }
-            cmbUserHeightSelection.SelectedItem = UserProfile.GetIntegerFromUserData(userId, "height");
+            cmbUserHeightSelection.SelectedItem = (int)UserProfile.GetDataFromUserData(userId, "height");
         }
         private void MenuButtonsDefaultColor()
         {
@@ -142,6 +149,15 @@ namespace ApexFit_desktop_UI
             pnlSleep.Visible = false;
             pnlHomePage.Visible = false;
         }
+        private void successPbTimer_Tick(object sender, EventArgs e)
+        {
+            successPbTimer.Stop();
+            pbCalorieLimitSetSuccessful.Visible = false;
+            pbChangeEmailSuccessfull.Visible = false;
+            pbChangeUserHeightSuccessful.Visible = false;
+            pbUserAgeChangeSuccessful.Visible = false;
+            pbUserPasswordChangeSuccessful.Visible = false;
+        }
 
         private void btnCloseApplication_Click(object sender, EventArgs e)
         {
@@ -168,7 +184,7 @@ namespace ApexFit_desktop_UI
         {
             UserProfile = new UserProfileComponent.CUserProfile();
 
-            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 0)
+            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MenuButtonsDefaultColor();
@@ -188,7 +204,7 @@ namespace ApexFit_desktop_UI
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
-            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 0)
+            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MenuButtonsDefaultColor();
@@ -231,12 +247,176 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserHeight_Click(object sender, EventArgs e)
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
 
+            UserProfile.UpdateUserData(userId, cmbUserHeightSelection.SelectedItem, "height");
+            UserDataLoad();
+            pbChangeUserHeightSuccessful.Visible = true;
+            successPbTimer.Start();
         }
 
         private void btnChangeUserAge_Click(object sender, EventArgs e)
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
 
+            UserProfile.UpdateUserData(userId, cmbUserAgeSelection.SelectedItem, "age");
+            UserDataLoad();
+            pbUserAgeChangeSuccessful.Visible = true;
+            successPbTimer.Start();
+        }
+
+        private void txtChangeCalorieLimitCalories_Enter(object sender, EventArgs e)
+        {
+            if (txtChangeCalorieLimitCalories.Text == "kcal")
+            {
+                txtChangeCalorieLimitCalories.Text = "";
+                txtChangeCalorieLimitCalories.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtCurrentEmail_Enter(object sender, EventArgs e)
+        {
+            if (txtCurrentEmail.Text == "Praegune meiliaadress")
+            {
+                txtCurrentEmail.Text = "";
+                txtCurrentEmail.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtNewEmail_Enter(object sender, EventArgs e)
+        {
+            if (txtNewEmail.Text == "Uus meiliaadress")
+            {
+                txtNewEmail.Text = "";
+                txtNewEmail.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtConfirmEmailChangePassword_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirmEmailChangePassword.Text == "Salasõna")
+            {
+                txtConfirmEmailChangePassword.Text = "";
+                txtConfirmEmailChangePassword.UseSystemPasswordChar = true;
+                txtConfirmEmailChangePassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtDeleteUserAccountPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtDeleteUserAccountPassword.Text == "Salasõna")
+            {
+                txtDeleteUserAccountPassword.Text = "";
+                txtDeleteUserAccountPassword.UseSystemPasswordChar = true;
+                txtDeleteUserAccountPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtCurrentUserPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtCurrentUserPassword.Text == "Praegune salasõna")
+            {
+                txtCurrentUserPassword.Text = "";
+                txtCurrentUserPassword.UseSystemPasswordChar = true;
+                txtCurrentUserPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtNewUserPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtNewUserPassword.Text == "Uus salasõna")
+            {
+                txtNewUserPassword.Text = "";
+                txtNewUserPassword.UseSystemPasswordChar = true;
+                txtNewUserPassword.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtNewUserPassword2_Enter(object sender, EventArgs e)
+        {
+            if (txtNewUserPassword2.Text == "Korda uut salasõna")
+            {
+                txtNewUserPassword2.Text = "";
+                txtNewUserPassword2.UseSystemPasswordChar = true;
+                txtNewUserPassword2.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtChangeCalorieLimitCalories_Leave(object sender, EventArgs e)
+        {
+            if (txtChangeCalorieLimitCalories.Text == "")
+            {
+                txtChangeCalorieLimitCalories.Text = "kcal";
+                txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtCurrentEmail_Leave(object sender, EventArgs e)
+        {
+            if (txtCurrentEmail.Text == "")
+            {
+                txtCurrentEmail.Text = "Praegune meiliaadress";
+                txtCurrentEmail.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtNewEmail_Leave(object sender, EventArgs e)
+        {
+            if (txtNewEmail.Text == "")
+            {
+                txtNewEmail.Text = "Uus meiliaadress";
+                txtNewEmail.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtConfirmEmailChangePassword_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirmEmailChangePassword.Text == "")
+            {
+                txtConfirmEmailChangePassword.Text = "Salasõna";
+                txtConfirmEmailChangePassword.UseSystemPasswordChar = false;
+                txtConfirmEmailChangePassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtDeleteUserAccountPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtDeleteUserAccountPassword.Text == "")
+            {
+                txtDeleteUserAccountPassword.Text = "Salasõna"; 
+                txtDeleteUserAccountPassword.UseSystemPasswordChar = false;
+                txtDeleteUserAccountPassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtCurrentUserPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtCurrentUserPassword.Text == "")
+            {
+                txtCurrentUserPassword.Text = "Praegune salasõna";
+                txtCurrentUserPassword.UseSystemPasswordChar = false;
+                txtCurrentUserPassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtNewUserPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtNewUserPassword.Text == "")
+            {
+                txtNewUserPassword.Text = "Uus salasõna";
+                txtNewUserPassword.UseSystemPasswordChar = false;
+                txtNewUserPassword.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtNewUserPassword2_Leave(object sender, EventArgs e)
+        {
+            if (txtNewUserPassword2.Text == "")
+            {
+                txtNewUserPassword2.Text = "Korda uut salasõna";
+                txtNewUserPassword2.UseSystemPasswordChar = false;
+                txtNewUserPassword2.ForeColor = Color.DarkGray;
+            }
         }
     }
 }
