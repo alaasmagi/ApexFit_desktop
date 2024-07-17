@@ -23,8 +23,6 @@ namespace ApexFit_desktop_UI
             Security = new SecurityLayer.CSecurity();
             userId = _userId;
             ResetForm();
-            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));
-            lblHomeTitleName.Text = "Tere, " + lblFirstname.Text + "!";
         }
 
         private void ResetForm()
@@ -33,7 +31,8 @@ namespace ApexFit_desktop_UI
             HideAllPanels();
             pnlHomePage.Visible = true;
             btnHome.BackColor = Color.FromArgb(205, 234, 231);
-
+            UserDataLoad();
+            ComboboxReset();
         }
 
         private void ResetControls()
@@ -75,9 +74,42 @@ namespace ApexFit_desktop_UI
             lblCreateAccountSecurityQuestion.Visible = false;
             lblForgotPassword2Username.Visible = false;*/
         }
+
+        private void UserDataLoad()
+        {
+            Security = new SecurityLayer.CSecurity();
+            UserProfile = new UserProfileComponent.CUserProfile();
+
+            lblProfileWeightGoal.Visible = false;
+            lblFirstname.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "firstname_enc"));
+            lblHomeTitleName.Text = "Tere, " + lblFirstname.Text + "!";
+            lblUserProfileFirstname.Text = lblFirstname.Text;
+            lblUserProfileUsername.Text = Security.DecryptString(UserProfile.GetStringFromUserData(userId, "username_enc"));
+            lblProfileUserAge.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "age") + "-aastane";
+            lblProfileUserHeight.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "height") + "cm";
+            lblProfileUserWeight.Text = "-  " + UserProfile.GetIntegerFromUserData(userId, "weight") + "kg";
+            lblProfileCalorieLimit.Text = "-  " + "Kalorilimiit: " + UserProfile.GetIntegerFromUserData(userId, "calorie_limit") + "kcal";
+            if (UserProfile.GetIntegerFromUserData(userId, "premium_unlocked") == 1)
+            {
+                lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + UserProfile.GetIntegerFromUserData(userId, "weight_goal") + "kg";
+                lblProfileWeightGoal.Visible = true;
+            }
+        }
         private void ComboboxReset()
         {
+            UserProfile = new UserProfileComponent.CUserProfile();
 
+            for (int index = 12; index < 100; index++)
+            {
+                cmbUserAgeSelection.Items.Add(index);
+            }
+            cmbUserAgeSelection.SelectedItem = UserProfile.GetIntegerFromUserData(userId, "age");
+
+            for (int index = 140; index < 210; index++)
+            {
+                cmbUserHeightSelection.Items.Add(index);
+            }
+            cmbUserHeightSelection.SelectedItem = UserProfile.GetIntegerFromUserData(userId, "height");
         }
         private void MenuButtonsDefaultColor()
         {
@@ -195,6 +227,16 @@ namespace ApexFit_desktop_UI
             HideAllPanels();
             pnlAnalysis.Visible = true;
             btnAnalysis.BackColor = Color.FromArgb(205, 234, 231);
+        }
+
+        private void btnChangeUserHeight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeUserAge_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

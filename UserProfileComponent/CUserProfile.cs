@@ -97,8 +97,8 @@ namespace UserProfileComponent
                 command.Parameters.AddWithValue("@weight", weight);
                 command.Parameters.AddWithValue("@sex", sex);
                 command.Parameters.AddWithValue("@age", age);
-                command.Parameters.AddWithValue("@calorieLimit", weight);
-                command.Parameters.AddWithValue("@weightGoal", 0); 
+                command.Parameters.AddWithValue("@calorieLimit", 0);
+                command.Parameters.AddWithValue("@weightGoal", weight); 
 
                 connection.Open();
                 command.ExecuteNonQuery();

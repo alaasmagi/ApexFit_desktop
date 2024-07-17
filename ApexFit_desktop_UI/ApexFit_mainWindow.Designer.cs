@@ -59,6 +59,31 @@
             this.pnlSleep = new System.Windows.Forms.Panel();
             this.lblSleepTitle = new System.Windows.Forms.Label();
             this.pnlProfileSettings = new System.Windows.Forms.Panel();
+            this.gbUserProfileDataOverview = new System.Windows.Forms.GroupBox();
+            this.lblProfileUserWeight = new System.Windows.Forms.Label();
+            this.lblProfileUserHeight = new System.Windows.Forms.Label();
+            this.lblProfileUserAge = new System.Windows.Forms.Label();
+            this.pbUserProfileDataOverviewIcon = new System.Windows.Forms.PictureBox();
+            this.lblUserProfileFirstname = new System.Windows.Forms.Label();
+            this.lblUserProfileUsername = new System.Windows.Forms.Label();
+            this.gbDeleteUserAccount = new System.Windows.Forms.GroupBox();
+            this.txtDeleteUserAccountPassword = new System.Windows.Forms.TextBox();
+            this.btnDeleteUserAccount = new System.Windows.Forms.Button();
+            this.gbUserHeight = new System.Windows.Forms.GroupBox();
+            this.pbChangeUserHeightSuccessful = new System.Windows.Forms.PictureBox();
+            this.cmbUserHeightSelection = new System.Windows.Forms.ComboBox();
+            this.btnChangeUserHeight = new System.Windows.Forms.Button();
+            this.gbUserAge = new System.Windows.Forms.GroupBox();
+            this.pbUserAgeChangeSuccessful = new System.Windows.Forms.PictureBox();
+            this.cmbUserAgeSelection = new System.Windows.Forms.ComboBox();
+            this.btnChangeUserAge = new System.Windows.Forms.Button();
+            this.gbChangeEmail = new System.Windows.Forms.GroupBox();
+            this.lblChangeEmailWarning = new System.Windows.Forms.Label();
+            this.pbChangeEmailSuccessfull = new System.Windows.Forms.PictureBox();
+            this.txtCurrentEmail = new System.Windows.Forms.TextBox();
+            this.btnChangeEmail = new System.Windows.Forms.Button();
+            this.txtNewEmail = new System.Windows.Forms.TextBox();
+            this.txtConfirmEmailChangePassword = new System.Windows.Forms.TextBox();
             this.gbChangeUserPassword = new System.Windows.Forms.GroupBox();
             this.pbUserPasswordChangeSuccessful = new System.Windows.Forms.PictureBox();
             this.txtCurrentUserPassword = new System.Windows.Forms.TextBox();
@@ -66,34 +91,15 @@
             this.txtNewUserPassword = new System.Windows.Forms.TextBox();
             this.txtNewUserPassword2 = new System.Windows.Forms.TextBox();
             this.gbProVersionPurchase = new System.Windows.Forms.GroupBox();
-            this.lblProfiilKehakaalSama = new System.Windows.Forms.Label();
+            this.lblProductPurchaseInfo = new System.Windows.Forms.Label();
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
-            this.gbChangeEmail = new System.Windows.Forms.GroupBox();
-            this.pbChangeEmailSuccessfull = new System.Windows.Forms.PictureBox();
-            this.txtCurrentEmail = new System.Windows.Forms.TextBox();
-            this.btnChangeEmail = new System.Windows.Forms.Button();
-            this.txtNewEmail = new System.Windows.Forms.TextBox();
-            this.txtConfirmEmailChangePassword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gbUserAge = new System.Windows.Forms.GroupBox();
-            this.cmbMuudaVanust = new System.Windows.Forms.ComboBox();
-            this.btnMuudaVanust = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gbUserHeight = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.gbDeleteUserAccount = new System.Windows.Forms.GroupBox();
-            this.btnDeleteUserAccount = new System.Windows.Forms.Button();
-            this.txtDeleteUserAccountPassword = new System.Windows.Forms.TextBox();
-            this.lblUserProfileFirstname = new System.Windows.Forms.Label();
-            this.lblUserProfileUsername = new System.Windows.Forms.Label();
-            this.gbUserProfileDataOverview = new System.Windows.Forms.GroupBox();
-            this.pbUserProfileDataOverviewIcon = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.gbChangeCalorieLimit = new System.Windows.Forms.GroupBox();
+            this.pbCalorieLimitSetSuccessful = new System.Windows.Forms.PictureBox();
+            this.btnSetCalorieLimit = new System.Windows.Forms.Button();
+            this.txtChangeCalorieLimitCalories = new System.Windows.Forms.TextBox();
+            this.lblProfileCalorieLimit = new System.Windows.Forms.Label();
+            this.lblProfileWeightGoal = new System.Windows.Forms.Label();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -104,18 +110,20 @@
             this.pnlGoals.SuspendLayout();
             this.pnlSleep.SuspendLayout();
             this.pnlProfileSettings.SuspendLayout();
+            this.gbUserProfileDataOverview.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).BeginInit();
+            this.gbDeleteUserAccount.SuspendLayout();
+            this.gbUserHeight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeUserHeightSuccessful)).BeginInit();
+            this.gbUserAge.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserAgeChangeSuccessful)).BeginInit();
+            this.gbChangeEmail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).BeginInit();
             this.gbChangeUserPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).BeginInit();
             this.gbProVersionPurchase.SuspendLayout();
-            this.gbChangeEmail.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).BeginInit();
-            this.gbUserAge.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.gbUserHeight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.gbDeleteUserAccount.SuspendLayout();
-            this.gbUserProfileDataOverview.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).BeginInit();
+            this.gbChangeCalorieLimit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -529,6 +537,7 @@
             // 
             // pnlProfileSettings
             // 
+            this.pnlProfileSettings.Controls.Add(this.gbChangeCalorieLimit);
             this.pnlProfileSettings.Controls.Add(this.gbUserProfileDataOverview);
             this.pnlProfileSettings.Controls.Add(this.gbDeleteUserAccount);
             this.pnlProfileSettings.Controls.Add(this.gbUserHeight);
@@ -542,6 +551,343 @@
             this.pnlProfileSettings.Size = new System.Drawing.Size(1039, 581);
             this.pnlProfileSettings.TabIndex = 6;
             // 
+            // gbUserProfileDataOverview
+            // 
+            this.gbUserProfileDataOverview.Controls.Add(this.lblProfileWeightGoal);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblProfileCalorieLimit);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblProfileUserWeight);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblProfileUserHeight);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblProfileUserAge);
+            this.gbUserProfileDataOverview.Controls.Add(this.pbUserProfileDataOverviewIcon);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileFirstname);
+            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileUsername);
+            this.gbUserProfileDataOverview.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserProfileDataOverview.Location = new System.Drawing.Point(687, 49);
+            this.gbUserProfileDataOverview.Name = "gbUserProfileDataOverview";
+            this.gbUserProfileDataOverview.Size = new System.Drawing.Size(340, 266);
+            this.gbUserProfileDataOverview.TabIndex = 48;
+            this.gbUserProfileDataOverview.TabStop = false;
+            this.gbUserProfileDataOverview.Text = "Üldandmed";
+            // 
+            // lblProfileUserWeight
+            // 
+            this.lblProfileUserWeight.AutoSize = true;
+            this.lblProfileUserWeight.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileUserWeight.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileUserWeight.Location = new System.Drawing.Point(141, 177);
+            this.lblProfileUserWeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileUserWeight.Name = "lblProfileUserWeight";
+            this.lblProfileUserWeight.Size = new System.Drawing.Size(44, 19);
+            this.lblProfileUserWeight.TabIndex = 50;
+            this.lblProfileUserWeight.Text = "Kaal";
+            // 
+            // lblProfileUserHeight
+            // 
+            this.lblProfileUserHeight.AutoSize = true;
+            this.lblProfileUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileUserHeight.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileUserHeight.Location = new System.Drawing.Point(141, 158);
+            this.lblProfileUserHeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileUserHeight.Name = "lblProfileUserHeight";
+            this.lblProfileUserHeight.Size = new System.Drawing.Size(53, 19);
+            this.lblProfileUserHeight.TabIndex = 49;
+            this.lblProfileUserHeight.Text = "Pikkus";
+            // 
+            // lblProfileUserAge
+            // 
+            this.lblProfileUserAge.AutoSize = true;
+            this.lblProfileUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileUserAge.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileUserAge.Location = new System.Drawing.Point(141, 139);
+            this.lblProfileUserAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileUserAge.Name = "lblProfileUserAge";
+            this.lblProfileUserAge.Size = new System.Drawing.Size(56, 19);
+            this.lblProfileUserAge.TabIndex = 48;
+            this.lblProfileUserAge.Text = "Vanus";
+            // 
+            // pbUserProfileDataOverviewIcon
+            // 
+            this.pbUserProfileDataOverviewIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbUserProfileDataOverviewIcon.BackgroundImage")));
+            this.pbUserProfileDataOverviewIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbUserProfileDataOverviewIcon.Location = new System.Drawing.Point(20, 34);
+            this.pbUserProfileDataOverviewIcon.Name = "pbUserProfileDataOverviewIcon";
+            this.pbUserProfileDataOverviewIcon.Size = new System.Drawing.Size(106, 215);
+            this.pbUserProfileDataOverviewIcon.TabIndex = 6;
+            this.pbUserProfileDataOverviewIcon.TabStop = false;
+            // 
+            // lblUserProfileFirstname
+            // 
+            this.lblUserProfileFirstname.AutoSize = true;
+            this.lblUserProfileFirstname.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserProfileFirstname.ForeColor = System.Drawing.Color.Black;
+            this.lblUserProfileFirstname.Location = new System.Drawing.Point(140, 61);
+            this.lblUserProfileFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserProfileFirstname.Name = "lblUserProfileFirstname";
+            this.lblUserProfileFirstname.Size = new System.Drawing.Size(79, 23);
+            this.lblUserProfileFirstname.TabIndex = 46;
+            this.lblUserProfileFirstname.Text = "Eesnimi";
+            // 
+            // lblUserProfileUsername
+            // 
+            this.lblUserProfileUsername.AutoSize = true;
+            this.lblUserProfileUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserProfileUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUserProfileUsername.Location = new System.Drawing.Point(140, 89);
+            this.lblUserProfileUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUserProfileUsername.Name = "lblUserProfileUsername";
+            this.lblUserProfileUsername.Size = new System.Drawing.Size(112, 19);
+            this.lblUserProfileUsername.TabIndex = 47;
+            this.lblUserProfileUsername.Text = "Kasutajanimi";
+            // 
+            // gbDeleteUserAccount
+            // 
+            this.gbDeleteUserAccount.Controls.Add(this.txtDeleteUserAccountPassword);
+            this.gbDeleteUserAccount.Controls.Add(this.btnDeleteUserAccount);
+            this.gbDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDeleteUserAccount.ForeColor = System.Drawing.Color.Black;
+            this.gbDeleteUserAccount.Location = new System.Drawing.Point(30, 432);
+            this.gbDeleteUserAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.gbDeleteUserAccount.Name = "gbDeleteUserAccount";
+            this.gbDeleteUserAccount.Padding = new System.Windows.Forms.Padding(2);
+            this.gbDeleteUserAccount.Size = new System.Drawing.Size(351, 138);
+            this.gbDeleteUserAccount.TabIndex = 44;
+            this.gbDeleteUserAccount.TabStop = false;
+            this.gbDeleteUserAccount.Text = "Konto kustutamine";
+            // 
+            // txtDeleteUserAccountPassword
+            // 
+            this.txtDeleteUserAccountPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeleteUserAccountPassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDeleteUserAccountPassword.Location = new System.Drawing.Point(15, 35);
+            this.txtDeleteUserAccountPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtDeleteUserAccountPassword.Name = "txtDeleteUserAccountPassword";
+            this.txtDeleteUserAccountPassword.Size = new System.Drawing.Size(312, 27);
+            this.txtDeleteUserAccountPassword.TabIndex = 27;
+            this.txtDeleteUserAccountPassword.Text = "Salasõna";
+            // 
+            // btnDeleteUserAccount
+            // 
+            this.btnDeleteUserAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnDeleteUserAccount.FlatAppearance.BorderSize = 0;
+            this.btnDeleteUserAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnDeleteUserAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteUserAccount.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnDeleteUserAccount.Location = new System.Drawing.Point(15, 72);
+            this.btnDeleteUserAccount.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnDeleteUserAccount.Name = "btnDeleteUserAccount";
+            this.btnDeleteUserAccount.Size = new System.Drawing.Size(312, 42);
+            this.btnDeleteUserAccount.TabIndex = 22;
+            this.btnDeleteUserAccount.Text = "Kustuta konto";
+            this.btnDeleteUserAccount.UseVisualStyleBackColor = false;
+            // 
+            // gbUserHeight
+            // 
+            this.gbUserHeight.Controls.Add(this.pbChangeUserHeightSuccessful);
+            this.gbUserHeight.Controls.Add(this.cmbUserHeightSelection);
+            this.gbUserHeight.Controls.Add(this.btnChangeUserHeight);
+            this.gbUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserHeight.ForeColor = System.Drawing.Color.Black;
+            this.gbUserHeight.Location = new System.Drawing.Point(399, 139);
+            this.gbUserHeight.Margin = new System.Windows.Forms.Padding(2);
+            this.gbUserHeight.Name = "gbUserHeight";
+            this.gbUserHeight.Padding = new System.Windows.Forms.Padding(2);
+            this.gbUserHeight.Size = new System.Drawing.Size(267, 84);
+            this.gbUserHeight.TabIndex = 43;
+            this.gbUserHeight.TabStop = false;
+            this.gbUserHeight.Text = "Pikkus";
+            // 
+            // pbChangeUserHeightSuccessful
+            // 
+            this.pbChangeUserHeightSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbChangeUserHeightSuccessful.BackgroundImage")));
+            this.pbChangeUserHeightSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbChangeUserHeightSuccessful.Location = new System.Drawing.Point(204, 25);
+            this.pbChangeUserHeightSuccessful.Name = "pbChangeUserHeightSuccessful";
+            this.pbChangeUserHeightSuccessful.Size = new System.Drawing.Size(39, 42);
+            this.pbChangeUserHeightSuccessful.TabIndex = 41;
+            this.pbChangeUserHeightSuccessful.TabStop = false;
+            this.pbChangeUserHeightSuccessful.Visible = false;
+            // 
+            // cmbUserHeightSelection
+            // 
+            this.cmbUserHeightSelection.DropDownHeight = 100;
+            this.cmbUserHeightSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserHeightSelection.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUserHeightSelection.FormattingEnabled = true;
+            this.cmbUserHeightSelection.IntegralHeight = false;
+            this.cmbUserHeightSelection.ItemHeight = 19;
+            this.cmbUserHeightSelection.Location = new System.Drawing.Point(15, 34);
+            this.cmbUserHeightSelection.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbUserHeightSelection.Name = "cmbUserHeightSelection";
+            this.cmbUserHeightSelection.Size = new System.Drawing.Size(74, 27);
+            this.cmbUserHeightSelection.TabIndex = 23;
+            // 
+            // btnChangeUserHeight
+            // 
+            this.btnChangeUserHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnChangeUserHeight.FlatAppearance.BorderSize = 0;
+            this.btnChangeUserHeight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnChangeUserHeight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeUserHeight.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnChangeUserHeight.Location = new System.Drawing.Point(109, 25);
+            this.btnChangeUserHeight.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnChangeUserHeight.Name = "btnChangeUserHeight";
+            this.btnChangeUserHeight.Size = new System.Drawing.Size(86, 42);
+            this.btnChangeUserHeight.TabIndex = 22;
+            this.btnChangeUserHeight.Text = "Muuda";
+            this.btnChangeUserHeight.UseVisualStyleBackColor = false;
+            this.btnChangeUserHeight.Click += new System.EventHandler(this.btnChangeUserHeight_Click);
+            // 
+            // gbUserAge
+            // 
+            this.gbUserAge.Controls.Add(this.pbUserAgeChangeSuccessful);
+            this.gbUserAge.Controls.Add(this.cmbUserAgeSelection);
+            this.gbUserAge.Controls.Add(this.btnChangeUserAge);
+            this.gbUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserAge.ForeColor = System.Drawing.Color.Black;
+            this.gbUserAge.Location = new System.Drawing.Point(399, 231);
+            this.gbUserAge.Margin = new System.Windows.Forms.Padding(2);
+            this.gbUserAge.Name = "gbUserAge";
+            this.gbUserAge.Padding = new System.Windows.Forms.Padding(2);
+            this.gbUserAge.Size = new System.Drawing.Size(267, 84);
+            this.gbUserAge.TabIndex = 42;
+            this.gbUserAge.TabStop = false;
+            this.gbUserAge.Text = "Vanus";
+            // 
+            // pbUserAgeChangeSuccessful
+            // 
+            this.pbUserAgeChangeSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbUserAgeChangeSuccessful.BackgroundImage")));
+            this.pbUserAgeChangeSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbUserAgeChangeSuccessful.Location = new System.Drawing.Point(204, 25);
+            this.pbUserAgeChangeSuccessful.Name = "pbUserAgeChangeSuccessful";
+            this.pbUserAgeChangeSuccessful.Size = new System.Drawing.Size(39, 42);
+            this.pbUserAgeChangeSuccessful.TabIndex = 41;
+            this.pbUserAgeChangeSuccessful.TabStop = false;
+            this.pbUserAgeChangeSuccessful.Visible = false;
+            // 
+            // cmbUserAgeSelection
+            // 
+            this.cmbUserAgeSelection.DropDownHeight = 100;
+            this.cmbUserAgeSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserAgeSelection.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUserAgeSelection.FormattingEnabled = true;
+            this.cmbUserAgeSelection.IntegralHeight = false;
+            this.cmbUserAgeSelection.ItemHeight = 19;
+            this.cmbUserAgeSelection.Location = new System.Drawing.Point(15, 34);
+            this.cmbUserAgeSelection.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbUserAgeSelection.Name = "cmbUserAgeSelection";
+            this.cmbUserAgeSelection.Size = new System.Drawing.Size(74, 27);
+            this.cmbUserAgeSelection.TabIndex = 23;
+            // 
+            // btnChangeUserAge
+            // 
+            this.btnChangeUserAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnChangeUserAge.FlatAppearance.BorderSize = 0;
+            this.btnChangeUserAge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnChangeUserAge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeUserAge.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnChangeUserAge.Location = new System.Drawing.Point(109, 25);
+            this.btnChangeUserAge.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnChangeUserAge.Name = "btnChangeUserAge";
+            this.btnChangeUserAge.Size = new System.Drawing.Size(86, 42);
+            this.btnChangeUserAge.TabIndex = 22;
+            this.btnChangeUserAge.Text = "Muuda";
+            this.btnChangeUserAge.UseVisualStyleBackColor = false;
+            this.btnChangeUserAge.Click += new System.EventHandler(this.btnChangeUserAge_Click);
+            // 
+            // gbChangeEmail
+            // 
+            this.gbChangeEmail.Controls.Add(this.lblChangeEmailWarning);
+            this.gbChangeEmail.Controls.Add(this.pbChangeEmailSuccessfull);
+            this.gbChangeEmail.Controls.Add(this.txtCurrentEmail);
+            this.gbChangeEmail.Controls.Add(this.btnChangeEmail);
+            this.gbChangeEmail.Controls.Add(this.txtNewEmail);
+            this.gbChangeEmail.Controls.Add(this.txtConfirmEmailChangePassword);
+            this.gbChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChangeEmail.ForeColor = System.Drawing.Color.Black;
+            this.gbChangeEmail.Location = new System.Drawing.Point(30, 152);
+            this.gbChangeEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.gbChangeEmail.Name = "gbChangeEmail";
+            this.gbChangeEmail.Padding = new System.Windows.Forms.Padding(2);
+            this.gbChangeEmail.Size = new System.Drawing.Size(351, 266);
+            this.gbChangeEmail.TabIndex = 41;
+            this.gbChangeEmail.TabStop = false;
+            this.gbChangeEmail.Text = "Meiliaadressi muutmine";
+            // 
+            // lblChangeEmailWarning
+            // 
+            this.lblChangeEmailWarning.AutoSize = true;
+            this.lblChangeEmailWarning.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChangeEmailWarning.ForeColor = System.Drawing.Color.Black;
+            this.lblChangeEmailWarning.Location = new System.Drawing.Point(4, 239);
+            this.lblChangeEmailWarning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblChangeEmailWarning.Name = "lblChangeEmailWarning";
+            this.lblChangeEmailWarning.Size = new System.Drawing.Size(339, 16);
+            this.lblChangeEmailWarning.TabIndex = 35;
+            this.lblChangeEmailWarning.Text = "Meiliaadressi muutmisega muutub ka kasutajanimi.";
+            // 
+            // pbChangeEmailSuccessfull
+            // 
+            this.pbChangeEmailSuccessfull.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbChangeEmailSuccessfull.BackgroundImage")));
+            this.pbChangeEmailSuccessfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbChangeEmailSuccessfull.Location = new System.Drawing.Point(277, 185);
+            this.pbChangeEmailSuccessfull.Name = "pbChangeEmailSuccessfull";
+            this.pbChangeEmailSuccessfull.Size = new System.Drawing.Size(50, 50);
+            this.pbChangeEmailSuccessfull.TabIndex = 40;
+            this.pbChangeEmailSuccessfull.TabStop = false;
+            this.pbChangeEmailSuccessfull.Visible = false;
+            // 
+            // txtCurrentEmail
+            // 
+            this.txtCurrentEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCurrentEmail.Location = new System.Drawing.Point(15, 62);
+            this.txtCurrentEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtCurrentEmail.Name = "txtCurrentEmail";
+            this.txtCurrentEmail.Size = new System.Drawing.Size(312, 27);
+            this.txtCurrentEmail.TabIndex = 26;
+            this.txtCurrentEmail.Text = "Praegune meiliaadress";
+            // 
+            // btnChangeEmail
+            // 
+            this.btnChangeEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnChangeEmail.FlatAppearance.BorderSize = 0;
+            this.btnChangeEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnChangeEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeEmail.ForeColor = System.Drawing.Color.White;
+            this.btnChangeEmail.Location = new System.Drawing.Point(15, 185);
+            this.btnChangeEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnChangeEmail.Name = "btnChangeEmail";
+            this.btnChangeEmail.Size = new System.Drawing.Size(242, 50);
+            this.btnChangeEmail.TabIndex = 22;
+            this.btnChangeEmail.Text = "Kinnita uus meiliaadress";
+            this.btnChangeEmail.UseVisualStyleBackColor = false;
+            // 
+            // txtNewEmail
+            // 
+            this.txtNewEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNewEmail.Location = new System.Drawing.Point(15, 97);
+            this.txtNewEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtNewEmail.Name = "txtNewEmail";
+            this.txtNewEmail.Size = new System.Drawing.Size(312, 27);
+            this.txtNewEmail.TabIndex = 20;
+            this.txtNewEmail.Text = "Uus meiliaadress";
+            // 
+            // txtConfirmEmailChangePassword
+            // 
+            this.txtConfirmEmailChangePassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmEmailChangePassword.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtConfirmEmailChangePassword.Location = new System.Drawing.Point(15, 132);
+            this.txtConfirmEmailChangePassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtConfirmEmailChangePassword.Name = "txtConfirmEmailChangePassword";
+            this.txtConfirmEmailChangePassword.Size = new System.Drawing.Size(312, 27);
+            this.txtConfirmEmailChangePassword.TabIndex = 21;
+            this.txtConfirmEmailChangePassword.Text = "Salasõna";
+            // 
             // gbChangeUserPassword
             // 
             this.gbChangeUserPassword.Controls.Add(this.pbUserPasswordChangeSuccessful);
@@ -551,11 +897,11 @@
             this.gbChangeUserPassword.Controls.Add(this.txtNewUserPassword2);
             this.gbChangeUserPassword.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChangeUserPassword.ForeColor = System.Drawing.Color.Black;
-            this.gbChangeUserPassword.Location = new System.Drawing.Point(399, 304);
+            this.gbChangeUserPassword.Location = new System.Drawing.Point(399, 323);
             this.gbChangeUserPassword.Margin = new System.Windows.Forms.Padding(2);
             this.gbChangeUserPassword.Name = "gbChangeUserPassword";
             this.gbChangeUserPassword.Padding = new System.Windows.Forms.Padding(2);
-            this.gbChangeUserPassword.Size = new System.Drawing.Size(351, 266);
+            this.gbChangeUserPassword.Size = new System.Drawing.Size(351, 247);
             this.gbChangeUserPassword.TabIndex = 16;
             this.gbChangeUserPassword.TabStop = false;
             this.gbChangeUserPassword.Text = "Salasõna muutmine";
@@ -622,28 +968,28 @@
             // 
             // gbProVersionPurchase
             // 
-            this.gbProVersionPurchase.Controls.Add(this.lblProfiilKehakaalSama);
+            this.gbProVersionPurchase.Controls.Add(this.lblProductPurchaseInfo);
             this.gbProVersionPurchase.Controls.Add(this.btnPurchaseProVersion);
             this.gbProVersionPurchase.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbProVersionPurchase.Location = new System.Drawing.Point(770, 304);
+            this.gbProVersionPurchase.Location = new System.Drawing.Point(770, 323);
             this.gbProVersionPurchase.Name = "gbProVersionPurchase";
-            this.gbProVersionPurchase.Size = new System.Drawing.Size(257, 265);
+            this.gbProVersionPurchase.Size = new System.Drawing.Size(257, 246);
             this.gbProVersionPurchase.TabIndex = 6;
             this.gbProVersionPurchase.TabStop = false;
             this.gbProVersionPurchase.Text = "PRO-versioon";
             // 
-            // lblProfiilKehakaalSama
+            // lblProductPurchaseInfo
             // 
-            this.lblProfiilKehakaalSama.AutoSize = true;
-            this.lblProfiilKehakaalSama.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfiilKehakaalSama.ForeColor = System.Drawing.Color.Black;
-            this.lblProfiilKehakaalSama.Location = new System.Drawing.Point(17, 37);
-            this.lblProfiilKehakaalSama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblProfiilKehakaalSama.Name = "lblProfiilKehakaalSama";
-            this.lblProfiilKehakaalSama.Size = new System.Drawing.Size(220, 80);
-            this.lblProfiilKehakaalSama.TabIndex = 34;
-            this.lblProfiilKehakaalSama.Text = "- 9.99€ ühekordne tasu\r\n- Eesmärkide seadmine\r\n- Une jälgimine\r\n- Veelgi detailse" +
-    "m treeningute ja \r\n  toitumise analüüs\r\n";
+            this.lblProductPurchaseInfo.AutoSize = true;
+            this.lblProductPurchaseInfo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductPurchaseInfo.ForeColor = System.Drawing.Color.Black;
+            this.lblProductPurchaseInfo.Location = new System.Drawing.Point(17, 37);
+            this.lblProductPurchaseInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProductPurchaseInfo.Name = "lblProductPurchaseInfo";
+            this.lblProductPurchaseInfo.Size = new System.Drawing.Size(224, 80);
+            this.lblProductPurchaseInfo.TabIndex = 34;
+            this.lblProductPurchaseInfo.Text = "-  9.99€ ühekordne tasu\r\n-  Eesmärkide seadmine\r\n-  Une jälgimine\r\n-  Veelgi deta" +
+    "ilsem treeningute ja \r\n   toitumise analüüs\r\n";
             // 
             // btnPurchaseProVersion
             // 
@@ -676,338 +1022,83 @@
             this.lblProfileSettingsTitle.TabIndex = 5;
             this.lblProfileSettingsTitle.Text = "Profiili seaded";
             // 
-            // gbChangeEmail
+            // gbChangeCalorieLimit
             // 
-            this.gbChangeEmail.Controls.Add(this.label1);
-            this.gbChangeEmail.Controls.Add(this.pbChangeEmailSuccessfull);
-            this.gbChangeEmail.Controls.Add(this.txtCurrentEmail);
-            this.gbChangeEmail.Controls.Add(this.btnChangeEmail);
-            this.gbChangeEmail.Controls.Add(this.txtNewEmail);
-            this.gbChangeEmail.Controls.Add(this.txtConfirmEmailChangePassword);
-            this.gbChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbChangeEmail.ForeColor = System.Drawing.Color.Black;
-            this.gbChangeEmail.Location = new System.Drawing.Point(30, 152);
-            this.gbChangeEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.gbChangeEmail.Name = "gbChangeEmail";
-            this.gbChangeEmail.Padding = new System.Windows.Forms.Padding(2);
-            this.gbChangeEmail.Size = new System.Drawing.Size(351, 266);
-            this.gbChangeEmail.TabIndex = 41;
-            this.gbChangeEmail.TabStop = false;
-            this.gbChangeEmail.Text = "Meiliaadressi muutmine";
+            this.gbChangeCalorieLimit.Controls.Add(this.txtChangeCalorieLimitCalories);
+            this.gbChangeCalorieLimit.Controls.Add(this.pbCalorieLimitSetSuccessful);
+            this.gbChangeCalorieLimit.Controls.Add(this.btnSetCalorieLimit);
+            this.gbChangeCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbChangeCalorieLimit.ForeColor = System.Drawing.Color.Black;
+            this.gbChangeCalorieLimit.Location = new System.Drawing.Point(399, 49);
+            this.gbChangeCalorieLimit.Margin = new System.Windows.Forms.Padding(2);
+            this.gbChangeCalorieLimit.Name = "gbChangeCalorieLimit";
+            this.gbChangeCalorieLimit.Padding = new System.Windows.Forms.Padding(2);
+            this.gbChangeCalorieLimit.Size = new System.Drawing.Size(267, 84);
+            this.gbChangeCalorieLimit.TabIndex = 44;
+            this.gbChangeCalorieLimit.TabStop = false;
+            this.gbChangeCalorieLimit.Text = "Kalorilimiidi seadmine";
             // 
-            // pbChangeEmailSuccessfull
+            // pbCalorieLimitSetSuccessful
             // 
-            this.pbChangeEmailSuccessfull.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbChangeEmailSuccessfull.BackgroundImage")));
-            this.pbChangeEmailSuccessfull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbChangeEmailSuccessfull.Location = new System.Drawing.Point(277, 185);
-            this.pbChangeEmailSuccessfull.Name = "pbChangeEmailSuccessfull";
-            this.pbChangeEmailSuccessfull.Size = new System.Drawing.Size(50, 50);
-            this.pbChangeEmailSuccessfull.TabIndex = 40;
-            this.pbChangeEmailSuccessfull.TabStop = false;
-            this.pbChangeEmailSuccessfull.Visible = false;
+            this.pbCalorieLimitSetSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCalorieLimitSetSuccessful.BackgroundImage")));
+            this.pbCalorieLimitSetSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbCalorieLimitSetSuccessful.Location = new System.Drawing.Point(204, 27);
+            this.pbCalorieLimitSetSuccessful.Name = "pbCalorieLimitSetSuccessful";
+            this.pbCalorieLimitSetSuccessful.Size = new System.Drawing.Size(39, 42);
+            this.pbCalorieLimitSetSuccessful.TabIndex = 41;
+            this.pbCalorieLimitSetSuccessful.TabStop = false;
+            this.pbCalorieLimitSetSuccessful.Visible = false;
             // 
-            // txtCurrentEmail
+            // btnSetCalorieLimit
             // 
-            this.txtCurrentEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentEmail.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCurrentEmail.Location = new System.Drawing.Point(15, 62);
-            this.txtCurrentEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtCurrentEmail.Name = "txtCurrentEmail";
-            this.txtCurrentEmail.Size = new System.Drawing.Size(312, 27);
-            this.txtCurrentEmail.TabIndex = 26;
-            this.txtCurrentEmail.Text = "Praegune meiliaadress";
+            this.btnSetCalorieLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnSetCalorieLimit.FlatAppearance.BorderSize = 0;
+            this.btnSetCalorieLimit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnSetCalorieLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetCalorieLimit.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSetCalorieLimit.Location = new System.Drawing.Point(109, 27);
+            this.btnSetCalorieLimit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnSetCalorieLimit.Name = "btnSetCalorieLimit";
+            this.btnSetCalorieLimit.Size = new System.Drawing.Size(86, 42);
+            this.btnSetCalorieLimit.TabIndex = 22;
+            this.btnSetCalorieLimit.Text = "Muuda";
+            this.btnSetCalorieLimit.UseVisualStyleBackColor = false;
             // 
-            // btnChangeEmail
+            // txtChangeCalorieLimitCalories
             // 
-            this.btnChangeEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnChangeEmail.FlatAppearance.BorderSize = 0;
-            this.btnChangeEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnChangeEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeEmail.ForeColor = System.Drawing.Color.White;
-            this.btnChangeEmail.Location = new System.Drawing.Point(15, 185);
-            this.btnChangeEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnChangeEmail.Name = "btnChangeEmail";
-            this.btnChangeEmail.Size = new System.Drawing.Size(242, 50);
-            this.btnChangeEmail.TabIndex = 22;
-            this.btnChangeEmail.Text = "Kinnita uus meiliaadress";
-            this.btnChangeEmail.UseVisualStyleBackColor = false;
+            this.txtChangeCalorieLimitCalories.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChangeCalorieLimitCalories.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtChangeCalorieLimitCalories.Location = new System.Drawing.Point(15, 36);
+            this.txtChangeCalorieLimitCalories.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtChangeCalorieLimitCalories.Name = "txtChangeCalorieLimitCalories";
+            this.txtChangeCalorieLimitCalories.Size = new System.Drawing.Size(74, 27);
+            this.txtChangeCalorieLimitCalories.TabIndex = 41;
+            this.txtChangeCalorieLimitCalories.Text = "kcal";
             // 
-            // txtNewEmail
+            // lblProfileCalorieLimit
             // 
-            this.txtNewEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewEmail.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtNewEmail.Location = new System.Drawing.Point(15, 97);
-            this.txtNewEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtNewEmail.Name = "txtNewEmail";
-            this.txtNewEmail.Size = new System.Drawing.Size(312, 27);
-            this.txtNewEmail.TabIndex = 20;
-            this.txtNewEmail.Text = "Uus meiliaadress";
+            this.lblProfileCalorieLimit.AutoSize = true;
+            this.lblProfileCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileCalorieLimit.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileCalorieLimit.Location = new System.Drawing.Point(141, 199);
+            this.lblProfileCalorieLimit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileCalorieLimit.Name = "lblProfileCalorieLimit";
+            this.lblProfileCalorieLimit.Size = new System.Drawing.Size(92, 19);
+            this.lblProfileCalorieLimit.TabIndex = 51;
+            this.lblProfileCalorieLimit.Text = "Kalorilimiit";
             // 
-            // txtConfirmEmailChangePassword
+            // lblProfileWeightGoal
             // 
-            this.txtConfirmEmailChangePassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmEmailChangePassword.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtConfirmEmailChangePassword.Location = new System.Drawing.Point(15, 132);
-            this.txtConfirmEmailChangePassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtConfirmEmailChangePassword.Name = "txtConfirmEmailChangePassword";
-            this.txtConfirmEmailChangePassword.Size = new System.Drawing.Size(312, 27);
-            this.txtConfirmEmailChangePassword.TabIndex = 21;
-            this.txtConfirmEmailChangePassword.Text = "Salasõna";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(4, 239);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 16);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Meiliaadressi muutmisega muutub ka kasutajanimi.";
-            // 
-            // gbUserAge
-            // 
-            this.gbUserAge.Controls.Add(this.pictureBox1);
-            this.gbUserAge.Controls.Add(this.cmbMuudaVanust);
-            this.gbUserAge.Controls.Add(this.btnMuudaVanust);
-            this.gbUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbUserAge.ForeColor = System.Drawing.Color.Black;
-            this.gbUserAge.Location = new System.Drawing.Point(399, 205);
-            this.gbUserAge.Margin = new System.Windows.Forms.Padding(2);
-            this.gbUserAge.Name = "gbUserAge";
-            this.gbUserAge.Padding = new System.Windows.Forms.Padding(2);
-            this.gbUserAge.Size = new System.Drawing.Size(267, 84);
-            this.gbUserAge.TabIndex = 42;
-            this.gbUserAge.TabStop = false;
-            this.gbUserAge.Text = "Vanus";
-            // 
-            // cmbMuudaVanust
-            // 
-            this.cmbMuudaVanust.DropDownHeight = 100;
-            this.cmbMuudaVanust.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMuudaVanust.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMuudaVanust.FormattingEnabled = true;
-            this.cmbMuudaVanust.IntegralHeight = false;
-            this.cmbMuudaVanust.ItemHeight = 19;
-            this.cmbMuudaVanust.Location = new System.Drawing.Point(15, 34);
-            this.cmbMuudaVanust.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbMuudaVanust.Name = "cmbMuudaVanust";
-            this.cmbMuudaVanust.Size = new System.Drawing.Size(74, 27);
-            this.cmbMuudaVanust.TabIndex = 23;
-            // 
-            // btnMuudaVanust
-            // 
-            this.btnMuudaVanust.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnMuudaVanust.FlatAppearance.BorderSize = 0;
-            this.btnMuudaVanust.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnMuudaVanust.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMuudaVanust.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMuudaVanust.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnMuudaVanust.Location = new System.Drawing.Point(109, 25);
-            this.btnMuudaVanust.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnMuudaVanust.Name = "btnMuudaVanust";
-            this.btnMuudaVanust.Size = new System.Drawing.Size(86, 42);
-            this.btnMuudaVanust.TabIndex = 22;
-            this.btnMuudaVanust.Text = "Muuda";
-            this.btnMuudaVanust.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(204, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
-            // gbUserHeight
-            // 
-            this.gbUserHeight.Controls.Add(this.pictureBox2);
-            this.gbUserHeight.Controls.Add(this.comboBox1);
-            this.gbUserHeight.Controls.Add(this.button1);
-            this.gbUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbUserHeight.ForeColor = System.Drawing.Color.Black;
-            this.gbUserHeight.Location = new System.Drawing.Point(399, 107);
-            this.gbUserHeight.Margin = new System.Windows.Forms.Padding(2);
-            this.gbUserHeight.Name = "gbUserHeight";
-            this.gbUserHeight.Padding = new System.Windows.Forms.Padding(2);
-            this.gbUserHeight.Size = new System.Drawing.Size(267, 84);
-            this.gbUserHeight.TabIndex = 43;
-            this.gbUserHeight.TabStop = false;
-            this.gbUserHeight.Text = "Pikkus";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(204, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox2.TabIndex = 41;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownHeight = 100;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 19;
-            this.comboBox1.Location = new System.Drawing.Point(15, 34);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(74, 27);
-            this.comboBox1.TabIndex = 23;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(109, 25);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 42);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Muuda";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // gbDeleteUserAccount
-            // 
-            this.gbDeleteUserAccount.Controls.Add(this.txtDeleteUserAccountPassword);
-            this.gbDeleteUserAccount.Controls.Add(this.btnDeleteUserAccount);
-            this.gbDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbDeleteUserAccount.ForeColor = System.Drawing.Color.Black;
-            this.gbDeleteUserAccount.Location = new System.Drawing.Point(30, 432);
-            this.gbDeleteUserAccount.Margin = new System.Windows.Forms.Padding(2);
-            this.gbDeleteUserAccount.Name = "gbDeleteUserAccount";
-            this.gbDeleteUserAccount.Padding = new System.Windows.Forms.Padding(2);
-            this.gbDeleteUserAccount.Size = new System.Drawing.Size(351, 138);
-            this.gbDeleteUserAccount.TabIndex = 44;
-            this.gbDeleteUserAccount.TabStop = false;
-            this.gbDeleteUserAccount.Text = "Konto kustutamine";
-            // 
-            // btnDeleteUserAccount
-            // 
-            this.btnDeleteUserAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnDeleteUserAccount.FlatAppearance.BorderSize = 0;
-            this.btnDeleteUserAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnDeleteUserAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteUserAccount.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteUserAccount.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnDeleteUserAccount.Location = new System.Drawing.Point(15, 72);
-            this.btnDeleteUserAccount.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnDeleteUserAccount.Name = "btnDeleteUserAccount";
-            this.btnDeleteUserAccount.Size = new System.Drawing.Size(312, 42);
-            this.btnDeleteUserAccount.TabIndex = 22;
-            this.btnDeleteUserAccount.Text = "Kustuta konto";
-            this.btnDeleteUserAccount.UseVisualStyleBackColor = false;
-            // 
-            // txtDeleteUserAccountPassword
-            // 
-            this.txtDeleteUserAccountPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeleteUserAccountPassword.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtDeleteUserAccountPassword.Location = new System.Drawing.Point(15, 35);
-            this.txtDeleteUserAccountPassword.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtDeleteUserAccountPassword.Name = "txtDeleteUserAccountPassword";
-            this.txtDeleteUserAccountPassword.Size = new System.Drawing.Size(312, 27);
-            this.txtDeleteUserAccountPassword.TabIndex = 27;
-            this.txtDeleteUserAccountPassword.Text = "Salasõna";
-            // 
-            // lblUserProfileFirstname
-            // 
-            this.lblUserProfileFirstname.AutoSize = true;
-            this.lblUserProfileFirstname.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserProfileFirstname.ForeColor = System.Drawing.Color.Black;
-            this.lblUserProfileFirstname.Location = new System.Drawing.Point(143, 44);
-            this.lblUserProfileFirstname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserProfileFirstname.Name = "lblUserProfileFirstname";
-            this.lblUserProfileFirstname.Size = new System.Drawing.Size(79, 23);
-            this.lblUserProfileFirstname.TabIndex = 46;
-            this.lblUserProfileFirstname.Text = "Eesnimi";
-            // 
-            // lblUserProfileUsername
-            // 
-            this.lblUserProfileUsername.AutoSize = true;
-            this.lblUserProfileUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserProfileUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUserProfileUsername.Location = new System.Drawing.Point(143, 72);
-            this.lblUserProfileUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblUserProfileUsername.Name = "lblUserProfileUsername";
-            this.lblUserProfileUsername.Size = new System.Drawing.Size(112, 19);
-            this.lblUserProfileUsername.TabIndex = 47;
-            this.lblUserProfileUsername.Text = "Kasutajanimi";
-            // 
-            // gbUserProfileDataOverview
-            // 
-            this.gbUserProfileDataOverview.Controls.Add(this.label4);
-            this.gbUserProfileDataOverview.Controls.Add(this.label3);
-            this.gbUserProfileDataOverview.Controls.Add(this.label2);
-            this.gbUserProfileDataOverview.Controls.Add(this.pbUserProfileDataOverviewIcon);
-            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileFirstname);
-            this.gbUserProfileDataOverview.Controls.Add(this.lblUserProfileUsername);
-            this.gbUserProfileDataOverview.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbUserProfileDataOverview.Location = new System.Drawing.Point(676, 76);
-            this.gbUserProfileDataOverview.Name = "gbUserProfileDataOverview";
-            this.gbUserProfileDataOverview.Size = new System.Drawing.Size(351, 213);
-            this.gbUserProfileDataOverview.TabIndex = 48;
-            this.gbUserProfileDataOverview.TabStop = false;
-            this.gbUserProfileDataOverview.Text = "Üldandmed";
-            // 
-            // pbUserProfileDataOverviewIcon
-            // 
-            this.pbUserProfileDataOverviewIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbUserProfileDataOverviewIcon.BackgroundImage")));
-            this.pbUserProfileDataOverviewIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbUserProfileDataOverviewIcon.Location = new System.Drawing.Point(21, 44);
-            this.pbUserProfileDataOverviewIcon.Name = "pbUserProfileDataOverviewIcon";
-            this.pbUserProfileDataOverviewIcon.Size = new System.Drawing.Size(106, 152);
-            this.pbUserProfileDataOverviewIcon.TabIndex = 6;
-            this.pbUserProfileDataOverviewIcon.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(144, 113);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 19);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Vanus";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(144, 132);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 19);
-            this.label3.TabIndex = 49;
-            this.label3.Text = "Pikkus";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(144, 151);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 19);
-            this.label4.TabIndex = 50;
-            this.label4.Text = "Kaal";
+            this.lblProfileWeightGoal.AutoSize = true;
+            this.lblProfileWeightGoal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileWeightGoal.ForeColor = System.Drawing.Color.Black;
+            this.lblProfileWeightGoal.Location = new System.Drawing.Point(140, 221);
+            this.lblProfileWeightGoal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProfileWeightGoal.Name = "lblProfileWeightGoal";
+            this.lblProfileWeightGoal.Size = new System.Drawing.Size(73, 19);
+            this.lblProfileWeightGoal.TabIndex = 52;
+            this.lblProfileWeightGoal.Text = "Sihtkaal";
             // 
             // ApexFit_mainWindow
             // 
@@ -1053,23 +1144,26 @@
             this.pnlSleep.PerformLayout();
             this.pnlProfileSettings.ResumeLayout(false);
             this.pnlProfileSettings.PerformLayout();
+            this.gbUserProfileDataOverview.ResumeLayout(false);
+            this.gbUserProfileDataOverview.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).EndInit();
+            this.gbDeleteUserAccount.ResumeLayout(false);
+            this.gbDeleteUserAccount.PerformLayout();
+            this.gbUserHeight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeUserHeightSuccessful)).EndInit();
+            this.gbUserAge.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserAgeChangeSuccessful)).EndInit();
+            this.gbChangeEmail.ResumeLayout(false);
+            this.gbChangeEmail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).EndInit();
             this.gbChangeUserPassword.ResumeLayout(false);
             this.gbChangeUserPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).EndInit();
             this.gbProVersionPurchase.ResumeLayout(false);
             this.gbProVersionPurchase.PerformLayout();
-            this.gbChangeEmail.ResumeLayout(false);
-            this.gbChangeEmail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbChangeEmailSuccessfull)).EndInit();
-            this.gbUserAge.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.gbUserHeight.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.gbDeleteUserAccount.ResumeLayout(false);
-            this.gbDeleteUserAccount.PerformLayout();
-            this.gbUserProfileDataOverview.ResumeLayout(false);
-            this.gbUserProfileDataOverview.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).EndInit();
+            this.gbChangeCalorieLimit.ResumeLayout(false);
+            this.gbChangeCalorieLimit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1109,7 +1203,7 @@
         internal System.Windows.Forms.Label lblProfileSettingsTitle;
         private System.Windows.Forms.GroupBox gbProVersionPurchase;
         internal System.Windows.Forms.Button btnPurchaseProVersion;
-        internal System.Windows.Forms.Label lblProfiilKehakaalSama;
+        internal System.Windows.Forms.Label lblProductPurchaseInfo;
         internal System.Windows.Forms.GroupBox gbChangeUserPassword;
         internal System.Windows.Forms.PictureBox pbUserPasswordChangeSuccessful;
         internal System.Windows.Forms.TextBox txtCurrentUserPassword;
@@ -1122,15 +1216,15 @@
         internal System.Windows.Forms.Button btnChangeEmail;
         internal System.Windows.Forms.TextBox txtNewEmail;
         internal System.Windows.Forms.TextBox txtConfirmEmailChangePassword;
-        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label lblChangeEmailWarning;
         internal System.Windows.Forms.GroupBox gbUserAge;
-        internal System.Windows.Forms.PictureBox pictureBox1;
-        internal System.Windows.Forms.ComboBox cmbMuudaVanust;
-        internal System.Windows.Forms.Button btnMuudaVanust;
+        internal System.Windows.Forms.PictureBox pbUserAgeChangeSuccessful;
+        internal System.Windows.Forms.ComboBox cmbUserAgeSelection;
+        internal System.Windows.Forms.Button btnChangeUserAge;
         internal System.Windows.Forms.GroupBox gbUserHeight;
-        internal System.Windows.Forms.PictureBox pictureBox2;
-        internal System.Windows.Forms.ComboBox comboBox1;
-        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.PictureBox pbChangeUserHeightSuccessful;
+        internal System.Windows.Forms.ComboBox cmbUserHeightSelection;
+        internal System.Windows.Forms.Button btnChangeUserHeight;
         internal System.Windows.Forms.GroupBox gbDeleteUserAccount;
         internal System.Windows.Forms.Button btnDeleteUserAccount;
         internal System.Windows.Forms.TextBox txtDeleteUserAccountPassword;
@@ -1138,8 +1232,14 @@
         internal System.Windows.Forms.Label lblUserProfileFirstname;
         private System.Windows.Forms.GroupBox gbUserProfileDataOverview;
         private System.Windows.Forms.PictureBox pbUserProfileDataOverviewIcon;
-        internal System.Windows.Forms.Label label4;
-        internal System.Windows.Forms.Label label3;
-        internal System.Windows.Forms.Label label2;
+        internal System.Windows.Forms.Label lblProfileUserWeight;
+        internal System.Windows.Forms.Label lblProfileUserHeight;
+        internal System.Windows.Forms.Label lblProfileUserAge;
+        internal System.Windows.Forms.GroupBox gbChangeCalorieLimit;
+        internal System.Windows.Forms.PictureBox pbCalorieLimitSetSuccessful;
+        internal System.Windows.Forms.Button btnSetCalorieLimit;
+        internal System.Windows.Forms.TextBox txtChangeCalorieLimitCalories;
+        internal System.Windows.Forms.Label lblProfileCalorieLimit;
+        internal System.Windows.Forms.Label lblProfileWeightGoal;
     }
 }
