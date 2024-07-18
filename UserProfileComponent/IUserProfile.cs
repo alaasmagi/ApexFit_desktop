@@ -14,5 +14,6 @@ namespace UserProfileComponent
         object GetDataFromUserData(int userId, string columnName);
         void UpdateUserData(int userId, object input, string columnName);
         bool SecurityAnswerApproval(int userId, string securityAnswerHash);
+        bool DeleteUserAccount(int userId);
     }
 }

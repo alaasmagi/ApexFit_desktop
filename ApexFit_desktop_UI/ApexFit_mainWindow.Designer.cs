@@ -765,6 +765,7 @@
             this.btnDeleteUserAccount.TabIndex = 22;
             this.btnDeleteUserAccount.Text = "Kustuta konto";
             this.btnDeleteUserAccount.UseVisualStyleBackColor = false;
+            this.btnDeleteUserAccount.Click += new System.EventHandler(this.btnDeleteUserAccount_Click);
             // 
             // gbUserHeight
             // 
@@ -1037,6 +1038,7 @@
             this.btnChangeUserPassword.TabIndex = 22;
             this.btnChangeUserPassword.Text = "Kinnita uus salasõna";
             this.btnChangeUserPassword.UseVisualStyleBackColor = false;
+            this.btnChangeUserPassword.Click += new System.EventHandler(this.btnChangeUserPassword_Click);
             // 
             // txtNewUserPassword
             // 

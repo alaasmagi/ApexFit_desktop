@@ -22,6 +22,6 @@ namespace SecurityLayer
         string GetSecurityQuestion(int recoveryQuestionId);
         int LoginWithToken();
         void RemoveToken(int userId);
-        bool ChangeUserPassword(int userId, string passwordHash);
+        bool ChangeUserPassword(int userId, string password);
     }
 }

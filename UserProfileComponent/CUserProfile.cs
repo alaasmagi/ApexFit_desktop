@@ -160,5 +160,27 @@ namespace UserProfileComponent
             }
         }
 
+        public bool DeleteUserAccount(int userId)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"DELETE FROM user_data WHERE user_id = @userId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false ;
+                }
+            }
+        }
     }
 }

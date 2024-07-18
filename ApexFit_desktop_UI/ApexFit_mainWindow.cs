@@ -135,7 +135,6 @@ namespace ApexFit_desktop_UI
             Security.RemoveToken(userId);
             this.Hide();
             ApexFit_login login = new ApexFit_login();
-           // ResetForm();
             login.Show();
         }
 
@@ -452,6 +451,10 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Viga uue meiliaadressi formaadis!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (UserProfile.UserProfileExists(txtNewEmail.Text) != 0)
+            {
+                MessageBox.Show("Uus meiliaadress on juba kasutusel!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else if (Security.LoginAttempt(userId, txtConfirmEmailChangePassword.Text) == false)
             {
                 MessageBox.Show("Viga salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -464,6 +467,55 @@ namespace ApexFit_desktop_UI
                 UserDataLoad();
                 TextboxReset();
                 successPbTimer.Start();
+            }
+        }
+
+        private void btnChangeUserPassword_Click(object sender, EventArgs e)
+        {
+            Security = new SecurityLayer.CSecurity();
+            Core = new CoreComponent.CCore();
+            UserProfile = new UserProfileComponent.CUserProfile();
+
+            if (Security.LoginAttempt(userId, txtCurrentUserPassword.Text) == false)
+            {
+                MessageBox.Show("Viga praeguses salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Core.CheckPasswordRequirements(txtNewUserPassword.Text, txtNewUserPassword2.Text) == false)
+            {
+                MessageBox.Show("Viga uues salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Security.ChangeUserPassword(userId, txtNewUserPassword.Text);
+                Security.RemoveToken(userId);
+                pbUserPasswordChangeSuccessful.Visible = true;
+                UserDataLoad();
+                TextboxReset();
+                successPbTimer.Start();
+            }
+        }
+
+        private void btnDeleteUserAccount_Click(object sender, EventArgs e)
+        {
+            Security = new SecurityLayer.CSecurity();
+            UserProfile = new UserProfileComponent.CUserProfile();
+            if (Security.LoginAttempt(userId, txtDeleteUserAccountPassword.Text) == false)
+            {
+                MessageBox.Show("Viga salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (UserProfile.DeleteUserAccount(userId) == true)
+                {
+                    MessageBox.Show("Konto kustutamine õnnestus!", "Konto kustutamine", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    ApexFit_login login = new ApexFit_login();
+                    login.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Konto kustutamine ebaõnnestus!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
