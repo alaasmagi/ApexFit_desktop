@@ -20,7 +20,7 @@ namespace CoreComponent
                 throw new InvalidOperationException("Connection string 'DefaultDBConnection' not found in the configuration file.");
             }
 
-            string password = Environment.GetEnvironmentVariable("APEX_DB");
+            string password = Environment.GetEnvironmentVariable("AF_userlogin");
 
             if (string.IsNullOrEmpty(password))
             {
