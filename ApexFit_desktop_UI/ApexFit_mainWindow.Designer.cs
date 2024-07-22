@@ -102,6 +102,17 @@
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
             this.successPbTimer = new System.Windows.Forms.Timer(this.components);
+            this.gbTrainingRemoval = new System.Windows.Forms.GroupBox();
+            this.pbTrainingRemovalSuccessful = new System.Windows.Forms.PictureBox();
+            this.lblTrainingRemovalLabel = new System.Windows.Forms.Label();
+            this.btnDeleteTraining = new System.Windows.Forms.Button();
+            this.cmbTrainingRemoval = new System.Windows.Forms.ComboBox();
+            this.GroupBox11 = new System.Windows.Forms.GroupBox();
+            this.pbTrainingInsertionSuccessful = new System.Windows.Forms.PictureBox();
+            this.txtTrainingInsertionKcal = new System.Windows.Forms.TextBox();
+            this.txtTrainingInsertionName = new System.Windows.Forms.TextBox();
+            this.btnTrainingInsertion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -126,6 +137,11 @@
             this.gbChangeUserPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).BeginInit();
             this.gbProVersionPurchase.SuspendLayout();
+            this.gbTrainingRemoval.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).BeginInit();
+            this.GroupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrainingInsertionSuccessful)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -459,6 +475,9 @@
             // 
             // pnlTrainings
             // 
+            this.pnlTrainings.Controls.Add(this.pictureBox1);
+            this.pnlTrainings.Controls.Add(this.GroupBox11);
+            this.pnlTrainings.Controls.Add(this.gbTrainingRemoval);
             this.pnlTrainings.Controls.Add(this.lblTrainingsTitle);
             this.pnlTrainings.Location = new System.Drawing.Point(225, 100);
             this.pnlTrainings.Name = "pnlTrainings";
@@ -1127,17 +1146,153 @@
             this.successPbTimer.Interval = 1000;
             this.successPbTimer.Tick += new System.EventHandler(this.successPbTimer_Tick);
             // 
+            // gbTrainingRemoval
+            // 
+            this.gbTrainingRemoval.Controls.Add(this.pbTrainingRemovalSuccessful);
+            this.gbTrainingRemoval.Controls.Add(this.lblTrainingRemovalLabel);
+            this.gbTrainingRemoval.Controls.Add(this.btnDeleteTraining);
+            this.gbTrainingRemoval.Controls.Add(this.cmbTrainingRemoval);
+            this.gbTrainingRemoval.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbTrainingRemoval.Location = new System.Drawing.Point(645, 402);
+            this.gbTrainingRemoval.Name = "gbTrainingRemoval";
+            this.gbTrainingRemoval.Size = new System.Drawing.Size(382, 167);
+            this.gbTrainingRemoval.TabIndex = 40;
+            this.gbTrainingRemoval.TabStop = false;
+            this.gbTrainingRemoval.Text = "Treeningu kustutamine andmebaasist";
+            // 
+            // pbTrainingRemovalSuccessful
+            // 
+            this.pbTrainingRemovalSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbTrainingRemovalSuccessful.Location = new System.Drawing.Point(312, 99);
+            this.pbTrainingRemovalSuccessful.Name = "pbTrainingRemovalSuccessful";
+            this.pbTrainingRemovalSuccessful.Size = new System.Drawing.Size(50, 42);
+            this.pbTrainingRemovalSuccessful.TabIndex = 39;
+            this.pbTrainingRemovalSuccessful.TabStop = false;
+            this.pbTrainingRemovalSuccessful.Visible = false;
+            // 
+            // lblTrainingRemovalLabel
+            // 
+            this.lblTrainingRemovalLabel.AutoSize = true;
+            this.lblTrainingRemovalLabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrainingRemovalLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblTrainingRemovalLabel.Location = new System.Drawing.Point(12, 61);
+            this.lblTrainingRemovalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTrainingRemovalLabel.Name = "lblTrainingRemovalLabel";
+            this.lblTrainingRemovalLabel.Size = new System.Drawing.Size(79, 19);
+            this.lblTrainingRemovalLabel.TabIndex = 38;
+            this.lblTrainingRemovalLabel.Text = "Nimetus:";
+            // 
+            // btnDeleteTraining
+            // 
+            this.btnDeleteTraining.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnDeleteTraining.FlatAppearance.BorderSize = 0;
+            this.btnDeleteTraining.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnDeleteTraining.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteTraining.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteTraining.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnDeleteTraining.Location = new System.Drawing.Point(16, 99);
+            this.btnDeleteTraining.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnDeleteTraining.Name = "btnDeleteTraining";
+            this.btnDeleteTraining.Size = new System.Drawing.Size(276, 42);
+            this.btnDeleteTraining.TabIndex = 29;
+            this.btnDeleteTraining.Text = "Kustuta treening";
+            this.btnDeleteTraining.UseVisualStyleBackColor = false;
+            // 
+            // cmbTrainingRemoval
+            // 
+            this.cmbTrainingRemoval.DropDownHeight = 100;
+            this.cmbTrainingRemoval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTrainingRemoval.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTrainingRemoval.FormattingEnabled = true;
+            this.cmbTrainingRemoval.IntegralHeight = false;
+            this.cmbTrainingRemoval.ItemHeight = 19;
+            this.cmbTrainingRemoval.Location = new System.Drawing.Point(92, 58);
+            this.cmbTrainingRemoval.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTrainingRemoval.Name = "cmbTrainingRemoval";
+            this.cmbTrainingRemoval.Size = new System.Drawing.Size(270, 27);
+            this.cmbTrainingRemoval.TabIndex = 25;
+            // 
+            // GroupBox11
+            // 
+            this.GroupBox11.Controls.Add(this.pbTrainingInsertionSuccessful);
+            this.GroupBox11.Controls.Add(this.txtTrainingInsertionKcal);
+            this.GroupBox11.Controls.Add(this.txtTrainingInsertionName);
+            this.GroupBox11.Controls.Add(this.btnTrainingInsertion);
+            this.GroupBox11.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox11.Location = new System.Drawing.Point(30, 402);
+            this.GroupBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.GroupBox11.Name = "GroupBox11";
+            this.GroupBox11.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupBox11.Size = new System.Drawing.Size(610, 167);
+            this.GroupBox11.TabIndex = 41;
+            this.GroupBox11.TabStop = false;
+            this.GroupBox11.Text = "Treeningu lisamine andmebaasi";
+            // 
+            // pbTrainingInsertionSuccessful
+            // 
+            this.pbTrainingInsertionSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbTrainingInsertionSuccessful.Location = new System.Drawing.Point(350, 106);
+            this.pbTrainingInsertionSuccessful.Name = "pbTrainingInsertionSuccessful";
+            this.pbTrainingInsertionSuccessful.Size = new System.Drawing.Size(51, 42);
+            this.pbTrainingInsertionSuccessful.TabIndex = 42;
+            this.pbTrainingInsertionSuccessful.TabStop = false;
+            this.pbTrainingInsertionSuccessful.Visible = false;
+            // 
+            // txtTrainingInsertionKcal
+            // 
+            this.txtTrainingInsertionKcal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrainingInsertionKcal.Location = new System.Drawing.Point(289, 68);
+            this.txtTrainingInsertionKcal.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtTrainingInsertionKcal.Name = "txtTrainingInsertionKcal";
+            this.txtTrainingInsertionKcal.Size = new System.Drawing.Size(112, 27);
+            this.txtTrainingInsertionKcal.TabIndex = 31;
+            // 
+            // txtTrainingInsertionName
+            // 
+            this.txtTrainingInsertionName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrainingInsertionName.Location = new System.Drawing.Point(15, 68);
+            this.txtTrainingInsertionName.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtTrainingInsertionName.Name = "txtTrainingInsertionName";
+            this.txtTrainingInsertionName.Size = new System.Drawing.Size(262, 27);
+            this.txtTrainingInsertionName.TabIndex = 27;
+            // 
+            // btnTrainingInsertion
+            // 
+            this.btnTrainingInsertion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnTrainingInsertion.FlatAppearance.BorderSize = 0;
+            this.btnTrainingInsertion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnTrainingInsertion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrainingInsertion.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrainingInsertion.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnTrainingInsertion.Location = new System.Drawing.Point(15, 103);
+            this.btnTrainingInsertion.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnTrainingInsertion.Name = "btnTrainingInsertion";
+            this.btnTrainingInsertion.Size = new System.Drawing.Size(276, 42);
+            this.btnTrainingInsertion.TabIndex = 28;
+            this.btnTrainingInsertion.Text = "Lisa";
+            this.btnTrainingInsertion.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(523, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(504, 47);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // ApexFit_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlAnalysis);
-            this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlSleep);
             this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlTopBar);
@@ -1191,6 +1346,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).EndInit();
             this.gbProVersionPurchase.ResumeLayout(false);
             this.gbProVersionPurchase.PerformLayout();
+            this.gbTrainingRemoval.ResumeLayout(false);
+            this.gbTrainingRemoval.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).EndInit();
+            this.GroupBox11.ResumeLayout(false);
+            this.GroupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrainingInsertionSuccessful)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1269,5 +1431,16 @@
         internal System.Windows.Forms.Label lblProfileCalorieLimit;
         internal System.Windows.Forms.Label lblProfileWeightGoal;
         internal System.Windows.Forms.Timer successPbTimer;
+        internal System.Windows.Forms.GroupBox gbTrainingRemoval;
+        internal System.Windows.Forms.PictureBox pbTrainingRemovalSuccessful;
+        internal System.Windows.Forms.Label lblTrainingRemovalLabel;
+        internal System.Windows.Forms.Button btnDeleteTraining;
+        internal System.Windows.Forms.ComboBox cmbTrainingRemoval;
+        internal System.Windows.Forms.GroupBox GroupBox11;
+        internal System.Windows.Forms.PictureBox pbTrainingInsertionSuccessful;
+        internal System.Windows.Forms.TextBox txtTrainingInsertionKcal;
+        internal System.Windows.Forms.TextBox txtTrainingInsertionName;
+        internal System.Windows.Forms.Button btnTrainingInsertion;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
