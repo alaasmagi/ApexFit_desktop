@@ -50,8 +50,10 @@
             this.pnlHomePage = new System.Windows.Forms.Panel();
             this.lblHomeTitleName = new System.Windows.Forms.Label();
             this.pnlFoods = new System.Windows.Forms.Panel();
+            this.lblFoodsSlogan = new System.Windows.Forms.Label();
             this.lblFoodsTitle = new System.Windows.Forms.Label();
             this.pnlTrainings = new System.Windows.Forms.Panel();
+            this.lblTrainingsSlogan = new System.Windows.Forms.Label();
             this.GroupBox11 = new System.Windows.Forms.GroupBox();
             this.pbTrainingInsertionSuccessful = new System.Windows.Forms.PictureBox();
             this.txtTrainingInsertionKcal = new System.Windows.Forms.TextBox();
@@ -64,8 +66,10 @@
             this.cmbTrainingRemoval = new System.Windows.Forms.ComboBox();
             this.lblTrainingsTitle = new System.Windows.Forms.Label();
             this.pnlAnalysis = new System.Windows.Forms.Panel();
+            this.lblAnalysisSlogan = new System.Windows.Forms.Label();
             this.lblAnalysisTitle = new System.Windows.Forms.Label();
             this.pnlGoals = new System.Windows.Forms.Panel();
+            this.lblGoalsSlogan = new System.Windows.Forms.Label();
             this.lblGoalsTitle = new System.Windows.Forms.Label();
             this.pnlSleep = new System.Windows.Forms.Panel();
             this.lblSleepTitle = new System.Windows.Forms.Label();
@@ -112,10 +116,8 @@
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
             this.successPbTimer = new System.Windows.Forms.Timer(this.components);
-            this.lblTrainingsSlogan = new System.Windows.Forms.Label();
-            this.lblFoodsSlogan = new System.Windows.Forms.Label();
-            this.lblAnalysisSlogan = new System.Windows.Forms.Label();
-            this.lblGoalsSlogan = new System.Windows.Forms.Label();
+            this.lblSleepSlogan = new System.Windows.Forms.Label();
+            this.lblHomePageSlogan = new System.Windows.Forms.Label();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -437,6 +439,7 @@
             // 
             // pnlHomePage
             // 
+            this.pnlHomePage.Controls.Add(this.lblHomePageSlogan);
             this.pnlHomePage.Controls.Add(this.lblHomeTitleName);
             this.pnlHomePage.Location = new System.Drawing.Point(225, 100);
             this.pnlHomePage.Name = "pnlHomePage";
@@ -464,6 +467,17 @@
             this.pnlFoods.Size = new System.Drawing.Size(1039, 581);
             this.pnlFoods.TabIndex = 0;
             // 
+            // lblFoodsSlogan
+            // 
+            this.lblFoodsSlogan.AutoSize = true;
+            this.lblFoodsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblFoodsSlogan.Location = new System.Drawing.Point(685, 15);
+            this.lblFoodsSlogan.Name = "lblFoodsSlogan";
+            this.lblFoodsSlogan.Size = new System.Drawing.Size(335, 116);
+            this.lblFoodsSlogan.TabIndex = 43;
+            this.lblFoodsSlogan.Text = "Toit on kütus, \r\nvali targalt!\r\n";
+            // 
             // lblFoodsTitle
             // 
             this.lblFoodsTitle.AutoSize = true;
@@ -486,6 +500,17 @@
             this.pnlTrainings.Name = "pnlTrainings";
             this.pnlTrainings.Size = new System.Drawing.Size(1039, 581);
             this.pnlTrainings.TabIndex = 3;
+            // 
+            // lblTrainingsSlogan
+            // 
+            this.lblTrainingsSlogan.AutoSize = true;
+            this.lblTrainingsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrainingsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblTrainingsSlogan.Location = new System.Drawing.Point(654, 15);
+            this.lblTrainingsSlogan.Name = "lblTrainingsSlogan";
+            this.lblTrainingsSlogan.Size = new System.Drawing.Size(366, 116);
+            this.lblTrainingsSlogan.TabIndex = 42;
+            this.lblTrainingsSlogan.Text = "Treeni täna, \r\nvõida homme!";
             // 
             // GroupBox11
             // 
@@ -634,6 +659,17 @@
             this.pnlAnalysis.Size = new System.Drawing.Size(1039, 581);
             this.pnlAnalysis.TabIndex = 4;
             // 
+            // lblAnalysisSlogan
+            // 
+            this.lblAnalysisSlogan.AutoSize = true;
+            this.lblAnalysisSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblAnalysisSlogan.Location = new System.Drawing.Point(531, 15);
+            this.lblAnalysisSlogan.Name = "lblAnalysisSlogan";
+            this.lblAnalysisSlogan.Size = new System.Drawing.Size(489, 116);
+            this.lblAnalysisSlogan.TabIndex = 44;
+            this.lblAnalysisSlogan.Text = "Väikesed sammud, \r\nsuured saavutused";
+            // 
             // lblAnalysisTitle
             // 
             this.lblAnalysisTitle.AutoSize = true;
@@ -655,6 +691,17 @@
             this.pnlGoals.Size = new System.Drawing.Size(1039, 581);
             this.pnlGoals.TabIndex = 5;
             // 
+            // lblGoalsSlogan
+            // 
+            this.lblGoalsSlogan.AutoSize = true;
+            this.lblGoalsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGoalsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblGoalsSlogan.Location = new System.Drawing.Point(671, 15);
+            this.lblGoalsSlogan.Name = "lblGoalsSlogan";
+            this.lblGoalsSlogan.Size = new System.Drawing.Size(350, 116);
+            this.lblGoalsSlogan.TabIndex = 43;
+            this.lblGoalsSlogan.Text = "Sihi kõrgele, \r\njõua kaugele!";
+            // 
             // lblGoalsTitle
             // 
             this.lblGoalsTitle.AutoSize = true;
@@ -669,6 +716,7 @@
             // 
             // pnlSleep
             // 
+            this.pnlSleep.Controls.Add(this.lblSleepSlogan);
             this.pnlSleep.Controls.Add(this.lblSleepTitle);
             this.pnlSleep.Location = new System.Drawing.Point(225, 100);
             this.pnlSleep.Name = "pnlSleep";
@@ -1277,49 +1325,27 @@
             this.successPbTimer.Interval = 1000;
             this.successPbTimer.Tick += new System.EventHandler(this.successPbTimer_Tick);
             // 
-            // lblTrainingsSlogan
+            // lblSleepSlogan
             // 
-            this.lblTrainingsSlogan.AutoSize = true;
-            this.lblTrainingsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrainingsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblTrainingsSlogan.Location = new System.Drawing.Point(655, 15);
-            this.lblTrainingsSlogan.Name = "lblTrainingsSlogan";
-            this.lblTrainingsSlogan.Size = new System.Drawing.Size(366, 116);
-            this.lblTrainingsSlogan.TabIndex = 42;
-            this.lblTrainingsSlogan.Text = "Treeni täna, \r\nvõida homme!";
+            this.lblSleepSlogan.AutoSize = true;
+            this.lblSleepSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSleepSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblSleepSlogan.Location = new System.Drawing.Point(724, 15);
+            this.lblSleepSlogan.Name = "lblSleepSlogan";
+            this.lblSleepSlogan.Size = new System.Drawing.Size(297, 116);
+            this.lblSleepSlogan.TabIndex = 44;
+            this.lblSleepSlogan.Text = "Hea uni \r\non edu alus";
             // 
-            // lblFoodsSlogan
+            // lblHomePageSlogan
             // 
-            this.lblFoodsSlogan.AutoSize = true;
-            this.lblFoodsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoodsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblFoodsSlogan.Location = new System.Drawing.Point(685, 15);
-            this.lblFoodsSlogan.Name = "lblFoodsSlogan";
-            this.lblFoodsSlogan.Size = new System.Drawing.Size(335, 116);
-            this.lblFoodsSlogan.TabIndex = 43;
-            this.lblFoodsSlogan.Text = "Toit on kütus, \r\nvali targalt!\r\n";
-            // 
-            // lblAnalysisSlogan
-            // 
-            this.lblAnalysisSlogan.AutoSize = true;
-            this.lblAnalysisSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblAnalysisSlogan.Location = new System.Drawing.Point(531, 15);
-            this.lblAnalysisSlogan.Name = "lblAnalysisSlogan";
-            this.lblAnalysisSlogan.Size = new System.Drawing.Size(489, 116);
-            this.lblAnalysisSlogan.TabIndex = 44;
-            this.lblAnalysisSlogan.Text = "Väikesed sammud, \r\nsuured saavutused";
-            // 
-            // lblGoalsSlogan
-            // 
-            this.lblGoalsSlogan.AutoSize = true;
-            this.lblGoalsSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGoalsSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblGoalsSlogan.Location = new System.Drawing.Point(671, 15);
-            this.lblGoalsSlogan.Name = "lblGoalsSlogan";
-            this.lblGoalsSlogan.Size = new System.Drawing.Size(350, 116);
-            this.lblGoalsSlogan.TabIndex = 43;
-            this.lblGoalsSlogan.Text = "Sihi kõrgele, \r\njõua kaugele!";
+            this.lblHomePageSlogan.AutoSize = true;
+            this.lblHomePageSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomePageSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblHomePageSlogan.Location = new System.Drawing.Point(698, 15);
+            this.lblHomePageSlogan.Name = "lblHomePageSlogan";
+            this.lblHomePageSlogan.Size = new System.Drawing.Size(323, 116);
+            this.lblHomePageSlogan.TabIndex = 45;
+            this.lblHomePageSlogan.Text = "Tugev keha, \r\ntugev vaim";
             // 
             // ApexFit_mainWindow
             // 
@@ -1327,13 +1353,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlTrainings);
+            this.Controls.Add(this.pnlHomePage);
+            this.Controls.Add(this.pnlSleep);
+            this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlProfileSettings);
-            this.Controls.Add(this.pnlHomePage);
-            this.Controls.Add(this.pnlSleep);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1483,5 +1509,7 @@
         private System.Windows.Forms.Label lblFoodsSlogan;
         private System.Windows.Forms.Label lblAnalysisSlogan;
         private System.Windows.Forms.Label lblGoalsSlogan;
+        private System.Windows.Forms.Label lblSleepSlogan;
+        private System.Windows.Forms.Label lblHomePageSlogan;
     }
 }
