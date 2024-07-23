@@ -14,5 +14,6 @@ namespace TrainingsComponent
         int TrainingNameExists(string trainingName);
         bool AddTrainingToHistory(int userId, int date, int trainingId, int duration);
         bool DeleteTraining(int trainingId);
+        int[] GetTrainingHistoryData(int userId, int date, string columnName);
     }
 }

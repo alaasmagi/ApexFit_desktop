@@ -120,6 +120,37 @@ namespace TrainingsComponent
             }
         }
 
+        public int[] GetTrainingHistoryData(int userId, int date, string columnName)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            List<int> trainingHistory = new List<int>();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT {columnName} FROM user_training_history WHERE user_id = @userId AND date = @date";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+                    command.Parameters.AddWithValue("@date", date);
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                trainingHistory.Add(reader.GetInt16(i));
+                            }
+                        }
+                    }
+                }
+            }
+
+            return trainingHistory.ToArray(); 
+        }
+
         public bool AddTrainingToHistory(int userId, int date, int trainingId, int duration)
         {
             Core = new CoreComponent.CCore();
