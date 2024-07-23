@@ -12,5 +12,7 @@ namespace TrainingsComponent
         bool AddTraining(string trainingName, int energyConsumption);
         List<string> GetTrainingNames();
         int TrainingNameExists(string trainingName);
+        bool AddTrainingToHistory(int userId, int date, int trainingId, int duration);
+        bool DeleteTraining(int trainingId);
     }
 }
