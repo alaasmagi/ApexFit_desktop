@@ -72,9 +72,5 @@ namespace CoreComponent
                 return Regex.IsMatch(email, pattern);
         }
 
-        public int CalculateTrainingConsumption(int calories, int duration)
-        {
-            int result = Math.Round(duration * (TreeninguEnergiakuluParing(treeninguId) / 60), 1)
-        }
     }
 }
