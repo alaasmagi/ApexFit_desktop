@@ -66,12 +66,15 @@ namespace CoreComponent
             return true;
         }
         
-
-
         public bool CheckEmailRequirements(string email)
         { 
                 string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
                 return Regex.IsMatch(email, pattern);
+        }
+
+        public int CalculateTrainingConsumption(int calories, int duration)
+        {
+            int result = Math.Round(duration * (TreeninguEnergiakuluParing(treeninguId) / 60), 1)
         }
     }
 }

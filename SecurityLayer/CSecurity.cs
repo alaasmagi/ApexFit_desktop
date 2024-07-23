@@ -41,10 +41,7 @@ namespace SecurityLayer
                 {
                     return true;
                 }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
         }
 
@@ -91,7 +88,6 @@ namespace SecurityLayer
                     string question = reader["recovery_question"].ToString();
                     securityQuestions.Add(question);
                 }
-
                 reader.Close();
             }
             return securityQuestions;
@@ -255,10 +251,7 @@ namespace SecurityLayer
                     {
                         return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    return false;
                 }
             }
         }
@@ -284,12 +277,8 @@ namespace SecurityLayer
                 if (result != null)
                 {
                     int.TryParse(result.ToString(), out userIdOutput);
-                    return userIdOutput;
                 }
-                else
-                {
-                    return userIdOutput;
-                }
+                return userIdOutput;
             }
         }
 

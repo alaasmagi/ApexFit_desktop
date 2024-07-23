@@ -51,5 +51,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreComponent\CoreComponent.csproj">
+      <Project>{27a7b09f-5cdc-4720-b373-c7628b9ed421}</Project>
+      <Name>CoreComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+      <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
+      <Name>SecurityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

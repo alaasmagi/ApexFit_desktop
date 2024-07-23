@@ -18,8 +18,6 @@ namespace UserProfileComponent
         private SecurityLayer.ISecurity Security;
         private string connectionString;
 
-       
-
         public string UserNameCreation(string userEmail)
         {
             int atIndex = userEmail.IndexOf('@');
@@ -34,7 +32,6 @@ namespace UserProfileComponent
             int userIdOutput = (Core.DateToInt(DateTime.Now) * 10000) + random.Next(0, 9999);
             return userIdOutput;
         }
-
 
         public int UserProfileExists(string userNameEnc)
         {
@@ -55,12 +52,8 @@ namespace UserProfileComponent
                 if (result != null)
                 {
                     int.TryParse(result.ToString(), out userIdOutput);
-                    return userIdOutput;
                 }
-                else
-                {
-                    return userIdOutput;
-                }
+                return userIdOutput;
             }
         }
 
@@ -176,10 +169,7 @@ namespace UserProfileComponent
                 {
                     return true;
                 }
-                else
-                {
-                    return false ;
-                }
+                return false ;
             }
         }
     }
