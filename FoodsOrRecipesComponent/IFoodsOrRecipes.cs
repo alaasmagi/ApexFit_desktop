@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FoodsOrRecipesComponent
 {
-    internal interface IFoodsOrRecipes
+    public interface IFoodsOrRecipes
     {
+        bool AddFood(string trainingName, int energyConsumption);
     }
 }

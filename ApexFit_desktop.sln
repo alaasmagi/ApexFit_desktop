@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreComponent", "CoreCompon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepComponent", "SleepComponent\SleepComponent.csproj", "{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisComponent", "AnalysisComponent\AnalysisComponent.csproj", "{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

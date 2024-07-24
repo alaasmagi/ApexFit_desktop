@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93088371-6C28-47AB-A785-25637E7683EE}</ProjectGuid>
+    <ProjectGuid>{D61BE040-79AB-4AA7-9E8D-611DE3B66E75}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FoodsOrRecipesComponent</RootNamespace>
-    <AssemblyName>FoodsOrRecipesComponent</AssemblyName>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -33,9 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,17 +41,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CFoodsOrRecipes.cs" />
-    <Compile Include="IFoodsOrRecipes.cs" />
+    <Compile Include="CInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoreComponent\CoreComponent.csproj">
       <Project>{27a7b09f-5cdc-4720-b373-c7628b9ed421}</Project>
       <Name>CoreComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodsOrRecipesComponent\FoodsOrRecipesComponent.csproj">
+      <Project>{93088371-6c28-47ab-a785-25637e7683ee}</Project>
+      <Name>FoodsOrRecipesComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+      <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
+      <Name>SecurityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SleepComponent\SleepComponent.csproj">
+      <Project>{77fd2059-e3d7-4e29-9b2b-e426518d2ba2}</Project>
+      <Name>SleepComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrainingsComponent\TrainingsComponent.csproj">
+      <Project>{415510b7-9ff0-4377-98a8-c4e7cce59a16}</Project>
+      <Name>TrainingsComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserProfileComponent\UserProfileComponent.csproj">
+      <Project>{313a8ab9-6f6e-42af-b7a4-b8d146e57bb7}</Project>
+      <Name>UserProfileComponent</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

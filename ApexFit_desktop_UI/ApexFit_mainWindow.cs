@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainInterface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,8 +22,6 @@ namespace ApexFit_desktop_UI
         public ApexFit_mainWindow(int _userId)
         {
             InitializeComponent();
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
             userId = _userId;
             ResetForm();
         }
@@ -39,6 +38,7 @@ namespace ApexFit_desktop_UI
 
         private void ResetControls()
         {
+            PrimaryService 
 
         }
         private void TextboxReset()
