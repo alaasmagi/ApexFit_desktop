@@ -8,5 +8,6 @@ namespace AnalysisComponent
 {
     public class CAnalysis:IAnalysis
     {
+
     }
 }

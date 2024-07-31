@@ -16,7 +16,7 @@ namespace FoodsOrRecipesComponent
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
 
-            int trainingId = GenerateTrainingId();
+            int trainingId = 0;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = $"INSERT INTO training_data (training_id, training_name, consumption) VALUES (@trainingId, @trainingName, @energyConsumption)";

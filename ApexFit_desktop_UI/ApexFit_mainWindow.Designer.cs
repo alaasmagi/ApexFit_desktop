@@ -48,13 +48,31 @@
             this.lblFirstname = new System.Windows.Forms.Label();
             this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.pnlHomePage = new System.Windows.Forms.Panel();
+            this.lblHomePageSlogan = new System.Windows.Forms.Label();
             this.lblHomeTitleName = new System.Windows.Forms.Label();
             this.pnlFoods = new System.Windows.Forms.Panel();
             this.lblFoodsSlogan = new System.Windows.Forms.Label();
             this.lblFoodsTitle = new System.Windows.Forms.Label();
             this.pnlTrainings = new System.Windows.Forms.Panel();
+            this.gbPlanTrainings = new System.Windows.Forms.GroupBox();
+            this.txtPlanTrainingsDuration = new System.Windows.Forms.TextBox();
+            this.lblAddToTrainingPlan = new System.Windows.Forms.Label();
+            this.cmbAddToTrainingPlan = new System.Windows.Forms.ComboBox();
+            this.pbAddTrainingToPlanSuccessful = new System.Windows.Forms.PictureBox();
+            this.btnAddTrainingToPlan = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.planTrainingDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.planTrainingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.planTrainingDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gbPlannedTrainings = new System.Windows.Forms.GroupBox();
+            this.pbPlannedUpcomingTrainingRemoval = new System.Windows.Forms.PictureBox();
+            this.btnPlannedUpcomingTrainingRemoval = new System.Windows.Forms.Button();
+            this.lvPlannedUpcomingTrainings = new System.Windows.Forms.ListView();
+            this.trainingDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.trainingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.trainingDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblTrainingsSlogan = new System.Windows.Forms.Label();
-            this.GroupBox11 = new System.Windows.Forms.GroupBox();
+            this.gbTrainingInsertionToDatabase = new System.Windows.Forms.GroupBox();
             this.pbTrainingInsertionSuccessful = new System.Windows.Forms.PictureBox();
             this.txtTrainingInsertionKcal = new System.Windows.Forms.TextBox();
             this.txtTrainingInsertionName = new System.Windows.Forms.TextBox();
@@ -72,6 +90,7 @@
             this.lblGoalsSlogan = new System.Windows.Forms.Label();
             this.lblGoalsTitle = new System.Windows.Forms.Label();
             this.pnlSleep = new System.Windows.Forms.Panel();
+            this.lblSleepSlogan = new System.Windows.Forms.Label();
             this.lblSleepTitle = new System.Windows.Forms.Label();
             this.pnlProfileSettings = new System.Windows.Forms.Panel();
             this.gbChangeCalorieLimit = new System.Windows.Forms.GroupBox();
@@ -116,15 +135,19 @@
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
             this.successPbTimer = new System.Windows.Forms.Timer(this.components);
-            this.lblSleepSlogan = new System.Windows.Forms.Label();
-            this.lblHomePageSlogan = new System.Windows.Forms.Label();
+            this.mcPlanTrainings = new System.Windows.Forms.MonthCalendar();
+            this.trainingCalories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
             this.pnlHomePage.SuspendLayout();
             this.pnlFoods.SuspendLayout();
             this.pnlTrainings.SuspendLayout();
-            this.GroupBox11.SuspendLayout();
+            this.gbPlanTrainings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddTrainingToPlanSuccessful)).BeginInit();
+            this.gbPlannedTrainings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlannedUpcomingTrainingRemoval)).BeginInit();
+            this.gbTrainingInsertionToDatabase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingInsertionSuccessful)).BeginInit();
             this.gbTrainingRemoval.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).BeginInit();
@@ -446,6 +469,17 @@
             this.pnlHomePage.Size = new System.Drawing.Size(1039, 581);
             this.pnlHomePage.TabIndex = 2;
             // 
+            // lblHomePageSlogan
+            // 
+            this.lblHomePageSlogan.AutoSize = true;
+            this.lblHomePageSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomePageSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblHomePageSlogan.Location = new System.Drawing.Point(698, 15);
+            this.lblHomePageSlogan.Name = "lblHomePageSlogan";
+            this.lblHomePageSlogan.Size = new System.Drawing.Size(323, 116);
+            this.lblHomePageSlogan.TabIndex = 45;
+            this.lblHomePageSlogan.Text = "Tugev keha, \r\ntugev vaim";
+            // 
             // lblHomeTitleName
             // 
             this.lblHomeTitleName.AutoSize = true;
@@ -492,14 +526,198 @@
             // 
             // pnlTrainings
             // 
+            this.pnlTrainings.Controls.Add(this.gbPlanTrainings);
+            this.pnlTrainings.Controls.Add(this.gbPlannedTrainings);
             this.pnlTrainings.Controls.Add(this.lblTrainingsSlogan);
-            this.pnlTrainings.Controls.Add(this.GroupBox11);
+            this.pnlTrainings.Controls.Add(this.gbTrainingInsertionToDatabase);
             this.pnlTrainings.Controls.Add(this.gbTrainingRemoval);
             this.pnlTrainings.Controls.Add(this.lblTrainingsTitle);
             this.pnlTrainings.Location = new System.Drawing.Point(225, 100);
             this.pnlTrainings.Name = "pnlTrainings";
             this.pnlTrainings.Size = new System.Drawing.Size(1039, 581);
             this.pnlTrainings.TabIndex = 3;
+            // 
+            // gbPlanTrainings
+            // 
+            this.gbPlanTrainings.Controls.Add(this.mcPlanTrainings);
+            this.gbPlanTrainings.Controls.Add(this.txtPlanTrainingsDuration);
+            this.gbPlanTrainings.Controls.Add(this.lblAddToTrainingPlan);
+            this.gbPlanTrainings.Controls.Add(this.cmbAddToTrainingPlan);
+            this.gbPlanTrainings.Controls.Add(this.pbAddTrainingToPlanSuccessful);
+            this.gbPlanTrainings.Controls.Add(this.btnAddTrainingToPlan);
+            this.gbPlanTrainings.Controls.Add(this.listView1);
+            this.gbPlanTrainings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPlanTrainings.Location = new System.Drawing.Point(30, 96);
+            this.gbPlanTrainings.Name = "gbPlanTrainings";
+            this.gbPlanTrainings.Size = new System.Drawing.Size(600, 291);
+            this.gbPlanTrainings.TabIndex = 42;
+            this.gbPlanTrainings.TabStop = false;
+            this.gbPlanTrainings.Text = "Planeeritud treeningud";
+            // 
+            // txtPlanTrainingsDuration
+            // 
+            this.txtPlanTrainingsDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlanTrainingsDuration.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPlanTrainingsDuration.Location = new System.Drawing.Point(338, 77);
+            this.txtPlanTrainingsDuration.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtPlanTrainingsDuration.Name = "txtPlanTrainingsDuration";
+            this.txtPlanTrainingsDuration.Size = new System.Drawing.Size(82, 27);
+            this.txtPlanTrainingsDuration.TabIndex = 47;
+            this.txtPlanTrainingsDuration.Text = "Kestus";
+            this.txtPlanTrainingsDuration.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblAddToTrainingPlan
+            // 
+            this.lblAddToTrainingPlan.AutoSize = true;
+            this.lblAddToTrainingPlan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddToTrainingPlan.ForeColor = System.Drawing.Color.Black;
+            this.lblAddToTrainingPlan.Location = new System.Drawing.Point(11, 80);
+            this.lblAddToTrainingPlan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddToTrainingPlan.Name = "lblAddToTrainingPlan";
+            this.lblAddToTrainingPlan.Size = new System.Drawing.Size(79, 19);
+            this.lblAddToTrainingPlan.TabIndex = 46;
+            this.lblAddToTrainingPlan.Text = "Nimetus:";
+            // 
+            // cmbAddToTrainingPlan
+            // 
+            this.cmbAddToTrainingPlan.DropDownHeight = 100;
+            this.cmbAddToTrainingPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAddToTrainingPlan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAddToTrainingPlan.FormattingEnabled = true;
+            this.cmbAddToTrainingPlan.IntegralHeight = false;
+            this.cmbAddToTrainingPlan.ItemHeight = 19;
+            this.cmbAddToTrainingPlan.Location = new System.Drawing.Point(91, 77);
+            this.cmbAddToTrainingPlan.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbAddToTrainingPlan.Name = "cmbAddToTrainingPlan";
+            this.cmbAddToTrainingPlan.Size = new System.Drawing.Size(236, 27);
+            this.cmbAddToTrainingPlan.TabIndex = 45;
+            this.cmbAddToTrainingPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // pbAddTrainingToPlanSuccessful
+            // 
+            this.pbAddTrainingToPlanSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbAddTrainingToPlanSuccessful.Location = new System.Drawing.Point(369, 231);
+            this.pbAddTrainingToPlanSuccessful.Name = "pbAddTrainingToPlanSuccessful";
+            this.pbAddTrainingToPlanSuccessful.Size = new System.Drawing.Size(51, 42);
+            this.pbAddTrainingToPlanSuccessful.TabIndex = 44;
+            this.pbAddTrainingToPlanSuccessful.TabStop = false;
+            this.pbAddTrainingToPlanSuccessful.Visible = false;
+            // 
+            // btnAddTrainingToPlan
+            // 
+            this.btnAddTrainingToPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnAddTrainingToPlan.FlatAppearance.BorderSize = 0;
+            this.btnAddTrainingToPlan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnAddTrainingToPlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTrainingToPlan.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddTrainingToPlan.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnAddTrainingToPlan.Location = new System.Drawing.Point(16, 231);
+            this.btnAddTrainingToPlan.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnAddTrainingToPlan.Name = "btnAddTrainingToPlan";
+            this.btnAddTrainingToPlan.Size = new System.Drawing.Size(311, 42);
+            this.btnAddTrainingToPlan.TabIndex = 30;
+            this.btnAddTrainingToPlan.Text = "Lisa plaani";
+            this.btnAddTrainingToPlan.UseVisualStyleBackColor = false;
+            // 
+            // listView1
+            // 
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.planTrainingDate,
+            this.planTrainingName,
+            this.planTrainingDuration,
+            this.trainingCalories});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(16, 131);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(404, 53);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // planTrainingDate
+            // 
+            this.planTrainingDate.Text = "Kuupäev";
+            this.planTrainingDate.Width = 103;
+            // 
+            // planTrainingName
+            // 
+            this.planTrainingName.Text = "Treeningu nimi";
+            this.planTrainingName.Width = 145;
+            // 
+            // planTrainingDuration
+            // 
+            this.planTrainingDuration.Text = "Kestus";
+            this.planTrainingDuration.Width = 78;
+            // 
+            // gbPlannedTrainings
+            // 
+            this.gbPlannedTrainings.Controls.Add(this.pbPlannedUpcomingTrainingRemoval);
+            this.gbPlannedTrainings.Controls.Add(this.btnPlannedUpcomingTrainingRemoval);
+            this.gbPlannedTrainings.Controls.Add(this.lvPlannedUpcomingTrainings);
+            this.gbPlannedTrainings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPlannedTrainings.Location = new System.Drawing.Point(645, 152);
+            this.gbPlannedTrainings.Name = "gbPlannedTrainings";
+            this.gbPlannedTrainings.Size = new System.Drawing.Size(382, 235);
+            this.gbPlannedTrainings.TabIndex = 41;
+            this.gbPlannedTrainings.TabStop = false;
+            this.gbPlannedTrainings.Text = "Planeeritud treeningud";
+            // 
+            // pbPlannedUpcomingTrainingRemoval
+            // 
+            this.pbPlannedUpcomingTrainingRemoval.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbPlannedUpcomingTrainingRemoval.Location = new System.Drawing.Point(312, 180);
+            this.pbPlannedUpcomingTrainingRemoval.Name = "pbPlannedUpcomingTrainingRemoval";
+            this.pbPlannedUpcomingTrainingRemoval.Size = new System.Drawing.Size(51, 42);
+            this.pbPlannedUpcomingTrainingRemoval.TabIndex = 43;
+            this.pbPlannedUpcomingTrainingRemoval.TabStop = false;
+            this.pbPlannedUpcomingTrainingRemoval.Visible = false;
+            // 
+            // btnPlannedUpcomingTrainingRemoval
+            // 
+            this.btnPlannedUpcomingTrainingRemoval.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnPlannedUpcomingTrainingRemoval.FlatAppearance.BorderSize = 0;
+            this.btnPlannedUpcomingTrainingRemoval.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnPlannedUpcomingTrainingRemoval.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlannedUpcomingTrainingRemoval.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlannedUpcomingTrainingRemoval.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnPlannedUpcomingTrainingRemoval.Location = new System.Drawing.Point(16, 180);
+            this.btnPlannedUpcomingTrainingRemoval.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnPlannedUpcomingTrainingRemoval.Name = "btnPlannedUpcomingTrainingRemoval";
+            this.btnPlannedUpcomingTrainingRemoval.Size = new System.Drawing.Size(276, 42);
+            this.btnPlannedUpcomingTrainingRemoval.TabIndex = 30;
+            this.btnPlannedUpcomingTrainingRemoval.Text = "Eemalda plaanist";
+            this.btnPlannedUpcomingTrainingRemoval.UseVisualStyleBackColor = false;
+            // 
+            // lvPlannedUpcomingTrainings
+            // 
+            this.lvPlannedUpcomingTrainings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvPlannedUpcomingTrainings.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.trainingDate,
+            this.trainingName,
+            this.trainingDuration});
+            this.lvPlannedUpcomingTrainings.HideSelection = false;
+            this.lvPlannedUpcomingTrainings.Location = new System.Drawing.Point(16, 36);
+            this.lvPlannedUpcomingTrainings.Name = "lvPlannedUpcomingTrainings";
+            this.lvPlannedUpcomingTrainings.Size = new System.Drawing.Size(350, 126);
+            this.lvPlannedUpcomingTrainings.TabIndex = 0;
+            this.lvPlannedUpcomingTrainings.UseCompatibleStateImageBehavior = false;
+            this.lvPlannedUpcomingTrainings.View = System.Windows.Forms.View.Details;
+            // 
+            // trainingDate
+            // 
+            this.trainingDate.Text = "Kuupäev";
+            this.trainingDate.Width = 103;
+            // 
+            // trainingName
+            // 
+            this.trainingName.Text = "Treeningu nimi";
+            this.trainingName.Width = 177;
+            // 
+            // trainingDuration
+            // 
+            this.trainingDuration.Text = "Kestus";
+            this.trainingDuration.Width = 69;
             // 
             // lblTrainingsSlogan
             // 
@@ -512,26 +730,26 @@
             this.lblTrainingsSlogan.TabIndex = 42;
             this.lblTrainingsSlogan.Text = "Treeni täna, \r\nvõida homme!";
             // 
-            // GroupBox11
+            // gbTrainingInsertionToDatabase
             // 
-            this.GroupBox11.Controls.Add(this.pbTrainingInsertionSuccessful);
-            this.GroupBox11.Controls.Add(this.txtTrainingInsertionKcal);
-            this.GroupBox11.Controls.Add(this.txtTrainingInsertionName);
-            this.GroupBox11.Controls.Add(this.btnTrainingInsertion);
-            this.GroupBox11.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox11.Location = new System.Drawing.Point(30, 402);
-            this.GroupBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.GroupBox11.Name = "GroupBox11";
-            this.GroupBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBox11.Size = new System.Drawing.Size(610, 167);
-            this.GroupBox11.TabIndex = 41;
-            this.GroupBox11.TabStop = false;
-            this.GroupBox11.Text = "Treeningu lisamine andmebaasi";
+            this.gbTrainingInsertionToDatabase.Controls.Add(this.pbTrainingInsertionSuccessful);
+            this.gbTrainingInsertionToDatabase.Controls.Add(this.txtTrainingInsertionKcal);
+            this.gbTrainingInsertionToDatabase.Controls.Add(this.txtTrainingInsertionName);
+            this.gbTrainingInsertionToDatabase.Controls.Add(this.btnTrainingInsertion);
+            this.gbTrainingInsertionToDatabase.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbTrainingInsertionToDatabase.Location = new System.Drawing.Point(30, 402);
+            this.gbTrainingInsertionToDatabase.Margin = new System.Windows.Forms.Padding(2);
+            this.gbTrainingInsertionToDatabase.Name = "gbTrainingInsertionToDatabase";
+            this.gbTrainingInsertionToDatabase.Padding = new System.Windows.Forms.Padding(2);
+            this.gbTrainingInsertionToDatabase.Size = new System.Drawing.Size(420, 167);
+            this.gbTrainingInsertionToDatabase.TabIndex = 41;
+            this.gbTrainingInsertionToDatabase.TabStop = false;
+            this.gbTrainingInsertionToDatabase.Text = "Treeningu lisamine andmebaasi";
             // 
             // pbTrainingInsertionSuccessful
             // 
             this.pbTrainingInsertionSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbTrainingInsertionSuccessful.Location = new System.Drawing.Point(350, 106);
+            this.pbTrainingInsertionSuccessful.Location = new System.Drawing.Point(350, 99);
             this.pbTrainingInsertionSuccessful.Name = "pbTrainingInsertionSuccessful";
             this.pbTrainingInsertionSuccessful.Size = new System.Drawing.Size(51, 42);
             this.pbTrainingInsertionSuccessful.TabIndex = 42;
@@ -541,20 +759,24 @@
             // txtTrainingInsertionKcal
             // 
             this.txtTrainingInsertionKcal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainingInsertionKcal.Location = new System.Drawing.Point(289, 68);
+            this.txtTrainingInsertionKcal.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTrainingInsertionKcal.Location = new System.Drawing.Point(308, 58);
             this.txtTrainingInsertionKcal.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtTrainingInsertionKcal.Name = "txtTrainingInsertionKcal";
-            this.txtTrainingInsertionKcal.Size = new System.Drawing.Size(112, 27);
+            this.txtTrainingInsertionKcal.Size = new System.Drawing.Size(93, 27);
             this.txtTrainingInsertionKcal.TabIndex = 31;
+            this.txtTrainingInsertionKcal.Text = "Kalorid";
             // 
             // txtTrainingInsertionName
             // 
             this.txtTrainingInsertionName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainingInsertionName.Location = new System.Drawing.Point(15, 68);
+            this.txtTrainingInsertionName.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTrainingInsertionName.Location = new System.Drawing.Point(15, 58);
             this.txtTrainingInsertionName.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.txtTrainingInsertionName.Name = "txtTrainingInsertionName";
-            this.txtTrainingInsertionName.Size = new System.Drawing.Size(262, 27);
+            this.txtTrainingInsertionName.Size = new System.Drawing.Size(276, 27);
             this.txtTrainingInsertionName.TabIndex = 27;
+            this.txtTrainingInsertionName.Text = "Nimetus";
             // 
             // btnTrainingInsertion
             // 
@@ -564,7 +786,7 @@
             this.btnTrainingInsertion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrainingInsertion.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrainingInsertion.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnTrainingInsertion.Location = new System.Drawing.Point(15, 103);
+            this.btnTrainingInsertion.Location = new System.Drawing.Point(15, 99);
             this.btnTrainingInsertion.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnTrainingInsertion.Name = "btnTrainingInsertion";
             this.btnTrainingInsertion.Size = new System.Drawing.Size(276, 42);
@@ -722,6 +944,17 @@
             this.pnlSleep.Name = "pnlSleep";
             this.pnlSleep.Size = new System.Drawing.Size(1039, 581);
             this.pnlSleep.TabIndex = 5;
+            // 
+            // lblSleepSlogan
+            // 
+            this.lblSleepSlogan.AutoSize = true;
+            this.lblSleepSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSleepSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.lblSleepSlogan.Location = new System.Drawing.Point(724, 15);
+            this.lblSleepSlogan.Name = "lblSleepSlogan";
+            this.lblSleepSlogan.Size = new System.Drawing.Size(297, 116);
+            this.lblSleepSlogan.TabIndex = 44;
+            this.lblSleepSlogan.Text = "Hea uni \r\non edu alus";
             // 
             // lblSleepTitle
             // 
@@ -1325,27 +1558,16 @@
             this.successPbTimer.Interval = 1000;
             this.successPbTimer.Tick += new System.EventHandler(this.successPbTimer_Tick);
             // 
-            // lblSleepSlogan
+            // mcPlanTrainings
             // 
-            this.lblSleepSlogan.AutoSize = true;
-            this.lblSleepSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSleepSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblSleepSlogan.Location = new System.Drawing.Point(724, 15);
-            this.lblSleepSlogan.Name = "lblSleepSlogan";
-            this.lblSleepSlogan.Size = new System.Drawing.Size(297, 116);
-            this.lblSleepSlogan.TabIndex = 44;
-            this.lblSleepSlogan.Text = "Hea uni \r\non edu alus";
+            this.mcPlanTrainings.Location = new System.Drawing.Point(431, 46);
+            this.mcPlanTrainings.Name = "mcPlanTrainings";
+            this.mcPlanTrainings.TabIndex = 48;
             // 
-            // lblHomePageSlogan
+            // trainingCalories
             // 
-            this.lblHomePageSlogan.AutoSize = true;
-            this.lblHomePageSlogan.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHomePageSlogan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.lblHomePageSlogan.Location = new System.Drawing.Point(698, 15);
-            this.lblHomePageSlogan.Name = "lblHomePageSlogan";
-            this.lblHomePageSlogan.Size = new System.Drawing.Size(323, 116);
-            this.lblHomePageSlogan.TabIndex = 45;
-            this.lblHomePageSlogan.Text = "Tugev keha, \r\ntugev vaim";
+            this.trainingCalories.Text = "Kalorid";
+            this.trainingCalories.Width = 78;
             // 
             // ApexFit_mainWindow
             // 
@@ -1383,8 +1605,13 @@
             this.pnlFoods.PerformLayout();
             this.pnlTrainings.ResumeLayout(false);
             this.pnlTrainings.PerformLayout();
-            this.GroupBox11.ResumeLayout(false);
-            this.GroupBox11.PerformLayout();
+            this.gbPlanTrainings.ResumeLayout(false);
+            this.gbPlanTrainings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddTrainingToPlanSuccessful)).EndInit();
+            this.gbPlannedTrainings.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlannedUpcomingTrainingRemoval)).EndInit();
+            this.gbTrainingInsertionToDatabase.ResumeLayout(false);
+            this.gbTrainingInsertionToDatabase.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingInsertionSuccessful)).EndInit();
             this.gbTrainingRemoval.ResumeLayout(false);
             this.gbTrainingRemoval.PerformLayout();
@@ -1500,7 +1727,7 @@
         internal System.Windows.Forms.Label lblTrainingRemovalLabel;
         internal System.Windows.Forms.Button btnDeleteTraining;
         internal System.Windows.Forms.ComboBox cmbTrainingRemoval;
-        internal System.Windows.Forms.GroupBox GroupBox11;
+        internal System.Windows.Forms.GroupBox gbTrainingInsertionToDatabase;
         internal System.Windows.Forms.PictureBox pbTrainingInsertionSuccessful;
         internal System.Windows.Forms.TextBox txtTrainingInsertionKcal;
         internal System.Windows.Forms.TextBox txtTrainingInsertionName;
@@ -1511,5 +1738,24 @@
         private System.Windows.Forms.Label lblGoalsSlogan;
         private System.Windows.Forms.Label lblSleepSlogan;
         private System.Windows.Forms.Label lblHomePageSlogan;
+        internal System.Windows.Forms.GroupBox gbPlannedTrainings;
+        private System.Windows.Forms.ListView lvPlannedUpcomingTrainings;
+        internal System.Windows.Forms.Button btnPlannedUpcomingTrainingRemoval;
+        private System.Windows.Forms.ColumnHeader trainingDate;
+        private System.Windows.Forms.ColumnHeader trainingName;
+        private System.Windows.Forms.ColumnHeader trainingDuration;
+        internal System.Windows.Forms.GroupBox gbPlanTrainings;
+        internal System.Windows.Forms.TextBox txtPlanTrainingsDuration;
+        internal System.Windows.Forms.Label lblAddToTrainingPlan;
+        internal System.Windows.Forms.ComboBox cmbAddToTrainingPlan;
+        internal System.Windows.Forms.PictureBox pbAddTrainingToPlanSuccessful;
+        internal System.Windows.Forms.Button btnAddTrainingToPlan;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader planTrainingDate;
+        private System.Windows.Forms.ColumnHeader planTrainingName;
+        private System.Windows.Forms.ColumnHeader planTrainingDuration;
+        internal System.Windows.Forms.PictureBox pbPlannedUpcomingTrainingRemoval;
+        private System.Windows.Forms.MonthCalendar mcPlanTrainings;
+        private System.Windows.Forms.ColumnHeader trainingCalories;
     }
 }

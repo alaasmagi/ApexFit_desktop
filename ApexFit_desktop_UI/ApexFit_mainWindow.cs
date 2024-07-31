@@ -1,5 +1,4 @@
-﻿using MainInterface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,8 +36,7 @@ namespace ApexFit_desktop_UI
         }
 
         private void ResetControls()
-        {
-            PrimaryService 
+        { 
 
         }
         private void TextboxReset()
@@ -517,6 +515,18 @@ namespace ApexFit_desktop_UI
                     MessageBox.Show("Konto kustutamine ebaõnnestus!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
