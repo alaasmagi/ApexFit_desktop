@@ -55,6 +55,7 @@
             this.lblFoodsTitle = new System.Windows.Forms.Label();
             this.pnlTrainings = new System.Windows.Forms.Panel();
             this.gbPlanTrainings = new System.Windows.Forms.GroupBox();
+            this.mcPlanTrainings = new System.Windows.Forms.MonthCalendar();
             this.txtPlanTrainingsDuration = new System.Windows.Forms.TextBox();
             this.lblAddToTrainingPlan = new System.Windows.Forms.Label();
             this.cmbAddToTrainingPlan = new System.Windows.Forms.ComboBox();
@@ -64,6 +65,7 @@
             this.planTrainingDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.planTrainingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.planTrainingDuration = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.trainingCalories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gbPlannedTrainings = new System.Windows.Forms.GroupBox();
             this.pbPlannedUpcomingTrainingRemoval = new System.Windows.Forms.PictureBox();
             this.btnPlannedUpcomingTrainingRemoval = new System.Windows.Forms.Button();
@@ -135,8 +137,27 @@
             this.btnPurchaseProVersion = new System.Windows.Forms.Button();
             this.lblProfileSettingsTitle = new System.Windows.Forms.Label();
             this.successPbTimer = new System.Windows.Forms.Timer(this.components);
-            this.mcPlanTrainings = new System.Windows.Forms.MonthCalendar();
-            this.trainingCalories = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pnlApplicationInfo = new System.Windows.Forms.Panel();
+            this.pbJanarLogo = new System.Windows.Forms.PictureBox();
+            this.gbApplicationInfoEnergySource = new System.Windows.Forms.GroupBox();
+            this.lnklblMonster = new System.Windows.Forms.LinkLabel();
+            this.lnklblRedbull = new System.Windows.Forms.LinkLabel();
+            this.lnklblPaulig = new System.Windows.Forms.LinkLabel();
+            this.lblApplicationInfoSponsorshipDisclaimer = new System.Windows.Forms.Label();
+            this.pbRedbullLogo = new System.Windows.Forms.PictureBox();
+            this.pbPauligLogo = new System.Windows.Forms.PictureBox();
+            this.pbMonsterLogo = new System.Windows.Forms.PictureBox();
+            this.lblApplicationInfoLabel4 = new System.Windows.Forms.Label();
+            this.lblApplicationInfoLabel3 = new System.Windows.Forms.Label();
+            this.lblApplicationInfoLabel2 = new System.Windows.Forms.Label();
+            this.lblApplicationInfoLabel1 = new System.Windows.Forms.Label();
+            this.gbDeveloperInfo = new System.Windows.Forms.GroupBox();
+            this.pbDeveloperPhoto = new System.Windows.Forms.PictureBox();
+            this.lnklblDevLinkedin = new System.Windows.Forms.LinkLabel();
+            this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
+            this.lblDeveloperName = new System.Windows.Forms.Label();
+            this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
+            this.lnklblJanarLink = new System.Windows.Forms.LinkLabel();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -169,6 +190,15 @@
             this.gbChangeUserPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).BeginInit();
             this.gbProVersionPurchase.SuspendLayout();
+            this.pnlApplicationInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJanarLogo)).BeginInit();
+            this.gbApplicationInfoEnergySource.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedbullLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPauligLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMonsterLogo)).BeginInit();
+            this.gbDeveloperInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -358,6 +388,7 @@
             this.pnlAppLogo.Name = "pnlAppLogo";
             this.pnlAppLogo.Size = new System.Drawing.Size(225, 100);
             this.pnlAppLogo.TabIndex = 1;
+            this.pnlAppLogo.Click += new System.EventHandler(this.pnlAppLogo_Click);
             // 
             // pnlTopBar
             // 
@@ -554,6 +585,12 @@
             this.gbPlanTrainings.TabStop = false;
             this.gbPlanTrainings.Text = "Planeeritud treeningud";
             // 
+            // mcPlanTrainings
+            // 
+            this.mcPlanTrainings.Location = new System.Drawing.Point(431, 46);
+            this.mcPlanTrainings.Name = "mcPlanTrainings";
+            this.mcPlanTrainings.TabIndex = 48;
+            // 
             // txtPlanTrainingsDuration
             // 
             this.txtPlanTrainingsDuration.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -649,6 +686,11 @@
             // 
             this.planTrainingDuration.Text = "Kestus";
             this.planTrainingDuration.Width = 78;
+            // 
+            // trainingCalories
+            // 
+            this.trainingCalories.Text = "Kalorid";
+            this.trainingCalories.Width = 78;
             // 
             // gbPlannedTrainings
             // 
@@ -1558,16 +1600,284 @@
             this.successPbTimer.Interval = 1000;
             this.successPbTimer.Tick += new System.EventHandler(this.successPbTimer_Tick);
             // 
-            // mcPlanTrainings
+            // pnlApplicationInfo
             // 
-            this.mcPlanTrainings.Location = new System.Drawing.Point(431, 46);
-            this.mcPlanTrainings.Name = "mcPlanTrainings";
-            this.mcPlanTrainings.TabIndex = 48;
+            this.pnlApplicationInfo.Controls.Add(this.lnklblJanarLink);
+            this.pnlApplicationInfo.Controls.Add(this.pbJanarLogo);
+            this.pnlApplicationInfo.Controls.Add(this.gbApplicationInfoEnergySource);
+            this.pnlApplicationInfo.Controls.Add(this.lblApplicationInfoLabel4);
+            this.pnlApplicationInfo.Controls.Add(this.lblApplicationInfoLabel3);
+            this.pnlApplicationInfo.Controls.Add(this.lblApplicationInfoLabel2);
+            this.pnlApplicationInfo.Controls.Add(this.lblApplicationInfoLabel1);
+            this.pnlApplicationInfo.Controls.Add(this.gbDeveloperInfo);
+            this.pnlApplicationInfo.Controls.Add(this.pbApplicationInfoLogo);
+            this.pnlApplicationInfo.Location = new System.Drawing.Point(225, 100);
+            this.pnlApplicationInfo.Name = "pnlApplicationInfo";
+            this.pnlApplicationInfo.Size = new System.Drawing.Size(1039, 581);
+            this.pnlApplicationInfo.TabIndex = 49;
             // 
-            // trainingCalories
+            // pbJanarLogo
             // 
-            this.trainingCalories.Text = "Kalorid";
-            this.trainingCalories.Width = 78;
+            this.pbJanarLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbJanarLogo.BackgroundImage")));
+            this.pbJanarLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbJanarLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbJanarLogo.Image")));
+            this.pbJanarLogo.Location = new System.Drawing.Point(84, 219);
+            this.pbJanarLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbJanarLogo.Name = "pbJanarLogo";
+            this.pbJanarLogo.Size = new System.Drawing.Size(180, 81);
+            this.pbJanarLogo.TabIndex = 11;
+            this.pbJanarLogo.TabStop = false;
+            // 
+            // gbApplicationInfoEnergySource
+            // 
+            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblMonster);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblRedbull);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblPaulig);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.lblApplicationInfoSponsorshipDisclaimer);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.pbRedbullLogo);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.pbPauligLogo);
+            this.gbApplicationInfoEnergySource.Controls.Add(this.pbMonsterLogo);
+            this.gbApplicationInfoEnergySource.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbApplicationInfoEnergySource.ForeColor = System.Drawing.Color.Black;
+            this.gbApplicationInfoEnergySource.Location = new System.Drawing.Point(84, 348);
+            this.gbApplicationInfoEnergySource.Margin = new System.Windows.Forms.Padding(2);
+            this.gbApplicationInfoEnergySource.Name = "gbApplicationInfoEnergySource";
+            this.gbApplicationInfoEnergySource.Padding = new System.Windows.Forms.Padding(2);
+            this.gbApplicationInfoEnergySource.Size = new System.Drawing.Size(887, 210);
+            this.gbApplicationInfoEnergySource.TabIndex = 7;
+            this.gbApplicationInfoEnergySource.TabStop = false;
+            this.gbApplicationInfoEnergySource.Text = "Arendaja energiaallikad";
+            // 
+            // lnklblMonster
+            // 
+            this.lnklblMonster.AutoSize = true;
+            this.lnklblMonster.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblMonster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnklblMonster.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblMonster.Location = new System.Drawing.Point(720, 161);
+            this.lnklblMonster.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblMonster.Name = "lnklblMonster";
+            this.lnklblMonster.Size = new System.Drawing.Size(34, 16);
+            this.lnklblMonster.TabIndex = 19;
+            this.lnklblMonster.TabStop = true;
+            this.lnklblMonster.Text = "LINK";
+            this.lnklblMonster.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblMonster_LinkClicked);
+            // 
+            // lnklblRedbull
+            // 
+            this.lnklblRedbull.AutoSize = true;
+            this.lnklblRedbull.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblRedbull.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnklblRedbull.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblRedbull.Location = new System.Drawing.Point(421, 161);
+            this.lnklblRedbull.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblRedbull.Name = "lnklblRedbull";
+            this.lnklblRedbull.Size = new System.Drawing.Size(34, 16);
+            this.lnklblRedbull.TabIndex = 18;
+            this.lnklblRedbull.TabStop = true;
+            this.lnklblRedbull.Text = "LINK";
+            this.lnklblRedbull.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblRedbull_LinkClicked);
+            // 
+            // lnklblPaulig
+            // 
+            this.lnklblPaulig.AutoSize = true;
+            this.lnklblPaulig.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblPaulig.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnklblPaulig.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblPaulig.Location = new System.Drawing.Point(138, 161);
+            this.lnklblPaulig.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblPaulig.Name = "lnklblPaulig";
+            this.lnklblPaulig.Size = new System.Drawing.Size(34, 16);
+            this.lnklblPaulig.TabIndex = 17;
+            this.lnklblPaulig.TabStop = true;
+            this.lnklblPaulig.Text = "LINK";
+            this.lnklblPaulig.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblPaulig_LinkClicked);
+            // 
+            // lblApplicationInfoSponsorshipDisclaimer
+            // 
+            this.lblApplicationInfoSponsorshipDisclaimer.AutoSize = true;
+            this.lblApplicationInfoSponsorshipDisclaimer.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationInfoSponsorshipDisclaimer.ForeColor = System.Drawing.Color.Black;
+            this.lblApplicationInfoSponsorshipDisclaimer.Location = new System.Drawing.Point(336, 187);
+            this.lblApplicationInfoSponsorshipDisclaimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApplicationInfoSponsorshipDisclaimer.Name = "lblApplicationInfoSponsorshipDisclaimer";
+            this.lblApplicationInfoSponsorshipDisclaimer.Size = new System.Drawing.Size(222, 16);
+            this.lblApplicationInfoSponsorshipDisclaimer.TabIndex = 16;
+            this.lblApplicationInfoSponsorshipDisclaimer.Text = "(ei ole mingil viisil sponsoreeritud!)";
+            // 
+            // pbRedbullLogo
+            // 
+            this.pbRedbullLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbRedbullLogo.BackgroundImage")));
+            this.pbRedbullLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbRedbullLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbRedbullLogo.Location = new System.Drawing.Point(312, 41);
+            this.pbRedbullLogo.Name = "pbRedbullLogo";
+            this.pbRedbullLogo.Size = new System.Drawing.Size(261, 110);
+            this.pbRedbullLogo.TabIndex = 8;
+            this.pbRedbullLogo.TabStop = false;
+            // 
+            // pbPauligLogo
+            // 
+            this.pbPauligLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPauligLogo.BackgroundImage")));
+            this.pbPauligLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbPauligLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbPauligLogo.Location = new System.Drawing.Point(23, 41);
+            this.pbPauligLogo.Name = "pbPauligLogo";
+            this.pbPauligLogo.Size = new System.Drawing.Size(261, 110);
+            this.pbPauligLogo.TabIndex = 7;
+            this.pbPauligLogo.TabStop = false;
+            // 
+            // pbMonsterLogo
+            // 
+            this.pbMonsterLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbMonsterLogo.BackgroundImage")));
+            this.pbMonsterLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbMonsterLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbMonsterLogo.Location = new System.Drawing.Point(600, 41);
+            this.pbMonsterLogo.Name = "pbMonsterLogo";
+            this.pbMonsterLogo.Size = new System.Drawing.Size(261, 110);
+            this.pbMonsterLogo.TabIndex = 6;
+            this.pbMonsterLogo.TabStop = false;
+            // 
+            // lblApplicationInfoLabel4
+            // 
+            this.lblApplicationInfoLabel4.AutoSize = true;
+            this.lblApplicationInfoLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationInfoLabel4.ForeColor = System.Drawing.Color.Black;
+            this.lblApplicationInfoLabel4.Location = new System.Drawing.Point(354, 158);
+            this.lblApplicationInfoLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApplicationInfoLabel4.Name = "lblApplicationInfoLabel4";
+            this.lblApplicationInfoLabel4.Size = new System.Drawing.Size(72, 21);
+            this.lblApplicationInfoLabel4.TabIndex = 10;
+            this.lblApplicationInfoLabel4.Text = "X-faktor";
+            // 
+            // lblApplicationInfoLabel3
+            // 
+            this.lblApplicationInfoLabel3.AutoSize = true;
+            this.lblApplicationInfoLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationInfoLabel3.ForeColor = System.Drawing.Color.Black;
+            this.lblApplicationInfoLabel3.Location = new System.Drawing.Point(354, 125);
+            this.lblApplicationInfoLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApplicationInfoLabel3.Name = "lblApplicationInfoLabel3";
+            this.lblApplicationInfoLabel3.Size = new System.Drawing.Size(75, 21);
+            this.lblApplicationInfoLabel3.TabIndex = 9;
+            this.lblApplicationInfoLabel3.Text = "Eesmärk";
+            // 
+            // lblApplicationInfoLabel2
+            // 
+            this.lblApplicationInfoLabel2.AutoSize = true;
+            this.lblApplicationInfoLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationInfoLabel2.ForeColor = System.Drawing.Color.Black;
+            this.lblApplicationInfoLabel2.Location = new System.Drawing.Point(354, 93);
+            this.lblApplicationInfoLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApplicationInfoLabel2.Name = "lblApplicationInfoLabel2";
+            this.lblApplicationInfoLabel2.Size = new System.Drawing.Size(66, 21);
+            this.lblApplicationInfoLabel2.TabIndex = 8;
+            this.lblApplicationInfoLabel2.Text = "Püsivus";
+            // 
+            // lblApplicationInfoLabel1
+            // 
+            this.lblApplicationInfoLabel1.AutoSize = true;
+            this.lblApplicationInfoLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApplicationInfoLabel1.ForeColor = System.Drawing.Color.Black;
+            this.lblApplicationInfoLabel1.Location = new System.Drawing.Point(354, 60);
+            this.lblApplicationInfoLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblApplicationInfoLabel1.Name = "lblApplicationInfoLabel1";
+            this.lblApplicationInfoLabel1.Size = new System.Drawing.Size(77, 21);
+            this.lblApplicationInfoLabel1.TabIndex = 7;
+            this.lblApplicationInfoLabel1.Text = "Aktiivsus";
+            // 
+            // gbDeveloperInfo
+            // 
+            this.gbDeveloperInfo.Controls.Add(this.pbDeveloperPhoto);
+            this.gbDeveloperInfo.Controls.Add(this.lnklblDevLinkedin);
+            this.gbDeveloperInfo.Controls.Add(this.lnklblDevGithub);
+            this.gbDeveloperInfo.Controls.Add(this.lblDeveloperName);
+            this.gbDeveloperInfo.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDeveloperInfo.ForeColor = System.Drawing.Color.Black;
+            this.gbDeveloperInfo.Location = new System.Drawing.Point(661, 40);
+            this.gbDeveloperInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.gbDeveloperInfo.Name = "gbDeveloperInfo";
+            this.gbDeveloperInfo.Padding = new System.Windows.Forms.Padding(2);
+            this.gbDeveloperInfo.Size = new System.Drawing.Size(336, 159);
+            this.gbDeveloperInfo.TabIndex = 2;
+            this.gbDeveloperInfo.TabStop = false;
+            this.gbDeveloperInfo.Text = "Arendaja";
+            // 
+            // pbDeveloperPhoto
+            // 
+            this.pbDeveloperPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbDeveloperPhoto.BackgroundImage")));
+            this.pbDeveloperPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbDeveloperPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbDeveloperPhoto.Location = new System.Drawing.Point(15, 32);
+            this.pbDeveloperPhoto.Name = "pbDeveloperPhoto";
+            this.pbDeveloperPhoto.Size = new System.Drawing.Size(110, 110);
+            this.pbDeveloperPhoto.TabIndex = 6;
+            this.pbDeveloperPhoto.TabStop = false;
+            // 
+            // lnklblDevLinkedin
+            // 
+            this.lnklblDevLinkedin.AutoSize = true;
+            this.lnklblDevLinkedin.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblDevLinkedin.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblDevLinkedin.Location = new System.Drawing.Point(142, 87);
+            this.lnklblDevLinkedin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblDevLinkedin.Name = "lnklblDevLinkedin";
+            this.lnklblDevLinkedin.Size = new System.Drawing.Size(75, 21);
+            this.lnklblDevLinkedin.TabIndex = 5;
+            this.lnklblDevLinkedin.TabStop = true;
+            this.lnklblDevLinkedin.Text = "LinkedIn";
+            this.lnklblDevLinkedin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblDevLinkedin_LinkClicked);
+            // 
+            // lnklblDevGithub
+            // 
+            this.lnklblDevGithub.AutoSize = true;
+            this.lnklblDevGithub.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblDevGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblDevGithub.Location = new System.Drawing.Point(251, 87);
+            this.lnklblDevGithub.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblDevGithub.Name = "lnklblDevGithub";
+            this.lnklblDevGithub.Size = new System.Drawing.Size(64, 21);
+            this.lnklblDevGithub.TabIndex = 4;
+            this.lnklblDevGithub.TabStop = true;
+            this.lnklblDevGithub.Text = "GitHub";
+            this.lnklblDevGithub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblDevGithub_LinkClicked);
+            // 
+            // lblDeveloperName
+            // 
+            this.lblDeveloperName.AutoSize = true;
+            this.lblDeveloperName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeveloperName.Location = new System.Drawing.Point(142, 64);
+            this.lblDeveloperName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDeveloperName.Name = "lblDeveloperName";
+            this.lblDeveloperName.Size = new System.Drawing.Size(178, 19);
+            this.lblDeveloperName.TabIndex = 0;
+            this.lblDeveloperName.Text = "Aleksander Laasmägi";
+            // 
+            // pbApplicationInfoLogo
+            // 
+            this.pbApplicationInfoLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbApplicationInfoLogo.BackgroundImage")));
+            this.pbApplicationInfoLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbApplicationInfoLogo.Location = new System.Drawing.Point(46, 49);
+            this.pbApplicationInfoLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pbApplicationInfoLogo.Name = "pbApplicationInfoLogo";
+            this.pbApplicationInfoLogo.Size = new System.Drawing.Size(270, 150);
+            this.pbApplicationInfoLogo.TabIndex = 1;
+            this.pbApplicationInfoLogo.TabStop = false;
+            // 
+            // lnklblJanarLink
+            // 
+            this.lnklblJanarLink.AutoSize = true;
+            this.lnklblJanarLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblJanarLink.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnklblJanarLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.lnklblJanarLink.Location = new System.Drawing.Point(118, 302);
+            this.lnklblJanarLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lnklblJanarLink.Name = "lnklblJanarLink";
+            this.lnklblJanarLink.Size = new System.Drawing.Size(116, 16);
+            this.lnklblJanarLink.TabIndex = 20;
+            this.lnklblJanarLink.TabStop = true;
+            this.lnklblJanarLink.Text = "Esialgne versioon";
+            this.lnklblJanarLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblJanarLink_LinkClicked);
             // 
             // ApexFit_mainWindow
             // 
@@ -1575,6 +1885,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlSleep);
@@ -1644,6 +1955,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUserPasswordChangeSuccessful)).EndInit();
             this.gbProVersionPurchase.ResumeLayout(false);
             this.gbProVersionPurchase.PerformLayout();
+            this.pnlApplicationInfo.ResumeLayout(false);
+            this.pnlApplicationInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJanarLogo)).EndInit();
+            this.gbApplicationInfoEnergySource.ResumeLayout(false);
+            this.gbApplicationInfoEnergySource.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedbullLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPauligLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMonsterLogo)).EndInit();
+            this.gbDeveloperInfo.ResumeLayout(false);
+            this.gbDeveloperInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1757,5 +2080,26 @@
         internal System.Windows.Forms.PictureBox pbPlannedUpcomingTrainingRemoval;
         private System.Windows.Forms.MonthCalendar mcPlanTrainings;
         private System.Windows.Forms.ColumnHeader trainingCalories;
+        private System.Windows.Forms.Panel pnlApplicationInfo;
+        internal System.Windows.Forms.GroupBox gbDeveloperInfo;
+        internal System.Windows.Forms.LinkLabel lnklblDevGithub;
+        internal System.Windows.Forms.Label lblDeveloperName;
+        internal System.Windows.Forms.PictureBox pbApplicationInfoLogo;
+        internal System.Windows.Forms.LinkLabel lnklblDevLinkedin;
+        private System.Windows.Forms.PictureBox pbDeveloperPhoto;
+        internal System.Windows.Forms.Label lblApplicationInfoLabel1;
+        internal System.Windows.Forms.Label lblApplicationInfoLabel2;
+        internal System.Windows.Forms.Label lblApplicationInfoLabel4;
+        internal System.Windows.Forms.Label lblApplicationInfoLabel3;
+        internal System.Windows.Forms.GroupBox gbApplicationInfoEnergySource;
+        private System.Windows.Forms.PictureBox pbPauligLogo;
+        private System.Windows.Forms.PictureBox pbMonsterLogo;
+        internal System.Windows.Forms.LinkLabel lnklblRedbull;
+        internal System.Windows.Forms.LinkLabel lnklblPaulig;
+        internal System.Windows.Forms.Label lblApplicationInfoSponsorshipDisclaimer;
+        private System.Windows.Forms.PictureBox pbRedbullLogo;
+        internal System.Windows.Forms.LinkLabel lnklblMonster;
+        internal System.Windows.Forms.PictureBox pbJanarLogo;
+        internal System.Windows.Forms.LinkLabel lnklblJanarLink;
     }
 }
