@@ -140,9 +140,6 @@
             this.pnlApplicationInfo = new System.Windows.Forms.Panel();
             this.pbJanarLogo = new System.Windows.Forms.PictureBox();
             this.gbApplicationInfoEnergySource = new System.Windows.Forms.GroupBox();
-            this.lnklblMonster = new System.Windows.Forms.LinkLabel();
-            this.lnklblRedbull = new System.Windows.Forms.LinkLabel();
-            this.lnklblPaulig = new System.Windows.Forms.LinkLabel();
             this.lblApplicationInfoSponsorshipDisclaimer = new System.Windows.Forms.Label();
             this.pbRedbullLogo = new System.Windows.Forms.PictureBox();
             this.pbPauligLogo = new System.Windows.Forms.PictureBox();
@@ -157,7 +154,16 @@
             this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
-            this.lnklblJanarLink = new System.Windows.Forms.LinkLabel();
+            this.pnlAnalysisButtons = new System.Windows.Forms.Panel();
+            this.btnAnalysisOverall = new System.Windows.Forms.Button();
+            this.btnAnalysisFoods = new System.Windows.Forms.Button();
+            this.btnAnalysisTrainings = new System.Windows.Forms.Button();
+            this.btnAnalysisSleep = new System.Windows.Forms.Button();
+            this.pnlAnalysisButtonBackPanel = new System.Windows.Forms.Panel();
+            this.subpnlAnalysisOverall = new System.Windows.Forms.Panel();
+            this.subpnlAnalysisFoods = new System.Windows.Forms.Panel();
+            this.subpnlAnalysisTrainings = new System.Windows.Forms.Panel();
+            this.subpnlAnalysisSleep = new System.Windows.Forms.Panel();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -199,6 +205,7 @@
             this.gbDeveloperInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).BeginInit();
+            this.pnlAnalysisButtons.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -916,6 +923,11 @@
             // 
             // pnlAnalysis
             // 
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisSleep);
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisTrainings);
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisFoods);
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisOverall);
+            this.pnlAnalysis.Controls.Add(this.pnlAnalysisButtons);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisSlogan);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisTitle);
             this.pnlAnalysis.Location = new System.Drawing.Point(225, 100);
@@ -1602,7 +1614,6 @@
             // 
             // pnlApplicationInfo
             // 
-            this.pnlApplicationInfo.Controls.Add(this.lnklblJanarLink);
             this.pnlApplicationInfo.Controls.Add(this.pbJanarLogo);
             this.pnlApplicationInfo.Controls.Add(this.gbApplicationInfoEnergySource);
             this.pnlApplicationInfo.Controls.Add(this.lblApplicationInfoLabel4);
@@ -1627,78 +1638,31 @@
             this.pbJanarLogo.Size = new System.Drawing.Size(180, 81);
             this.pbJanarLogo.TabIndex = 11;
             this.pbJanarLogo.TabStop = false;
+            this.pbJanarLogo.Click += new System.EventHandler(this.pbJanarLogo_Click);
             // 
             // gbApplicationInfoEnergySource
             // 
-            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblMonster);
-            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblRedbull);
-            this.gbApplicationInfoEnergySource.Controls.Add(this.lnklblPaulig);
             this.gbApplicationInfoEnergySource.Controls.Add(this.lblApplicationInfoSponsorshipDisclaimer);
             this.gbApplicationInfoEnergySource.Controls.Add(this.pbRedbullLogo);
             this.gbApplicationInfoEnergySource.Controls.Add(this.pbPauligLogo);
             this.gbApplicationInfoEnergySource.Controls.Add(this.pbMonsterLogo);
             this.gbApplicationInfoEnergySource.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbApplicationInfoEnergySource.ForeColor = System.Drawing.Color.Black;
-            this.gbApplicationInfoEnergySource.Location = new System.Drawing.Point(84, 348);
+            this.gbApplicationInfoEnergySource.Location = new System.Drawing.Point(84, 363);
             this.gbApplicationInfoEnergySource.Margin = new System.Windows.Forms.Padding(2);
             this.gbApplicationInfoEnergySource.Name = "gbApplicationInfoEnergySource";
             this.gbApplicationInfoEnergySource.Padding = new System.Windows.Forms.Padding(2);
-            this.gbApplicationInfoEnergySource.Size = new System.Drawing.Size(887, 210);
+            this.gbApplicationInfoEnergySource.Size = new System.Drawing.Size(887, 195);
             this.gbApplicationInfoEnergySource.TabIndex = 7;
             this.gbApplicationInfoEnergySource.TabStop = false;
             this.gbApplicationInfoEnergySource.Text = "Arendaja energiaallikad";
-            // 
-            // lnklblMonster
-            // 
-            this.lnklblMonster.AutoSize = true;
-            this.lnklblMonster.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblMonster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblMonster.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblMonster.Location = new System.Drawing.Point(720, 161);
-            this.lnklblMonster.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lnklblMonster.Name = "lnklblMonster";
-            this.lnklblMonster.Size = new System.Drawing.Size(34, 16);
-            this.lnklblMonster.TabIndex = 19;
-            this.lnklblMonster.TabStop = true;
-            this.lnklblMonster.Text = "LINK";
-            this.lnklblMonster.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblMonster_LinkClicked);
-            // 
-            // lnklblRedbull
-            // 
-            this.lnklblRedbull.AutoSize = true;
-            this.lnklblRedbull.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblRedbull.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblRedbull.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblRedbull.Location = new System.Drawing.Point(421, 161);
-            this.lnklblRedbull.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lnklblRedbull.Name = "lnklblRedbull";
-            this.lnklblRedbull.Size = new System.Drawing.Size(34, 16);
-            this.lnklblRedbull.TabIndex = 18;
-            this.lnklblRedbull.TabStop = true;
-            this.lnklblRedbull.Text = "LINK";
-            this.lnklblRedbull.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblRedbull_LinkClicked);
-            // 
-            // lnklblPaulig
-            // 
-            this.lnklblPaulig.AutoSize = true;
-            this.lnklblPaulig.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblPaulig.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblPaulig.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblPaulig.Location = new System.Drawing.Point(138, 161);
-            this.lnklblPaulig.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lnklblPaulig.Name = "lnklblPaulig";
-            this.lnklblPaulig.Size = new System.Drawing.Size(34, 16);
-            this.lnklblPaulig.TabIndex = 17;
-            this.lnklblPaulig.TabStop = true;
-            this.lnklblPaulig.Text = "LINK";
-            this.lnklblPaulig.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblPaulig_LinkClicked);
             // 
             // lblApplicationInfoSponsorshipDisclaimer
             // 
             this.lblApplicationInfoSponsorshipDisclaimer.AutoSize = true;
             this.lblApplicationInfoSponsorshipDisclaimer.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApplicationInfoSponsorshipDisclaimer.ForeColor = System.Drawing.Color.Black;
-            this.lblApplicationInfoSponsorshipDisclaimer.Location = new System.Drawing.Point(336, 187);
+            this.lblApplicationInfoSponsorshipDisclaimer.Location = new System.Drawing.Point(336, 171);
             this.lblApplicationInfoSponsorshipDisclaimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApplicationInfoSponsorshipDisclaimer.Name = "lblApplicationInfoSponsorshipDisclaimer";
             this.lblApplicationInfoSponsorshipDisclaimer.Size = new System.Drawing.Size(222, 16);
@@ -1715,6 +1679,7 @@
             this.pbRedbullLogo.Size = new System.Drawing.Size(261, 110);
             this.pbRedbullLogo.TabIndex = 8;
             this.pbRedbullLogo.TabStop = false;
+            this.pbRedbullLogo.Click += new System.EventHandler(this.pbRedbullLogo_Click);
             // 
             // pbPauligLogo
             // 
@@ -1726,6 +1691,7 @@
             this.pbPauligLogo.Size = new System.Drawing.Size(261, 110);
             this.pbPauligLogo.TabIndex = 7;
             this.pbPauligLogo.TabStop = false;
+            this.pbPauligLogo.Click += new System.EventHandler(this.pbPauligLogo_Click);
             // 
             // pbMonsterLogo
             // 
@@ -1737,6 +1703,7 @@
             this.pbMonsterLogo.Size = new System.Drawing.Size(261, 110);
             this.pbMonsterLogo.TabIndex = 6;
             this.pbMonsterLogo.TabStop = false;
+            this.pbMonsterLogo.Click += new System.EventHandler(this.pbMonsterLogo_Click);
             // 
             // lblApplicationInfoLabel4
             // 
@@ -1863,21 +1830,127 @@
             this.pbApplicationInfoLogo.Size = new System.Drawing.Size(270, 150);
             this.pbApplicationInfoLogo.TabIndex = 1;
             this.pbApplicationInfoLogo.TabStop = false;
+            this.pbApplicationInfoLogo.Click += new System.EventHandler(this.pbApplicationInfoLogo_Click);
             // 
-            // lnklblJanarLink
+            // pnlAnalysisButtons
             // 
-            this.lnklblJanarLink.AutoSize = true;
-            this.lnklblJanarLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblJanarLink.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblJanarLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
-            this.lnklblJanarLink.Location = new System.Drawing.Point(118, 302);
-            this.lnklblJanarLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lnklblJanarLink.Name = "lnklblJanarLink";
-            this.lnklblJanarLink.Size = new System.Drawing.Size(116, 16);
-            this.lnklblJanarLink.TabIndex = 20;
-            this.lnklblJanarLink.TabStop = true;
-            this.lnklblJanarLink.Text = "Esialgne versioon";
-            this.lnklblJanarLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblJanarLink_LinkClicked);
+            this.pnlAnalysisButtons.Controls.Add(this.btnAnalysisTrainings);
+            this.pnlAnalysisButtons.Controls.Add(this.btnAnalysisSleep);
+            this.pnlAnalysisButtons.Controls.Add(this.btnAnalysisFoods);
+            this.pnlAnalysisButtons.Controls.Add(this.btnAnalysisOverall);
+            this.pnlAnalysisButtons.Controls.Add(this.pnlAnalysisButtonBackPanel);
+            this.pnlAnalysisButtons.Location = new System.Drawing.Point(30, 76);
+            this.pnlAnalysisButtons.Name = "pnlAnalysisButtons";
+            this.pnlAnalysisButtons.Size = new System.Drawing.Size(447, 47);
+            this.pnlAnalysisButtons.TabIndex = 45;
+            // 
+            // btnAnalysisOverall
+            // 
+            this.btnAnalysisOverall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
+            this.btnAnalysisOverall.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAnalysisOverall.FlatAppearance.BorderSize = 0;
+            this.btnAnalysisOverall.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(241)))), ((int)(((byte)(237)))));
+            this.btnAnalysisOverall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysisOverall.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysisOverall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnAnalysisOverall.Location = new System.Drawing.Point(0, 0);
+            this.btnAnalysisOverall.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalysisOverall.Name = "btnAnalysisOverall";
+            this.btnAnalysisOverall.Size = new System.Drawing.Size(111, 47);
+            this.btnAnalysisOverall.TabIndex = 16;
+            this.btnAnalysisOverall.Text = "Üldine";
+            this.btnAnalysisOverall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalysisOverall.UseVisualStyleBackColor = false;
+            // 
+            // btnAnalysisFoods
+            // 
+            this.btnAnalysisFoods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
+            this.btnAnalysisFoods.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAnalysisFoods.FlatAppearance.BorderSize = 0;
+            this.btnAnalysisFoods.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(241)))), ((int)(((byte)(237)))));
+            this.btnAnalysisFoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysisFoods.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysisFoods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnAnalysisFoods.Location = new System.Drawing.Point(112, 0);
+            this.btnAnalysisFoods.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalysisFoods.Name = "btnAnalysisFoods";
+            this.btnAnalysisFoods.Size = new System.Drawing.Size(111, 47);
+            this.btnAnalysisFoods.TabIndex = 17;
+            this.btnAnalysisFoods.Text = "Toitumine";
+            this.btnAnalysisFoods.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalysisFoods.UseVisualStyleBackColor = false;
+            // 
+            // btnAnalysisTrainings
+            // 
+            this.btnAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
+            this.btnAnalysisTrainings.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAnalysisTrainings.FlatAppearance.BorderSize = 0;
+            this.btnAnalysisTrainings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(241)))), ((int)(((byte)(237)))));
+            this.btnAnalysisTrainings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysisTrainings.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysisTrainings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnAnalysisTrainings.Location = new System.Drawing.Point(224, 0);
+            this.btnAnalysisTrainings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalysisTrainings.Name = "btnAnalysisTrainings";
+            this.btnAnalysisTrainings.Size = new System.Drawing.Size(111, 47);
+            this.btnAnalysisTrainings.TabIndex = 18;
+            this.btnAnalysisTrainings.Text = "Treeningud";
+            this.btnAnalysisTrainings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalysisTrainings.UseVisualStyleBackColor = false;
+            // 
+            // btnAnalysisSleep
+            // 
+            this.btnAnalysisSleep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
+            this.btnAnalysisSleep.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnAnalysisSleep.FlatAppearance.BorderSize = 0;
+            this.btnAnalysisSleep.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(241)))), ((int)(((byte)(237)))));
+            this.btnAnalysisSleep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysisSleep.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysisSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnAnalysisSleep.Location = new System.Drawing.Point(336, 0);
+            this.btnAnalysisSleep.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalysisSleep.Name = "btnAnalysisSleep";
+            this.btnAnalysisSleep.Size = new System.Drawing.Size(111, 47);
+            this.btnAnalysisSleep.TabIndex = 19;
+            this.btnAnalysisSleep.Text = "Uni";
+            this.btnAnalysisSleep.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalysisSleep.UseVisualStyleBackColor = false;
+            // 
+            // pnlAnalysisButtonBackPanel
+            // 
+            this.pnlAnalysisButtonBackPanel.BackColor = System.Drawing.Color.Gray;
+            this.pnlAnalysisButtonBackPanel.Location = new System.Drawing.Point(0, 7);
+            this.pnlAnalysisButtonBackPanel.Name = "pnlAnalysisButtonBackPanel";
+            this.pnlAnalysisButtonBackPanel.Size = new System.Drawing.Size(447, 33);
+            this.pnlAnalysisButtonBackPanel.TabIndex = 3;
+            // 
+            // subpnlAnalysisOverall
+            // 
+            this.subpnlAnalysisOverall.Location = new System.Drawing.Point(30, 152);
+            this.subpnlAnalysisOverall.Name = "subpnlAnalysisOverall";
+            this.subpnlAnalysisOverall.Size = new System.Drawing.Size(997, 417);
+            this.subpnlAnalysisOverall.TabIndex = 46;
+            // 
+            // subpnlAnalysisFoods
+            // 
+            this.subpnlAnalysisFoods.Location = new System.Drawing.Point(30, 152);
+            this.subpnlAnalysisFoods.Name = "subpnlAnalysisFoods";
+            this.subpnlAnalysisFoods.Size = new System.Drawing.Size(997, 417);
+            this.subpnlAnalysisFoods.TabIndex = 47;
+            // 
+            // subpnlAnalysisTrainings
+            // 
+            this.subpnlAnalysisTrainings.Location = new System.Drawing.Point(30, 152);
+            this.subpnlAnalysisTrainings.Name = "subpnlAnalysisTrainings";
+            this.subpnlAnalysisTrainings.Size = new System.Drawing.Size(997, 417);
+            this.subpnlAnalysisTrainings.TabIndex = 48;
+            // 
+            // subpnlAnalysisSleep
+            // 
+            this.subpnlAnalysisSleep.Location = new System.Drawing.Point(30, 152);
+            this.subpnlAnalysisSleep.Name = "subpnlAnalysisSleep";
+            this.subpnlAnalysisSleep.Size = new System.Drawing.Size(997, 417);
+            this.subpnlAnalysisSleep.TabIndex = 49;
             // 
             // ApexFit_mainWindow
             // 
@@ -1885,12 +1958,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlSleep);
             this.Controls.Add(this.pnlGoals);
-            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlTopBar);
@@ -1967,6 +2040,7 @@
             this.gbDeveloperInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).EndInit();
+            this.pnlAnalysisButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2094,12 +2168,18 @@
         internal System.Windows.Forms.GroupBox gbApplicationInfoEnergySource;
         private System.Windows.Forms.PictureBox pbPauligLogo;
         private System.Windows.Forms.PictureBox pbMonsterLogo;
-        internal System.Windows.Forms.LinkLabel lnklblRedbull;
-        internal System.Windows.Forms.LinkLabel lnklblPaulig;
         internal System.Windows.Forms.Label lblApplicationInfoSponsorshipDisclaimer;
         private System.Windows.Forms.PictureBox pbRedbullLogo;
-        internal System.Windows.Forms.LinkLabel lnklblMonster;
         internal System.Windows.Forms.PictureBox pbJanarLogo;
-        internal System.Windows.Forms.LinkLabel lnklblJanarLink;
+        private System.Windows.Forms.Panel pnlAnalysisButtons;
+        internal System.Windows.Forms.Button btnAnalysisTrainings;
+        internal System.Windows.Forms.Button btnAnalysisFoods;
+        internal System.Windows.Forms.Button btnAnalysisOverall;
+        internal System.Windows.Forms.Button btnAnalysisSleep;
+        private System.Windows.Forms.Panel pnlAnalysisButtonBackPanel;
+        private System.Windows.Forms.Panel subpnlAnalysisSleep;
+        private System.Windows.Forms.Panel subpnlAnalysisTrainings;
+        private System.Windows.Forms.Panel subpnlAnalysisFoods;
+        private System.Windows.Forms.Panel subpnlAnalysisOverall;
     }
 }

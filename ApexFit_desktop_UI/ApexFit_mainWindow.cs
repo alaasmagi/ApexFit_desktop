@@ -548,24 +548,29 @@ namespace ApexFit_desktop_UI
             Process.Start("https://github.com/alaasmagi");
         }
 
-        private void lnklblJanarLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://github.com/alaasmagi/Toitumispaevik");
-        }
-
-        private void lnklblPaulig_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pbPauligLogo_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.pngegg.com/en/png-eovhe");
         }
 
-        private void lnklblRedbull_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pbRedbullLogo_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.pngegg.com/en/png-dtrxy");
         }
 
-        private void lnklblMonster_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pbMonsterLogo_Click(object sender, EventArgs e)
         {
             Process.Start("https://i.pinimg.com/originals/54/e0/5d/54e05d64cfba06861544f94d5405802f.png");
+        }
+
+        private void pbApplicationInfoLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbJanarLogo_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/alaasmagi/Toitumispaevik");
         }
     }
 }
