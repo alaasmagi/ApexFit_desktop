@@ -40,6 +40,7 @@ namespace ApexFit_desktop_UI
         { 
 
         }
+
         private void TextboxReset()
         {
            /* txtLoginUsername.Text = "Kasutajanimi";
@@ -101,6 +102,7 @@ namespace ApexFit_desktop_UI
                 lblProfileWeightGoal.Visible = true;
             }
         }
+
         private void ComboboxReset()
         {
             UserProfile = new UserProfileComponent.CUserProfile();
@@ -116,7 +118,16 @@ namespace ApexFit_desktop_UI
                 cmbUserHeightSelection.Items.Add(index);
             }
             cmbUserHeightSelection.SelectedItem = (int)UserProfile.GetDataFromUserData(userId, "height");
+
+            cmbAnalysisOverallWeightPeriod.Items.Add("Viimased 7 päeva");
+            cmbAnalysisOverallWeightPeriod.Items.Add("Viimane 1 kuu");
+            cmbAnalysisOverallWeightPeriod.Items.Add("Viimased 3 kuud");
+            cmbAnalysisOverallWeightPeriod.Items.Add("Viimased 6 kuud");
+            cmbAnalysisOverallWeightPeriod.Items.Add("Viimane aasta");
+            cmbAnalysisOverallWeightPeriod.Items.Add("Kogu ajalugu");
+            cmbAnalysisOverallWeightPeriod.SelectedIndex = 0;
         }
+
         private void MenuButtonsDefaultColor()
         {
             btnFood.BackColor = Color.FromArgb(188, 227, 224);
@@ -125,8 +136,9 @@ namespace ApexFit_desktop_UI
             btnHome.BackColor = Color.FromArgb(188, 227, 224);
             btnProfileSettings.BackColor = Color.FromArgb(188, 227, 224);
             btnGoals.BackColor = Color.FromArgb(188, 227, 224);
-            btnSleep.BackColor = Color.FromArgb(188, 227, 224);
+            btnSleep.BackColor = Color.FromArgb(188, 227, 224); 
         }
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Security = new SecurityLayer.CSecurity();
@@ -135,6 +147,22 @@ namespace ApexFit_desktop_UI
             this.Hide();
             ApexFit_login login = new ApexFit_login();
             login.Show();
+        }
+
+        private void HideAnalysisSubPanels()
+        {
+            subpnlAnalysisOverall.Visible = false;
+            subpnlAnalysisFoods.Visible = false;
+            subpnlAnalysisTrainings.Visible = false;
+            subpnlAnalysisSleep.Visible = false;
+        }
+
+        private void AnalysisSubPanelButtonsDefaultColor()
+        {
+            btnAnalysisOverall.BackColor = Color.FromArgb(221, 241, 239);
+            btnAnalysisFoods.BackColor = Color.FromArgb(221, 241, 239);
+            btnAnalysisTrainings.BackColor = Color.FromArgb(221, 241, 239);
+            btnAnalysisSleep.BackColor = Color.FromArgb(221, 241, 239);
         }
 
         private void HideAllPanels()
@@ -241,7 +269,9 @@ namespace ApexFit_desktop_UI
             MenuButtonsDefaultColor();
             HideAllPanels();
             pnlAnalysis.Visible = true;
+            subpnlAnalysisOverall.Visible = true;
             btnAnalysis.BackColor = Color.FromArgb(205, 234, 231);
+            btnAnalysisOverall.BackColor = Color.FromArgb(235, 247, 246);
         }
 
         private void btnChangeUserHeight_Click(object sender, EventArgs e)
@@ -571,6 +601,38 @@ namespace ApexFit_desktop_UI
         private void pbJanarLogo_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/alaasmagi/Toitumispaevik");
+        }
+
+        private void btnAnalysisOverall_Click(object sender, EventArgs e)
+        {
+            AnalysisSubPanelButtonsDefaultColor();
+            HideAnalysisSubPanels();
+            subpnlAnalysisOverall.Visible = true;
+            btnAnalysisOverall.BackColor = Color.FromArgb(235, 247, 246);
+        }
+
+        private void btnAnalysisFoods_Click(object sender, EventArgs e)
+        {
+            AnalysisSubPanelButtonsDefaultColor();
+            HideAnalysisSubPanels();
+            subpnlAnalysisFoods.Visible = true;
+            btnAnalysisFoods.BackColor = Color.FromArgb(235, 247, 246);
+        }
+
+        private void btnAnalysisTrainings_Click(object sender, EventArgs e)
+        {
+            AnalysisSubPanelButtonsDefaultColor();
+            HideAnalysisSubPanels();
+            subpnlAnalysisTrainings.Visible = true;
+            btnAnalysisTrainings.BackColor = Color.FromArgb(235, 247, 246);
+        }
+
+        private void btnAnalysisSleep_Click(object sender, EventArgs e)
+        {
+            AnalysisSubPanelButtonsDefaultColor();
+            HideAnalysisSubPanels();
+            subpnlAnalysisSleep.Visible = true;
+            btnAnalysisSleep.BackColor = Color.FromArgb(235, 247, 246);
         }
     }
 }
