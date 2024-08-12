@@ -629,10 +629,33 @@ namespace ApexFit_desktop_UI
 
         private void btnAnalysisSleep_Click(object sender, EventArgs e)
         {
-            AnalysisSubPanelButtonsDefaultColor();
-            HideAnalysisSubPanels();
-            subpnlAnalysisSleep.Visible = true;
-            btnAnalysisSleep.BackColor = Color.FromArgb(235, 247, 246);
+
+            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
+            {
+                MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                AnalysisSubPanelButtonsDefaultColor();
+                HideAnalysisSubPanels();
+                subpnlAnalysisOverall.Visible = true;
+                btnAnalysisOverall.BackColor = Color.FromArgb(235, 247, 246);
+            }
+            else
+            {
+                AnalysisSubPanelButtonsDefaultColor();
+                HideAnalysisSubPanels();
+                subpnlAnalysisSleep.Visible = true;
+                btnAnalysisSleep.BackColor = Color.FromArgb(235, 247, 246);
+            } 
+        }
+
+        private void pnlAnalysis_VisibleChanged(object sender, EventArgs e)
+        {
+            if (pnlAnalysis.Visible == false)
+            {
+                AnalysisSubPanelButtonsDefaultColor();
+                HideAnalysisSubPanels();
+                subpnlAnalysisOverall.Visible = true;
+                btnAnalysisOverall.BackColor = Color.FromArgb(235, 247, 246);
+            }
         }
     }
 }
