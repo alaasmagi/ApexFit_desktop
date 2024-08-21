@@ -662,5 +662,21 @@ namespace ApexFit_desktop_UI
         {
 
         }
+
+        private void lblTrainingsDateSelectionLabel_Click(object sender, EventArgs e)
+        {
+            mcPlanTrainings.Visible = true;
+            lblTrainingsDateSelectionLabel.Visible = false;
+            btnTrainingsCloseCalender.Visible = true;
+            btnAddTrainingToPlan.Enabled = false;
+        }
+
+        private void btnTrainingsCloseCalender_Click(object sender, EventArgs e)
+        {
+            mcPlanTrainings.Visible = false;
+            lblTrainingsDateSelectionLabel.Visible = true;
+            btnTrainingsCloseCalender.Visible = false;
+            btnAddTrainingToPlan.Enabled = true;
+        }
     }
 }
