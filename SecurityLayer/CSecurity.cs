@@ -79,10 +79,17 @@ namespace SecurityLayer
                 string query = "SELECT recovery_question FROM recovery_questions";
 
                 SqlCommand command = new SqlCommand(query, connection);
-                connection.Open();
+                
+                try
+                {
+                    connection.Open();
+                }
+                catch
+                {
+                    return null;
+                }
 
                 SqlDataReader reader = command.ExecuteReader();
-
                 while (reader.Read())
                 {
                     string question = reader["recovery_question"].ToString();
@@ -90,8 +97,9 @@ namespace SecurityLayer
                 }
                 reader.Close();
             }
+
             return securityQuestions;
-        }
+            }
 
         public string GenerateSalt()
         {
@@ -238,6 +246,7 @@ namespace SecurityLayer
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+
                 connection.Open();
                 string query = "UPDATE user_data SET password_hash = @passwordHash WHERE user_id = @userId";
                 using (SqlCommand cmd = new SqlCommand(query, connection))
@@ -293,7 +302,6 @@ namespace SecurityLayer
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@tokenEnc", 0);
                 command.Parameters.AddWithValue("@userId", userId);
-                connection.Open();
                 command.ExecuteNonQuery();
             }
         }

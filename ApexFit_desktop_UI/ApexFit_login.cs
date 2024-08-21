@@ -67,10 +67,18 @@ namespace ApexFit_desktop_UI
             }
             cmbCreateAccountUserWeight.SelectedItem = 75;
 
-            List<string> securityQuestions = Security.GetAllSecurityQuestions();
-            foreach (string question in securityQuestions)
+            List<string> securityQuestions = null;
+            if (Security.GetAllSecurityQuestions() == null)
             {
-                cmbCreateAccountSecurityQuestion.Items.Add(question);
+                MessageBox.Show("Ühendus serveriga ebaõnnestus!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                securityQuestions = Security.GetAllSecurityQuestions();
+                foreach (string question in securityQuestions)
+                {
+                    cmbCreateAccountSecurityQuestion.Items.Add(question);
+                }
             }
             cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
         }

@@ -88,7 +88,7 @@ namespace UserProfileComponent
                 command.Parameters.AddWithValue("@sex", sex);
                 command.Parameters.AddWithValue("@age", age);
                 command.Parameters.AddWithValue("@calorieLimit", 0);
-                command.Parameters.AddWithValue("@weightGoal", weight); 
+                command.Parameters.AddWithValue("@weightGoal", weight);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -130,7 +130,6 @@ namespace UserProfileComponent
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@input", input);
                 command.Parameters.AddWithValue("@userId", userId);
-                connection.Open();
                 command.ExecuteNonQuery();
             }
         }
@@ -163,6 +162,7 @@ namespace UserProfileComponent
                 string query = $"DELETE FROM user_data WHERE user_id = @userId";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@userId", userId);
+
                 connection.Open();
                 int rowsAffected = command.ExecuteNonQuery();
                 if (rowsAffected > 0)

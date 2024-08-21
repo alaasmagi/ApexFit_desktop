@@ -135,6 +135,7 @@ namespace TrainingsComponent
                     command.Parameters.AddWithValue("@userId", userId);
                     command.Parameters.AddWithValue("@date", date);
                     command.Parameters.AddWithValue("@date", date);
+
                     connection.Open();
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
