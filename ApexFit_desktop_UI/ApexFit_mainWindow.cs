@@ -657,5 +657,10 @@ namespace ApexFit_desktop_UI
                 btnAnalysisOverall.BackColor = Color.FromArgb(235, 247, 246);
             }
         }
+
+        private void pnlAnalysis_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

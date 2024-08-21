@@ -9365,70 +9365,40 @@
   <metadata name="lblAnalysisDate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label22.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallSleepTimeData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label20.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallWeightChangeData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label21.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallCalorieBilanceData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label19.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallConsumedCaloriesData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallSpentCaloriesData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="listView3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallBodyweightData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lblAnalysisOverallCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallBodyweightLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="lblAnalysisOverallCalories.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallSleepTimeLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="chrAnalysisOverallDailyCalories.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallWeightChangeLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="chart1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallCalorieBilanceLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallConsumedCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="label15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="lblAnalysisOverallSpentCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="btnAnalysisOverallWeightPeriodShow.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -9443,6 +9413,177 @@
   <metadata name="chrAnalysisOverallBodyweight.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="lblAnalysisTrainingsTimeTotalData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsNotSpentCaloriesData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsCaloriesGoalData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsSpentCaloriesData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsNotSpentCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsCaloriesGoalLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsTimeTotalLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisTrainingsSpentCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="chAnalysisTrainings.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsDinnerData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsMidData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsLunchData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsMorningData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsDinnerLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsMidLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsLunchLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsMorningLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisFoodsDailyFoodsLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lvAnalysisDailyFoods.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisOverallCaloriesLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisOverallCalories.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="chrAnalysisOverallDailyCalories.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisSleepAwakeTimeData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisSleepWholeLengthData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pbAnalysisSleepQualityNeutral.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pbAnalysisSleepQualityNeutral.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA2pJREFUeF7t
+        Wttt5DAM3FJSgku4UtLJlXBAUsCWscnXluJSchyBChSbpPWgZTvQAINsVhJFUnzIiW8DAwMDAwN98Pg3
+        vTzepz+Pt+n18336C368TXf8HogxIk+/PmBwNJL4VcCZGBzDoq4FnCIZ8EwMaiGc8byEM3DiUDZR3pvz
+        KVOEDS8N8xbesSdvfyw43CUllwyhHItfWvRiESysF/PhaQEFBMVSzsHYwrCN3YIdAsdJssEgn5f1BW1u
+        npSXYkknEfcBuzuBNrUK3Z2nuSLDEbvsu4KlRI+ctPbfPRKMgte1PXHXkWrDfnrwpssNA3saH2E6gcZ4
+        mh9IsJj3RxgfYUTkk6f4QNvo8D5M0Fqx68GQQOn0fb3cANJFask++qke3iPPKqHVJ5coIEGr099qN1CI
+        21XTIy3WQg5+bhmjHFR7FAhCv3hIhKJIcWWmNUvHm9dejoJlV5h5uA6KMeqNy6jKYPZNjeaqN00rEjjq
+        sudvggSsioslUJqfkqdtQlqbUA1r5QDq00AQZhpB4+rJgTlpoBW0hLoD5LV1aaAIM8NYCsGUPM1EhgNM
+        HWh8dQhVaSCFk1WEAEv5rbUpLEduGeNWB6QCiO94WAU77kc1LjEegCMFQ7IedEQHZOi9QosgGABlMR+f
+        +etiBDmQUXCCfAA/9C49gABaWNQBzgI3B4gRcFEHEMv/WnRZB1DKrPSuqQGSoKpQ6gw/B3jlUme4Ra7S
+        07Ovld+dwIMFnYR0XBfvmk6kOCD7WklzzeeCQpY8SK3W81A5aHH1tZLmdneAlP+5a0XA2FqBmLdY18Lq
+        PasKYERLGtC8IxywWluV/ylIiPSIu6kQhyOc0MycU5SqP9bycD2UNNjnnw8NEHT0u7iRsKoo6AXSRdKv
+        /Q+iEUotOMXFSKn8/td2Eip5+dB3dpT0BP2jk6Og3z8jN6BFJbibPobHu76vY+ix/xOrlnPELu/rGPu3
+        XXpKoPTcQIztEYIc8rgXiPsS/ar+FqCM5QSiWzRk7AUe05IzFEPRvNfkZabh/cJeA4em1B2WDM6AUVA6
+        kBwTSJ/xPRsstVuJ53ltNve0HPnEnrz9ecDRkHuCNTzPqVtASJOyno44/r3gGiAi2BlW+5KIehFerGZR
+        10dwBshFLzomFr/wHcbOmNsDAwMDA78St9t/cjWl54lPAg4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="pbAnalysisSleepQualityBad.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pbAnalysisSleepQualityBad.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA7JJREFUeF7t
+        WtuR2zAMdAn6vFx+UkpKSScpIHeTElxKSlEpCRcGNTQJgA+RkpXhzuzc2aRAPJagZPs2MTExMTFxDH6/
+        Ld9+vS3fP78uPz7fl5/gx/typ9eOGAN5+vWBgH2Qjn8ruDpSYtjUtYAqfnxZ/kRBtXKFrUskAxXvGLjE
+        9SW3CAVeL/M9vGNNXv5ckNxlJ2M+pMzNL2x6vglW9ov19G0BBwTHQq4Iqla222nxSAgaomQbJPt82bFw
+        i5uV6uVYcJKI64CHJyHT6O48rSsKEjFk3QSWE0fsSXP90UowGt6hxxOfOlJvGOcHLxovSDwyeA8rCRjj
+        af2g7fszgvdQFel85Sl9oC10+jnsoB3FXQsjVr93lnfA+ZMeyb380zI8ZJ81QutPXVQgVT933MAhPq52
+        PdLiWtjB31wwYqF6qCAx6shDIhTFVHdmIfHmbS+rID4VVh5ugxKMeselduUHi+/UJNV5Wkpg1RXPz8IZ
+        SJqLZVCaH5KnZSFdu9GQtViAPdsgMebIQyKsyoEl20BraBuNgJRr27aBYsyUsSTBkDzNRDYBGR+kIjRt
+        A0lOVhMCLOdz14awEpkLplsfkBog3uNhFZy4p25cEzyARAqBFD3oSAko8TvBHkMIAM5iPv7nt6tBiXA2
+        airIBXj2u7IABHdh1QnwKuiWAEkBV02AY/2nRVdNALZM7HdbD5AMtUjpYHRLQLe9FGBrjs4OKQxn9uPc
+        poemHgrrplw4Gxuy7sIsUDcXHFOII7T5mx9cG9giNtkSE1B5W1kZeMymREQ2iDxUjz23lUoCW1j8KC3t
+        f8f6E8BD6gMlBpXr9rDoLtDNS+Tf1AA9WrZBQfBP3xdiDZCqJyguYDYJwjX7P7pTnFJV4Makz+rBoipy
+        0lUbPC2B0mva5e+hVFTcl8oerD49SBFK89QkLc0tSXgRSlXg3ksrVxm8BylBXjdRgTivcV0RLMvnBRxR
+        JZ7yUAocicjDTdiSEDGsrKa6btX3oMXThcZ9GVkASnrqE7h/78dgFUjNacyXkRloqgSH+WNk/NDf6xh+
+        jH9iVTs9khD0hFEw1t9301MD7YgCMTZCgix5/XsH16N46njAGSsJjt3UULAW2L/plaDAMXqia9mXhYEf
+        J3sNLE3t1jUkJQNBwWkQiQHpNd5HwPJxK/HUI/gJpdXqRpckrMnLvw5IDeUVbOHrVN0CJN05Eef/LrgF
+        tDWQDOv4krn9sJpNXR9IBrg1PU6Mb354jbGX3NsTExMTE/8lbrd/XmSxkH6ZkEoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="pbAnalysisSleepQualityGood.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pbAnalysisSleepQualityGood.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA9ZJREFUeF7t
+        WtuNGzEMdCn5DGCnh/t0GSkiBvKXUq4Ul3KlXEiK8mN3SEpa7doLaADi7rwSRQ5fsn2HgYGBgYGBbXD+
+        +/PH+c/p43z59Zt+/hO5HD/l7/TaB4su3z/UYXXy9F0ux69MjKraFySSl9N17liLMBmsawdkSMS7OY6E
+        yHjHEkmO16b5EqGz6Ew9/rXQdAdGTkVT+db87k3voQlW9AvW9+KySIYj47JIyrLDVWl7mxaJECYO6GZJ
+        +nXbtggj1cmw+yQBZ2TZmgQ61Gl0x09d1hUxEeucO4NvxPo16Z6/dibQAUbDk1rcbDzp1AG9YUU70qHT
+        A1U2dD7DJYGe6bJ+IOW47l/gfIadkaerLukD+6DXX0/NUdwzMKQQRb8vywtAaY9Gch/7TIbXqLNGmP2p
+        RxaQonn0g3EjBsm44si0l4mQL3rkp+uMEajlWQCUfusjCGxIfWemfRPiZcSZxKcsmE6F45c+boPhjHnj
+        4ijN12cpv6nRevum6WRCypby9SHY6BqFcP2D6LIQaO+DmGltBKC9DICyIP2dyLEUlIHZ0O5iEwD3NpaB
+        ocxNY5iCD6LLXMQEBDagILSUAUwnpwkxXOODvY9wiQycgXubCIANMB5pfBin3dO+CucZQuTMEZkCoSPz
+        fSwNo3iJInWAiCAS6Xd9uRopo0hHRQTTuRO7KwMg4FoDiupTaWP0IwBlwF4JCBonxG4J4JKZ2t3UA5Ci
+        llTaGP0I6FVLG6Nb5hoz3b+FMWkT0cfNgHqdyQKbt7PeBCbAvlbi9SQLSBBnK3Wi9fqoHrS56loJ1/MF
+        piECJqFOR8f13zABMnAEHANso6u+wjIjz+IGAL0bbWiAGbVlwKA1zjtCMtBzgM9DTewm4Ruh+Z6G7HsC
+        KUFpHWSB/7kAk5jWyDVXvy32iBNx39dj4hakfwZHDCh26zqOZLWEH2qAPYsa8BNIWVUWMDqSUOI8yp5w
+        XzFSWs8OYIbDxqZ7o/QGUvj2F3Z+kl7RzyClKAuKv4xMRHDdc/1P9WTR3kBrdZsLPtvQs7z2p1AHgPH0
+        WqHBGaJL9HH0pBFWRyvtn9qiUmlPMRzGiZgF87YSth0kDWRWwaw5JqGgJyyFfT7LRkFgR7EBJPxshRRM
+        Ke/eL/p1/QhijDvi+mVDfBbLCk2vBAWGpa7e2uRC/Szb9R4ITU1ntGW5kUFO3bu/SPq99EqsIlm2bsMr
+        RXm0usmVz9Tj3wcpG1pufaXyRlH3kFK8JxFcPi+u9RakjGAy3PEFRHqK/GO1qto/hIzUK1LTy8Tcmp80
+        QvcDz4GBgYGBgZ44HP4DV7eXwvEdTLQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="lblAnalysisSleepQualityLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisSleepAwakeTimeLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisSleepWholeLengthLabel.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gbAnalysisSleepReccomendations.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="lblAnalysisSleepRecommendations.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblAnalysisSleepRecommendations.Text" xml:space="preserve">
+    <value>- Hoia uneaeg ühtlasena, minnes magama ja ärgates iga päev samal ajal.
+- Loo pimedas ja vaikses toas mõnus magamiskeskkond.
+- Vähenda ekraaniaega vähemalt tund enne magamaminekut.
+- Väldi kofeiini ja alkoholi tarbimist hilisel pärastlõunal ja õhtul.
+- Tee regulaarselt mõõdukat trenni, kuid mitte vahetult enne magamaminekut.
+- Hoia toatemperatuur magamiseks jahedana ja mugavana.
+- Piira päevaseid uinakuid maksimaalselt 20-30 minutini.
+- Loo lõõgastav õhturutiin, näiteks lugemine või soe dušš.
+- Väldi rasket söömist vahetult enne magamaminekut.
+- Kui ei suuda uinuda, tõuse voodist ja tee midagi rahustavat.</value>
+  </data>
   <metadata name="chrAnalysisSleepData.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -30333,7 +30474,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>48</value>
+    <value>36</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
