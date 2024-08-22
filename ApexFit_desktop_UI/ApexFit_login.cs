@@ -68,9 +68,22 @@ namespace ApexFit_desktop_UI
             cmbCreateAccountUserWeight.SelectedItem = 75;
 
             List<string> securityQuestions = null;
-            if (Security.GetAllSecurityQuestions() == null)
+            DialogResult userErrorInput = DialogResult.Yes;
+            while (userErrorInput == DialogResult.Yes)
             {
-                MessageBox.Show("Ühendus serveriga ebaõnnestus!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (Security.GetAllSecurityQuestions() == null)
+                {
+                  userErrorInput = MessageBox.Show("Ühendus serveriga ebaõnnestus! Kas proovin uuesti?", "Tõrge", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            if (securityQuestions == null)
+            {
+                this.Close();
             }
             else
             {
@@ -79,8 +92,8 @@ namespace ApexFit_desktop_UI
                 {
                     cmbCreateAccountSecurityQuestion.Items.Add(question);
                 }
+                cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
             }
-            cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
         }
 
         public void ClearControls(Control parentControl)

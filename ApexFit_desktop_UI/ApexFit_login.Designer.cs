@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_login));
             this.pnlLoginLogo = new System.Windows.Forms.Panel();
             this.pnlLogin = new System.Windows.Forms.Panel();
@@ -74,6 +75,7 @@
             this.txtForgotPassword2Password2 = new System.Windows.Forms.TextBox();
             this.txtForgotPassword2Password = new System.Windows.Forms.TextBox();
             this.btnForgotPasswordChangePass = new System.Windows.Forms.Button();
+            this.errorTimer = new System.Windows.Forms.Timer(this.components);
             this.pnlLogin.SuspendLayout();
             this.pnlCreateAccount1.SuspendLayout();
             this.pnlCreateAccount2.SuspendLayout();
@@ -748,6 +750,7 @@
         internal System.Windows.Forms.Label lblForgotPassword2Username;
         internal System.Windows.Forms.Label lblForgotPassword2GoBack;
         private System.Windows.Forms.CheckBox chbStayLoggedIn;
+        private System.Windows.Forms.Timer errorTimer;
     }
 }
 
