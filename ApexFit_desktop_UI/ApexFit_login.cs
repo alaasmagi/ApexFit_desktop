@@ -80,7 +80,6 @@ namespace ApexFit_desktop_UI
                     break;
                 }
             }
-
             if (securityQuestions == null)
             {
                 this.Close();

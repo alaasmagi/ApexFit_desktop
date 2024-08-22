@@ -30,30 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_mainWindow));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlLeftBar = new System.Windows.Forms.Panel();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
@@ -302,6 +305,24 @@
             this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
+            this.GroupBox8 = new System.Windows.Forms.GroupBox();
+            this.pbToidukorraLisamineOnnestus = new System.Windows.Forms.PictureBox();
+            this.chbMukbangFilter = new System.Windows.Forms.CheckBox();
+            this.rdbOhtu = new System.Windows.Forms.RadioButton();
+            this.rdbVahepala = new System.Windows.Forms.RadioButton();
+            this.rdbLouna = new System.Windows.Forms.RadioButton();
+            this.rdbHommik = new System.Windows.Forms.RadioButton();
+            this.Label27 = new System.Windows.Forms.Label();
+            this.btnToiduaineKiirvalikLisa = new System.Windows.Forms.Button();
+            this.txtToiduaineKiirvalikKogus = new System.Windows.Forms.TextBox();
+            this.cmbToiduaineKiirvalik = new System.Windows.Forms.ComboBox();
+            this.GroupBox10 = new System.Windows.Forms.GroupBox();
+            this.pbTreeningsessiooniLisamineOnnestus = new System.Windows.Forms.PictureBox();
+            this.Label42 = new System.Windows.Forms.Label();
+            this.btnTreeninguKiirvalikLisa = new System.Windows.Forms.Button();
+            this.txtTreeninguKiirvalikKestus = new System.Windows.Forms.TextBox();
+            this.cmbTreeninguteKiirvalik = new System.Windows.Forms.ComboBox();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -365,6 +386,11 @@
             this.gbDeveloperInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).BeginInit();
+            this.GroupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbToidukorraLisamineOnnestus)).BeginInit();
+            this.GroupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTreeningsessiooniLisamineOnnestus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -659,6 +685,9 @@
             // 
             // pnlHomePage
             // 
+            this.pnlHomePage.Controls.Add(this.chart2);
+            this.pnlHomePage.Controls.Add(this.GroupBox10);
+            this.pnlHomePage.Controls.Add(this.GroupBox8);
             this.pnlHomePage.Controls.Add(this.lblHomePageSlogan);
             this.pnlHomePage.Controls.Add(this.lblHomeTitleName);
             this.pnlHomePage.Location = new System.Drawing.Point(225, 100);
@@ -1533,10 +1562,10 @@
             this.pnlAnalysis.Controls.Add(this.btnAnalysisNextDate);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisDayOfWeek);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisDate);
-            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisSleep);
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisTrainings);
             this.pnlAnalysis.Controls.Add(this.subpnlAnalysisOverall);
             this.pnlAnalysis.Controls.Add(this.subpnlAnalysisFoods);
-            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisTrainings);
+            this.pnlAnalysis.Controls.Add(this.subpnlAnalysisSleep);
             this.pnlAnalysis.Controls.Add(this.pnlAnalysisButtons);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisSlogan);
             this.pnlAnalysis.Controls.Add(this.lblAnalysisTitle);
@@ -1686,32 +1715,32 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.Transparent;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea6.BackColor = System.Drawing.Color.Transparent;
+            chartArea6.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.Color.Transparent;
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(25, 167);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series1.BorderColor = System.Drawing.Color.Transparent;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Transparent;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series6.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series6.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series6.BorderColor = System.Drawing.Color.Transparent;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.Transparent;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(500, 179);
             this.chart1.TabIndex = 76;
             this.chart1.Text = "chart3";
-            title1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "chrAnalysisOverallBodyweightTitle";
-            title1.Text = "Une pikkus ajas";
-            this.chart1.Titles.Add(title1);
+            title5.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title5.Name = "chrAnalysisOverallBodyweightTitle";
+            title5.Text = "Une pikkus ajas";
+            this.chart1.Titles.Add(title5);
             // 
             // lblAnalysisSleepAwakeTimeData
             // 
@@ -1806,32 +1835,32 @@
             // chrAnalysisSleepData
             // 
             this.chrAnalysisSleepData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea2.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chrAnalysisSleepData.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.Transparent;
-            legend2.Name = "Legend1";
-            this.chrAnalysisSleepData.Legends.Add(legend2);
+            chartArea7.BackColor = System.Drawing.Color.Transparent;
+            chartArea7.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea7.Name = "ChartArea1";
+            this.chrAnalysisSleepData.ChartAreas.Add(chartArea7);
+            legend7.BackColor = System.Drawing.Color.Transparent;
+            legend7.Name = "Legend1";
+            this.chrAnalysisSleepData.Legends.Add(legend7);
             this.chrAnalysisSleepData.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisSleepData.Name = "chrAnalysisSleepData";
             this.chrAnalysisSleepData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series2.BorderColor = System.Drawing.Color.Transparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Color = System.Drawing.Color.Transparent;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chrAnalysisSleepData.Series.Add(series2);
+            series7.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series7.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series7.BorderColor = System.Drawing.Color.Transparent;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series7.Color = System.Drawing.Color.Transparent;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chrAnalysisSleepData.Series.Add(series7);
             this.chrAnalysisSleepData.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisSleepData.TabIndex = 1;
             this.chrAnalysisSleepData.Text = "chrAnalysisSleepData";
-            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "chrAnalysisSleepDataTitle";
-            title2.Text = "Ööpäevane uni:";
-            this.chrAnalysisSleepData.Titles.Add(title2);
+            title6.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title6.Name = "chrAnalysisSleepDataTitle";
+            title6.Text = "Ööpäevane uni:";
+            this.chrAnalysisSleepData.Titles.Add(title6);
             // 
             // subpnlAnalysisOverall
             // 
@@ -2067,10 +2096,10 @@
             this.chrAnalysisOverallBodyweight.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallBodyweight.TabIndex = 2;
             this.chrAnalysisOverallBodyweight.Text = "chart3";
-            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "chrAnalysisOverallBodyweightTitle";
-            title3.Text = "Kehakaalu muutus";
-            this.chrAnalysisOverallBodyweight.Titles.Add(title3);
+            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "chrAnalysisOverallBodyweightTitle";
+            title2.Text = "Kehakaalu muutus";
+            this.chrAnalysisOverallBodyweight.Titles.Add(title2);
             // 
             // subpnlAnalysisFoods
             // 
@@ -2301,18 +2330,18 @@
             this.chrAnalysisOverallDailyCalories.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallDailyCalories.TabIndex = 58;
             this.chrAnalysisOverallDailyCalories.Text = "Toitumine";
-            title4.DockedToChartArea = "ChartArea1";
+            title3.DockedToChartArea = "ChartArea1";
+            title3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Toitumine";
+            title3.Text = "Toitained";
+            title4.DockedToChartArea = "ChartArea2";
             title4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
             title4.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "Toitumine";
-            title4.Text = "Toitained";
-            title5.DockedToChartArea = "ChartArea2";
-            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title5.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.Name = "Title1";
-            title5.Text = "Kalorid";
+            title4.Name = "Title1";
+            title4.Text = "Kalorid";
+            this.chrAnalysisOverallDailyCalories.Titles.Add(title3);
             this.chrAnalysisOverallDailyCalories.Titles.Add(title4);
-            this.chrAnalysisOverallDailyCalories.Titles.Add(title5);
             // 
             // subpnlAnalysisTrainings
             // 
@@ -2443,32 +2472,32 @@
             // chAnalysisTrainings
             // 
             this.chAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea6.BackColor = System.Drawing.Color.Transparent;
-            chartArea6.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea6.Name = "ChartArea1";
-            this.chAnalysisTrainings.ChartAreas.Add(chartArea6);
-            legend6.BackColor = System.Drawing.Color.Transparent;
-            legend6.Name = "Legend1";
-            this.chAnalysisTrainings.Legends.Add(legend6);
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chAnalysisTrainings.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.Transparent;
+            legend2.Name = "Legend1";
+            this.chAnalysisTrainings.Legends.Add(legend2);
             this.chAnalysisTrainings.Location = new System.Drawing.Point(557, 25);
             this.chAnalysisTrainings.Name = "chAnalysisTrainings";
             this.chAnalysisTrainings.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series6.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series6.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series6.BorderColor = System.Drawing.Color.Transparent;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Color = System.Drawing.Color.Transparent;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chAnalysisTrainings.Series.Add(series6);
+            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series2.BorderColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Color = System.Drawing.Color.Transparent;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chAnalysisTrainings.Series.Add(series2);
             this.chAnalysisTrainings.Size = new System.Drawing.Size(442, 333);
             this.chAnalysisTrainings.TabIndex = 2;
             this.chAnalysisTrainings.Text = "chart1";
-            title6.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.Name = "chrAnalysisTrainingsCaloriesTitle";
-            title6.Text = "Päevane kaloritarve";
-            this.chAnalysisTrainings.Titles.Add(title6);
+            title1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "chrAnalysisTrainingsCaloriesTitle";
+            title1.Text = "Päevane kaloritarve";
+            this.chAnalysisTrainings.Titles.Add(title1);
             // 
             // lvAnalysisTrainings
             // 
@@ -3688,6 +3717,266 @@
             this.pbApplicationInfoLogo.TabStop = false;
             this.pbApplicationInfoLogo.Click += new System.EventHandler(this.pbApplicationInfoLogo_Click);
             // 
+            // GroupBox8
+            // 
+            this.GroupBox8.Controls.Add(this.pbToidukorraLisamineOnnestus);
+            this.GroupBox8.Controls.Add(this.chbMukbangFilter);
+            this.GroupBox8.Controls.Add(this.rdbOhtu);
+            this.GroupBox8.Controls.Add(this.rdbVahepala);
+            this.GroupBox8.Controls.Add(this.rdbLouna);
+            this.GroupBox8.Controls.Add(this.rdbHommik);
+            this.GroupBox8.Controls.Add(this.Label27);
+            this.GroupBox8.Controls.Add(this.btnToiduaineKiirvalikLisa);
+            this.GroupBox8.Controls.Add(this.txtToiduaineKiirvalikKogus);
+            this.GroupBox8.Controls.Add(this.cmbToiduaineKiirvalik);
+            this.GroupBox8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox8.Location = new System.Drawing.Point(648, 167);
+            this.GroupBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.GroupBox8.Name = "GroupBox8";
+            this.GroupBox8.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupBox8.Size = new System.Drawing.Size(376, 211);
+            this.GroupBox8.TabIndex = 46;
+            this.GroupBox8.TabStop = false;
+            this.GroupBox8.Text = "Toidukorra lisamine";
+            // 
+            // pbToidukorraLisamineOnnestus
+            // 
+            this.pbToidukorraLisamineOnnestus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbToidukorraLisamineOnnestus.Location = new System.Drawing.Point(331, 110);
+            this.pbToidukorraLisamineOnnestus.Name = "pbToidukorraLisamineOnnestus";
+            this.pbToidukorraLisamineOnnestus.Size = new System.Drawing.Size(28, 29);
+            this.pbToidukorraLisamineOnnestus.TabIndex = 40;
+            this.pbToidukorraLisamineOnnestus.TabStop = false;
+            this.pbToidukorraLisamineOnnestus.Visible = false;
+            // 
+            // chbMukbangFilter
+            // 
+            this.chbMukbangFilter.AutoSize = true;
+            this.chbMukbangFilter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbMukbangFilter.ForeColor = System.Drawing.Color.Black;
+            this.chbMukbangFilter.Location = new System.Drawing.Point(95, 64);
+            this.chbMukbangFilter.Name = "chbMukbangFilter";
+            this.chbMukbangFilter.Size = new System.Drawing.Size(144, 23);
+            this.chbMukbangFilter.TabIndex = 38;
+            this.chbMukbangFilter.Text = "Mukbang filter";
+            this.chbMukbangFilter.UseVisualStyleBackColor = true;
+            // 
+            // rdbOhtu
+            // 
+            this.rdbOhtu.AutoSize = true;
+            this.rdbOhtu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbOhtu.ForeColor = System.Drawing.Color.Black;
+            this.rdbOhtu.Location = new System.Drawing.Point(295, 160);
+            this.rdbOhtu.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbOhtu.Name = "rdbOhtu";
+            this.rdbOhtu.Size = new System.Drawing.Size(68, 23);
+            this.rdbOhtu.TabIndex = 29;
+            this.rdbOhtu.TabStop = true;
+            this.rdbOhtu.Text = "Õhtu";
+            this.rdbOhtu.UseVisualStyleBackColor = true;
+            // 
+            // rdbVahepala
+            // 
+            this.rdbVahepala.AutoSize = true;
+            this.rdbVahepala.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbVahepala.ForeColor = System.Drawing.Color.Black;
+            this.rdbVahepala.Location = new System.Drawing.Point(183, 161);
+            this.rdbVahepala.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbVahepala.Name = "rdbVahepala";
+            this.rdbVahepala.Size = new System.Drawing.Size(106, 23);
+            this.rdbVahepala.TabIndex = 28;
+            this.rdbVahepala.TabStop = true;
+            this.rdbVahepala.Text = "Vahepala";
+            this.rdbVahepala.UseVisualStyleBackColor = true;
+            // 
+            // rdbLouna
+            // 
+            this.rdbLouna.AutoSize = true;
+            this.rdbLouna.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbLouna.ForeColor = System.Drawing.Color.Black;
+            this.rdbLouna.Location = new System.Drawing.Point(107, 161);
+            this.rdbLouna.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbLouna.Name = "rdbLouna";
+            this.rdbLouna.Size = new System.Drawing.Size(74, 23);
+            this.rdbLouna.TabIndex = 27;
+            this.rdbLouna.TabStop = true;
+            this.rdbLouna.Text = "Lõuna";
+            this.rdbLouna.UseVisualStyleBackColor = true;
+            // 
+            // rdbHommik
+            // 
+            this.rdbHommik.AutoSize = true;
+            this.rdbHommik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbHommik.ForeColor = System.Drawing.Color.Black;
+            this.rdbHommik.Location = new System.Drawing.Point(17, 161);
+            this.rdbHommik.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbHommik.Name = "rdbHommik";
+            this.rdbHommik.Size = new System.Drawing.Size(92, 23);
+            this.rdbHommik.TabIndex = 26;
+            this.rdbHommik.TabStop = true;
+            this.rdbHommik.Text = "Hommik";
+            this.rdbHommik.UseVisualStyleBackColor = true;
+            // 
+            // Label27
+            // 
+            this.Label27.AutoSize = true;
+            this.Label27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label27.ForeColor = System.Drawing.Color.Black;
+            this.Label27.Location = new System.Drawing.Point(13, 35);
+            this.Label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label27.Name = "Label27";
+            this.Label27.Size = new System.Drawing.Size(79, 19);
+            this.Label27.TabIndex = 30;
+            this.Label27.Text = "Nimetus:";
+            // 
+            // btnToiduaineKiirvalikLisa
+            // 
+            this.btnToiduaineKiirvalikLisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnToiduaineKiirvalikLisa.FlatAppearance.BorderSize = 0;
+            this.btnToiduaineKiirvalikLisa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnToiduaineKiirvalikLisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToiduaineKiirvalikLisa.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToiduaineKiirvalikLisa.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnToiduaineKiirvalikLisa.Location = new System.Drawing.Point(230, 111);
+            this.btnToiduaineKiirvalikLisa.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnToiduaineKiirvalikLisa.Name = "btnToiduaineKiirvalikLisa";
+            this.btnToiduaineKiirvalikLisa.Size = new System.Drawing.Size(92, 27);
+            this.btnToiduaineKiirvalikLisa.TabIndex = 30;
+            this.btnToiduaineKiirvalikLisa.Text = "Lisa";
+            this.btnToiduaineKiirvalikLisa.UseVisualStyleBackColor = false;
+            // 
+            // txtToiduaineKiirvalikKogus
+            // 
+            this.txtToiduaineKiirvalikKogus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtToiduaineKiirvalikKogus.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtToiduaineKiirvalikKogus.Location = new System.Drawing.Point(95, 111);
+            this.txtToiduaineKiirvalikKogus.Margin = new System.Windows.Forms.Padding(2);
+            this.txtToiduaineKiirvalikKogus.Name = "txtToiduaineKiirvalikKogus";
+            this.txtToiduaineKiirvalikKogus.Size = new System.Drawing.Size(116, 27);
+            this.txtToiduaineKiirvalikKogus.TabIndex = 25;
+            this.txtToiduaineKiirvalikKogus.Text = "Kogus(g)";
+            // 
+            // cmbToiduaineKiirvalik
+            // 
+            this.cmbToiduaineKiirvalik.DropDownHeight = 100;
+            this.cmbToiduaineKiirvalik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbToiduaineKiirvalik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbToiduaineKiirvalik.FormattingEnabled = true;
+            this.cmbToiduaineKiirvalik.IntegralHeight = false;
+            this.cmbToiduaineKiirvalik.ItemHeight = 19;
+            this.cmbToiduaineKiirvalik.Location = new System.Drawing.Point(95, 32);
+            this.cmbToiduaineKiirvalik.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbToiduaineKiirvalik.Name = "cmbToiduaineKiirvalik";
+            this.cmbToiduaineKiirvalik.Size = new System.Drawing.Size(264, 27);
+            this.cmbToiduaineKiirvalik.TabIndex = 24;
+            // 
+            // GroupBox10
+            // 
+            this.GroupBox10.Controls.Add(this.pbTreeningsessiooniLisamineOnnestus);
+            this.GroupBox10.Controls.Add(this.Label42);
+            this.GroupBox10.Controls.Add(this.btnTreeninguKiirvalikLisa);
+            this.GroupBox10.Controls.Add(this.txtTreeninguKiirvalikKestus);
+            this.GroupBox10.Controls.Add(this.cmbTreeninguteKiirvalik);
+            this.GroupBox10.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupBox10.Location = new System.Drawing.Point(648, 390);
+            this.GroupBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.GroupBox10.Name = "GroupBox10";
+            this.GroupBox10.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupBox10.Size = new System.Drawing.Size(376, 179);
+            this.GroupBox10.TabIndex = 41;
+            this.GroupBox10.TabStop = false;
+            this.GroupBox10.Text = "Treeningsessiooni lisamine";
+            // 
+            // pbTreeningsessiooniLisamineOnnestus
+            // 
+            this.pbTreeningsessiooniLisamineOnnestus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbTreeningsessiooniLisamineOnnestus.Location = new System.Drawing.Point(330, 101);
+            this.pbTreeningsessiooniLisamineOnnestus.Name = "pbTreeningsessiooniLisamineOnnestus";
+            this.pbTreeningsessiooniLisamineOnnestus.Size = new System.Drawing.Size(29, 28);
+            this.pbTreeningsessiooniLisamineOnnestus.TabIndex = 40;
+            this.pbTreeningsessiooniLisamineOnnestus.TabStop = false;
+            this.pbTreeningsessiooniLisamineOnnestus.Visible = false;
+            // 
+            // Label42
+            // 
+            this.Label42.AutoSize = true;
+            this.Label42.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label42.ForeColor = System.Drawing.Color.Black;
+            this.Label42.Location = new System.Drawing.Point(12, 54);
+            this.Label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label42.Name = "Label42";
+            this.Label42.Size = new System.Drawing.Size(79, 19);
+            this.Label42.TabIndex = 30;
+            this.Label42.Text = "Nimetus:";
+            // 
+            // btnTreeninguKiirvalikLisa
+            // 
+            this.btnTreeninguKiirvalikLisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnTreeninguKiirvalikLisa.FlatAppearance.BorderSize = 0;
+            this.btnTreeninguKiirvalikLisa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnTreeninguKiirvalikLisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTreeninguKiirvalikLisa.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTreeninguKiirvalikLisa.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnTreeninguKiirvalikLisa.Location = new System.Drawing.Point(231, 100);
+            this.btnTreeninguKiirvalikLisa.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnTreeninguKiirvalikLisa.Name = "btnTreeninguKiirvalikLisa";
+            this.btnTreeninguKiirvalikLisa.Size = new System.Drawing.Size(92, 28);
+            this.btnTreeninguKiirvalikLisa.TabIndex = 26;
+            this.btnTreeninguKiirvalikLisa.Text = "Lisa";
+            this.btnTreeninguKiirvalikLisa.UseVisualStyleBackColor = false;
+            // 
+            // txtTreeninguKiirvalikKestus
+            // 
+            this.txtTreeninguKiirvalikKestus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTreeninguKiirvalikKestus.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTreeninguKiirvalikKestus.Location = new System.Drawing.Point(95, 101);
+            this.txtTreeninguKiirvalikKestus.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTreeninguKiirvalikKestus.Name = "txtTreeninguKiirvalikKestus";
+            this.txtTreeninguKiirvalikKestus.Size = new System.Drawing.Size(116, 27);
+            this.txtTreeninguKiirvalikKestus.TabIndex = 25;
+            this.txtTreeninguKiirvalikKestus.Text = "Kestus(min)";
+            // 
+            // cmbTreeninguteKiirvalik
+            // 
+            this.cmbTreeninguteKiirvalik.DropDownHeight = 100;
+            this.cmbTreeninguteKiirvalik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTreeninguteKiirvalik.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTreeninguteKiirvalik.FormattingEnabled = true;
+            this.cmbTreeninguteKiirvalik.IntegralHeight = false;
+            this.cmbTreeninguteKiirvalik.ItemHeight = 19;
+            this.cmbTreeninguteKiirvalik.Location = new System.Drawing.Point(95, 51);
+            this.cmbTreeninguteKiirvalik.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTreeninguteKiirvalik.Name = "cmbTreeninguteKiirvalik";
+            this.cmbTreeninguteKiirvalik.Size = new System.Drawing.Size(264, 27);
+            this.cmbTreeninguteKiirvalik.TabIndex = 24;
+            // 
+            // chart2
+            // 
+            this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.Transparent;
+            legend1.Name = "Legend1";
+            legend1.Title = "Makroained";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(31, 76);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series1.BorderColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Color = System.Drawing.Color.Transparent;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(582, 333);
+            this.chart2.TabIndex = 59;
+            this.chart2.Text = "Toitumine";
+            // 
             // ApexFit_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -3695,9 +3984,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnlHomePage);
+            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlSleep);
-            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlProfileSettings);
@@ -3807,6 +4096,13 @@
             this.gbDeveloperInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).EndInit();
+            this.GroupBox8.ResumeLayout(false);
+            this.GroupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbToidukorraLisamineOnnestus)).EndInit();
+            this.GroupBox10.ResumeLayout(false);
+            this.GroupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTreeningsessiooniLisamineOnnestus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4061,5 +4357,23 @@
         internal System.Windows.Forms.ComboBox comboBox1;
         internal System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        internal System.Windows.Forms.GroupBox GroupBox10;
+        internal System.Windows.Forms.PictureBox pbTreeningsessiooniLisamineOnnestus;
+        internal System.Windows.Forms.Label Label42;
+        internal System.Windows.Forms.Button btnTreeninguKiirvalikLisa;
+        internal System.Windows.Forms.TextBox txtTreeninguKiirvalikKestus;
+        internal System.Windows.Forms.ComboBox cmbTreeninguteKiirvalik;
+        internal System.Windows.Forms.GroupBox GroupBox8;
+        internal System.Windows.Forms.PictureBox pbToidukorraLisamineOnnestus;
+        internal System.Windows.Forms.CheckBox chbMukbangFilter;
+        internal System.Windows.Forms.RadioButton rdbOhtu;
+        internal System.Windows.Forms.RadioButton rdbVahepala;
+        internal System.Windows.Forms.RadioButton rdbLouna;
+        internal System.Windows.Forms.RadioButton rdbHommik;
+        internal System.Windows.Forms.Label Label27;
+        internal System.Windows.Forms.Button btnToiduaineKiirvalikLisa;
+        internal System.Windows.Forms.TextBox txtToiduaineKiirvalikKogus;
+        internal System.Windows.Forms.ComboBox cmbToiduaineKiirvalik;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
     }
 }
