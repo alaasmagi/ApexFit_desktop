@@ -678,5 +678,6 @@ namespace ApexFit_desktop_UI
             btnTrainingsCloseCalender.Visible = false;
             btnAddTrainingToPlan.Enabled = true;
         }
+
     }
 }

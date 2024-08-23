@@ -76,6 +76,19 @@
             this.lblFirstname = new System.Windows.Forms.Label();
             this.pbTopBarProfile = new System.Windows.Forms.PictureBox();
             this.pnlHomePage = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.GroupBox10 = new System.Windows.Forms.GroupBox();
             this.pbTreeningsessiooniLisamineOnnestus = new System.Windows.Forms.PictureBox();
@@ -90,7 +103,6 @@
             this.rdbVahepala = new System.Windows.Forms.RadioButton();
             this.rdbLouna = new System.Windows.Forms.RadioButton();
             this.rdbHommik = new System.Windows.Forms.RadioButton();
-            this.Label27 = new System.Windows.Forms.Label();
             this.btnToiduaineKiirvalikLisa = new System.Windows.Forms.Button();
             this.txtToiduaineKiirvalikKogus = new System.Windows.Forms.TextBox();
             this.cmbToiduaineKiirvalik = new System.Windows.Forms.ComboBox();
@@ -171,21 +183,6 @@
             this.btnAnalysisNextDate = new System.Windows.Forms.Button();
             this.lblAnalysisDayOfWeek = new System.Windows.Forms.Label();
             this.lblAnalysisDate = new System.Windows.Forms.Label();
-            this.subpnlAnalysisTrainings = new System.Windows.Forms.Panel();
-            this.lblAnalysisTrainingsTimeTotalData = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsNotSpentCaloriesData = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsCaloriesGoalData = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsSpentCaloriesData = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsCaloriesGoalLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsTimeTotalLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsTitleLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisTrainingsSpentCaloriesLabel = new System.Windows.Forms.Label();
-            this.chAnalysisTrainings = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lvAnalysisTrainings = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.subpnlAnalysisOverall = new System.Windows.Forms.Panel();
             this.lblAnalysisOverallSleepTimeData = new System.Windows.Forms.Label();
             this.lblAnalysisOverallWeightChangeData = new System.Windows.Forms.Label();
@@ -203,6 +200,21 @@
             this.cmbAnalysisOverallWeightPeriod = new System.Windows.Forms.ComboBox();
             this.lblAnalysisOverallWeightPeriodLabel = new System.Windows.Forms.Label();
             this.chrAnalysisOverallBodyweight = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.subpnlAnalysisTrainings = new System.Windows.Forms.Panel();
+            this.lblAnalysisTrainingsTimeTotalData = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsNotSpentCaloriesData = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsCaloriesGoalData = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsSpentCaloriesData = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsCaloriesGoalLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsTimeTotalLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsTitleLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisTrainingsSpentCaloriesLabel = new System.Windows.Forms.Label();
+            this.chAnalysisTrainings = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lvAnalysisTrainings = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.subpnlAnalysisFoods = new System.Windows.Forms.Panel();
             this.lblAnalysisFoodsDinnerData = new System.Windows.Forms.Label();
             this.lblAnalysisFoodsMidData = new System.Windows.Forms.Label();
@@ -265,10 +277,6 @@
             this.lblSleepSlogan = new System.Windows.Forms.Label();
             this.lblSleepTitle = new System.Windows.Forms.Label();
             this.pnlProfileSettings = new System.Windows.Forms.Panel();
-            this.gbChangeCalorieLimit = new System.Windows.Forms.GroupBox();
-            this.txtChangeCalorieLimitCalories = new System.Windows.Forms.TextBox();
-            this.pbCalorieLimitSetSuccessful = new System.Windows.Forms.PictureBox();
-            this.btnSetCalorieLimit = new System.Windows.Forms.Button();
             this.gbUserProfileDataOverview = new System.Windows.Forms.GroupBox();
             this.lblProfileWeightGoal = new System.Windows.Forms.Label();
             this.lblProfileCalorieLimit = new System.Windows.Forms.Label();
@@ -324,22 +332,43 @@
             this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnSyncronise = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.Label27 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
             this.pnlHomePage.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.GroupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTreeningsessiooniLisamineOnnestus)).BeginInit();
@@ -362,10 +391,10 @@
             this.gbTrainingRemoval.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).BeginInit();
             this.pnlAnalysis.SuspendLayout();
-            this.subpnlAnalysisTrainings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).BeginInit();
             this.subpnlAnalysisOverall.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallBodyweight)).BeginInit();
+            this.subpnlAnalysisTrainings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).BeginInit();
             this.subpnlAnalysisFoods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallDailyCalories)).BeginInit();
             this.subpnlAnalysisSleep.SuspendLayout();
@@ -381,8 +410,6 @@
             this.gbSleepAddSession.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlProfileSettings.SuspendLayout();
-            this.gbChangeCalorieLimit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).BeginInit();
             this.gbUserProfileDataOverview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).BeginInit();
             this.gbDeleteUserAccount.SuspendLayout();
@@ -404,6 +431,15 @@
             this.gbDeveloperInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -598,6 +634,7 @@
             // pnlTopBar
             // 
             this.pnlTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.pnlTopBar.Controls.Add(this.btnSyncronise);
             this.pnlTopBar.Controls.Add(this.btnProfileSettings);
             this.pnlTopBar.Controls.Add(this.btnLogout);
             this.pnlTopBar.Controls.Add(this.btnCloseApplication);
@@ -698,16 +735,21 @@
             // 
             // pnlHomePage
             // 
+            this.pnlHomePage.Controls.Add(this.label20);
+            this.pnlHomePage.Controls.Add(this.label21);
+            this.pnlHomePage.Controls.Add(this.label18);
+            this.pnlHomePage.Controls.Add(this.label19);
+            this.pnlHomePage.Controls.Add(this.label15);
+            this.pnlHomePage.Controls.Add(this.label14);
+            this.pnlHomePage.Controls.Add(this.label13);
+            this.pnlHomePage.Controls.Add(this.label8);
             this.pnlHomePage.Controls.Add(this.label6);
             this.pnlHomePage.Controls.Add(this.label7);
-            this.pnlHomePage.Controls.Add(this.label8);
+            this.pnlHomePage.Controls.Add(this.groupBox1);
             this.pnlHomePage.Controls.Add(this.label9);
             this.pnlHomePage.Controls.Add(this.label10);
             this.pnlHomePage.Controls.Add(this.label11);
             this.pnlHomePage.Controls.Add(this.label12);
-            this.pnlHomePage.Controls.Add(this.label13);
-            this.pnlHomePage.Controls.Add(this.label14);
-            this.pnlHomePage.Controls.Add(this.label15);
             this.pnlHomePage.Controls.Add(this.label16);
             this.pnlHomePage.Controls.Add(this.label17);
             this.pnlHomePage.Controls.Add(this.chart2);
@@ -720,6 +762,166 @@
             this.pnlHomePage.Size = new System.Drawing.Size(1039, 581);
             this.pnlHomePage.TabIndex = 2;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(302, 454);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(194, 18);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "TOP1 söödud toit/retsept:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(471, 429);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 18);
+            this.label6.TabIndex = 84;
+            this.label6.Text = "data";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(302, 429);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(165, 18);
+            this.label7.TabIndex = 83;
+            this.label7.Text = "TOP1 tehtud treening:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(305, 483);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(305, 86);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Kehakaalu sisestus";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(256, 39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox2.TabIndex = 40;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Window;
+            this.button3.Location = new System.Drawing.Point(157, 38);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(92, 28);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "Sisesta";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox7.Location = new System.Drawing.Point(21, 39);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(116, 27);
+            this.textBox7.TabIndex = 25;
+            this.textBox7.Text = "Kehakaal(kg)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(236, 511);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(43, 18);
+            this.label9.TabIndex = 82;
+            this.label9.Text = "data";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(223, 551);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 18);
+            this.label10.TabIndex = 81;
+            this.label10.Text = "data";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(141, 454);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 18);
+            this.label11.TabIndex = 80;
+            this.label11.Text = "data";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(27, 454);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 18);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Une eesmärk:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(28, 511);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(204, 18);
+            this.label16.TabIndex = 75;
+            this.label16.Text = "Kalorikulutamise eesmärk:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(27, 551);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(192, 18);
+            this.label17.TabIndex = 74;
+            this.label17.Text = "Kaloritarbimise eesmärk:";
+            // 
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
@@ -729,7 +931,7 @@
             this.chart2.ChartAreas.Add(chartArea8);
             legend8.BackColor = System.Drawing.Color.Transparent;
             legend8.Name = "Legend1";
-            legend8.Title = "Makroained";
+            legend8.Title = "Toidukord";
             this.chart2.Legends.Add(legend8);
             this.chart2.Location = new System.Drawing.Point(28, 76);
             this.chart2.Name = "chart2";
@@ -743,12 +945,12 @@
             series8.Legend = "Legend1";
             series8.Name = "Series1";
             this.chart2.Series.Add(series8);
-            this.chart2.Size = new System.Drawing.Size(582, 333);
+            this.chart2.Size = new System.Drawing.Size(582, 302);
             this.chart2.TabIndex = 59;
             this.chart2.Text = "Toitumine";
             title8.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title8.Name = "Title1";
-            title8.Text = "Päevane tarbimine";
+            title8.Text = "Päevane kaloraaž";
             this.chart2.Titles.Add(title8);
             // 
             // GroupBox10
@@ -771,7 +973,7 @@
             // pbTreeningsessiooniLisamineOnnestus
             // 
             this.pbTreeningsessiooniLisamineOnnestus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbTreeningsessiooniLisamineOnnestus.Location = new System.Drawing.Point(330, 101);
+            this.pbTreeningsessiooniLisamineOnnestus.Location = new System.Drawing.Point(330, 111);
             this.pbTreeningsessiooniLisamineOnnestus.Name = "pbTreeningsessiooniLisamineOnnestus";
             this.pbTreeningsessiooniLisamineOnnestus.Size = new System.Drawing.Size(29, 28);
             this.pbTreeningsessiooniLisamineOnnestus.TabIndex = 40;
@@ -783,7 +985,7 @@
             this.Label42.AutoSize = true;
             this.Label42.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label42.ForeColor = System.Drawing.Color.Black;
-            this.Label42.Location = new System.Drawing.Point(12, 54);
+            this.Label42.Location = new System.Drawing.Point(12, 64);
             this.Label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label42.Name = "Label42";
             this.Label42.Size = new System.Drawing.Size(79, 19);
@@ -798,7 +1000,7 @@
             this.btnTreeninguKiirvalikLisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTreeninguKiirvalikLisa.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTreeninguKiirvalikLisa.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnTreeninguKiirvalikLisa.Location = new System.Drawing.Point(231, 100);
+            this.btnTreeninguKiirvalikLisa.Location = new System.Drawing.Point(231, 110);
             this.btnTreeninguKiirvalikLisa.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnTreeninguKiirvalikLisa.Name = "btnTreeninguKiirvalikLisa";
             this.btnTreeninguKiirvalikLisa.Size = new System.Drawing.Size(92, 28);
@@ -810,7 +1012,7 @@
             // 
             this.txtTreeninguKiirvalikKestus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTreeninguKiirvalikKestus.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtTreeninguKiirvalikKestus.Location = new System.Drawing.Point(95, 101);
+            this.txtTreeninguKiirvalikKestus.Location = new System.Drawing.Point(95, 111);
             this.txtTreeninguKiirvalikKestus.Margin = new System.Windows.Forms.Padding(2);
             this.txtTreeninguKiirvalikKestus.Name = "txtTreeninguKiirvalikKestus";
             this.txtTreeninguKiirvalikKestus.Size = new System.Drawing.Size(116, 27);
@@ -825,7 +1027,7 @@
             this.cmbTreeninguteKiirvalik.FormattingEnabled = true;
             this.cmbTreeninguteKiirvalik.IntegralHeight = false;
             this.cmbTreeninguteKiirvalik.ItemHeight = 19;
-            this.cmbTreeninguteKiirvalik.Location = new System.Drawing.Point(95, 51);
+            this.cmbTreeninguteKiirvalik.Location = new System.Drawing.Point(95, 61);
             this.cmbTreeninguteKiirvalik.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTreeninguteKiirvalik.Name = "cmbTreeninguteKiirvalik";
             this.cmbTreeninguteKiirvalik.Size = new System.Drawing.Size(264, 27);
@@ -931,18 +1133,6 @@
             this.rdbHommik.Text = "Hommik";
             this.rdbHommik.UseVisualStyleBackColor = true;
             // 
-            // Label27
-            // 
-            this.Label27.AutoSize = true;
-            this.Label27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label27.ForeColor = System.Drawing.Color.Black;
-            this.Label27.Location = new System.Drawing.Point(13, 35);
-            this.Label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label27.Name = "Label27";
-            this.Label27.Size = new System.Drawing.Size(79, 19);
-            this.Label27.TabIndex = 30;
-            this.Label27.Text = "Nimetus:";
-            // 
             // btnToiduaineKiirvalikLisa
             // 
             this.btnToiduaineKiirvalikLisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
@@ -1003,9 +1193,9 @@
             this.lblHomeTitleName.Location = new System.Drawing.Point(25, 25);
             this.lblHomeTitleName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHomeTitleName.Name = "lblHomeTitleName";
-            this.lblHomeTitleName.Size = new System.Drawing.Size(136, 30);
+            this.lblHomeTitleName.Size = new System.Drawing.Size(172, 30);
             this.lblHomeTitleName.TabIndex = 5;
-            this.lblHomeTitleName.Text = "Eesmärgid";
+            this.lblHomeTitleName.Text = "Tere, eesnimi!";
             // 
             // pnlFoods
             // 
@@ -1938,193 +2128,6 @@
             this.lblAnalysisDate.TabIndex = 50;
             this.lblAnalysisDate.Text = "DD.MM.YYYY";
             // 
-            // subpnlAnalysisTrainings
-            // 
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTimeTotalData);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsNotSpentCaloriesData);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsCaloriesGoalData);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsSpentCaloriesData);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsNotSpentCaloriesLabel);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsCaloriesGoalLabel);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTimeTotalLabel);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTitleLabel);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsSpentCaloriesLabel);
-            this.subpnlAnalysisTrainings.Controls.Add(this.chAnalysisTrainings);
-            this.subpnlAnalysisTrainings.Controls.Add(this.lvAnalysisTrainings);
-            this.subpnlAnalysisTrainings.Location = new System.Drawing.Point(12, 173);
-            this.subpnlAnalysisTrainings.Name = "subpnlAnalysisTrainings";
-            this.subpnlAnalysisTrainings.Size = new System.Drawing.Size(1015, 396);
-            this.subpnlAnalysisTrainings.TabIndex = 48;
-            // 
-            // lblAnalysisTrainingsTimeTotalData
-            // 
-            this.lblAnalysisTrainingsTimeTotalData.AutoSize = true;
-            this.lblAnalysisTrainingsTimeTotalData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsTimeTotalData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsTimeTotalData.Location = new System.Drawing.Point(280, 361);
-            this.lblAnalysisTrainingsTimeTotalData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsTimeTotalData.Name = "lblAnalysisTrainingsTimeTotalData";
-            this.lblAnalysisTrainingsTimeTotalData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisTrainingsTimeTotalData.TabIndex = 72;
-            this.lblAnalysisTrainingsTimeTotalData.Text = "data";
-            // 
-            // lblAnalysisTrainingsNotSpentCaloriesData
-            // 
-            this.lblAnalysisTrainingsNotSpentCaloriesData.AutoSize = true;
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsNotSpentCaloriesData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Location = new System.Drawing.Point(229, 331);
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Name = "lblAnalysisTrainingsNotSpentCaloriesData";
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisTrainingsNotSpentCaloriesData.TabIndex = 71;
-            this.lblAnalysisTrainingsNotSpentCaloriesData.Text = "data";
-            // 
-            // lblAnalysisTrainingsCaloriesGoalData
-            // 
-            this.lblAnalysisTrainingsCaloriesGoalData.AutoSize = true;
-            this.lblAnalysisTrainingsCaloriesGoalData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsCaloriesGoalData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsCaloriesGoalData.Location = new System.Drawing.Point(243, 298);
-            this.lblAnalysisTrainingsCaloriesGoalData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsCaloriesGoalData.Name = "lblAnalysisTrainingsCaloriesGoalData";
-            this.lblAnalysisTrainingsCaloriesGoalData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisTrainingsCaloriesGoalData.TabIndex = 70;
-            this.lblAnalysisTrainingsCaloriesGoalData.Text = "data";
-            // 
-            // lblAnalysisTrainingsSpentCaloriesData
-            // 
-            this.lblAnalysisTrainingsSpentCaloriesData.AutoSize = true;
-            this.lblAnalysisTrainingsSpentCaloriesData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsSpentCaloriesData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsSpentCaloriesData.Location = new System.Drawing.Point(207, 265);
-            this.lblAnalysisTrainingsSpentCaloriesData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsSpentCaloriesData.Name = "lblAnalysisTrainingsSpentCaloriesData";
-            this.lblAnalysisTrainingsSpentCaloriesData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisTrainingsSpentCaloriesData.TabIndex = 69;
-            this.lblAnalysisTrainingsSpentCaloriesData.Text = "data";
-            // 
-            // lblAnalysisTrainingsNotSpentCaloriesLabel
-            // 
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.AutoSize = true;
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Location = new System.Drawing.Point(16, 331);
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Name = "lblAnalysisTrainingsNotSpentCaloriesLabel";
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Size = new System.Drawing.Size(209, 18);
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.TabIndex = 61;
-            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Text = "Kulutamata jäänud kalorid:";
-            // 
-            // lblAnalysisTrainingsCaloriesGoalLabel
-            // 
-            this.lblAnalysisTrainingsCaloriesGoalLabel.AutoSize = true;
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsCaloriesGoalLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Location = new System.Drawing.Point(16, 298);
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Name = "lblAnalysisTrainingsCaloriesGoalLabel";
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Size = new System.Drawing.Size(223, 18);
-            this.lblAnalysisTrainingsCaloriesGoalLabel.TabIndex = 60;
-            this.lblAnalysisTrainingsCaloriesGoalLabel.Text = "Kalorite kulutamise eesmärk:";
-            // 
-            // lblAnalysisTrainingsTimeTotalLabel
-            // 
-            this.lblAnalysisTrainingsTimeTotalLabel.AutoSize = true;
-            this.lblAnalysisTrainingsTimeTotalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsTimeTotalLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsTimeTotalLabel.Location = new System.Drawing.Point(16, 361);
-            this.lblAnalysisTrainingsTimeTotalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsTimeTotalLabel.Name = "lblAnalysisTrainingsTimeTotalLabel";
-            this.lblAnalysisTrainingsTimeTotalLabel.Size = new System.Drawing.Size(260, 18);
-            this.lblAnalysisTrainingsTimeTotalLabel.TabIndex = 59;
-            this.lblAnalysisTrainingsTimeTotalLabel.Text = "Treeningutele kulunud aeg kokku:";
-            // 
-            // lblAnalysisTrainingsTitleLabel
-            // 
-            this.lblAnalysisTrainingsTitleLabel.AutoSize = true;
-            this.lblAnalysisTrainingsTitleLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsTitleLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsTitleLabel.Location = new System.Drawing.Point(12, 25);
-            this.lblAnalysisTrainingsTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsTitleLabel.Name = "lblAnalysisTrainingsTitleLabel";
-            this.lblAnalysisTrainingsTitleLabel.Size = new System.Drawing.Size(278, 23);
-            this.lblAnalysisTrainingsTitleLabel.TabIndex = 55;
-            this.lblAnalysisTrainingsTitleLabel.Text = "Päevased treeningsessioonid";
-            // 
-            // lblAnalysisTrainingsSpentCaloriesLabel
-            // 
-            this.lblAnalysisTrainingsSpentCaloriesLabel.AutoSize = true;
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisTrainingsSpentCaloriesLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Location = new System.Drawing.Point(15, 265);
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Name = "lblAnalysisTrainingsSpentCaloriesLabel";
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Size = new System.Drawing.Size(188, 18);
-            this.lblAnalysisTrainingsSpentCaloriesLabel.TabIndex = 58;
-            this.lblAnalysisTrainingsSpentCaloriesLabel.Text = "Kulutatud kalorid kokku:";
-            // 
-            // chAnalysisTrainings
-            // 
-            this.chAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea9.BackColor = System.Drawing.Color.Transparent;
-            chartArea9.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea9.Name = "ChartArea1";
-            this.chAnalysisTrainings.ChartAreas.Add(chartArea9);
-            legend9.BackColor = System.Drawing.Color.Transparent;
-            legend9.Name = "Legend1";
-            this.chAnalysisTrainings.Legends.Add(legend9);
-            this.chAnalysisTrainings.Location = new System.Drawing.Point(557, 25);
-            this.chAnalysisTrainings.Name = "chAnalysisTrainings";
-            this.chAnalysisTrainings.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series9.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series9.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series9.BorderColor = System.Drawing.Color.Transparent;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series9.Color = System.Drawing.Color.Transparent;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chAnalysisTrainings.Series.Add(series9);
-            this.chAnalysisTrainings.Size = new System.Drawing.Size(442, 333);
-            this.chAnalysisTrainings.TabIndex = 2;
-            this.chAnalysisTrainings.Text = "chart1";
-            title9.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title9.Name = "chrAnalysisTrainingsCaloriesTitle";
-            title9.Text = "Päevane kaloritarve";
-            this.chAnalysisTrainings.Titles.Add(title9);
-            // 
-            // lvAnalysisTrainings
-            // 
-            this.lvAnalysisTrainings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lvAnalysisTrainings.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.lvAnalysisTrainings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvAnalysisTrainings.HideSelection = false;
-            this.lvAnalysisTrainings.Location = new System.Drawing.Point(16, 65);
-            this.lvAnalysisTrainings.Name = "lvAnalysisTrainings";
-            this.lvAnalysisTrainings.Size = new System.Drawing.Size(500, 174);
-            this.lvAnalysisTrainings.TabIndex = 1;
-            this.lvAnalysisTrainings.UseCompatibleStateImageBehavior = false;
-            this.lvAnalysisTrainings.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Treeningu nimi";
-            this.columnHeader2.Width = 244;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Kestus(min)";
-            this.columnHeader3.Width = 128;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Kalorid";
-            this.columnHeader4.Width = 126;
-            // 
             // subpnlAnalysisOverall
             // 
             this.subpnlAnalysisOverall.Controls.Add(this.lblAnalysisOverallSleepTimeData);
@@ -2337,32 +2340,219 @@
             // chrAnalysisOverallBodyweight
             // 
             this.chrAnalysisOverallBodyweight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea10.BackColor = System.Drawing.Color.Transparent;
-            chartArea10.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea10.Name = "ChartArea1";
-            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea10);
-            legend10.BackColor = System.Drawing.Color.Transparent;
-            legend10.Name = "Legend1";
-            this.chrAnalysisOverallBodyweight.Legends.Add(legend10);
+            chartArea9.BackColor = System.Drawing.Color.Transparent;
+            chartArea9.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea9.Name = "ChartArea1";
+            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea9);
+            legend9.BackColor = System.Drawing.Color.Transparent;
+            legend9.Name = "Legend1";
+            this.chrAnalysisOverallBodyweight.Legends.Add(legend9);
             this.chrAnalysisOverallBodyweight.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisOverallBodyweight.Name = "chrAnalysisOverallBodyweight";
             this.chrAnalysisOverallBodyweight.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series9.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series9.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series9.BorderColor = System.Drawing.Color.Transparent;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Color = System.Drawing.Color.Transparent;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chrAnalysisOverallBodyweight.Series.Add(series9);
+            this.chrAnalysisOverallBodyweight.Size = new System.Drawing.Size(442, 333);
+            this.chrAnalysisOverallBodyweight.TabIndex = 2;
+            this.chrAnalysisOverallBodyweight.Text = "chart3";
+            title9.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title9.Name = "chrAnalysisOverallBodyweightTitle";
+            title9.Text = "Kehakaalu muutus";
+            this.chrAnalysisOverallBodyweight.Titles.Add(title9);
+            // 
+            // subpnlAnalysisTrainings
+            // 
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTimeTotalData);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsNotSpentCaloriesData);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsCaloriesGoalData);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsSpentCaloriesData);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsNotSpentCaloriesLabel);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsCaloriesGoalLabel);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTimeTotalLabel);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsTitleLabel);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lblAnalysisTrainingsSpentCaloriesLabel);
+            this.subpnlAnalysisTrainings.Controls.Add(this.chAnalysisTrainings);
+            this.subpnlAnalysisTrainings.Controls.Add(this.lvAnalysisTrainings);
+            this.subpnlAnalysisTrainings.Location = new System.Drawing.Point(12, 173);
+            this.subpnlAnalysisTrainings.Name = "subpnlAnalysisTrainings";
+            this.subpnlAnalysisTrainings.Size = new System.Drawing.Size(1015, 396);
+            this.subpnlAnalysisTrainings.TabIndex = 48;
+            // 
+            // lblAnalysisTrainingsTimeTotalData
+            // 
+            this.lblAnalysisTrainingsTimeTotalData.AutoSize = true;
+            this.lblAnalysisTrainingsTimeTotalData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsTimeTotalData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsTimeTotalData.Location = new System.Drawing.Point(280, 361);
+            this.lblAnalysisTrainingsTimeTotalData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsTimeTotalData.Name = "lblAnalysisTrainingsTimeTotalData";
+            this.lblAnalysisTrainingsTimeTotalData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisTrainingsTimeTotalData.TabIndex = 72;
+            this.lblAnalysisTrainingsTimeTotalData.Text = "data";
+            // 
+            // lblAnalysisTrainingsNotSpentCaloriesData
+            // 
+            this.lblAnalysisTrainingsNotSpentCaloriesData.AutoSize = true;
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsNotSpentCaloriesData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Location = new System.Drawing.Point(229, 331);
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Name = "lblAnalysisTrainingsNotSpentCaloriesData";
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisTrainingsNotSpentCaloriesData.TabIndex = 71;
+            this.lblAnalysisTrainingsNotSpentCaloriesData.Text = "data";
+            // 
+            // lblAnalysisTrainingsCaloriesGoalData
+            // 
+            this.lblAnalysisTrainingsCaloriesGoalData.AutoSize = true;
+            this.lblAnalysisTrainingsCaloriesGoalData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsCaloriesGoalData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsCaloriesGoalData.Location = new System.Drawing.Point(243, 298);
+            this.lblAnalysisTrainingsCaloriesGoalData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsCaloriesGoalData.Name = "lblAnalysisTrainingsCaloriesGoalData";
+            this.lblAnalysisTrainingsCaloriesGoalData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisTrainingsCaloriesGoalData.TabIndex = 70;
+            this.lblAnalysisTrainingsCaloriesGoalData.Text = "data";
+            // 
+            // lblAnalysisTrainingsSpentCaloriesData
+            // 
+            this.lblAnalysisTrainingsSpentCaloriesData.AutoSize = true;
+            this.lblAnalysisTrainingsSpentCaloriesData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsSpentCaloriesData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsSpentCaloriesData.Location = new System.Drawing.Point(207, 265);
+            this.lblAnalysisTrainingsSpentCaloriesData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsSpentCaloriesData.Name = "lblAnalysisTrainingsSpentCaloriesData";
+            this.lblAnalysisTrainingsSpentCaloriesData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisTrainingsSpentCaloriesData.TabIndex = 69;
+            this.lblAnalysisTrainingsSpentCaloriesData.Text = "data";
+            // 
+            // lblAnalysisTrainingsNotSpentCaloriesLabel
+            // 
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.AutoSize = true;
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Location = new System.Drawing.Point(16, 331);
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Name = "lblAnalysisTrainingsNotSpentCaloriesLabel";
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Size = new System.Drawing.Size(209, 18);
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.TabIndex = 61;
+            this.lblAnalysisTrainingsNotSpentCaloriesLabel.Text = "Kulutamata jäänud kalorid:";
+            // 
+            // lblAnalysisTrainingsCaloriesGoalLabel
+            // 
+            this.lblAnalysisTrainingsCaloriesGoalLabel.AutoSize = true;
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsCaloriesGoalLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Location = new System.Drawing.Point(16, 298);
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Name = "lblAnalysisTrainingsCaloriesGoalLabel";
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Size = new System.Drawing.Size(223, 18);
+            this.lblAnalysisTrainingsCaloriesGoalLabel.TabIndex = 60;
+            this.lblAnalysisTrainingsCaloriesGoalLabel.Text = "Kalorite kulutamise eesmärk:";
+            // 
+            // lblAnalysisTrainingsTimeTotalLabel
+            // 
+            this.lblAnalysisTrainingsTimeTotalLabel.AutoSize = true;
+            this.lblAnalysisTrainingsTimeTotalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsTimeTotalLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsTimeTotalLabel.Location = new System.Drawing.Point(16, 361);
+            this.lblAnalysisTrainingsTimeTotalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsTimeTotalLabel.Name = "lblAnalysisTrainingsTimeTotalLabel";
+            this.lblAnalysisTrainingsTimeTotalLabel.Size = new System.Drawing.Size(260, 18);
+            this.lblAnalysisTrainingsTimeTotalLabel.TabIndex = 59;
+            this.lblAnalysisTrainingsTimeTotalLabel.Text = "Treeningutele kulunud aeg kokku:";
+            // 
+            // lblAnalysisTrainingsTitleLabel
+            // 
+            this.lblAnalysisTrainingsTitleLabel.AutoSize = true;
+            this.lblAnalysisTrainingsTitleLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsTitleLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsTitleLabel.Location = new System.Drawing.Point(12, 25);
+            this.lblAnalysisTrainingsTitleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsTitleLabel.Name = "lblAnalysisTrainingsTitleLabel";
+            this.lblAnalysisTrainingsTitleLabel.Size = new System.Drawing.Size(278, 23);
+            this.lblAnalysisTrainingsTitleLabel.TabIndex = 55;
+            this.lblAnalysisTrainingsTitleLabel.Text = "Päevased treeningsessioonid";
+            // 
+            // lblAnalysisTrainingsSpentCaloriesLabel
+            // 
+            this.lblAnalysisTrainingsSpentCaloriesLabel.AutoSize = true;
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisTrainingsSpentCaloriesLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Location = new System.Drawing.Point(15, 265);
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Name = "lblAnalysisTrainingsSpentCaloriesLabel";
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Size = new System.Drawing.Size(188, 18);
+            this.lblAnalysisTrainingsSpentCaloriesLabel.TabIndex = 58;
+            this.lblAnalysisTrainingsSpentCaloriesLabel.Text = "Kulutatud kalorid kokku:";
+            // 
+            // chAnalysisTrainings
+            // 
+            this.chAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
+            chartArea10.BackColor = System.Drawing.Color.Transparent;
+            chartArea10.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea10.Name = "ChartArea1";
+            this.chAnalysisTrainings.ChartAreas.Add(chartArea10);
+            legend10.BackColor = System.Drawing.Color.Transparent;
+            legend10.Name = "Legend1";
+            this.chAnalysisTrainings.Legends.Add(legend10);
+            this.chAnalysisTrainings.Location = new System.Drawing.Point(557, 25);
+            this.chAnalysisTrainings.Name = "chAnalysisTrainings";
+            this.chAnalysisTrainings.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series10.BackImageTransparentColor = System.Drawing.Color.Transparent;
             series10.BackSecondaryColor = System.Drawing.Color.Transparent;
             series10.BorderColor = System.Drawing.Color.Transparent;
             series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series10.Color = System.Drawing.Color.Transparent;
             series10.Legend = "Legend1";
             series10.Name = "Series1";
-            this.chrAnalysisOverallBodyweight.Series.Add(series10);
-            this.chrAnalysisOverallBodyweight.Size = new System.Drawing.Size(442, 333);
-            this.chrAnalysisOverallBodyweight.TabIndex = 2;
-            this.chrAnalysisOverallBodyweight.Text = "chart3";
+            this.chAnalysisTrainings.Series.Add(series10);
+            this.chAnalysisTrainings.Size = new System.Drawing.Size(442, 333);
+            this.chAnalysisTrainings.TabIndex = 2;
+            this.chAnalysisTrainings.Text = "chart1";
             title10.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title10.Name = "chrAnalysisOverallBodyweightTitle";
-            title10.Text = "Kehakaalu muutus";
-            this.chrAnalysisOverallBodyweight.Titles.Add(title10);
+            title10.Name = "chrAnalysisTrainingsCaloriesTitle";
+            title10.Text = "Päevane kaloritarve";
+            this.chAnalysisTrainings.Titles.Add(title10);
+            // 
+            // lvAnalysisTrainings
+            // 
+            this.lvAnalysisTrainings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvAnalysisTrainings.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lvAnalysisTrainings.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvAnalysisTrainings.HideSelection = false;
+            this.lvAnalysisTrainings.Location = new System.Drawing.Point(16, 65);
+            this.lvAnalysisTrainings.Name = "lvAnalysisTrainings";
+            this.lvAnalysisTrainings.Size = new System.Drawing.Size(500, 174);
+            this.lvAnalysisTrainings.TabIndex = 1;
+            this.lvAnalysisTrainings.UseCompatibleStateImageBehavior = false;
+            this.lvAnalysisTrainings.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Treeningu nimi";
+            this.columnHeader2.Width = 244;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Kestus(min)";
+            this.columnHeader3.Width = 128;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Kalorid";
+            this.columnHeader4.Width = 126;
             // 
             // subpnlAnalysisFoods
             // 
@@ -2940,6 +3130,10 @@
             // 
             // pnlGoals
             // 
+            this.pnlGoals.Controls.Add(this.groupBox5);
+            this.pnlGoals.Controls.Add(this.groupBox4);
+            this.pnlGoals.Controls.Add(this.groupBox3);
+            this.pnlGoals.Controls.Add(this.groupBox2);
             this.pnlGoals.Controls.Add(this.lblGoalsSlogan);
             this.pnlGoals.Controls.Add(this.lblGoalsTitle);
             this.pnlGoals.Location = new System.Drawing.Point(225, 100);
@@ -3196,7 +3390,6 @@
             // 
             // pnlProfileSettings
             // 
-            this.pnlProfileSettings.Controls.Add(this.gbChangeCalorieLimit);
             this.pnlProfileSettings.Controls.Add(this.gbUserProfileDataOverview);
             this.pnlProfileSettings.Controls.Add(this.gbDeleteUserAccount);
             this.pnlProfileSettings.Controls.Add(this.gbUserHeight);
@@ -3209,63 +3402,6 @@
             this.pnlProfileSettings.Name = "pnlProfileSettings";
             this.pnlProfileSettings.Size = new System.Drawing.Size(1039, 581);
             this.pnlProfileSettings.TabIndex = 6;
-            // 
-            // gbChangeCalorieLimit
-            // 
-            this.gbChangeCalorieLimit.Controls.Add(this.txtChangeCalorieLimitCalories);
-            this.gbChangeCalorieLimit.Controls.Add(this.pbCalorieLimitSetSuccessful);
-            this.gbChangeCalorieLimit.Controls.Add(this.btnSetCalorieLimit);
-            this.gbChangeCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbChangeCalorieLimit.ForeColor = System.Drawing.Color.Black;
-            this.gbChangeCalorieLimit.Location = new System.Drawing.Point(399, 49);
-            this.gbChangeCalorieLimit.Margin = new System.Windows.Forms.Padding(2);
-            this.gbChangeCalorieLimit.Name = "gbChangeCalorieLimit";
-            this.gbChangeCalorieLimit.Padding = new System.Windows.Forms.Padding(2);
-            this.gbChangeCalorieLimit.Size = new System.Drawing.Size(267, 84);
-            this.gbChangeCalorieLimit.TabIndex = 44;
-            this.gbChangeCalorieLimit.TabStop = false;
-            this.gbChangeCalorieLimit.Text = "Kalorilimiidi seadmine";
-            // 
-            // txtChangeCalorieLimitCalories
-            // 
-            this.txtChangeCalorieLimitCalories.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChangeCalorieLimitCalories.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtChangeCalorieLimitCalories.Location = new System.Drawing.Point(15, 36);
-            this.txtChangeCalorieLimitCalories.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtChangeCalorieLimitCalories.Name = "txtChangeCalorieLimitCalories";
-            this.txtChangeCalorieLimitCalories.Size = new System.Drawing.Size(74, 27);
-            this.txtChangeCalorieLimitCalories.TabIndex = 41;
-            this.txtChangeCalorieLimitCalories.Text = "kcal";
-            this.txtChangeCalorieLimitCalories.Enter += new System.EventHandler(this.txtChangeCalorieLimitCalories_Enter);
-            this.txtChangeCalorieLimitCalories.Leave += new System.EventHandler(this.txtChangeCalorieLimitCalories_Leave);
-            // 
-            // pbCalorieLimitSetSuccessful
-            // 
-            this.pbCalorieLimitSetSuccessful.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbCalorieLimitSetSuccessful.BackgroundImage")));
-            this.pbCalorieLimitSetSuccessful.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbCalorieLimitSetSuccessful.Location = new System.Drawing.Point(204, 27);
-            this.pbCalorieLimitSetSuccessful.Name = "pbCalorieLimitSetSuccessful";
-            this.pbCalorieLimitSetSuccessful.Size = new System.Drawing.Size(39, 42);
-            this.pbCalorieLimitSetSuccessful.TabIndex = 41;
-            this.pbCalorieLimitSetSuccessful.TabStop = false;
-            this.pbCalorieLimitSetSuccessful.Visible = false;
-            // 
-            // btnSetCalorieLimit
-            // 
-            this.btnSetCalorieLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnSetCalorieLimit.FlatAppearance.BorderSize = 0;
-            this.btnSetCalorieLimit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnSetCalorieLimit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetCalorieLimit.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetCalorieLimit.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnSetCalorieLimit.Location = new System.Drawing.Point(109, 27);
-            this.btnSetCalorieLimit.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnSetCalorieLimit.Name = "btnSetCalorieLimit";
-            this.btnSetCalorieLimit.Size = new System.Drawing.Size(86, 42);
-            this.btnSetCalorieLimit.TabIndex = 22;
-            this.btnSetCalorieLimit.Text = "Muuda";
-            this.btnSetCalorieLimit.UseVisualStyleBackColor = false;
-            this.btnSetCalorieLimit.Click += new System.EventHandler(this.btnSetCalorieLimit_Click);
             // 
             // gbUserProfileDataOverview
             // 
@@ -3431,7 +3567,7 @@
             this.gbUserHeight.Controls.Add(this.btnChangeUserHeight);
             this.gbUserHeight.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbUserHeight.ForeColor = System.Drawing.Color.Black;
-            this.gbUserHeight.Location = new System.Drawing.Point(399, 139);
+            this.gbUserHeight.Location = new System.Drawing.Point(400, 72);
             this.gbUserHeight.Margin = new System.Windows.Forms.Padding(2);
             this.gbUserHeight.Name = "gbUserHeight";
             this.gbUserHeight.Padding = new System.Windows.Forms.Padding(2);
@@ -3489,7 +3625,7 @@
             this.gbUserAge.Controls.Add(this.btnChangeUserAge);
             this.gbUserAge.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbUserAge.ForeColor = System.Drawing.Color.Black;
-            this.gbUserAge.Location = new System.Drawing.Point(399, 231);
+            this.gbUserAge.Location = new System.Drawing.Point(400, 164);
             this.gbUserAge.Margin = new System.Windows.Forms.Padding(2);
             this.gbUserAge.Name = "gbUserAge";
             this.gbUserAge.Padding = new System.Windows.Forms.Padding(2);
@@ -3550,7 +3686,7 @@
             this.gbChangeEmail.Controls.Add(this.txtConfirmEmailChangePassword);
             this.gbChangeEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbChangeEmail.ForeColor = System.Drawing.Color.Black;
-            this.gbChangeEmail.Location = new System.Drawing.Point(30, 152);
+            this.gbChangeEmail.Location = new System.Drawing.Point(28, 72);
             this.gbChangeEmail.Margin = new System.Windows.Forms.Padding(2);
             this.gbChangeEmail.Name = "gbChangeEmail";
             this.gbChangeEmail.Padding = new System.Windows.Forms.Padding(2);
@@ -4006,149 +4142,407 @@
             this.pbApplicationInfoLogo.TabStop = false;
             this.pbApplicationInfoLogo.Click += new System.EventHandler(this.pbApplicationInfoLogo_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(536, 535);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 18);
-            this.label6.TabIndex = 85;
-            this.label6.Text = "data";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(563, 486);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 18);
-            this.label7.TabIndex = 84;
-            this.label7.Text = "data";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(544, 431);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 18);
-            this.label8.TabIndex = 83;
-            this.label8.Text = "data";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(153, 540);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 18);
-            this.label9.TabIndex = 82;
-            this.label9.Text = "data";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(167, 486);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 18);
-            this.label10.TabIndex = 81;
-            this.label10.Text = "data";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(111, 436);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 18);
-            this.label11.TabIndex = 80;
-            this.label11.Text = "data";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(25, 436);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(83, 18);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "Kehakaal:";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(411, 536);
+            this.label13.Location = new System.Drawing.Point(500, 454);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(121, 18);
-            this.label13.TabIndex = 78;
-            this.label13.Text = "Uneaeg kokku:";
+            this.label13.Size = new System.Drawing.Size(43, 18);
+            this.label13.TabIndex = 86;
+            this.label13.Text = "data";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(410, 486);
+            this.label14.Location = new System.Drawing.Point(314, 383);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(149, 18);
-            this.label14.TabIndex = 77;
-            this.label14.Text = "Kehakaalu muutus:";
+            this.label14.Size = new System.Drawing.Size(81, 18);
+            this.label14.TabIndex = 87;
+            this.label14.Text = "kcal/kcal";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(410, 431);
+            this.label15.Location = new System.Drawing.Point(246, 383);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(130, 18);
-            this.label15.TabIndex = 76;
-            this.label15.Text = "Kalorite balanss:";
+            this.label15.Size = new System.Drawing.Size(64, 18);
+            this.label15.TabIndex = 88;
+            this.label15.Text = "Kalorid:";
             // 
-            // label16
+            // label18
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(24, 540);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(125, 18);
-            this.label16.TabIndex = 75;
-            this.label16.Text = "Söödud kalorid:";
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(236, 489);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(43, 18);
+            this.label18.TabIndex = 90;
+            this.label18.Text = "data";
             // 
-            // label17
+            // label19
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(25, 486);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 18);
-            this.label17.TabIndex = 74;
-            this.label17.Text = "Kulutatud kalorid:";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(28, 490);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(204, 18);
+            this.label19.TabIndex = 89;
+            this.label19.Text = "Tänased kulutatud kalorid:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(123, 432);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(43, 18);
+            this.label20.TabIndex = 92;
+            this.label20.Text = "data";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(27, 432);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(92, 18);
+            this.label21.TabIndex = 91;
+            this.label21.Text = "Tänane uni:";
+            // 
+            // btnSyncronise
+            // 
+            this.btnSyncronise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(227)))), ((int)(((byte)(224)))));
+            this.btnSyncronise.FlatAppearance.BorderSize = 0;
+            this.btnSyncronise.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(214)))), ((int)(((byte)(208)))));
+            this.btnSyncronise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSyncronise.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSyncronise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(74)))), ((int)(((byte)(71)))));
+            this.btnSyncronise.Image = ((System.Drawing.Image)(resources.GetObject("btnSyncronise.Image")));
+            this.btnSyncronise.Location = new System.Drawing.Point(458, 28);
+            this.btnSyncronise.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSyncronise.Name = "btnSyncronise";
+            this.btnSyncronise.Size = new System.Drawing.Size(132, 45);
+            this.btnSyncronise.TabIndex = 6;
+            this.btnSyncronise.Text = "Sünkrooni";
+            this.btnSyncronise.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSyncronise.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSyncronise.UseVisualStyleBackColor = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(28, 72);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(614, 239);
+            this.groupBox2.TabIndex = 44;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Toitumise eesmärgistamine";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(487, 198);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Window;
+            this.button4.Location = new System.Drawing.Point(388, 197);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(92, 28);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "Sisesta";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox8.Location = new System.Drawing.Point(208, 198);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(128, 27);
+            this.textBox8.TabIndex = 25;
+            this.textBox8.Text = "Kehakaal(kg)";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.pictureBox7);
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(28, 335);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(614, 234);
+            this.groupBox3.TabIndex = 45;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Treeningute eesmärgistamine";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.pictureBox4);
+            this.groupBox4.Controls.Add(this.pictureBox5);
+            this.groupBox4.Controls.Add(this.button6);
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.button5);
+            this.groupBox4.Controls.Add(this.textBox9);
+            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(675, 286);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(352, 283);
+            this.groupBox4.TabIndex = 46;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Une eesmärgistamine";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(256, 39);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox5.TabIndex = 40;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.Window;
+            this.button6.Location = new System.Drawing.Point(157, 38);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(92, 28);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "Sisesta";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox10.Location = new System.Drawing.Point(21, 39);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(116, 27);
+            this.textBox10.TabIndex = 25;
+            this.textBox10.Text = "Kehakaal(kg)";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.pictureBox6);
+            this.groupBox5.Controls.Add(this.button7);
+            this.groupBox5.Controls.Add(this.textBox11);
+            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(676, 151);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(352, 103);
+            this.groupBox5.TabIndex = 47;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Kehakaalu eesmärgistamine";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(311, 47);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox6.TabIndex = 40;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.Window;
+            this.button7.Location = new System.Drawing.Point(185, 47);
+            this.button7.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(120, 28);
+            this.button7.TabIndex = 26;
+            this.button7.Text = "Sea eesmärk";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox11.Location = new System.Drawing.Point(16, 47);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(147, 27);
+            this.textBox11.TabIndex = 25;
+            this.textBox11.Text = "Eesmärk(kg)";
+            // 
+            // Label27
+            // 
+            this.Label27.AutoSize = true;
+            this.Label27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label27.ForeColor = System.Drawing.Color.Black;
+            this.Label27.Location = new System.Drawing.Point(13, 35);
+            this.Label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label27.Name = "Label27";
+            this.Label27.Size = new System.Drawing.Size(79, 19);
+            this.Label27.TabIndex = 30;
+            this.Label27.Text = "Nimetus:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(60, 201);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(137, 19);
+            this.label22.TabIndex = 48;
+            this.label22.Text = "Sea ise eesmärk:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(60, 196);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(137, 19);
+            this.label23.TabIndex = 52;
+            this.label23.Text = "Sea ise eesmärk:";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(487, 193);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox7.TabIndex = 51;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Window;
+            this.button8.Location = new System.Drawing.Point(388, 192);
+            this.button8.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 28);
+            this.button8.TabIndex = 50;
+            this.button8.Text = "Sisesta";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox12.Location = new System.Drawing.Point(208, 193);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(128, 27);
+            this.textBox12.TabIndex = 49;
+            this.textBox12.Text = "Kehakaal(kg)";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(47, 213);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(137, 19);
+            this.label24.TabIndex = 56;
+            this.label24.Text = "Sea ise eesmärk:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(293, 242);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox4.TabIndex = 55;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Window;
+            this.button5.Location = new System.Drawing.Point(195, 242);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(92, 28);
+            this.button5.TabIndex = 54;
+            this.button5.Text = "Sisesta";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox9.Location = new System.Drawing.Point(195, 210);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(127, 27);
+            this.textBox9.TabIndex = 53;
+            this.textBox9.Text = "Kehakaal(kg)";
             // 
             // ApexFit_mainWindow
             // 
@@ -4156,13 +4550,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pnlHomePage);
-            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlGoals);
+            this.Controls.Add(this.pnlHomePage);
+            this.Controls.Add(this.pnlProfileSettings);
+            this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlSleep);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlTrainings);
-            this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
@@ -4183,6 +4577,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).EndInit();
             this.pnlHomePage.ResumeLayout(false);
             this.pnlHomePage.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.GroupBox10.ResumeLayout(false);
             this.GroupBox10.PerformLayout();
@@ -4216,12 +4613,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).EndInit();
             this.pnlAnalysis.ResumeLayout(false);
             this.pnlAnalysis.PerformLayout();
-            this.subpnlAnalysisTrainings.ResumeLayout(false);
-            this.subpnlAnalysisTrainings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).EndInit();
             this.subpnlAnalysisOverall.ResumeLayout(false);
             this.subpnlAnalysisOverall.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallBodyweight)).EndInit();
+            this.subpnlAnalysisTrainings.ResumeLayout(false);
+            this.subpnlAnalysisTrainings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).EndInit();
             this.subpnlAnalysisFoods.ResumeLayout(false);
             this.subpnlAnalysisFoods.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallDailyCalories)).EndInit();
@@ -4244,9 +4641,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlProfileSettings.ResumeLayout(false);
             this.pnlProfileSettings.PerformLayout();
-            this.gbChangeCalorieLimit.ResumeLayout(false);
-            this.gbChangeCalorieLimit.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCalorieLimitSetSuccessful)).EndInit();
             this.gbUserProfileDataOverview.ResumeLayout(false);
             this.gbUserProfileDataOverview.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUserProfileDataOverviewIcon)).EndInit();
@@ -4276,6 +4670,19 @@
             this.gbDeveloperInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4347,10 +4754,6 @@
         internal System.Windows.Forms.Label lblProfileUserWeight;
         internal System.Windows.Forms.Label lblProfileUserHeight;
         internal System.Windows.Forms.Label lblProfileUserAge;
-        internal System.Windows.Forms.GroupBox gbChangeCalorieLimit;
-        internal System.Windows.Forms.PictureBox pbCalorieLimitSetSuccessful;
-        internal System.Windows.Forms.Button btnSetCalorieLimit;
-        internal System.Windows.Forms.TextBox txtChangeCalorieLimitCalories;
         internal System.Windows.Forms.Label lblProfileCalorieLimit;
         internal System.Windows.Forms.Label lblProfileWeightGoal;
         internal System.Windows.Forms.Timer successPbTimer;
@@ -4543,22 +4946,53 @@
         internal System.Windows.Forms.RadioButton rdbVahepala;
         internal System.Windows.Forms.RadioButton rdbLouna;
         internal System.Windows.Forms.RadioButton rdbHommik;
-        internal System.Windows.Forms.Label Label27;
         internal System.Windows.Forms.Button btnToiduaineKiirvalikLisa;
         internal System.Windows.Forms.TextBox txtToiduaineKiirvalikKogus;
         internal System.Windows.Forms.ComboBox cmbToiduaineKiirvalik;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        internal System.Windows.Forms.Label label6;
-        internal System.Windows.Forms.Label label7;
-        internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Label label10;
         internal System.Windows.Forms.Label label11;
         internal System.Windows.Forms.Label label12;
-        internal System.Windows.Forms.Label label13;
-        internal System.Windows.Forms.Label label14;
-        internal System.Windows.Forms.Label label15;
         internal System.Windows.Forms.Label label16;
         internal System.Windows.Forms.Label label17;
+        internal System.Windows.Forms.GroupBox groupBox1;
+        internal System.Windows.Forms.PictureBox pictureBox2;
+        internal System.Windows.Forms.Button button3;
+        internal System.Windows.Forms.TextBox textBox7;
+        internal System.Windows.Forms.Label label8;
+        internal System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.Label label7;
+        internal System.Windows.Forms.Label label13;
+        internal System.Windows.Forms.Label label15;
+        internal System.Windows.Forms.Label label14;
+        internal System.Windows.Forms.Label label20;
+        internal System.Windows.Forms.Label label21;
+        internal System.Windows.Forms.Label label18;
+        internal System.Windows.Forms.Label label19;
+        internal System.Windows.Forms.Button btnSyncronise;
+        internal System.Windows.Forms.GroupBox groupBox4;
+        internal System.Windows.Forms.PictureBox pictureBox5;
+        internal System.Windows.Forms.Button button6;
+        internal System.Windows.Forms.TextBox textBox10;
+        internal System.Windows.Forms.GroupBox groupBox3;
+        internal System.Windows.Forms.GroupBox groupBox2;
+        internal System.Windows.Forms.PictureBox pictureBox3;
+        internal System.Windows.Forms.Button button4;
+        internal System.Windows.Forms.TextBox textBox8;
+        internal System.Windows.Forms.GroupBox groupBox5;
+        internal System.Windows.Forms.PictureBox pictureBox6;
+        internal System.Windows.Forms.Button button7;
+        internal System.Windows.Forms.TextBox textBox11;
+        internal System.Windows.Forms.Label Label27;
+        internal System.Windows.Forms.Label label22;
+        internal System.Windows.Forms.Label label24;
+        internal System.Windows.Forms.PictureBox pictureBox4;
+        internal System.Windows.Forms.Button button5;
+        internal System.Windows.Forms.TextBox textBox9;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.PictureBox pictureBox7;
+        internal System.Windows.Forms.Button button8;
+        internal System.Windows.Forms.TextBox textBox12;
     }
 }
