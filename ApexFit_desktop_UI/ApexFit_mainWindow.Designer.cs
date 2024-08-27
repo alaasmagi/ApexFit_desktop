@@ -30,34 +30,34 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_mainWindow));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title13 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title14 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pnlLeftBar = new System.Windows.Forms.Panel();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
@@ -270,19 +270,25 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -367,24 +373,25 @@
             this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label39 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label40 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.pnlLeftBar.SuspendLayout();
             this.pnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTopBarProfile)).BeginInit();
@@ -430,10 +437,6 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlSleep.SuspendLayout();
@@ -462,6 +465,9 @@
             this.gbDeveloperInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftBar
@@ -1050,33 +1056,33 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea8.BackColor = System.Drawing.Color.Transparent;
-            chartArea8.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            legend8.BackColor = System.Drawing.Color.Transparent;
-            legend8.Name = "Legend1";
-            legend8.Title = "Toidukord";
-            this.chart2.Legends.Add(legend8);
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.Transparent;
+            legend1.Name = "Legend1";
+            legend1.Title = "Toidukord";
+            this.chart2.Legends.Add(legend1);
             this.chart2.Location = new System.Drawing.Point(28, 76);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series8.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series8.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series8.BorderColor = System.Drawing.Color.Transparent;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.Color = System.Drawing.Color.Transparent;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart2.Series.Add(series8);
+            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series1.BorderColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Color = System.Drawing.Color.Transparent;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(582, 302);
             this.chart2.TabIndex = 59;
             this.chart2.Text = "Toitumine";
-            title8.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title8.Name = "Title1";
-            title8.Text = "Päevane kaloraaž";
-            this.chart2.Titles.Add(title8);
+            title1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Päevane kaloraaž";
+            this.chart2.Titles.Add(title1);
             // 
             // GroupBox10
             // 
@@ -2477,32 +2483,32 @@
             // chrAnalysisOverallBodyweight
             // 
             this.chrAnalysisOverallBodyweight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea9.BackColor = System.Drawing.Color.Transparent;
-            chartArea9.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea9.Name = "ChartArea1";
-            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea9);
-            legend9.BackColor = System.Drawing.Color.Transparent;
-            legend9.Name = "Legend1";
-            this.chrAnalysisOverallBodyweight.Legends.Add(legend9);
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.Transparent;
+            legend2.Name = "Legend1";
+            this.chrAnalysisOverallBodyweight.Legends.Add(legend2);
             this.chrAnalysisOverallBodyweight.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisOverallBodyweight.Name = "chrAnalysisOverallBodyweight";
             this.chrAnalysisOverallBodyweight.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series9.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series9.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series9.BorderColor = System.Drawing.Color.Transparent;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Color = System.Drawing.Color.Transparent;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chrAnalysisOverallBodyweight.Series.Add(series9);
+            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series2.BorderColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Color = System.Drawing.Color.Transparent;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chrAnalysisOverallBodyweight.Series.Add(series2);
             this.chrAnalysisOverallBodyweight.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallBodyweight.TabIndex = 2;
             this.chrAnalysisOverallBodyweight.Text = "chart3";
-            title9.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title9.Name = "chrAnalysisOverallBodyweightTitle";
-            title9.Text = "Kehakaalu muutus";
-            this.chrAnalysisOverallBodyweight.Titles.Add(title9);
+            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "chrAnalysisOverallBodyweightTitle";
+            title2.Text = "Kehakaalu muutus";
+            this.chrAnalysisOverallBodyweight.Titles.Add(title2);
             // 
             // subpnlAnalysisTrainings
             // 
@@ -2633,32 +2639,32 @@
             // chAnalysisTrainings
             // 
             this.chAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea10.BackColor = System.Drawing.Color.Transparent;
-            chartArea10.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea10.Name = "ChartArea1";
-            this.chAnalysisTrainings.ChartAreas.Add(chartArea10);
-            legend10.BackColor = System.Drawing.Color.Transparent;
-            legend10.Name = "Legend1";
-            this.chAnalysisTrainings.Legends.Add(legend10);
+            chartArea3.BackColor = System.Drawing.Color.Transparent;
+            chartArea3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea3.Name = "ChartArea1";
+            this.chAnalysisTrainings.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.Color.Transparent;
+            legend3.Name = "Legend1";
+            this.chAnalysisTrainings.Legends.Add(legend3);
             this.chAnalysisTrainings.Location = new System.Drawing.Point(557, 25);
             this.chAnalysisTrainings.Name = "chAnalysisTrainings";
             this.chAnalysisTrainings.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series10.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series10.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series10.BorderColor = System.Drawing.Color.Transparent;
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series10.Color = System.Drawing.Color.Transparent;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chAnalysisTrainings.Series.Add(series10);
+            series3.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series3.BorderColor = System.Drawing.Color.Transparent;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Color = System.Drawing.Color.Transparent;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chAnalysisTrainings.Series.Add(series3);
             this.chAnalysisTrainings.Size = new System.Drawing.Size(442, 333);
             this.chAnalysisTrainings.TabIndex = 2;
             this.chAnalysisTrainings.Text = "chart1";
-            title10.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title10.Name = "chrAnalysisTrainingsCaloriesTitle";
-            title10.Text = "Päevane kaloritarve";
-            this.chAnalysisTrainings.Titles.Add(title10);
+            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "chrAnalysisTrainingsCaloriesTitle";
+            title3.Text = "Päevane kaloritarve";
+            this.chAnalysisTrainings.Titles.Add(title3);
             // 
             // lvAnalysisTrainings
             // 
@@ -2885,53 +2891,53 @@
             // chrAnalysisOverallDailyCalories
             // 
             this.chrAnalysisOverallDailyCalories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea11.BackColor = System.Drawing.Color.Transparent;
-            chartArea11.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea11.Name = "ChartArea1";
-            chartArea12.BackColor = System.Drawing.Color.Transparent;
-            chartArea12.Name = "ChartArea2";
-            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea11);
-            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea12);
-            legend11.BackColor = System.Drawing.Color.Transparent;
-            legend11.Name = "Legend1";
-            legend11.Title = "Makroained";
-            legend12.BackColor = System.Drawing.Color.Transparent;
-            legend12.Name = "Legend2";
-            legend12.Title = "Toidukorrad";
-            this.chrAnalysisOverallDailyCalories.Legends.Add(legend11);
-            this.chrAnalysisOverallDailyCalories.Legends.Add(legend12);
+            chartArea4.BackColor = System.Drawing.Color.Transparent;
+            chartArea4.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea4.Name = "ChartArea1";
+            chartArea5.BackColor = System.Drawing.Color.Transparent;
+            chartArea5.Name = "ChartArea2";
+            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea4);
+            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea5);
+            legend4.BackColor = System.Drawing.Color.Transparent;
+            legend4.Name = "Legend1";
+            legend4.Title = "Makroained";
+            legend5.BackColor = System.Drawing.Color.Transparent;
+            legend5.Name = "Legend2";
+            legend5.Title = "Toidukorrad";
+            this.chrAnalysisOverallDailyCalories.Legends.Add(legend4);
+            this.chrAnalysisOverallDailyCalories.Legends.Add(legend5);
             this.chrAnalysisOverallDailyCalories.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisOverallDailyCalories.Name = "chrAnalysisOverallDailyCalories";
             this.chrAnalysisOverallDailyCalories.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series11.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series11.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series11.BorderColor = System.Drawing.Color.Transparent;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series11.Color = System.Drawing.Color.Transparent;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            series12.ChartArea = "ChartArea2";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.Legend = "Legend2";
-            series12.Name = "Series2";
-            this.chrAnalysisOverallDailyCalories.Series.Add(series11);
-            this.chrAnalysisOverallDailyCalories.Series.Add(series12);
+            series4.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series4.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series4.BorderColor = System.Drawing.Color.Transparent;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.Color = System.Drawing.Color.Transparent;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            series5.ChartArea = "ChartArea2";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.Legend = "Legend2";
+            series5.Name = "Series2";
+            this.chrAnalysisOverallDailyCalories.Series.Add(series4);
+            this.chrAnalysisOverallDailyCalories.Series.Add(series5);
             this.chrAnalysisOverallDailyCalories.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallDailyCalories.TabIndex = 58;
             this.chrAnalysisOverallDailyCalories.Text = "Toitumine";
-            title11.DockedToChartArea = "ChartArea1";
-            title11.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title11.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title11.Name = "Toitumine";
-            title11.Text = "Toitained";
-            title12.DockedToChartArea = "ChartArea2";
-            title12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title12.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title12.Name = "Title1";
-            title12.Text = "Kalorid";
-            this.chrAnalysisOverallDailyCalories.Titles.Add(title11);
-            this.chrAnalysisOverallDailyCalories.Titles.Add(title12);
+            title4.DockedToChartArea = "ChartArea1";
+            title4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title4.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Name = "Toitumine";
+            title4.Text = "Toitained";
+            title5.DockedToChartArea = "ChartArea2";
+            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title5.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title5.Name = "Title1";
+            title5.Text = "Kalorid";
+            this.chrAnalysisOverallDailyCalories.Titles.Add(title4);
+            this.chrAnalysisOverallDailyCalories.Titles.Add(title5);
             // 
             // subpnlAnalysisSleep
             // 
@@ -2999,32 +3005,32 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea13.BackColor = System.Drawing.Color.Transparent;
-            chartArea13.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea13.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea13);
-            legend13.BackColor = System.Drawing.Color.Transparent;
-            legend13.Name = "Legend1";
-            this.chart1.Legends.Add(legend13);
+            chartArea6.BackColor = System.Drawing.Color.Transparent;
+            chartArea6.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.Color.Transparent;
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(25, 167);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series13.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series13.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series13.BorderColor = System.Drawing.Color.Transparent;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Color = System.Drawing.Color.Transparent;
-            series13.Legend = "Legend1";
-            series13.Name = "Series1";
-            this.chart1.Series.Add(series13);
+            series6.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series6.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series6.BorderColor = System.Drawing.Color.Transparent;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.Transparent;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(500, 179);
             this.chart1.TabIndex = 76;
             this.chart1.Text = "chart3";
-            title13.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title13.Name = "chrAnalysisOverallBodyweightTitle";
-            title13.Text = "Une pikkus ajas";
-            this.chart1.Titles.Add(title13);
+            title6.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title6.Name = "chrAnalysisOverallBodyweightTitle";
+            title6.Text = "Une pikkus ajas";
+            this.chart1.Titles.Add(title6);
             // 
             // lblAnalysisSleepAwakeTimeData
             // 
@@ -3119,32 +3125,32 @@
             // chrAnalysisSleepData
             // 
             this.chrAnalysisSleepData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea14.BackColor = System.Drawing.Color.Transparent;
-            chartArea14.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea14.Name = "ChartArea1";
-            this.chrAnalysisSleepData.ChartAreas.Add(chartArea14);
-            legend14.BackColor = System.Drawing.Color.Transparent;
-            legend14.Name = "Legend1";
-            this.chrAnalysisSleepData.Legends.Add(legend14);
+            chartArea7.BackColor = System.Drawing.Color.Transparent;
+            chartArea7.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea7.Name = "ChartArea1";
+            this.chrAnalysisSleepData.ChartAreas.Add(chartArea7);
+            legend7.BackColor = System.Drawing.Color.Transparent;
+            legend7.Name = "Legend1";
+            this.chrAnalysisSleepData.Legends.Add(legend7);
             this.chrAnalysisSleepData.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisSleepData.Name = "chrAnalysisSleepData";
             this.chrAnalysisSleepData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series14.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series14.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series14.BorderColor = System.Drawing.Color.Transparent;
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series14.Color = System.Drawing.Color.Transparent;
-            series14.Legend = "Legend1";
-            series14.Name = "Series1";
-            this.chrAnalysisSleepData.Series.Add(series14);
+            series7.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series7.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series7.BorderColor = System.Drawing.Color.Transparent;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series7.Color = System.Drawing.Color.Transparent;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.chrAnalysisSleepData.Series.Add(series7);
             this.chrAnalysisSleepData.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisSleepData.TabIndex = 1;
             this.chrAnalysisSleepData.Text = "chrAnalysisSleepData";
-            title14.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title14.Name = "chrAnalysisSleepDataTitle";
-            title14.Text = "Ööpäevane uni:";
-            this.chrAnalysisSleepData.Titles.Add(title14);
+            title7.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title7.Name = "chrAnalysisSleepDataTitle";
+            title7.Text = "Ööpäevane uni:";
+            this.chrAnalysisSleepData.Titles.Add(title7);
             // 
             // pnlAnalysisButtons
             // 
@@ -3269,7 +3275,6 @@
             // 
             this.pnlGoals.Controls.Add(this.groupBox5);
             this.pnlGoals.Controls.Add(this.groupBox4);
-            this.pnlGoals.Controls.Add(this.groupBox3);
             this.pnlGoals.Controls.Add(this.groupBox2);
             this.pnlGoals.Controls.Add(this.lblGoalsSlogan);
             this.pnlGoals.Controls.Add(this.lblGoalsTitle);
@@ -3283,12 +3288,12 @@
             this.groupBox5.Controls.Add(this.pictureBox6);
             this.groupBox5.Controls.Add(this.button7);
             this.groupBox5.Controls.Add(this.textBox11);
-            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(676, 151);
+            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(30, 76);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(352, 103);
+            this.groupBox5.Size = new System.Drawing.Size(371, 100);
             this.groupBox5.TabIndex = 47;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Kehakaalu eesmärgistamine";
@@ -3296,9 +3301,9 @@
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(311, 47);
+            this.pictureBox6.Location = new System.Drawing.Point(300, 45);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.TabIndex = 40;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Visible = false;
@@ -3309,213 +3314,74 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Window;
-            this.button7.Location = new System.Drawing.Point(185, 47);
+            this.button7.Location = new System.Drawing.Point(171, 45);
             this.button7.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(120, 28);
+            this.button7.Size = new System.Drawing.Size(120, 30);
             this.button7.TabIndex = 26;
             this.button7.Text = "Sea eesmärk";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // textBox11
             // 
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.ForeColor = System.Drawing.Color.DarkGray;
             this.textBox11.Location = new System.Drawing.Point(16, 47);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(147, 26);
+            this.textBox11.Size = new System.Drawing.Size(130, 27);
             this.textBox11.TabIndex = 25;
             this.textBox11.Text = "Eesmärk(kg)";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Controls.Add(this.pictureBox4);
-            this.groupBox4.Controls.Add(this.pictureBox5);
             this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.label46);
+            this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Controls.Add(this.textBox9);
-            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(675, 286);
+            this.groupBox4.Controls.Add(this.radioButton9);
+            this.groupBox4.Controls.Add(this.radioButton8);
+            this.groupBox4.Controls.Add(this.label45);
+            this.groupBox4.Controls.Add(this.radioButton6);
+            this.groupBox4.Controls.Add(this.radioButton7);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.label41);
+            this.groupBox4.Controls.Add(this.label43);
+            this.groupBox4.Controls.Add(this.label44);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.pictureBox8);
+            this.groupBox4.Controls.Add(this.button8);
+            this.groupBox4.Controls.Add(this.textBox12);
+            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(30, 442);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(352, 283);
+            this.groupBox4.Size = new System.Drawing.Size(997, 128);
             this.groupBox4.TabIndex = 46;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Une eesmärgistamine";
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(47, 213);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(130, 18);
-            this.label24.TabIndex = 56;
-            this.label24.Text = "Sea ise eesmärk:";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(293, 242);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(29, 28);
-            this.pictureBox4.TabIndex = 55;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(256, 39);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(29, 28);
-            this.pictureBox5.TabIndex = 40;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Window;
-            this.button6.Location = new System.Drawing.Point(157, 38);
-            this.button6.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(92, 28);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Sisesta";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox10.Location = new System.Drawing.Point(21, 39);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(116, 26);
-            this.textBox10.TabIndex = 25;
-            this.textBox10.Text = "Kehakaal(kg)";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Window;
-            this.button5.Location = new System.Drawing.Point(195, 242);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 28);
-            this.button5.TabIndex = 54;
-            this.button5.Text = "Sisesta";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox9.Location = new System.Drawing.Point(195, 210);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(127, 26);
-            this.textBox9.TabIndex = 53;
-            this.textBox9.Text = "Kehakaal(kg)";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.pictureBox7);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(28, 335);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(614, 234);
-            this.groupBox3.TabIndex = 45;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Treeningute eesmärgistamine";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(60, 196);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(130, 18);
-            this.label23.TabIndex = 52;
-            this.label23.Text = "Sea ise eesmärk:";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(487, 193);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(29, 28);
-            this.pictureBox7.TabIndex = 51;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Window;
-            this.button8.Location = new System.Drawing.Point(388, 192);
-            this.button8.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 28);
-            this.button8.TabIndex = 50;
-            this.button8.Text = "Sisesta";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox12.Location = new System.Drawing.Point(208, 193);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(128, 26);
-            this.textBox12.TabIndex = 49;
-            this.textBox12.Text = "Kehakaal(kg)";
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Controls.Add(this.label40);
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.label39);
             this.groupBox2.Controls.Add(this.button9);
             this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.label38);
             this.groupBox2.Controls.Add(this.label37);
+            this.groupBox2.Controls.Add(this.label38);
+            this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.label36);
+            this.groupBox2.Controls.Add(this.radioButton1);
             this.groupBox2.Controls.Add(this.label35);
+            this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.label34);
+            this.groupBox2.Controls.Add(this.radioButton2);
             this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.label31);
@@ -3528,82 +3394,306 @@
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(28, 72);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(30, 189);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(614, 239);
+            this.groupBox2.Size = new System.Drawing.Size(994, 239);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Toitumise eesmärgistamine";
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(206, 161);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(50, 19);
+            this.label40.TabIndex = 114;
+            this.label40.Text = "data";
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.Window;
+            this.button10.Location = new System.Drawing.Point(19, 194);
+            this.button10.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(167, 30);
+            this.button10.TabIndex = 113;
+            this.button10.Text = "Sea eesmärgiks";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(125, 160);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(77, 21);
+            this.label39.TabIndex = 112;
+            this.label39.Text = "Tulemus:";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Window;
+            this.button9.Location = new System.Drawing.Point(19, 156);
+            this.button9.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(90, 30);
+            this.button9.TabIndex = 111;
+            this.button9.Text = "Arvuta";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton5.Location = new System.Drawing.Point(333, 81);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(125, 23);
+            this.radioButton5.TabIndex = 110;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Eriti aktiivne";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(163, 96);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(139, 23);
+            this.radioButton4.TabIndex = 109;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Väga aktiivne";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(19, 96);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(141, 23);
+            this.radioButton3.TabIndex = 108;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Kerge aktiivsus";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(163, 65);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(157, 23);
+            this.radioButton2.TabIndex = 107;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Mõõdukas eluviis";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(19, 65);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(113, 23);
+            this.radioButton1.TabIndex = 106;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Istuv eluviis";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Location = new System.Drawing.Point(15, 38);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(251, 21);
+            this.label38.TabIndex = 105;
+            this.label38.Text = "Valige kehalise aktiivsuse tase:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(884, 98);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(50, 19);
+            this.label37.TabIndex = 104;
+            this.label37.Text = "data";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(883, 70);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(50, 19);
+            this.label36.TabIndex = 103;
+            this.label36.Text = "data";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(871, 41);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(50, 19);
+            this.label35.TabIndex = 102;
+            this.label35.Text = "data";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Black;
+            this.label34.Location = new System.Drawing.Point(615, 98);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(50, 19);
+            this.label34.TabIndex = 101;
+            this.label34.Text = "data";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(616, 70);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(50, 19);
+            this.label33.TabIndex = 100;
+            this.label33.Text = "data";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(709, 68);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(171, 21);
+            this.label32.TabIndex = 99;
+            this.label32.Text = "Kehakaalu eesmärk:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(709, 97);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(171, 21);
+            this.label31.TabIndex = 98;
+            this.label31.Text = "Kaalu muutuse soov:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Black;
+            this.label30.Location = new System.Drawing.Point(709, 40);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(158, 21);
+            this.label30.TabIndex = 97;
+            this.label30.Text = "Hetkene kehakaal:";
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(15, 87);
+            this.label26.Location = new System.Drawing.Point(549, 97);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 18);
+            this.label26.Size = new System.Drawing.Size(62, 21);
             this.label26.TabIndex = 96;
             this.label26.Text = "Pikkus:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(14, 64);
+            this.label25.Location = new System.Drawing.Point(549, 68);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(58, 18);
+            this.label25.Size = new System.Drawing.Size(63, 21);
             this.label25.TabIndex = 95;
             this.label25.Text = "Vanus:";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(67, 41);
+            this.label28.Location = new System.Drawing.Point(606, 40);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(43, 18);
+            this.label28.Size = new System.Drawing.Size(50, 19);
             this.label28.TabIndex = 94;
             this.label28.Text = "data";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(15, 41);
+            this.label29.Location = new System.Drawing.Point(549, 38);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(48, 18);
+            this.label29.Size = new System.Drawing.Size(53, 21);
             this.label29.TabIndex = 93;
             this.label29.Text = "Sugu:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(15, 202);
+            this.label22.Location = new System.Drawing.Point(549, 197);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(134, 18);
+            this.label22.Size = new System.Drawing.Size(139, 21);
             this.label22.TabIndex = 48;
             this.label22.Text = "Sea ise eesmärk:";
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(390, 200);
+            this.pictureBox3.Location = new System.Drawing.Point(951, 194);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.TabIndex = 40;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
@@ -3614,26 +3704,26 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Window;
-            this.button4.Location = new System.Drawing.Point(289, 200);
+            this.button4.Location = new System.Drawing.Point(852, 194);
             this.button4.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 28);
+            this.button4.Size = new System.Drawing.Size(90, 30);
             this.button4.TabIndex = 26;
             this.button4.Text = "Sisesta";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // textBox8
             // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox8.Location = new System.Drawing.Point(152, 200);
+            this.textBox8.Location = new System.Drawing.Point(695, 195);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(128, 26);
+            this.textBox8.Size = new System.Drawing.Size(130, 27);
             this.textBox8.TabIndex = 25;
-            this.textBox8.Text = "Kehakaal(kg)";
+            this.textBox8.Text = "Eesmärk(kcal)";
             // 
             // lblGoalsSlogan
             // 
@@ -4636,228 +4726,238 @@
             this.pbApplicationInfoLogo.TabStop = false;
             this.pbApplicationInfoLogo.Click += new System.EventHandler(this.pbApplicationInfoLogo_Click);
             // 
-            // label30
+            // pictureBox7
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(14, 109);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(150, 18);
-            this.label30.TabIndex = 97;
-            this.label30.Text = "Hetkene kehakaal:";
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(195, 194);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.TabIndex = 115;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             // 
-            // label31
+            // label23
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(13, 154);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(160, 18);
-            this.label31.TabIndex = 98;
-            this.label31.Text = "Kaalu muutuse soov:";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(549, 86);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(139, 21);
+            this.label23.TabIndex = 60;
+            this.label23.Text = "Sea ise eesmärk:";
             // 
-            // label32
+            // pictureBox8
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(14, 131);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(161, 18);
-            this.label32.TabIndex = 99;
-            this.label32.Text = "Kehakaalu eesmärk:";
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(951, 83);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.TabIndex = 59;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
             // 
-            // label33
+            // button8
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(76, 64);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(43, 18);
-            this.label33.TabIndex = 100;
-            this.label33.Text = "data";
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Window;
+            this.button8.Location = new System.Drawing.Point(852, 83);
+            this.button8.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(90, 30);
+            this.button8.TabIndex = 58;
+            this.button8.Text = "Sisesta";
+            this.button8.UseVisualStyleBackColor = false;
             // 
-            // label34
+            // textBox12
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(77, 87);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(43, 18);
-            this.label34.TabIndex = 101;
-            this.label34.Text = "data";
+            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox12.Location = new System.Drawing.Point(695, 84);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(130, 27);
+            this.textBox12.TabIndex = 57;
+            this.textBox12.Text = "Eesmärk(kcal)";
             // 
-            // label35
+            // label24
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(168, 109);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(43, 18);
-            this.label35.TabIndex = 102;
-            this.label35.Text = "data";
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(82, 80);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(50, 19);
+            this.label24.TabIndex = 104;
+            this.label24.Text = "data";
             // 
-            // label36
+            // label41
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(179, 131);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(43, 18);
-            this.label36.TabIndex = 103;
-            this.label36.Text = "data";
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(15, 78);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(63, 21);
+            this.label41.TabIndex = 103;
+            this.label41.Text = "Vanus:";
             // 
-            // label37
+            // label43
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(177, 154);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(43, 18);
-            this.label37.TabIndex = 104;
-            this.label37.Text = "data";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(72, 50);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(50, 19);
+            this.label43.TabIndex = 102;
+            this.label43.Text = "data";
             // 
-            // label38
+            // label44
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(264, 41);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(241, 18);
-            this.label38.TabIndex = 105;
-            this.label38.Text = "Valige kehalise aktiivsuse tase:";
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Black;
+            this.label44.Location = new System.Drawing.Point(15, 48);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(53, 21);
+            this.label44.TabIndex = 101;
+            this.label44.Text = "Sugu:";
             // 
-            // radioButton1
+            // label45
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(267, 67);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 22);
-            this.radioButton1.TabIndex = 106;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Istuv eluviis";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Black;
+            this.label45.Location = new System.Drawing.Point(181, 31);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(238, 21);
+            this.label45.TabIndex = 110;
+            this.label45.Text = "Valige elustiili aktiivsuse tase:";
             // 
-            // radioButton2
+            // radioButton6
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(407, 68);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(151, 22);
-            this.radioButton2.TabIndex = 107;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Mõõdukas eluviis";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(348, 59);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(139, 23);
+            this.radioButton6.TabIndex = 112;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Väga aktiivne";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton7
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(267, 92);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(133, 22);
-            this.radioButton3.TabIndex = 108;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Kerge aktiivsus";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton7.Location = new System.Drawing.Point(185, 87);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(157, 23);
+            this.radioButton7.TabIndex = 111;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Mõõdukas eluviis";
+            this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButton8
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(407, 92);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(129, 22);
-            this.radioButton4.TabIndex = 109;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Väga aktiivne";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Location = new System.Drawing.Point(185, 58);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(141, 23);
+            this.radioButton8.TabIndex = 116;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Kerge aktiivsus";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton9
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(350, 117);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(114, 22);
-            this.radioButton5.TabIndex = 110;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Eriti aktiivne";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton9.Location = new System.Drawing.Point(348, 87);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(156, 23);
+            this.radioButton9.TabIndex = 117;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Kõrge stressitase";
+            this.radioButton9.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // label46
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Window;
-            this.button9.Location = new System.Drawing.Point(490, 149);
-            this.button9.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(92, 28);
-            this.button9.TabIndex = 111;
-            this.button9.Text = "Arvuta";
-            this.button9.UseVisualStyleBackColor = false;
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(699, 45);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(50, 19);
+            this.label46.TabIndex = 120;
+            this.label46.Text = "data";
             // 
-            // label39
+            // label47
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(264, 154);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(71, 18);
-            this.label39.TabIndex = 112;
-            this.label39.Text = "Tulemus:";
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(618, 44);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(77, 21);
+            this.label47.TabIndex = 119;
+            this.label47.Text = "Tulemus:";
             // 
-            // button10
+            // button5
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Window;
-            this.button10.Location = new System.Drawing.Point(490, 185);
-            this.button10.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(92, 28);
-            this.button10.TabIndex = 113;
-            this.button10.UseVisualStyleBackColor = false;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Window;
+            this.button5.Location = new System.Drawing.Point(523, 39);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(90, 30);
+            this.button5.TabIndex = 118;
+            this.button5.Text = "Arvuta";
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // label40
+            // pictureBox4
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(339, 154);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(43, 18);
-            this.label40.TabIndex = 114;
-            this.label40.Text = "data";
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(951, 39);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.TabIndex = 122;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.Window;
+            this.button6.Location = new System.Drawing.Point(775, 39);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(167, 30);
+            this.button6.TabIndex = 121;
+            this.button6.Text = "Sea eesmärgiks";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // ApexFit_mainWindow
             // 
@@ -4866,8 +4966,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnlGoals);
-            this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlProfileSettings);
+            this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlSleep);
             this.Controls.Add(this.pnlFoods);
@@ -4875,7 +4975,7 @@
             this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -4952,11 +5052,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -4998,6 +5093,9 @@
             this.gbDeveloperInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeveloperPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbApplicationInfoLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5287,10 +5385,6 @@
         internal System.Windows.Forms.Label label19;
         internal System.Windows.Forms.Button btnSyncronise;
         internal System.Windows.Forms.GroupBox groupBox4;
-        internal System.Windows.Forms.PictureBox pictureBox5;
-        internal System.Windows.Forms.Button button6;
-        internal System.Windows.Forms.TextBox textBox10;
-        internal System.Windows.Forms.GroupBox groupBox3;
         internal System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.PictureBox pictureBox3;
         internal System.Windows.Forms.Button button4;
@@ -5301,14 +5395,6 @@
         internal System.Windows.Forms.TextBox textBox11;
         internal System.Windows.Forms.Label Label27;
         internal System.Windows.Forms.Label label22;
-        internal System.Windows.Forms.Label label24;
-        internal System.Windows.Forms.PictureBox pictureBox4;
-        internal System.Windows.Forms.Button button5;
-        internal System.Windows.Forms.TextBox textBox9;
-        internal System.Windows.Forms.Label label23;
-        internal System.Windows.Forms.PictureBox pictureBox7;
-        internal System.Windows.Forms.Button button8;
-        internal System.Windows.Forms.TextBox textBox12;
         internal System.Windows.Forms.Label label26;
         internal System.Windows.Forms.Label label25;
         internal System.Windows.Forms.Label label28;
@@ -5331,5 +5417,24 @@
         private System.Windows.Forms.RadioButton radioButton2;
         internal System.Windows.Forms.Label label40;
         internal System.Windows.Forms.Button button10;
+        internal System.Windows.Forms.PictureBox pictureBox7;
+        internal System.Windows.Forms.Label label24;
+        internal System.Windows.Forms.Label label41;
+        internal System.Windows.Forms.Label label43;
+        internal System.Windows.Forms.Label label44;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.PictureBox pictureBox8;
+        internal System.Windows.Forms.Button button8;
+        internal System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton8;
+        internal System.Windows.Forms.Label label45;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
+        internal System.Windows.Forms.PictureBox pictureBox4;
+        internal System.Windows.Forms.Button button6;
+        internal System.Windows.Forms.Label label46;
+        internal System.Windows.Forms.Label label47;
+        internal System.Windows.Forms.Button button5;
     }
 }
