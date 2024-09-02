@@ -8,6 +8,7 @@ namespace FoodsOrRecipesComponent
 {
     public interface IFoodsOrRecipes
     {
-        bool AddFood(string trainingName, int energyConsumption);
+        bool AddFood(string foodName, int energy, int c_hydrates, int sugars, int proteins, int lipids);
+        bool AddRecipe(string recipeName, int energy, int c_hydrates, int sugars, int proteins, int lipids);
     }
 }

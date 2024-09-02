@@ -11,19 +11,53 @@ namespace FoodsOrRecipesComponent
     {
         private CoreComponent.ICore Core;
         string connectionString;
-        public bool AddFood(string trainingName, int energyConsumption)
+        
+        public bool AddFood(string foodName, int energy, int c_hydrates, int sugars, int proteins, int lipids)
         {
             Core = new CoreComponent.CCore();
             connectionString = Core.GetConnectionString();
 
-            int trainingId = 0;
+            int foodId = 0;
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = $"INSERT INTO training_data (training_id, training_name, consumption) VALUES (@trainingId, @trainingName, @energyConsumption)";
+                string query = $"INSERT INTO food_data (food_id, food_name, energy, c_hydrates, sugars, proteins, lipids) VALUES (@foodId, @foodName, @energy, @c_hydrates, @sugars, @proteins, @lipids)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@trainingId", trainingId);
-                command.Parameters.AddWithValue("@trainingName", trainingName);
-                command.Parameters.AddWithValue("@energyConsumption", energyConsumption);
+                command.Parameters.AddWithValue("@foodId", foodId);
+                command.Parameters.AddWithValue("@foodName", foodName);
+                command.Parameters.AddWithValue("@energy", energy);
+                command.Parameters.AddWithValue("@c_hydrates", c_hydrates);
+                command.Parameters.AddWithValue("@sugars", sugars);
+                command.Parameters.AddWithValue("@proteins", proteins);
+                command.Parameters.AddWithValue("@lipids", lipids);
+
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool AddRecipe(string recipeName, int energy, int c_hydrates, int sugars, int proteins, int lipids)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            int foodId = 0;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"INSERT INTO recipe_data (food_id, food_name, energy, c_hydrates, sugars, proteins, lipids) VALUES (@foodId, @foodName, @energy, @c_hydrates, @sugars, @proteins, @lipids)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@foodId", foodId);
+                command.Parameters.AddWithValue("@foodName", recipeName);
+                command.Parameters.AddWithValue("@energy", energy);
+                command.Parameters.AddWithValue("@c_hydrates", c_hydrates);
+                command.Parameters.AddWithValue("@sugars", sugars);
+                command.Parameters.AddWithValue("@proteins", proteins);
+                command.Parameters.AddWithValue("@lipids", lipids);
 
                 connection.Open();
                 int result = command.ExecuteNonQuery();
