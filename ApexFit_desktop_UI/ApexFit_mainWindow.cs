@@ -549,18 +549,6 @@ namespace ApexFit_desktop_UI
             }
         }
 
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void pnlAppLogo_Click(object sender, EventArgs e)
         {
             MenuButtonsDefaultColor();

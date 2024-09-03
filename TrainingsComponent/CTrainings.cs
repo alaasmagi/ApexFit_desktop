@@ -201,5 +201,111 @@ namespace TrainingsComponent
                 return false;
             }
         }
+
+        public bool AddToTrainingPlan(int userId, int date, int trainingId, int duration)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            int energyConsumption = (int)Math.Round((double)duration * ((double)GetTrainingData(trainingId, "consumption") / 60));
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"INSERT INTO user_training_plan (user_id, date, training_id, duration) VALUES (@userId, @date, @trainingId, @duration)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@trainingId", trainingId);
+                command.Parameters.AddWithValue("@duration", duration);
+
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public bool TrainingExistsInTrainingPlan(int userId, int date, int trainingId)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT FROM user_training_plan WHERE user_id = @userId AND date = @date AND training_id = @trainingId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@trainingId", trainingId);
+
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public int[] GetTrainingPlanData(int userId, int date)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            List<int> trainingPlan = new List<int>();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT  FROM user_training_plan WHERE user_id = @userId AND date = @date";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+                    command.Parameters.AddWithValue("@date", date);
+                    command.Parameters.AddWithValue("@date", date);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                trainingPlan.Add(reader.GetInt16(i));
+                            }
+                        }
+                    }
+                }
+            }
+            return trainingPlan.ToArray();
+        }
+
+        public bool DeleteFromTrainingPlan(int userId, int date, int trainingId)
+        {
+            Core = new CoreComponent.CCore();
+            connectionString = Core.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"DELETE FROM user_training_plan WHERE user_id = @userId AND date = @date AND training_id = @trainingId";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@userId", userId);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@trainingId", trainingId);
+
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
     }
 }

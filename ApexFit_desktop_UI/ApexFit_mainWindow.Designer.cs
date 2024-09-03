@@ -35,6 +35,14 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -51,14 +59,6 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pnlLeftBar = new System.Windows.Forms.Panel();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
@@ -182,7 +182,20 @@
             this.btnAnalysisPreviousDate = new System.Windows.Forms.Button();
             this.btnAnalysisNextDate = new System.Windows.Forms.Button();
             this.lblAnalysisDayOfWeek = new System.Windows.Forms.Label();
-            this.lblAnalysisDate = new System.Windows.Forms.Label();
+            this.subpnlAnalysisSleep = new System.Windows.Forms.Panel();
+            this.btnAnalysisSleepPeriod = new System.Windows.Forms.Button();
+            this.cmbAnalysisSleepPeriod = new System.Windows.Forms.ComboBox();
+            this.lblAnalysisSleepPeriodLabel = new System.Windows.Forms.Label();
+            this.chrNightSleepLength = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblAnalysisSleepAwakeTimeData = new System.Windows.Forms.Label();
+            this.lblAnalysisSleepWholeLengthData = new System.Windows.Forms.Label();
+            this.pbAnalysisSleepQualityNeutral = new System.Windows.Forms.PictureBox();
+            this.pbAnalysisSleepQualityBad = new System.Windows.Forms.PictureBox();
+            this.pbAnalysisSleepQualityGood = new System.Windows.Forms.PictureBox();
+            this.lblAnalysisSleepQualityLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisSleepAwakeTimeLabel = new System.Windows.Forms.Label();
+            this.lblAnalysisSleepWholeLengthLabel = new System.Windows.Forms.Label();
+            this.chrAnalysisSleepData = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.subpnlAnalysisOverall = new System.Windows.Forms.Panel();
             this.lblAnalysisOverallSleepTimeData = new System.Windows.Forms.Label();
             this.lblAnalysisOverallWeightChangeData = new System.Windows.Forms.Label();
@@ -233,20 +246,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.subpnlAnalysisSleep = new System.Windows.Forms.Panel();
-            this.btnAnalysisSleepPeriod = new System.Windows.Forms.Button();
-            this.cmbAnalysisSleepPeriod = new System.Windows.Forms.ComboBox();
-            this.lblAnalysisSleepPeriodLabel = new System.Windows.Forms.Label();
-            this.chrNightSleepLength = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lblAnalysisSleepAwakeTimeData = new System.Windows.Forms.Label();
-            this.lblAnalysisSleepWholeLengthData = new System.Windows.Forms.Label();
-            this.pbAnalysisSleepQualityNeutral = new System.Windows.Forms.PictureBox();
-            this.pbAnalysisSleepQualityBad = new System.Windows.Forms.PictureBox();
-            this.pbAnalysisSleepQualityGood = new System.Windows.Forms.PictureBox();
-            this.lblAnalysisSleepQualityLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisSleepAwakeTimeLabel = new System.Windows.Forms.Label();
-            this.lblAnalysisSleepWholeLengthLabel = new System.Windows.Forms.Label();
-            this.chrAnalysisSleepData = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblAnalysisDate = new System.Windows.Forms.Label();
             this.pnlAnalysisButtons = new System.Windows.Forms.Panel();
             this.btnAnalysisOverall = new System.Windows.Forms.Button();
             this.btnAnalysisTrainings = new System.Windows.Forms.Button();
@@ -312,6 +312,7 @@
             this.gbAnalysisSleepReccomendations = new System.Windows.Forms.GroupBox();
             this.lblAnalysisSleepRecommendations = new System.Windows.Forms.Label();
             this.gbSleepAddSession = new System.Windows.Forms.GroupBox();
+            this.lblSleepAddNewSleepTotalLabel = new System.Windows.Forms.Label();
             this.lblSleepAddNewSleepDeepSleepLabel = new System.Windows.Forms.Label();
             this.lblSleepAddNewSleepAwakeLabel = new System.Windows.Forms.Label();
             this.lblSleepAddNewSleepLightSleep = new System.Windows.Forms.Label();
@@ -381,7 +382,6 @@
             this.lnklblDevGithub = new System.Windows.Forms.LinkLabel();
             this.lblDeveloperName = new System.Windows.Forms.Label();
             this.pbApplicationInfoLogo = new System.Windows.Forms.PictureBox();
-            this.lblSleepAddNewSleepTotalLabel = new System.Windows.Forms.Label();
             pbGoalsSetComputedSleepGoalSuccess = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pbGoalsSetComputedSleepGoalSuccess)).BeginInit();
             this.pnlLeftBar.SuspendLayout();
@@ -412,18 +412,18 @@
             this.gbTrainingRemoval.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).BeginInit();
             this.pnlAnalysis.SuspendLayout();
-            this.subpnlAnalysisOverall.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallBodyweight)).BeginInit();
-            this.subpnlAnalysisFoods.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallDailyCalories)).BeginInit();
-            this.subpnlAnalysisTrainings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).BeginInit();
             this.subpnlAnalysisSleep.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrNightSleepLength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityNeutral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityBad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityGood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisSleepData)).BeginInit();
+            this.subpnlAnalysisOverall.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallBodyweight)).BeginInit();
+            this.subpnlAnalysisFoods.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallDailyCalories)).BeginInit();
+            this.subpnlAnalysisTrainings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).BeginInit();
             this.pnlAnalysisButtons.SuspendLayout();
             this.pnlGoals.SuspendLayout();
             this.gbGoalsBodyweightGoal.SuspendLayout();
@@ -1735,7 +1735,6 @@
             this.txtPlanTrainingsDuration.Size = new System.Drawing.Size(114, 27);
             this.txtPlanTrainingsDuration.TabIndex = 47;
             this.txtPlanTrainingsDuration.Text = "Kestus";
-            this.txtPlanTrainingsDuration.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblAddToTrainingPlan
             // 
@@ -1762,7 +1761,6 @@
             this.cmbAddToTrainingPlan.Name = "cmbAddToTrainingPlan";
             this.cmbAddToTrainingPlan.Size = new System.Drawing.Size(273, 27);
             this.cmbAddToTrainingPlan.TabIndex = 45;
-            this.cmbAddToTrainingPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pbAddTrainingToPlanSuccessful
             // 
@@ -2130,17 +2128,218 @@
             this.lblAnalysisDayOfWeek.Text = "D,";
             this.lblAnalysisDayOfWeek.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // lblAnalysisDate
+            // subpnlAnalysisSleep
             // 
-            this.lblAnalysisDate.AutoSize = true;
-            this.lblAnalysisDate.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisDate.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisDate.Location = new System.Drawing.Point(177, 132);
-            this.lblAnalysisDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisDate.Name = "lblAnalysisDate";
-            this.lblAnalysisDate.Size = new System.Drawing.Size(144, 25);
-            this.lblAnalysisDate.TabIndex = 50;
-            this.lblAnalysisDate.Text = "DD.MM.YYYY";
+            this.subpnlAnalysisSleep.Controls.Add(this.btnAnalysisSleepPeriod);
+            this.subpnlAnalysisSleep.Controls.Add(this.cmbAnalysisSleepPeriod);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepPeriodLabel);
+            this.subpnlAnalysisSleep.Controls.Add(this.chrNightSleepLength);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepAwakeTimeData);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepWholeLengthData);
+            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityNeutral);
+            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityBad);
+            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityGood);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepQualityLabel);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepAwakeTimeLabel);
+            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepWholeLengthLabel);
+            this.subpnlAnalysisSleep.Controls.Add(this.chrAnalysisSleepData);
+            this.subpnlAnalysisSleep.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subpnlAnalysisSleep.Location = new System.Drawing.Point(12, 173);
+            this.subpnlAnalysisSleep.Name = "subpnlAnalysisSleep";
+            this.subpnlAnalysisSleep.Size = new System.Drawing.Size(1015, 396);
+            this.subpnlAnalysisSleep.TabIndex = 49;
+            // 
+            // btnAnalysisSleepPeriod
+            // 
+            this.btnAnalysisSleepPeriod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
+            this.btnAnalysisSleepPeriod.FlatAppearance.BorderSize = 0;
+            this.btnAnalysisSleepPeriod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
+            this.btnAnalysisSleepPeriod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnalysisSleepPeriod.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnalysisSleepPeriod.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnAnalysisSleepPeriod.Location = new System.Drawing.Point(366, 355);
+            this.btnAnalysisSleepPeriod.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.btnAnalysisSleepPeriod.Name = "btnAnalysisSleepPeriod";
+            this.btnAnalysisSleepPeriod.Size = new System.Drawing.Size(60, 30);
+            this.btnAnalysisSleepPeriod.TabIndex = 79;
+            this.btnAnalysisSleepPeriod.Text = "Kuva";
+            this.btnAnalysisSleepPeriod.UseVisualStyleBackColor = false;
+            // 
+            // cmbAnalysisSleepPeriod
+            // 
+            this.cmbAnalysisSleepPeriod.DropDownHeight = 100;
+            this.cmbAnalysisSleepPeriod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnalysisSleepPeriod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAnalysisSleepPeriod.FormattingEnabled = true;
+            this.cmbAnalysisSleepPeriod.IntegralHeight = false;
+            this.cmbAnalysisSleepPeriod.ItemHeight = 19;
+            this.cmbAnalysisSleepPeriod.Location = new System.Drawing.Point(95, 355);
+            this.cmbAnalysisSleepPeriod.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbAnalysisSleepPeriod.Name = "cmbAnalysisSleepPeriod";
+            this.cmbAnalysisSleepPeriod.Size = new System.Drawing.Size(236, 27);
+            this.cmbAnalysisSleepPeriod.TabIndex = 78;
+            // 
+            // lblAnalysisSleepPeriodLabel
+            // 
+            this.lblAnalysisSleepPeriodLabel.AutoSize = true;
+            this.lblAnalysisSleepPeriodLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepPeriodLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepPeriodLabel.Location = new System.Drawing.Point(22, 359);
+            this.lblAnalysisSleepPeriodLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepPeriodLabel.Name = "lblAnalysisSleepPeriodLabel";
+            this.lblAnalysisSleepPeriodLabel.Size = new System.Drawing.Size(73, 21);
+            this.lblAnalysisSleepPeriodLabel.TabIndex = 77;
+            this.lblAnalysisSleepPeriodLabel.Text = "Periood:";
+            // 
+            // chrNightSleepLength
+            // 
+            this.chrNightSleepLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea2.Name = "ChartArea1";
+            this.chrNightSleepLength.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.Transparent;
+            legend2.Name = "Legend1";
+            this.chrNightSleepLength.Legends.Add(legend2);
+            this.chrNightSleepLength.Location = new System.Drawing.Point(25, 167);
+            this.chrNightSleepLength.Name = "chrNightSleepLength";
+            this.chrNightSleepLength.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series2.BorderColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Color = System.Drawing.Color.Transparent;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chrNightSleepLength.Series.Add(series2);
+            this.chrNightSleepLength.Size = new System.Drawing.Size(500, 179);
+            this.chrNightSleepLength.TabIndex = 76;
+            this.chrNightSleepLength.Text = "chart3";
+            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "chrAnalysisOverallBodyweightTitle";
+            title2.Text = "Une pikkus ajas";
+            this.chrNightSleepLength.Titles.Add(title2);
+            // 
+            // lblAnalysisSleepAwakeTimeData
+            // 
+            this.lblAnalysisSleepAwakeTimeData.AutoSize = true;
+            this.lblAnalysisSleepAwakeTimeData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepAwakeTimeData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepAwakeTimeData.Location = new System.Drawing.Point(161, 77);
+            this.lblAnalysisSleepAwakeTimeData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepAwakeTimeData.Name = "lblAnalysisSleepAwakeTimeData";
+            this.lblAnalysisSleepAwakeTimeData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisSleepAwakeTimeData.TabIndex = 75;
+            this.lblAnalysisSleepAwakeTimeData.Text = "data";
+            // 
+            // lblAnalysisSleepWholeLengthData
+            // 
+            this.lblAnalysisSleepWholeLengthData.AutoSize = true;
+            this.lblAnalysisSleepWholeLengthData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepWholeLengthData.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepWholeLengthData.Location = new System.Drawing.Point(157, 30);
+            this.lblAnalysisSleepWholeLengthData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepWholeLengthData.Name = "lblAnalysisSleepWholeLengthData";
+            this.lblAnalysisSleepWholeLengthData.Size = new System.Drawing.Size(43, 18);
+            this.lblAnalysisSleepWholeLengthData.TabIndex = 74;
+            this.lblAnalysisSleepWholeLengthData.Text = "data";
+            // 
+            // pbAnalysisSleepQualityNeutral
+            // 
+            this.pbAnalysisSleepQualityNeutral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityNeutral.BackgroundImage")));
+            this.pbAnalysisSleepQualityNeutral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbAnalysisSleepQualityNeutral.Location = new System.Drawing.Point(214, 116);
+            this.pbAnalysisSleepQualityNeutral.Name = "pbAnalysisSleepQualityNeutral";
+            this.pbAnalysisSleepQualityNeutral.Size = new System.Drawing.Size(40, 40);
+            this.pbAnalysisSleepQualityNeutral.TabIndex = 71;
+            this.pbAnalysisSleepQualityNeutral.TabStop = false;
+            // 
+            // pbAnalysisSleepQualityBad
+            // 
+            this.pbAnalysisSleepQualityBad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityBad.BackgroundImage")));
+            this.pbAnalysisSleepQualityBad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbAnalysisSleepQualityBad.Location = new System.Drawing.Point(214, 116);
+            this.pbAnalysisSleepQualityBad.Name = "pbAnalysisSleepQualityBad";
+            this.pbAnalysisSleepQualityBad.Size = new System.Drawing.Size(40, 40);
+            this.pbAnalysisSleepQualityBad.TabIndex = 70;
+            this.pbAnalysisSleepQualityBad.TabStop = false;
+            // 
+            // pbAnalysisSleepQualityGood
+            // 
+            this.pbAnalysisSleepQualityGood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityGood.BackgroundImage")));
+            this.pbAnalysisSleepQualityGood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbAnalysisSleepQualityGood.Location = new System.Drawing.Point(214, 116);
+            this.pbAnalysisSleepQualityGood.Name = "pbAnalysisSleepQualityGood";
+            this.pbAnalysisSleepQualityGood.Size = new System.Drawing.Size(40, 40);
+            this.pbAnalysisSleepQualityGood.TabIndex = 69;
+            this.pbAnalysisSleepQualityGood.TabStop = false;
+            // 
+            // lblAnalysisSleepQualityLabel
+            // 
+            this.lblAnalysisSleepQualityLabel.AutoSize = true;
+            this.lblAnalysisSleepQualityLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepQualityLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepQualityLabel.Location = new System.Drawing.Point(22, 123);
+            this.lblAnalysisSleepQualityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepQualityLabel.Name = "lblAnalysisSleepQualityLabel";
+            this.lblAnalysisSleepQualityLabel.Size = new System.Drawing.Size(191, 21);
+            this.lblAnalysisSleepQualityLabel.TabIndex = 68;
+            this.lblAnalysisSleepQualityLabel.Text = "Une kvaliteedihinnang:";
+            // 
+            // lblAnalysisSleepAwakeTimeLabel
+            // 
+            this.lblAnalysisSleepAwakeTimeLabel.AutoSize = true;
+            this.lblAnalysisSleepAwakeTimeLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepAwakeTimeLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepAwakeTimeLabel.Location = new System.Drawing.Point(22, 75);
+            this.lblAnalysisSleepAwakeTimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepAwakeTimeLabel.Name = "lblAnalysisSleepAwakeTimeLabel";
+            this.lblAnalysisSleepAwakeTimeLabel.Size = new System.Drawing.Size(142, 21);
+            this.lblAnalysisSleepAwakeTimeLabel.TabIndex = 67;
+            this.lblAnalysisSleepAwakeTimeLabel.Text = "Ärkveloleku aeg:";
+            // 
+            // lblAnalysisSleepWholeLengthLabel
+            // 
+            this.lblAnalysisSleepWholeLengthLabel.AutoSize = true;
+            this.lblAnalysisSleepWholeLengthLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisSleepWholeLengthLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisSleepWholeLengthLabel.Location = new System.Drawing.Point(22, 30);
+            this.lblAnalysisSleepWholeLengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisSleepWholeLengthLabel.Name = "lblAnalysisSleepWholeLengthLabel";
+            this.lblAnalysisSleepWholeLengthLabel.Size = new System.Drawing.Size(138, 21);
+            this.lblAnalysisSleepWholeLengthLabel.TabIndex = 66;
+            this.lblAnalysisSleepWholeLengthLabel.Text = "Une kogupikkus:";
+            // 
+            // chrAnalysisSleepData
+            // 
+            this.chrAnalysisSleepData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
+            chartArea3.BackColor = System.Drawing.Color.Transparent;
+            chartArea3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea3.Name = "ChartArea1";
+            this.chrAnalysisSleepData.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.Color.Transparent;
+            legend3.Name = "Legend1";
+            this.chrAnalysisSleepData.Legends.Add(legend3);
+            this.chrAnalysisSleepData.Location = new System.Drawing.Point(557, 25);
+            this.chrAnalysisSleepData.Name = "chrAnalysisSleepData";
+            this.chrAnalysisSleepData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series3.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series3.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series3.BorderColor = System.Drawing.Color.Transparent;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Color = System.Drawing.Color.Transparent;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chrAnalysisSleepData.Series.Add(series3);
+            this.chrAnalysisSleepData.Size = new System.Drawing.Size(442, 333);
+            this.chrAnalysisSleepData.TabIndex = 1;
+            this.chrAnalysisSleepData.Text = "chrAnalysisSleepData";
+            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "chrAnalysisSleepDataTitle";
+            title3.Text = "Ööpäevane uni:";
+            this.chrAnalysisSleepData.Titles.Add(title3);
             // 
             // subpnlAnalysisOverall
             // 
@@ -2810,218 +3009,17 @@
             this.columnHeader4.Text = "Kalorid";
             this.columnHeader4.Width = 126;
             // 
-            // subpnlAnalysisSleep
+            // lblAnalysisDate
             // 
-            this.subpnlAnalysisSleep.Controls.Add(this.btnAnalysisSleepPeriod);
-            this.subpnlAnalysisSleep.Controls.Add(this.cmbAnalysisSleepPeriod);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepPeriodLabel);
-            this.subpnlAnalysisSleep.Controls.Add(this.chrNightSleepLength);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepAwakeTimeData);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepWholeLengthData);
-            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityNeutral);
-            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityBad);
-            this.subpnlAnalysisSleep.Controls.Add(this.pbAnalysisSleepQualityGood);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepQualityLabel);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepAwakeTimeLabel);
-            this.subpnlAnalysisSleep.Controls.Add(this.lblAnalysisSleepWholeLengthLabel);
-            this.subpnlAnalysisSleep.Controls.Add(this.chrAnalysisSleepData);
-            this.subpnlAnalysisSleep.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subpnlAnalysisSleep.Location = new System.Drawing.Point(12, 173);
-            this.subpnlAnalysisSleep.Name = "subpnlAnalysisSleep";
-            this.subpnlAnalysisSleep.Size = new System.Drawing.Size(1015, 396);
-            this.subpnlAnalysisSleep.TabIndex = 49;
-            // 
-            // btnAnalysisSleepPeriod
-            // 
-            this.btnAnalysisSleepPeriod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(168)))), ((int)(((byte)(160)))));
-            this.btnAnalysisSleepPeriod.FlatAppearance.BorderSize = 0;
-            this.btnAnalysisSleepPeriod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(130)))), ((int)(((byte)(124)))));
-            this.btnAnalysisSleepPeriod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalysisSleepPeriod.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalysisSleepPeriod.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnAnalysisSleepPeriod.Location = new System.Drawing.Point(366, 355);
-            this.btnAnalysisSleepPeriod.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnAnalysisSleepPeriod.Name = "btnAnalysisSleepPeriod";
-            this.btnAnalysisSleepPeriod.Size = new System.Drawing.Size(60, 30);
-            this.btnAnalysisSleepPeriod.TabIndex = 79;
-            this.btnAnalysisSleepPeriod.Text = "Kuva";
-            this.btnAnalysisSleepPeriod.UseVisualStyleBackColor = false;
-            // 
-            // cmbAnalysisSleepPeriod
-            // 
-            this.cmbAnalysisSleepPeriod.DropDownHeight = 100;
-            this.cmbAnalysisSleepPeriod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAnalysisSleepPeriod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbAnalysisSleepPeriod.FormattingEnabled = true;
-            this.cmbAnalysisSleepPeriod.IntegralHeight = false;
-            this.cmbAnalysisSleepPeriod.ItemHeight = 19;
-            this.cmbAnalysisSleepPeriod.Location = new System.Drawing.Point(95, 355);
-            this.cmbAnalysisSleepPeriod.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbAnalysisSleepPeriod.Name = "cmbAnalysisSleepPeriod";
-            this.cmbAnalysisSleepPeriod.Size = new System.Drawing.Size(236, 27);
-            this.cmbAnalysisSleepPeriod.TabIndex = 78;
-            // 
-            // lblAnalysisSleepPeriodLabel
-            // 
-            this.lblAnalysisSleepPeriodLabel.AutoSize = true;
-            this.lblAnalysisSleepPeriodLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepPeriodLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepPeriodLabel.Location = new System.Drawing.Point(22, 359);
-            this.lblAnalysisSleepPeriodLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepPeriodLabel.Name = "lblAnalysisSleepPeriodLabel";
-            this.lblAnalysisSleepPeriodLabel.Size = new System.Drawing.Size(73, 21);
-            this.lblAnalysisSleepPeriodLabel.TabIndex = 77;
-            this.lblAnalysisSleepPeriodLabel.Text = "Periood:";
-            // 
-            // chrNightSleepLength
-            // 
-            this.chrNightSleepLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea2.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chrNightSleepLength.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.Transparent;
-            legend2.Name = "Legend1";
-            this.chrNightSleepLength.Legends.Add(legend2);
-            this.chrNightSleepLength.Location = new System.Drawing.Point(25, 167);
-            this.chrNightSleepLength.Name = "chrNightSleepLength";
-            this.chrNightSleepLength.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series2.BorderColor = System.Drawing.Color.Transparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.Transparent;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chrNightSleepLength.Series.Add(series2);
-            this.chrNightSleepLength.Size = new System.Drawing.Size(500, 179);
-            this.chrNightSleepLength.TabIndex = 76;
-            this.chrNightSleepLength.Text = "chart3";
-            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "chrAnalysisOverallBodyweightTitle";
-            title2.Text = "Une pikkus ajas";
-            this.chrNightSleepLength.Titles.Add(title2);
-            // 
-            // lblAnalysisSleepAwakeTimeData
-            // 
-            this.lblAnalysisSleepAwakeTimeData.AutoSize = true;
-            this.lblAnalysisSleepAwakeTimeData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepAwakeTimeData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepAwakeTimeData.Location = new System.Drawing.Point(161, 77);
-            this.lblAnalysisSleepAwakeTimeData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepAwakeTimeData.Name = "lblAnalysisSleepAwakeTimeData";
-            this.lblAnalysisSleepAwakeTimeData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisSleepAwakeTimeData.TabIndex = 75;
-            this.lblAnalysisSleepAwakeTimeData.Text = "data";
-            // 
-            // lblAnalysisSleepWholeLengthData
-            // 
-            this.lblAnalysisSleepWholeLengthData.AutoSize = true;
-            this.lblAnalysisSleepWholeLengthData.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepWholeLengthData.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepWholeLengthData.Location = new System.Drawing.Point(157, 30);
-            this.lblAnalysisSleepWholeLengthData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepWholeLengthData.Name = "lblAnalysisSleepWholeLengthData";
-            this.lblAnalysisSleepWholeLengthData.Size = new System.Drawing.Size(43, 18);
-            this.lblAnalysisSleepWholeLengthData.TabIndex = 74;
-            this.lblAnalysisSleepWholeLengthData.Text = "data";
-            // 
-            // pbAnalysisSleepQualityNeutral
-            // 
-            this.pbAnalysisSleepQualityNeutral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityNeutral.BackgroundImage")));
-            this.pbAnalysisSleepQualityNeutral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbAnalysisSleepQualityNeutral.Location = new System.Drawing.Point(214, 116);
-            this.pbAnalysisSleepQualityNeutral.Name = "pbAnalysisSleepQualityNeutral";
-            this.pbAnalysisSleepQualityNeutral.Size = new System.Drawing.Size(40, 40);
-            this.pbAnalysisSleepQualityNeutral.TabIndex = 71;
-            this.pbAnalysisSleepQualityNeutral.TabStop = false;
-            // 
-            // pbAnalysisSleepQualityBad
-            // 
-            this.pbAnalysisSleepQualityBad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityBad.BackgroundImage")));
-            this.pbAnalysisSleepQualityBad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbAnalysisSleepQualityBad.Location = new System.Drawing.Point(214, 116);
-            this.pbAnalysisSleepQualityBad.Name = "pbAnalysisSleepQualityBad";
-            this.pbAnalysisSleepQualityBad.Size = new System.Drawing.Size(40, 40);
-            this.pbAnalysisSleepQualityBad.TabIndex = 70;
-            this.pbAnalysisSleepQualityBad.TabStop = false;
-            // 
-            // pbAnalysisSleepQualityGood
-            // 
-            this.pbAnalysisSleepQualityGood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbAnalysisSleepQualityGood.BackgroundImage")));
-            this.pbAnalysisSleepQualityGood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbAnalysisSleepQualityGood.Location = new System.Drawing.Point(214, 116);
-            this.pbAnalysisSleepQualityGood.Name = "pbAnalysisSleepQualityGood";
-            this.pbAnalysisSleepQualityGood.Size = new System.Drawing.Size(40, 40);
-            this.pbAnalysisSleepQualityGood.TabIndex = 69;
-            this.pbAnalysisSleepQualityGood.TabStop = false;
-            // 
-            // lblAnalysisSleepQualityLabel
-            // 
-            this.lblAnalysisSleepQualityLabel.AutoSize = true;
-            this.lblAnalysisSleepQualityLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepQualityLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepQualityLabel.Location = new System.Drawing.Point(22, 123);
-            this.lblAnalysisSleepQualityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepQualityLabel.Name = "lblAnalysisSleepQualityLabel";
-            this.lblAnalysisSleepQualityLabel.Size = new System.Drawing.Size(191, 21);
-            this.lblAnalysisSleepQualityLabel.TabIndex = 68;
-            this.lblAnalysisSleepQualityLabel.Text = "Une kvaliteedihinnang:";
-            // 
-            // lblAnalysisSleepAwakeTimeLabel
-            // 
-            this.lblAnalysisSleepAwakeTimeLabel.AutoSize = true;
-            this.lblAnalysisSleepAwakeTimeLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepAwakeTimeLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepAwakeTimeLabel.Location = new System.Drawing.Point(22, 75);
-            this.lblAnalysisSleepAwakeTimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepAwakeTimeLabel.Name = "lblAnalysisSleepAwakeTimeLabel";
-            this.lblAnalysisSleepAwakeTimeLabel.Size = new System.Drawing.Size(142, 21);
-            this.lblAnalysisSleepAwakeTimeLabel.TabIndex = 67;
-            this.lblAnalysisSleepAwakeTimeLabel.Text = "Ärkveloleku aeg:";
-            // 
-            // lblAnalysisSleepWholeLengthLabel
-            // 
-            this.lblAnalysisSleepWholeLengthLabel.AutoSize = true;
-            this.lblAnalysisSleepWholeLengthLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnalysisSleepWholeLengthLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblAnalysisSleepWholeLengthLabel.Location = new System.Drawing.Point(22, 30);
-            this.lblAnalysisSleepWholeLengthLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAnalysisSleepWholeLengthLabel.Name = "lblAnalysisSleepWholeLengthLabel";
-            this.lblAnalysisSleepWholeLengthLabel.Size = new System.Drawing.Size(138, 21);
-            this.lblAnalysisSleepWholeLengthLabel.TabIndex = 66;
-            this.lblAnalysisSleepWholeLengthLabel.Text = "Une kogupikkus:";
-            // 
-            // chrAnalysisSleepData
-            // 
-            this.chrAnalysisSleepData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea3.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chrAnalysisSleepData.ChartAreas.Add(chartArea3);
-            legend3.BackColor = System.Drawing.Color.Transparent;
-            legend3.Name = "Legend1";
-            this.chrAnalysisSleepData.Legends.Add(legend3);
-            this.chrAnalysisSleepData.Location = new System.Drawing.Point(557, 25);
-            this.chrAnalysisSleepData.Name = "chrAnalysisSleepData";
-            this.chrAnalysisSleepData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series3.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series3.BorderColor = System.Drawing.Color.Transparent;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Color = System.Drawing.Color.Transparent;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chrAnalysisSleepData.Series.Add(series3);
-            this.chrAnalysisSleepData.Size = new System.Drawing.Size(442, 333);
-            this.chrAnalysisSleepData.TabIndex = 1;
-            this.chrAnalysisSleepData.Text = "chrAnalysisSleepData";
-            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "chrAnalysisSleepDataTitle";
-            title3.Text = "Ööpäevane uni:";
-            this.chrAnalysisSleepData.Titles.Add(title3);
+            this.lblAnalysisDate.AutoSize = true;
+            this.lblAnalysisDate.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnalysisDate.ForeColor = System.Drawing.Color.Black;
+            this.lblAnalysisDate.Location = new System.Drawing.Point(177, 132);
+            this.lblAnalysisDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAnalysisDate.Name = "lblAnalysisDate";
+            this.lblAnalysisDate.Size = new System.Drawing.Size(144, 25);
+            this.lblAnalysisDate.TabIndex = 50;
+            this.lblAnalysisDate.Text = "DD.MM.YYYY";
             // 
             // pnlAnalysisButtons
             // 
@@ -3902,6 +3900,18 @@
             this.gbSleepAddSession.TabIndex = 47;
             this.gbSleepAddSession.TabStop = false;
             this.gbSleepAddSession.Text = "Unesessiooni lisamine";
+            // 
+            // lblSleepAddNewSleepTotalLabel
+            // 
+            this.lblSleepAddNewSleepTotalLabel.AutoSize = true;
+            this.lblSleepAddNewSleepTotalLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSleepAddNewSleepTotalLabel.ForeColor = System.Drawing.Color.Black;
+            this.lblSleepAddNewSleepTotalLabel.Location = new System.Drawing.Point(29, 50);
+            this.lblSleepAddNewSleepTotalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSleepAddNewSleepTotalLabel.Name = "lblSleepAddNewSleepTotalLabel";
+            this.lblSleepAddNewSleepTotalLabel.Size = new System.Drawing.Size(89, 21);
+            this.lblSleepAddNewSleepTotalLabel.TabIndex = 51;
+            this.lblSleepAddNewSleepTotalLabel.Text = "Uni kokku:";
             // 
             // lblSleepAddNewSleepDeepSleepLabel
             // 
@@ -4809,26 +4819,14 @@
             this.pbApplicationInfoLogo.TabStop = false;
             this.pbApplicationInfoLogo.Click += new System.EventHandler(this.pbApplicationInfoLogo_Click);
             // 
-            // lblSleepAddNewSleepTotalLabel
-            // 
-            this.lblSleepAddNewSleepTotalLabel.AutoSize = true;
-            this.lblSleepAddNewSleepTotalLabel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSleepAddNewSleepTotalLabel.ForeColor = System.Drawing.Color.Black;
-            this.lblSleepAddNewSleepTotalLabel.Location = new System.Drawing.Point(29, 50);
-            this.lblSleepAddNewSleepTotalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSleepAddNewSleepTotalLabel.Name = "lblSleepAddNewSleepTotalLabel";
-            this.lblSleepAddNewSleepTotalLabel.Size = new System.Drawing.Size(89, 21);
-            this.lblSleepAddNewSleepTotalLabel.TabIndex = 51;
-            this.lblSleepAddNewSleepTotalLabel.Text = "Uni kokku:";
-            // 
             // ApexFit_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlTrainings);
+            this.Controls.Add(this.pnlApplicationInfo);
             this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlAnalysis);
@@ -4891,6 +4889,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTrainingRemovalSuccessful)).EndInit();
             this.pnlAnalysis.ResumeLayout(false);
             this.pnlAnalysis.PerformLayout();
+            this.subpnlAnalysisSleep.ResumeLayout(false);
+            this.subpnlAnalysisSleep.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chrNightSleepLength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityNeutral)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityBad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityGood)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisSleepData)).EndInit();
             this.subpnlAnalysisOverall.ResumeLayout(false);
             this.subpnlAnalysisOverall.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisOverallBodyweight)).EndInit();
@@ -4900,13 +4905,6 @@
             this.subpnlAnalysisTrainings.ResumeLayout(false);
             this.subpnlAnalysisTrainings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chAnalysisTrainings)).EndInit();
-            this.subpnlAnalysisSleep.ResumeLayout(false);
-            this.subpnlAnalysisSleep.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chrNightSleepLength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityNeutral)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityBad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAnalysisSleepQualityGood)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chrAnalysisSleepData)).EndInit();
             this.pnlAnalysisButtons.ResumeLayout(false);
             this.pnlGoals.ResumeLayout(false);
             this.pnlGoals.PerformLayout();
