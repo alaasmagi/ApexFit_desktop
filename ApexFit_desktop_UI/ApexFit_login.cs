@@ -82,7 +82,7 @@ namespace ApexFit_desktop_UI
             }
             if (securityQuestions == null)
             {
-                this.Close();
+               // this.Close();
             }
             else
             {

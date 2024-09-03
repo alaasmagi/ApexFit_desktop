@@ -64,8 +64,8 @@ namespace ApexFit_desktop_UI
             txtDeleteUserAccountPassword.Text = "Salasõna";
             txtDeleteUserAccountPassword.UseSystemPasswordChar = false;
             txtDeleteUserAccountPassword.ForeColor = Color.DarkGray;
-            txtChangeCalorieLimitCalories.Text = "kcal";
-            txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
+          //  txtChangeCalorieLimitCalories.Text = "kcal";
+           // txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
 
 
            /* txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
@@ -179,7 +179,7 @@ namespace ApexFit_desktop_UI
         private void successPbTimer_Tick(object sender, EventArgs e)
         {
             successPbTimer.Stop();
-            pbCalorieLimitSetSuccessful.Visible = false;
+            //pbCalorieLimitSetSuccessful.Visible = false;
             pbChangeEmailSuccessfull.Visible = false;
             pbChangeUserHeightSuccessful.Visible = false;
             pbUserAgeChangeSuccessful.Visible = false;
@@ -294,14 +294,14 @@ namespace ApexFit_desktop_UI
             successPbTimer.Start();
         }
 
-        private void txtChangeCalorieLimitCalories_Enter(object sender, EventArgs e)
+        /*private void txtChangeCalorieLimitCalories_Enter(object sender, EventArgs e)
         {
             if (txtChangeCalorieLimitCalories.Text == "kcal")
             {
                 txtChangeCalorieLimitCalories.Text = "";
                 txtChangeCalorieLimitCalories.ForeColor = Color.Black;
             }
-        }
+        }*/
 
         private void txtCurrentEmail_Enter(object sender, EventArgs e)
         {
@@ -371,14 +371,14 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void txtChangeCalorieLimitCalories_Leave(object sender, EventArgs e)
+       /* private void txtChangeCalorieLimitCalories_Leave(object sender, EventArgs e)
         {
             if (txtChangeCalorieLimitCalories.Text == "")
             {
                 txtChangeCalorieLimitCalories.Text = "kcal";
                 txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
             }
-        }
+        }*/
 
         private void txtCurrentEmail_Leave(object sender, EventArgs e)
         {
@@ -448,7 +448,7 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void btnSetCalorieLimit_Click(object sender, EventArgs e)
+        /*private void btnSetCalorieLimit_Click(object sender, EventArgs e)
         {
             int temp;
             UserProfile = new UserProfileComponent.CUserProfile();
@@ -465,7 +465,7 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Viga kaloraaži sisestuses!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
-        }
+        }*/
 
         private void btnChangeEmail_Click(object sender, EventArgs e)
         {

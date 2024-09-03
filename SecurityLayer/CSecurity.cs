@@ -298,9 +298,9 @@ namespace SecurityLayer
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "UPDATE user_data SET token_enc = @tokenEnc WHERE user_id = @userId";
+                connection.Open();
+                string query = "UPDATE user_data SET token_enc = 0 WHERE user_id = @userId";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@tokenEnc", 0);
                 command.Parameters.AddWithValue("@userId", userId);
                 command.ExecuteNonQuery();
             }

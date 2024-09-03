@@ -9,7 +9,6 @@ using System.Drawing.Text;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace ApexFit_desktop_UI
 {
     internal class Program
@@ -19,19 +18,23 @@ namespace ApexFit_desktop_UI
         /// </summary>
         [STAThread]
         static void Main()
-        {   
-            ApexFit_login login = new ApexFit_login();
+        {
             Application.EnableVisualStyles();
-            int userId = login.TryLoginWithToken();
-            if (userId == 0)
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            using (ApexFit_login login = new ApexFit_login())
             {
-                Application.Run(new ApexFit_login());
-            }
-            else
-            {
-                Application.Run(new ApexFit_mainWindow(userId));
+                int userId = login.TryLoginWithToken();
+                if (userId == 0)
+                {
+                    Application.Run(new ApexFit_login());
+                }
+                else
+                {
+                    Application.Run(new ApexFit_mainWindow(userId));
+                }
             }
         }
-        
     }
 }
+
