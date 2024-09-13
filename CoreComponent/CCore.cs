@@ -27,7 +27,7 @@ namespace CoreComponent
                 throw new InvalidOperationException("Database password is not set in the environment variables.");
             }
 
-            string connectionString = baseConnectionString.Replace("{PASSWORD}", password);
+            string connectionString = baseConnectionString.Replace("{PASSWORD}", password) + ";Connect Timeout=90";
 
             return connectionString;
         }
