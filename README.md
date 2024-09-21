@@ -21,14 +21,21 @@ No external UI elements were used in this project. I did my best to create a use
 ### Structure of the backend
 The application uses component-based architecture which means that the app is divided into 8 parts. Each part is a project on its own and has an interface.
 
-**UI component** - contains and implements both login and main window and the logic behind UI elements.
-**Core component** - implements different functions for calculations and connecting to database.
-**Security layer** - implements functions which help to keep user data secure.
-**Analysis component** - performs analysis specifically related to fitness functionality.
-**Foods'/recipes' component** - handles food and recipe data. 
-**User profile component** - handles user data.
-**Trainings' component** - handles training data.
-**Sleep component** - handles sleep data.
+***UI component** - contains and implements both login and main window and the logic behind UI elements.
+
+***Core component** - implements different functions for calculations and connecting to database.
+
+***Security layer** - implements functions which help to keep user data secure.
+
+***Analysis component** - performs analysis specifically related to fitness functionality.
+
+***Foods'/recipes' component** - handles food and recipe data. 
+
+***User profile component** - handles user data.
+
+***Trainings' component** - handles training data.
+
+***Sleep component** - handles sleep data.
 
 ### Data management
 The application uses Microsoft Azure SQL database as database server. Predecessor ("Toitumispaevik") used SQLite and, therefore, stored data locally. However this application can be used in any modern Windows system and data will be always within reach.
@@ -36,17 +43,27 @@ Database is secured with username and password. Both are set as environmental va
 
 Data is separated between 11 tables. Each table has its own use.
 
-**user_data** - stores information about user. Sensitive info is protected by using my own encryption methods and salted hash.
-**user_daily_data** - stores daily information about user (ig. their calorie daily intake, consumption).
-**food_data** - stores all foods (and their nutritional information) that are available to select. User can also add their own foods.
-**recipe_data** - stores all recipes (and their nutritional information) that are available to select. User can also add their own recipes.
-**recipe_ingredients** - stores ingredients (foods) of recipes that are created.
-**user_food_history** - stores all history related to user's meals.
-**training_data** - stores all training styles (and fitness related information) that are available to select. User can also add their own training styles.
-**user_training_plan** - stores all future plans related to user's training sessions.
-**user_training_history** - stores all history related to user's training sessions.
-**user_sleep_history** - stores all history related to user's sleeping sessions.
-**recovery_questions** - stores all app's security questions used to recover forgotten password.
+***user_data** - stores information about user. Sensitive info is protected by using my own encryption methods and salted hash.
+
+***user_daily_data** - stores daily information about user (ig. their calorie daily intake, consumption).
+
+***food_data** - stores all foods (and their nutritional information) that are available to select. User can also add their own foods.
+
+***recipe_data** - stores all recipes (and their nutritional information) that are available to select. User can also add their own recipes.
+
+***recipe_ingredients** - stores ingredients (foods) of recipes that are created.
+
+***user_food_history** - stores all history related to user's meals.
+
+***training_data** - stores all training styles (and fitness related information) that are available to select. User can also add their own training styles.
+
+***user_training_plan** - stores all future plans related to user's training sessions.
+
+***user_training_history** - stores all history related to user's training sessions.
+
+***user_sleep_history** - stores all history related to user's sleeping sessions.
+
+***recovery_questions** - stores all app's security questions used to recover forgotten password.
 
 ## Scaling possibilities
 
