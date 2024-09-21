@@ -5,6 +5,7 @@
 * App to track Your diet, trainings and sleep.
 * UI language: Estonian
 * Successor of my team's uni project "Toitumispaevik".
+* Development year: **2024**
 * Languages and technologies: **C#, .NET framework & Microsoft Azure SQL**
 
 ## How to run
