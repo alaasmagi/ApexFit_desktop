@@ -1,4 +1,4 @@
-# Apexfit - fitness tracker
+# Apexfit - fitness tracker (Still under development)
 
 ## Description
 
