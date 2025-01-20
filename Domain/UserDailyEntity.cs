@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class UserDailyEntity : BaseEntity
+    public class UserDailyEntity : BaseEntity
     {
         public Guid UserId { get; set; }
         public DateTime Date {  get; set; }
