@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class TrainingEntity : BaseEntity
+    public class UserTokenEntity : BaseEntity
     {
-        public string Name { get; set; } = default;
-        public int AvgConsumptionPerHour { get; set; }
+        public Guid UserId { get; set; }
+        public string TokenEnc { get; set; } = default;
     }
 }

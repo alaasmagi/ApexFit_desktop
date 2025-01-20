@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class UserDailyStatsEntity
+    public enum EUserSex
     {
+        Female,
+        Male
     }
 }

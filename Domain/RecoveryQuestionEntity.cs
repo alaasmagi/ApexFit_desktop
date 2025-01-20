@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class RecoveryQuestionEntity
+    public class RecoveryQuestionEntity : BaseEntity
     {
-        public int Id { get; set; }
-        public string QuestionText { get; set; } = default;
+        public string Question { get; set; } = default;
     }
 }

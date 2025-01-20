@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class TrainingEntity : BaseEntity
+    public enum EMealType
     {
-        public string Name { get; set; } = default;
-        public int AvgConsumptionPerHour { get; set; }
+        Breakfast,
+        Lunch,
+        Snack,
+        Dinner
     }
 }

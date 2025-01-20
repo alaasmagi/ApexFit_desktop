@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class RecipeIngredientEntity
+    public class RecipeIngredientEntity : BaseEntity
     {
+        public Guid RecipeId { get; set; }
+        public Guid FoodId { get; set; }
+        public int Amount { get; set; }
     }
 }
