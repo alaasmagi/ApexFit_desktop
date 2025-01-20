@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodsOrRecipesComponent
 {
-    public class CFoodsOrRecipes:IFoodsOrRecipes
+   /* public class CFoodsOrRecipes:IFoodsOrRecipes
     {
         private CoreComponent.ICore Core;
         string connectionString;
@@ -71,5 +71,5 @@ namespace FoodsOrRecipesComponent
                 return false;
             }
         }
-    }
+    }*/
 }

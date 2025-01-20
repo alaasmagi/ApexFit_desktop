@@ -41,17 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="EMealType.cs" />
+    <Compile Include="EUserSex.cs" />
     <Compile Include="FoodEntity.cs" />
     <Compile Include="RecipeEntity.cs" />
     <Compile Include="RecipeIngredientEntity.cs" />
     <Compile Include="RecoveryQuestionEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainingEntity.cs" />
-    <Compile Include="UserDailyStatsEntity.cs" />
-    <Compile Include="UserEntity.cs" />
+    <Compile Include="UserDailyEntity.cs" />
+    <Compile Include="UserFitnessEntity.cs" />
+    <Compile Include="UserMainEntity.cs" />
     <Compile Include="UserMealEntity.cs" />
     <Compile Include="UserSleepEntity.cs" />
+    <Compile Include="UserTokenEntity.cs" />
     <Compile Include="UserTrainingEntity.cs" />
+    <Compile Include="UserUpcomingTrainingEntity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,6 @@
 ﻿using Domain;
+using MySql.Data.EntityFramework;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class AppDbContext : DbContext
     {
         public DbSet<FoodEntity> FoodData { get; set; }
@@ -26,7 +29,7 @@ namespace DataAccess
         public DbSet<UserTrainingEntity> UserTrainingData { get; set; }
         public DbSet<UserDailyEntity> UserDailyData { get; set; }
 
-
+        public AppDbContext() : base("DefaultDBConnection") { }
         public AppDbContext(string connectionString) : base(connectionString) { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
