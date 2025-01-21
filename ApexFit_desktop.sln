@@ -7,15 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexFit_desktop_UI", "ApexF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLayer", "SecurityLayer\SecurityLayer.csproj", "{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingsComponent", "TrainingsComponent\TrainingsComponent.csproj", "{415510B7-9FF0-4377-98A8-C4E7CCE59A16}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserProfileComponent", "UserProfileComponent\UserProfileComponent.csproj", "{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodsOrRecipesComponent", "FoodsOrRecipesComponent\FoodsOrRecipesComponent.csproj", "{93088371-6C28-47AB-A785-25637E7683EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreComponent", "CoreComponent\CoreComponent.csproj", "{27A7B09F-5CDC-4720-B373-C7628B9ED421}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepComponent", "SleepComponent\SleepComponent.csproj", "{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisComponent", "AnalysisComponent\AnalysisComponent.csproj", "{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}"
 EndProject
@@ -39,14 +33,6 @@ Global
 		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}.Release|Any CPU.Build.0 = Release|Any CPU
-		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{415510B7-9FF0-4377-98A8-C4E7CCE59A16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{313A8AB9-6F6E-42AF-B7A4-B8D146E57BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93088371-6C28-47AB-A785-25637E7683EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93088371-6C28-47AB-A785-25637E7683EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93088371-6C28-47AB-A785-25637E7683EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,10 +41,6 @@ Global
 		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77FD2059-E3D7-4E29-9B2B-E426518D2BA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Release|Any CPU.ActiveCfg = Release|Any CPU

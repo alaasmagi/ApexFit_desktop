@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace SecurityLayer
 {
-    public class CSecurity : ISecurity
+    public class CSecurity
     {
         private CoreComponent.ICore Core;
         string connectionString;

@@ -9,6 +9,6 @@ namespace Domain
     public class BaseEntity
     {
         public Guid Id { get; set; }
-        public DateTime ModifiedAt { get; set; }
+        public DateTime ModifiedAt { get; set; } = DateTime.Now;
     }
 }

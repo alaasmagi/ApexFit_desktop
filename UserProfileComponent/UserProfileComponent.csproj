@@ -66,10 +66,6 @@
       <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
       <Name>SecurityLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TrainingsComponent\TrainingsComponent.csproj">
-      <Project>{415510b7-9ff0-4377-98a8-c4e7cce59a16}</Project>
-      <Name>TrainingsComponent</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

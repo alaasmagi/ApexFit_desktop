@@ -12,10 +12,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace ApexFit_desktop_UI
 {
-    public partial class ApexFit_mainWindow : Form
+  /*  public partial class ApexFit_mainWindow : Form
     {
         private SecurityLayer.ISecurity Security;
-        private UserProfileComponent.IUserProfile UserProfile;
+       // private UserProfileComponent.IUserProfile UserProfile;
         private CoreComponent.ICore Core;
 
         private int userId;
@@ -41,11 +41,11 @@ namespace ApexFit_desktop_UI
 
         }
 
-        private void TextboxReset()
+      /*  private void TextboxReset()
         {
            /* txtLoginUsername.Text = "Kasutajanimi";
             txtLoginUsername.ForeColor = Color.DarkGray;*/
-            txtCurrentUserPassword.Text = "Praegune salasõna";
+          /*  txtCurrentUserPassword.Text = "Praegune salasõna";
             txtCurrentUserPassword.UseSystemPasswordChar = false;
             txtCurrentUserPassword.ForeColor = Color.DarkGray;
             txtNewUserPassword.Text = "Uus salasõna";
@@ -82,7 +82,7 @@ namespace ApexFit_desktop_UI
             lblForgotPassword2Username.Visible = false;*/
         }
 
-        private void UserDataLoad()
+        /*private void UserDataLoad()
         {
             Security = new SecurityLayer.CSecurity();
             UserProfile = new UserProfileComponent.CUserProfile();
@@ -101,9 +101,9 @@ namespace ApexFit_desktop_UI
                 lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + (int)UserProfile.GetDataFromUserData(userId, "weight_goal") + "kg";
                 lblProfileWeightGoal.Visible = true;
             }
-        }
+        }*/
 
-        private void ComboboxReset()
+       /* private void ComboboxReset()
         {
             UserProfile = new UserProfileComponent.CUserProfile();
 
@@ -301,9 +301,9 @@ namespace ApexFit_desktop_UI
                 txtChangeCalorieLimitCalories.Text = "";
                 txtChangeCalorieLimitCalories.ForeColor = Color.Black;
             }*/
-        }
+        //}
 
-        private void txtCurrentEmail_Enter(object sender, EventArgs e)
+      /*  private void txtCurrentEmail_Enter(object sender, EventArgs e)
         {
             if (txtCurrentEmail.Text == "Praegune meiliaadress")
             {
@@ -378,8 +378,8 @@ namespace ApexFit_desktop_UI
                 txtChangeCalorieLimitCalories.Text = "kcal";
                 txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
             }*/
-        }
-
+        //}
+/*
         private void txtCurrentEmail_Leave(object sender, EventArgs e)
         {
             if (txtCurrentEmail.Text == "")
@@ -465,9 +465,9 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Viga kaloraaži sisestuses!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }*/
-        }
+        //}
 
-        private void btnChangeEmail_Click(object sender, EventArgs e)
+  /*      private void btnChangeEmail_Click(object sender, EventArgs e)
         {
             Security = new SecurityLayer.CSecurity();
             Core = new CoreComponent.CCore();
@@ -669,3 +669,4 @@ namespace ApexFit_desktop_UI
 
     }
 }
+  */

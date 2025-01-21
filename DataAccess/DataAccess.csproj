@@ -146,12 +146,16 @@
   <ItemGroup>
     <Compile Include="AppDbContextFactory.cs" />
     <Compile Include="AppDbContext.cs" />
-    <Compile Include="Migrations\202501201805105_InitialCreate.cs" />
-    <Compile Include="Migrations\202501201805105_InitialCreate.Designer.cs">
-      <DependentUpon>202501201805105_InitialCreate.cs</DependentUpon>
+    <Compile Include="MealRepository.cs" />
+    <Compile Include="Migrations\202501211038580_InitialCreate.cs" />
+    <Compile Include="Migrations\202501211038580_InitialCreate.Designer.cs">
+      <DependentUpon>202501211038580_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SleepRepository.cs" />
+    <Compile Include="TrainingRepository.cs" />
+    <Compile Include="UserMainRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -162,13 +166,17 @@
       <Project>{41C3588D-B8D6-4AF4-A03E-125A385467AB}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+      <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
+      <Name>SecurityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202501201805105_InitialCreate.resx">
-      <DependentUpon>202501201805105_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202501211038580_InitialCreate.resx">
+      <DependentUpon>202501211038580_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

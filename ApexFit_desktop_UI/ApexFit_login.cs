@@ -9,7 +9,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UserProfileComponent;
 using System.Drawing.Text;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -20,7 +19,6 @@ namespace ApexFit_desktop_UI
     public partial class ApexFit_login : Form
     {
         private SecurityLayer.ISecurity Security;
-        private UserProfileComponent.IUserProfile UserProfile;
         private CoreComponent.ICore Core;
 
         private int userId = 0;
@@ -203,7 +201,7 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+       /* private void btnLogin_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
@@ -225,7 +223,7 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Kasutajanime ja/või parooli viga", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }*/
 
         private void txtCreateAccountFirstname_Enter(object sender, EventArgs e)
         {
@@ -350,7 +348,7 @@ namespace ApexFit_desktop_UI
             pnlForgotPassword1.Visible = true;
         }
 
-        private void btnForgotPasswordShowQuestion_Click(object sender, EventArgs e)
+       /* private void btnForgotPasswordShowQuestion_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
@@ -365,7 +363,7 @@ namespace ApexFit_desktop_UI
             {
                 lblForgotPasswordSecurityQuestion.Text = Security.GetSecurityQuestion((int)UserProfile.GetDataFromUserData(userId, "recovery_question_id"));
             }
-        }
+        }*/
 
         private void lblForgotPassword1GoBack_Click(object sender, EventArgs e)
         {
@@ -375,7 +373,7 @@ namespace ApexFit_desktop_UI
             pnlLogin.Visible = true;
         }
 
-        private void btnForgotPasswordCheckSecurityAnswer_Click(object sender, EventArgs e)
+        /*private void btnForgotPasswordCheckSecurityAnswer_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
@@ -390,7 +388,7 @@ namespace ApexFit_desktop_UI
                 pnlForgotPassword1.Visible = false;
                 pnlForgotPassword2.Visible = true;
             }
-        }
+        }*/
         private void btnForgotPasswordChangePass_Click(object sender, EventArgs e)
         {
             Core = new CoreComponent.CCore();
@@ -495,7 +493,7 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void btnCreateAccount2_Click(object sender, EventArgs e)
+       /* private void btnCreateAccount2_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
@@ -554,6 +552,6 @@ namespace ApexFit_desktop_UI
                 pnlCreateAccount1.Visible = false;
                 pnlCreateAccount2.Visible = true;
             }
-        }
+        }*/
     }
 }

@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Domain
 {
     public class FoodEntity : BaseEntity
     {
-        public string Name { get; set; } = default;
+        [MaxLength(128)]
+        public string Name { get; set; } = string.Empty;
         public int Energy { get; set; }
         public int CHydrates { get; set; }
         public int Sugars { get; set; }
