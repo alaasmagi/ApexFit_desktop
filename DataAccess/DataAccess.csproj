@@ -10,11 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccess</RootNamespace>
     <AssemblyName>DataAccess</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -166,9 +167,9 @@
       <Project>{41C3588D-B8D6-4AF4-A03E-125A385467AB}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+    <ProjectReference Include="..\SecurityLayer\BusinessLogic.csproj">
       <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
-      <Name>SecurityLayer</Name>
+      <Name>BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

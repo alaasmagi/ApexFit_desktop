@@ -7,11 +7,12 @@
     <ProjectGuid>{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SecurityLayer</RootNamespace>
-    <AssemblyName>SecurityLayer</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,19 +97,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSecurity.cs" />
-    <Compile Include="ISecurity.cs" />
+    <Compile Include="CoreHelpers.cs" />
+    <Compile Include="SecurityHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CoreComponent\CoreComponent.csproj">
-      <Project>{27a7b09f-5cdc-4720-b373-c7628b9ed421}</Project>
-      <Name>CoreComponent</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />

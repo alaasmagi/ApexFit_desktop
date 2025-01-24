@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.DependencyInjection;
+using DataAccess;
+using Domain;
 
 
 namespace ApexFit_desktop_UI
@@ -20,16 +22,18 @@ namespace ApexFit_desktop_UI
         [STAThread]
         static void Main()
         {   
-            ApexFit_login login = new ApexFit_login();
+            AppDbContextFactory contextFactory = new AppDbContextFactory();
+            var dbContext = contextFactory.CreateDbContext();
+            ApexFit_login login = new ApexFit_login(dbContext);
             Application.EnableVisualStyles();
-            int userId = login.TryLoginWithToken();
-            if (userId == 0)
+            UserMainEntity user = login.TryLoginWithToken();
+            if (user == null)
             {
-                Application.Run(new ApexFit_login());
+                Application.Run(new ApexFit_login(dbContext));
             }
             else
             {
-                Application.Run(new ApexFit_mainWindow(userId));
+                Application.Run(new ApexFit_mainWindow(user, dbContext));
             }
         }
         

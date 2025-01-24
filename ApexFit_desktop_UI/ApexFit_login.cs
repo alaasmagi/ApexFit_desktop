@@ -13,21 +13,24 @@ using System.Drawing.Text;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.IO;
+using Domain;
+using DataAccess;
+using BusinessLogic;
 
 namespace ApexFit_desktop_UI
 {
     public partial class ApexFit_login : Form
     {
-        private SecurityLayer.ISecurity Security;
-        private CoreComponent.ICore Core;
+        private static AppDbContext _context;
+        private UserMainRepository userRepo = new UserMainRepository(_context);
+        private CoreHelpers coreHelpers = new CoreHelpers();
 
-        private int userId = 0;
-        private int userSex = 0;
+        private UserMainEntity userMainData = new UserMainEntity();
+        private UserFitnessEntity userFitnessData = new UserFitnessEntity();
 
-
-        public ApexFit_login()
+        public ApexFit_login(AppDbContext dbContext)
         {
-            Security = new SecurityLayer.CSecurity();
+            _context = dbContext;
             InitializeComponent();
             ResetForm();
             pnlCreateAccount2.Visible = false;
@@ -46,7 +49,6 @@ namespace ApexFit_desktop_UI
         }
         private void ComboboxReset()
         {
-            Security = new SecurityLayer.CSecurity();
             for (int index = 12; index < 100; index++)
             {
                 cmbCreateAccountUserAge.Items.Add(index);
@@ -65,11 +67,11 @@ namespace ApexFit_desktop_UI
             }
             cmbCreateAccountUserWeight.SelectedItem = 75;
 
-            List<string> securityQuestions = null;
+            List<RecoveryQuestionEntity> securityQuestions = null;
             DialogResult userErrorInput = DialogResult.Yes;
             while (userErrorInput == DialogResult.Yes)
             {
-                if (Security.GetAllSecurityQuestions() == null)
+                if (userRepo.GetRecoveryQuestions() == null)
                 {
                   userErrorInput = MessageBox.Show("Ühendus serveriga ebaõnnestus! Kas proovin uuesti?", "Tõrge", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 }
@@ -84,10 +86,10 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                securityQuestions = Security.GetAllSecurityQuestions();
-                foreach (string question in securityQuestions)
+                securityQuestions = userRepo.GetRecoveryQuestions();
+                foreach (var question in securityQuestions)
                 {
-                    cmbCreateAccountSecurityQuestion.Items.Add(question);
+                    cmbCreateAccountSecurityQuestion.Items.Add(question.Question);
                 }
                 cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
             }
@@ -126,8 +128,8 @@ namespace ApexFit_desktop_UI
 
         private void TextboxReset()
         {
-            txtLoginUsername.Text = "Kasutajanimi";
-            txtLoginUsername.ForeColor = Color.DarkGray;
+            txtLoginEmail.Text = "Meiliaadress";
+            txtLoginEmail.ForeColor = Color.DarkGray;
             txtLoginPassword.Text = "Salasõna";
             txtLoginPassword.UseSystemPasswordChar = false;
             txtLoginPassword.ForeColor = Color.DarkGray;
@@ -157,18 +159,17 @@ namespace ApexFit_desktop_UI
             lblForgotPassword2Username.Visible = false;
         }
 
-        public int TryLoginWithToken()
+        public UserMainEntity TryLoginWithToken()
         {
-            Security = new SecurityLayer.CSecurity();
-            int userIdTemp = Security.LoginWithToken();
-            return userIdTemp;
+            UserMainEntity user = userRepo.TokenLoginAttempt();            
+            return user ?? null;
         }
         private void txtLoginUsername_Enter(object sender, EventArgs e)
         {
-            if (txtLoginUsername.Text == "Kasutajanimi")
+            if (txtLoginEmail.Text == "Kasutajanimi")
             {
-                txtLoginUsername.Text = "";
-                txtLoginUsername.ForeColor = Color.Black;
+                txtLoginEmail.Text = "";
+                txtLoginEmail.ForeColor = Color.Black;
             }
         }
 
@@ -184,10 +185,10 @@ namespace ApexFit_desktop_UI
 
         private void txtLoginUsername_Leave(object sender, EventArgs e)
         {
-            if (txtLoginUsername.Text == "")
+            if (txtLoginEmail.Text == "")
             {
-                txtLoginUsername.Text = "Kasutajanimi";
-                txtLoginUsername.ForeColor = Color.DarkGray;
+                txtLoginEmail.Text = "Kasutajanimi";
+                txtLoginEmail.ForeColor = Color.DarkGray;
             }
         }
 
@@ -201,21 +202,21 @@ namespace ApexFit_desktop_UI
             }
         }
 
-       /* private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
+            if (userRepo.CheckForExistingUser(txtLoginEmail.Text))
+            {
+                userMainData = userRepo.UserLogin(txtLoginEmail.Text, txtLoginPassword.Text);
+            }
 
-            int userIdTemp = UserProfile.UserProfileExists(Security.EncryptString(txtLoginUsername.Text));
-            if (userIdTemp != 0 && Security.LoginAttempt(userIdTemp, txtLoginPassword.Text) == true)
+            if (userMainData.Id != Guid.Empty)
             {
                 if (chbStayLoggedIn.Checked == true)
                 {
-                    Security.CreateLoginToken(userIdTemp);
+                    userRepo.AddToken(userMainData.Id);
                 }
-                userId = userIdTemp;
                 this.Hide();
-                ApexFit_mainWindow main_window = new ApexFit_mainWindow(userId);
+                ApexFit_mainWindow main_window = new ApexFit_mainWindow(userMainData, _context);
                 ResetForm();
                 main_window.Show();
             }
@@ -223,7 +224,7 @@ namespace ApexFit_desktop_UI
             {
                 MessageBox.Show("Kasutajanime ja/või parooli viga", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }*/
+        }
 
         private void txtCreateAccountFirstname_Enter(object sender, EventArgs e)
         {
@@ -348,22 +349,17 @@ namespace ApexFit_desktop_UI
             pnlForgotPassword1.Visible = true;
         }
 
-       /* private void btnForgotPasswordShowQuestion_Click(object sender, EventArgs e)
+       private void btnForgotPasswordShowQuestion_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
-
-            userId = UserProfile.UserProfileExists(Security.EncryptString(UserProfile.UserNameCreation(txtForgotPasswordUserEmail.Text)));
-
-            if (userId == 0)
+            if (userRepo.CheckForExistingUser(txtForgotPasswordUserEmail.Text))
             {
                 MessageBox.Show("Sisestatud meiliaadressiga kontot ei eksisteeri", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                lblForgotPasswordSecurityQuestion.Text = Security.GetSecurityQuestion((int)UserProfile.GetDataFromUserData(userId, "recovery_question_id"));
+                lblForgotPasswordSecurityQuestion.Text = userRepo.GetRecoveryQuestionByEmail(txtForgotPasswordUserEmail.Text).Question;
             }
-        }*/
+        }
 
         private void lblForgotPassword1GoBack_Click(object sender, EventArgs e)
         {
@@ -373,31 +369,28 @@ namespace ApexFit_desktop_UI
             pnlLogin.Visible = true;
         }
 
-        /*private void btnForgotPasswordCheckSecurityAnswer_Click(object sender, EventArgs e)
+        private void btnForgotPasswordCheckSecurityAnswer_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
-            
-            if (UserProfile.SecurityAnswerApproval(userId, txtForgotPasswordSecurityAnswer.Text) == false)
+            userMainData = userRepo.ValidateRecoveryAns(txtForgotPasswordSecurityAnswer.Text, txtForgotPasswordUserEmail.Text);
+            if (userMainData == null)
             {
                 MessageBox.Show("Viga turvaküsimuse vastuses", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                lblForgotPassword2Username.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "username_enc"));
+                lblForgotPassword2Username.Text = userMainData.Email;
                 pnlForgotPassword1.Visible = false;
                 pnlForgotPassword2.Visible = true;
             }
-        }*/
+        }
+
         private void btnForgotPasswordChangePass_Click(object sender, EventArgs e)
         {
-            Core = new CoreComponent.CCore();
-
-            if (!(Core.CheckPasswordRequirements(txtForgotPassword2Password.Text, txtForgotPassword2Password2.Text)))
+            if (!coreHelpers.CheckPasswordRequirements(txtForgotPassword2Password.Text, txtForgotPassword2Password2.Text))
             {
                 MessageBox.Show("Viga salasõna(des)", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (Security.ChangeUserPassword(userId, txtForgotPassword2Password.Text) == false)
+            else if (userRepo.UpdateUser(userMainData) == false)
             {
                 MessageBox.Show("Salasõna vahetamine ebaõnnestus", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -493,7 +486,7 @@ namespace ApexFit_desktop_UI
             }
         }
 
-       /* private void btnCreateAccount2_Click(object sender, EventArgs e)
+       private void btnCreateAccount2_Click(object sender, EventArgs e)
         {
             UserProfile = new UserProfileComponent.CUserProfile();
             Security = new SecurityLayer.CSecurity();
@@ -552,6 +545,6 @@ namespace ApexFit_desktop_UI
                 pnlCreateAccount1.Visible = false;
                 pnlCreateAccount2.Visible = true;
             }
-        }*/
+        }
     }
 }

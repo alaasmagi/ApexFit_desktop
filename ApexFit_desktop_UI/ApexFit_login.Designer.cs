@@ -34,7 +34,7 @@
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.chbStayLoggedIn = new System.Windows.Forms.CheckBox();
             this.lblNoAccount = new System.Windows.Forms.Label();
-            this.txtLoginUsername = new System.Windows.Forms.TextBox();
+            this.txtLoginEmail = new System.Windows.Forms.TextBox();
             this.txtLoginPassword = new System.Windows.Forms.TextBox();
             this.lblForgotPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -97,7 +97,7 @@
             // 
             this.pnlLogin.Controls.Add(this.chbStayLoggedIn);
             this.pnlLogin.Controls.Add(this.lblNoAccount);
-            this.pnlLogin.Controls.Add(this.txtLoginUsername);
+            this.pnlLogin.Controls.Add(this.txtLoginEmail);
             this.pnlLogin.Controls.Add(this.txtLoginPassword);
             this.pnlLogin.Controls.Add(this.lblForgotPassword);
             this.pnlLogin.Controls.Add(this.btnLogin);
@@ -129,18 +129,18 @@
             this.lblNoAccount.Text = "Pole kontot? Loo konto!";
             this.lblNoAccount.Click += new System.EventHandler(this.lblNoAccount_Click);
             // 
-            // txtLoginUsername
+            // txtLoginEmail
             // 
-            this.txtLoginUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoginUsername.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtLoginUsername.Location = new System.Drawing.Point(143, 118);
-            this.txtLoginUsername.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.txtLoginUsername.Name = "txtLoginUsername";
-            this.txtLoginUsername.Size = new System.Drawing.Size(312, 27);
-            this.txtLoginUsername.TabIndex = 80;
-            this.txtLoginUsername.Text = "Kasutajanimi";
-            this.txtLoginUsername.Enter += new System.EventHandler(this.txtLoginUsername_Enter);
-            this.txtLoginUsername.Leave += new System.EventHandler(this.txtLoginUsername_Leave);
+            this.txtLoginEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoginEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtLoginEmail.Location = new System.Drawing.Point(143, 118);
+            this.txtLoginEmail.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.txtLoginEmail.Name = "txtLoginEmail";
+            this.txtLoginEmail.Size = new System.Drawing.Size(312, 27);
+            this.txtLoginEmail.TabIndex = 80;
+            this.txtLoginEmail.Text = "Meiliaadress";
+            this.txtLoginEmail.Enter += new System.EventHandler(this.txtLoginUsername_Enter);
+            this.txtLoginEmail.Leave += new System.EventHandler(this.txtLoginUsername_Leave);
             // 
             // txtLoginPassword
             // 
@@ -674,11 +674,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
+            this.Controls.Add(this.pnlForgotPassword1);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlCreateAccount2);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlCreateAccount1);
-            this.Controls.Add(this.pnlLogin);
-            this.Controls.Add(this.pnlForgotPassword1);
             this.Controls.Add(this.pnlLoginLogo);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -709,7 +709,7 @@
         private System.Windows.Forms.Panel pnlLogin;
         internal System.Windows.Forms.Button btnLogin;
         internal System.Windows.Forms.Label lblNoAccount;
-        internal System.Windows.Forms.TextBox txtLoginUsername;
+        internal System.Windows.Forms.TextBox txtLoginEmail;
         internal System.Windows.Forms.TextBox txtLoginPassword;
         internal System.Windows.Forms.Label lblForgotPassword;
         private System.Windows.Forms.Panel pnlCreateAccount1;

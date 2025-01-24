@@ -5,19 +5,13 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexFit_desktop_UI", "ApexFit_desktop_UI\ApexFit_desktop_UI.csproj", "{EF6B8453-1BF2-43A1-99ED-987319299063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLayer", "SecurityLayer\SecurityLayer.csproj", "{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "SecurityLayer\BusinessLogic.csproj", "{EB2D4906-2AF1-456E-A2E3-948B0D9A5D03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodsOrRecipesComponent", "FoodsOrRecipesComponent\FoodsOrRecipesComponent.csproj", "{93088371-6C28-47AB-A785-25637E7683EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreComponent", "CoreComponent\CoreComponent.csproj", "{27A7B09F-5CDC-4720-B373-C7628B9ED421}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalysisComponent", "AnalysisComponent\AnalysisComponent.csproj", "{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{41C3588D-B8D6-4AF4-A03E-125A385467AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A9579C02-3684-4784-A36F-E323C6DB476D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{2E3E89CC-AFCA-4399-9D27-9519372E3487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +31,6 @@ Global
 		{93088371-6C28-47AB-A785-25637E7683EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93088371-6C28-47AB-A785-25637E7683EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93088371-6C28-47AB-A785-25637E7683EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27A7B09F-5CDC-4720-B373-C7628B9ED421}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BDB5A0B-7F9E-409B-AF6B-53DA07F727EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41C3588D-B8D6-4AF4-A03E-125A385467AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41C3588D-B8D6-4AF4-A03E-125A385467AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41C3588D-B8D6-4AF4-A03E-125A385467AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,10 +39,6 @@ Global
 		{A9579C02-3684-4784-A36F-E323C6DB476D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9579C02-3684-4784-A36F-E323C6DB476D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9579C02-3684-4784-A36F-E323C6DB476D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E3E89CC-AFCA-4399-9D27-9519372E3487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E3E89CC-AFCA-4399-9D27-9519372E3487}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E3E89CC-AFCA-4399-9D27-9519372E3487}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E3E89CC-AFCA-4399-9D27-9519372E3487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

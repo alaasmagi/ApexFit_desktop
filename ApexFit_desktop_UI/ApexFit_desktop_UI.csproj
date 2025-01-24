@@ -9,12 +9,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ApexFit_desktop_UI</RootNamespace>
     <AssemblyName>ApexFit_desktop_UI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -125,7 +126,9 @@
     <Compile Include="ApexFit_login.Designer.cs">
       <DependentUpon>ApexFit_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="ApexFit_mainWindow.cs" />
+    <Compile Include="ApexFit_mainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApexFit_mainWindow.Designer.cs">
       <DependentUpon>ApexFit_mainWindow.cs</DependentUpon>
     </Compile>
@@ -145,6 +148,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -163,17 +167,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CoreComponent\CoreComponent.csproj">
-      <Project>{27a7b09f-5cdc-4720-b373-c7628b9ed421}</Project>
-      <Name>CoreComponent</Name>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{A9579C02-3684-4784-A36F-E323C6DB476D}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{41C3588D-B8D6-4AF4-A03E-125A385467AB}</Project>
+      <Name>Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\FoodsOrRecipesComponent\FoodsOrRecipesComponent.csproj">
       <Project>{93088371-6c28-47ab-a785-25637e7683ee}</Project>
       <Name>FoodsOrRecipesComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+    <ProjectReference Include="..\SecurityLayer\BusinessLogic.csproj">
       <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
-      <Name>SecurityLayer</Name>
+      <Name>BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

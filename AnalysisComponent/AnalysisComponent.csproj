@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AnalysisComponent</RootNamespace>
     <AssemblyName>AnalysisComponent</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,9 +55,9 @@
       <Project>{93088371-6c28-47ab-a785-25637e7683ee}</Project>
       <Name>FoodsOrRecipesComponent</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SecurityLayer\SecurityLayer.csproj">
+    <ProjectReference Include="..\SecurityLayer\BusinessLogic.csproj">
       <Project>{eb2d4906-2af1-456e-a2e3-948b0d9a5d03}</Project>
-      <Name>SecurityLayer</Name>
+      <Name>BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
