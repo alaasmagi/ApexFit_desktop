@@ -12,15 +12,15 @@
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+         {
+             if (disposing && (components != null))
+             {
+                 components.Dispose();
+             }
+             base.Dispose(disposing);
+         }
 
-        #region Windows Form Designer generated code
+       // #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -4825,9 +4825,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlTrainings);
             this.Controls.Add(this.pnlApplicationInfo);
-            this.Controls.Add(this.pnlProfileSettings);
             this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlAnalysis);
             this.Controls.Add(this.pnlFoods);
@@ -4959,8 +4959,6 @@
             this.ResumeLayout(false);
 
         }
-
-        #endregion
 
         private System.Windows.Forms.Panel pnlLeftBar;
         private System.Windows.Forms.Panel pnlAppLogo;

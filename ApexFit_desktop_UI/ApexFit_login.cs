@@ -1,18 +1,7 @@
-﻿using SecurityLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Text;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.IO;
 using Domain;
 using DataAccess;
 using BusinessLogic;
@@ -27,6 +16,8 @@ namespace ApexFit_desktop_UI
 
         private UserMainEntity userMainData = new UserMainEntity();
         private UserFitnessEntity userFitnessData = new UserFitnessEntity();
+
+        private List<RecoveryQuestionEntity> recoveryQuestions = null;
 
         public ApexFit_login(AppDbContext dbContext)
         {
@@ -66,8 +57,7 @@ namespace ApexFit_desktop_UI
                 cmbCreateAccountUserWeight.Items.Add(index);
             }
             cmbCreateAccountUserWeight.SelectedItem = 75;
-
-            List<RecoveryQuestionEntity> securityQuestions = null;
+            
             DialogResult userErrorInput = DialogResult.Yes;
             while (userErrorInput == DialogResult.Yes)
             {
@@ -80,14 +70,15 @@ namespace ApexFit_desktop_UI
                     break;
                 }
             }
-            if (securityQuestions == null)
+
+            if (recoveryQuestions == null)
             {
                 this.Close();
             }
             else
             {
-                securityQuestions = userRepo.GetRecoveryQuestions();
-                foreach (var question in securityQuestions)
+                recoveryQuestions = userRepo.GetRecoveryQuestions();
+                foreach (var question in recoveryQuestions)
                 {
                     cmbCreateAccountSecurityQuestion.Items.Add(question.Question);
                 }
@@ -271,7 +262,6 @@ namespace ApexFit_desktop_UI
                 txtCreateAccountFirstname.Text = "Eesnimi";
                 txtCreateAccountFirstname.ForeColor = Color.DarkGray;
             }
-
         }
 
         private void txtCreateAccountEmail_Leave(object sender, EventArgs e)
@@ -487,18 +477,14 @@ namespace ApexFit_desktop_UI
         }
 
        private void btnCreateAccount2_Click(object sender, EventArgs e)
-        {
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
-
-            int userIdTemp = 0;
+        { 
             if (rdbCreateAccountMale.Checked == true)
             {
-                userSex = 0;
+                userFitnessData.Sex = EUserSex.Male;
             }
             else
             {
-                userSex = 1;
+                userFitnessData.Sex = EUserSex.Female;
             }
 
             if (txtCreateAccount2SecurityQuestionAnswer.Text == "Turvaküsimuse vastus")
@@ -511,9 +497,14 @@ namespace ApexFit_desktop_UI
             }
             else
             {
-                userIdTemp = UserProfile.CreateUserProfile(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text)), Security.EncryptString(txtCreateAccountEmail.Text), txtCreateAccountPassword1.Text, 
-                   Security.EncryptString(txtCreateAccountFirstname.Text), cmbCreateAccountSecurityQuestion.SelectedIndex + 1, txtCreateAccount2SecurityQuestionAnswer.Text, Convert.ToInt32(cmbCreateAccountUserHeight.SelectedItem),
-                    Convert.ToInt32(cmbCreateAccountUserWeight.SelectedItem), userSex, Convert.ToInt32(cmbCreateAccountUserAge.SelectedItem));
+                userMainData.RecoveryId = recoveryQuestions[cmbCreateAccountSecurityQuestion.SelectedIndex].Id;
+                userMainData.RecoveryAns = txtCreateAccount2SecurityQuestionAnswer.Text;
+
+                userFitnessData.Age = int.Parse(cmbCreateAccountUserAge.SelectedItem.ToString());
+                userFitnessData.Height = int.Parse(cmbCreateAccountUserHeight.SelectedItem.ToString());
+                userFitnessData.WeightGoal = int.Parse(cmbCreateAccountUserWeight.SelectedItem.ToString());
+
+                userRepo.CreateNewUser(userMainData, userFitnessData);
                 ComboboxReset();
                 TextboxReset();
                 pnlCreateAccount2.Visible = false;
@@ -523,25 +514,26 @@ namespace ApexFit_desktop_UI
 
         private void btnCreateAccount1_Click_1(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-            Security = new SecurityLayer.CSecurity();
-            Core = new CoreComponent.CCore();
-
             if (txtCreateAccountFirstname.Text == "Eesnimi")
             {
                 MessageBox.Show("Viga eesnimes", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!Core.CheckEmailRequirements(txtCreateAccountEmail.Text) ||
-                     UserProfile.UserProfileExists(Security.EncryptString(UserProfile.UserNameCreation(txtCreateAccountEmail.Text))) != 0)
+            else if (!coreHelpers.CheckEmailRequirements(txtCreateAccountEmail.Text) ||
+                     userRepo.CheckForExistingUser(txtCreateAccountEmail.Text))
             {
                 MessageBox.Show("Meiliaadress on kasutusel või on vales formaadis", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (!(Core.CheckPasswordRequirements(txtCreateAccountPassword1.Text, txtCreateAccountPassword2.Text)))
+            else if (!coreHelpers.CheckPasswordRequirements(txtCreateAccountPassword1.Text, txtCreateAccountPassword2.Text))
             {
                 MessageBox.Show("Viga salasõna(des)", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
+                userMainData.Email = txtCreateAccountEmail.Text;
+                userMainData.FirstName = txtCreateAccountFirstname.Text;
+                userMainData.PasswordHash = txtCreateAccountPassword2.Text;
+                userMainData.PremiumUnlock = false;
+
                 pnlCreateAccount1.Visible = false;
                 pnlCreateAccount2.Visible = true;
             }

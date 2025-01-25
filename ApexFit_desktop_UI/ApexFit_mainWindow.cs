@@ -18,6 +18,8 @@ namespace ApexFit_desktop_UI
     {
         private AppDbContext _dbContext;
         private UserMainEntity userMainData = new UserMainEntity();
+        private UserFitnessEntity fitnessEntity = new UserFitnessEntity();
+
         public ApexFit_mainWindow(UserMainEntity user, AppDbContext dbContext)
         {
             InitializeComponent();
@@ -65,7 +67,7 @@ namespace ApexFit_desktop_UI
             txtDeleteUserAccountPassword.UseSystemPasswordChar = false;
             txtDeleteUserAccountPassword.ForeColor = Color.DarkGray;
             txtChangeCalorieLimitCalories.Text = "kcal";
-            txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;*/
+            txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
 
 
             txtCreateAccount2SecurityQuestionAnswer.Text = "Turvaküsimuse vastus";
@@ -84,8 +86,6 @@ namespace ApexFit_desktop_UI
 
         private void UserDataLoad()
         {
-            Security = new SecurityLayer.CSecurity();
-            UserProfile = new UserProfileComponent.CUserProfile();
 
             lblProfileWeightGoal.Visible = false;
             lblFirstname.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "firstname_enc"));
@@ -179,7 +179,7 @@ namespace ApexFit_desktop_UI
         private void successPbTimer_Tick(object sender, EventArgs e)
         {
             successPbTimer.Stop();
-            //pbCalorieLimitSetSuccessful.Visible = false;
+            pbCalorieLimitSetSuccessful.Visible = false;
             pbChangeEmailSuccessfull.Visible = false;
             pbChangeUserHeightSuccessful.Visible = false;
             pbUserAgeChangeSuccessful.Visible = false;
@@ -209,8 +209,6 @@ namespace ApexFit_desktop_UI
 
         private void btnGoals_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-
             if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -276,8 +274,6 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserHeight_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-
             UserProfile.UpdateUserData(userId, cmbUserHeightSelection.SelectedItem, "height");
             UserDataLoad();
             pbChangeUserHeightSuccessful.Visible = true;
@@ -286,8 +282,6 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserAge_Click(object sender, EventArgs e)
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-
             UserProfile.UpdateUserData(userId, cmbUserAgeSelection.SelectedItem, "age");
             UserDataLoad();
             pbUserAgeChangeSuccessful.Visible = true;
@@ -451,8 +445,6 @@ namespace ApexFit_desktop_UI
         private void btnSetCalorieLimit_Click(object sender, EventArgs e)
         {
             int temp;
-            UserProfile = new UserProfileComponent.CUserProfile();
-
             if (int.TryParse(txtChangeCalorieLimitCalories.Text, out temp))
             {
                 UserProfile.UpdateUserData(userId, txtChangeCalorieLimitCalories.Text, "calorie_limit");
@@ -467,11 +459,7 @@ namespace ApexFit_desktop_UI
             }
         }
      private void btnChangeEmail_Click(object sender, EventArgs e)
-        {
-            Security = new SecurityLayer.CSecurity();
-            Core = new CoreComponent.CCore();
-            UserProfile = new UserProfileComponent.CUserProfile();
-
+        { 
             if (txtCurrentEmail.Text != Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "user_email_enc")))
             {
                 MessageBox.Show("Viga kehtivas meiliaadressis!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -501,11 +489,7 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserPassword_Click(object sender, EventArgs e)
         {
-            Security = new SecurityLayer.CSecurity();
-            Core = new CoreComponent.CCore();
-            UserProfile = new UserProfileComponent.CUserProfile();
-
-            if (Security.LoginAttempt(userId, txtCurrentUserPassword.Text) == false)
+           if (Security.LoginAttempt(userId, txtCurrentUserPassword.Text) == false)
             {
                 MessageBox.Show("Viga praeguses salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -526,8 +510,6 @@ namespace ApexFit_desktop_UI
 
         private void btnDeleteUserAccount_Click(object sender, EventArgs e)
         {
-            Security = new SecurityLayer.CSecurity();
-            UserProfile = new UserProfileComponent.CUserProfile();
             if (Security.LoginAttempt(userId, txtDeleteUserAccountPassword.Text) == false)
             {
                 MessageBox.Show("Viga salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
