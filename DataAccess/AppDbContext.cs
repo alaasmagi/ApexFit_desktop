@@ -29,8 +29,15 @@ namespace DataAccess
         public DbSet<UserTrainingEntity> UserTrainingData { get; set; }
         public DbSet<UserDailyEntity> UserDailyData { get; set; }
 
-        public AppDbContext() : base("DefaultDBConnection") { }
-        public AppDbContext(string connectionString) : base(connectionString) { }
+        public AppDbContext() : base("DefaultDBConnection")
+        {
+            Database.SetInitializer<AppDbContext>(null);
+        }
+
+        public AppDbContext(string connectionString) : base(new MySql.Data.MySqlClient.MySqlConnection(connectionString), contextOwnsConnection: true)
+        {
+            Database.SetInitializer<AppDbContext>(null);
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

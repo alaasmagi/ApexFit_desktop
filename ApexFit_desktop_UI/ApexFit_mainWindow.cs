@@ -16,14 +16,19 @@ namespace ApexFit_desktop_UI
 {
     public partial class ApexFit_mainWindow : Form
     {
-        private AppDbContext _dbContext;
+        private static AppDbContext _context;
         private UserMainEntity userMainData = new UserMainEntity();
-        private UserFitnessEntity fitnessEntity = new UserFitnessEntity();
+        private UserFitnessEntity userFitnessData = new UserFitnessEntity();
+        private UserDailyEntity userDailyData = new UserDailyEntity();
+
+        private UserMainRepository userRepo;
 
         public ApexFit_mainWindow(UserMainEntity user, AppDbContext dbContext)
-        {
+        {   
+            _context = dbContext;
+            userRepo = new UserMainRepository(dbContext);
+
             InitializeComponent();
-            _dbContext = dbContext;
             userMainData = user;
             ResetForm();
         }
@@ -45,8 +50,6 @@ namespace ApexFit_desktop_UI
 
         private void TextboxReset()
         {
-            txtLoginUsername.Text = "Kasutajanimi";
-            txtLoginUsername.ForeColor = Color.DarkGray;
             txtCurrentUserPassword.Text = "Praegune salasõna";
             txtCurrentUserPassword.UseSystemPasswordChar = false;
             txtCurrentUserPassword.ForeColor = Color.DarkGray;
@@ -66,7 +69,7 @@ namespace ApexFit_desktop_UI
             txtDeleteUserAccountPassword.Text = "Salasõna";
             txtDeleteUserAccountPassword.UseSystemPasswordChar = false;
             txtDeleteUserAccountPassword.ForeColor = Color.DarkGray;
-            txtChangeCalorieLimitCalories.Text = "kcal";
+            /*txtChangeCalorieLimitCalories.Text = "kcal";
             txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
 
 
@@ -81,43 +84,41 @@ namespace ApexFit_desktop_UI
             txtForgotPassword2Password2.UseSystemPasswordChar = false;
             txtForgotPassword2Password2.ForeColor = Color.DarkGray;
             lblCreateAccountSecurityQuestion.Visible = false;
-            lblForgotPassword2Username.Visible = false;
+            lblForgotPassword2Username.Visible = false;*/
         }
 
         private void UserDataLoad()
         {
 
             lblProfileWeightGoal.Visible = false;
-            lblFirstname.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "firstname_enc"));
+            lblFirstname.Text = userMainData.FirstName;
             lblHomeTitleName.Text = "Tere, " + lblFirstname.Text + "!";
             lblUserProfileFirstname.Text = lblFirstname.Text;
-            lblUserProfileUsername.Text = Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "username_enc"));
-            lblProfileUserAge.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "age") + "-aastane";
-            lblProfileUserHeight.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "height") + "cm";
-            lblProfileUserWeight.Text = "-  " + (int)UserProfile.GetDataFromUserData(userId, "weight") + "kg";
-            lblProfileCalorieLimit.Text = "-  " + "Kalorilimiit: " + (int)UserProfile.GetDataFromUserData(userId, "calorie_limit") + "kcal";
-            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 1)
+            lblUserProfileUsername.Text = userMainData.FirstName;
+            lblProfileUserAge.Text = "-  " + userFitnessData.Age + "-aastane";
+            lblProfileUserHeight.Text = "-  " + userFitnessData.Height + "cm";
+            lblProfileUserWeight.Text = "-  " + userDailyData.Weight + "kg";
+            lblProfileCalorieLimit.Text = "-  " + "Kalorilimiit: " + userFitnessData.CalorieLimit + "kcal";
+            if (userMainData.PremiumUnlock == true)
             {
-                lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + (int)UserProfile.GetDataFromUserData(userId, "weight_goal") + "kg";
+                lblProfileWeightGoal.Text = "-  " + "Sihtkaal: " + userFitnessData.WeightGoal + "kg";
                 lblProfileWeightGoal.Visible = true;
             }
         }
 
        private void ComboboxReset()
         {
-            UserProfile = new UserProfileComponent.CUserProfile();
-
             for (int index = 12; index < 100; index++)
             {
                 cmbUserAgeSelection.Items.Add(index);
             }
-            cmbUserAgeSelection.SelectedItem = (int)UserProfile.GetDataFromUserData(userId, "age");
+            cmbUserAgeSelection.SelectedItem = userFitnessData.Age;
 
             for (int index = 140; index < 210; index++)
             {
                 cmbUserHeightSelection.Items.Add(index);
             }
-            cmbUserHeightSelection.SelectedItem = (int)UserProfile.GetDataFromUserData(userId, "height");
+            cmbUserHeightSelection.SelectedItem = userFitnessData.Height;
 
             cmbAnalysisOverallWeightPeriod.Items.Add("Viimased 7 päeva");
             cmbAnalysisOverallWeightPeriod.Items.Add("Viimane 1 kuu");
@@ -141,11 +142,9 @@ namespace ApexFit_desktop_UI
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Security = new SecurityLayer.CSecurity();
-
-            Security.RemoveToken(userId);
+            
             this.Hide();
-            ApexFit_login login = new ApexFit_login();
+            ApexFit_login login = new ApexFit_login(_context);
             login.Show();
         }
 
@@ -179,7 +178,7 @@ namespace ApexFit_desktop_UI
         private void successPbTimer_Tick(object sender, EventArgs e)
         {
             successPbTimer.Stop();
-            pbCalorieLimitSetSuccessful.Visible = false;
+            //pbCalorieLimitSetSuccessful.Visible = false;
             pbChangeEmailSuccessfull.Visible = false;
             pbChangeUserHeightSuccessful.Visible = false;
             pbUserAgeChangeSuccessful.Visible = false;
@@ -209,7 +208,7 @@ namespace ApexFit_desktop_UI
 
         private void btnGoals_Click(object sender, EventArgs e)
         {
-            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
+            if (userMainData.PremiumUnlock == false)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MenuButtonsDefaultColor();
@@ -229,7 +228,7 @@ namespace ApexFit_desktop_UI
 
         private void btnSleep_Click(object sender, EventArgs e)
         {
-            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
+            if (userMainData.PremiumUnlock == false)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MenuButtonsDefaultColor();
@@ -274,7 +273,10 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserHeight_Click(object sender, EventArgs e)
         {
-            UserProfile.UpdateUserData(userId, cmbUserHeightSelection.SelectedItem, "height");
+            userFitnessData.Height = int.Parse(cmbUserHeightSelection.SelectedItem.ToString());
+            
+            // TODO: implement userFitness saving!
+           
             UserDataLoad();
             pbChangeUserHeightSuccessful.Visible = true;
             successPbTimer.Start();
@@ -282,7 +284,10 @@ namespace ApexFit_desktop_UI
 
         private void btnChangeUserAge_Click(object sender, EventArgs e)
         {
-            UserProfile.UpdateUserData(userId, cmbUserAgeSelection.SelectedItem, "age");
+            userFitnessData.Age = int.Parse(cmbUserAgeSelection.SelectedItem.ToString());
+
+            // TODO: implement userFitness saving!
+
             UserDataLoad();
             pbUserAgeChangeSuccessful.Visible = true;
             successPbTimer.Start();
@@ -290,11 +295,11 @@ namespace ApexFit_desktop_UI
 
         private void txtChangeCalorieLimitCalories_Enter(object sender, EventArgs e)
         {
-           if (txtChangeCalorieLimitCalories.Text == "kcal")
+           /*if (txtChangeCalorieLimitCalories.Text == "kcal")
             {
                 txtChangeCalorieLimitCalories.Text = "";
                 txtChangeCalorieLimitCalories.ForeColor = Color.Black;
-            }
+            }*/
         }
 
      private void txtCurrentEmail_Enter(object sender, EventArgs e)
@@ -367,11 +372,11 @@ namespace ApexFit_desktop_UI
 
         private void txtChangeCalorieLimitCalories_Leave(object sender, EventArgs e)
         {
-            if (txtChangeCalorieLimitCalories.Text == "")
+            /*if (txtChangeCalorieLimitCalories.Text == "")
             {
                 txtChangeCalorieLimitCalories.Text = "kcal";
                 txtChangeCalorieLimitCalories.ForeColor = Color.DarkGray;
-            }
+            }*/
         }
 
         private void txtCurrentEmail_Leave(object sender, EventArgs e)
@@ -442,9 +447,9 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void btnSetCalorieLimit_Click(object sender, EventArgs e)
+       private void btnSetCalorieLimit_Click(object sender, EventArgs e)
         {
-            int temp;
+            /*int temp;
             if (int.TryParse(txtChangeCalorieLimitCalories.Text, out temp))
             {
                 UserProfile.UpdateUserData(userId, txtChangeCalorieLimitCalories.Text, "calorie_limit");
@@ -456,11 +461,11 @@ namespace ApexFit_desktop_UI
             else if (!(int.TryParse(txtChangeCalorieLimitCalories.Text, out temp)) && txtChangeCalorieLimitCalories.Text != "kcal")
             {
                 MessageBox.Show("Viga kaloraaži sisestuses!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error); 
-            }
+            }*/
         }
      private void btnChangeEmail_Click(object sender, EventArgs e)
         { 
-            if (txtCurrentEmail.Text != Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "user_email_enc")))
+           /* if (txtCurrentEmail.Text != Security.DecryptString((string)UserProfile.GetDataFromUserData(userId, "user_email_enc")))
             {
                 MessageBox.Show("Viga kehtivas meiliaadressis!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -484,12 +489,12 @@ namespace ApexFit_desktop_UI
                 UserDataLoad();
                 TextboxReset();
                 successPbTimer.Start();
-            }
+            }*/
         }
 
         private void btnChangeUserPassword_Click(object sender, EventArgs e)
         {
-           if (Security.LoginAttempt(userId, txtCurrentUserPassword.Text) == false)
+          /* if (Security.LoginAttempt(userId, txtCurrentUserPassword.Text) == false)
             {
                 MessageBox.Show("Viga praeguses salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -505,12 +510,12 @@ namespace ApexFit_desktop_UI
                 UserDataLoad();
                 TextboxReset();
                 successPbTimer.Start();
-            }
+            }*/
         }
 
         private void btnDeleteUserAccount_Click(object sender, EventArgs e)
         {
-            if (Security.LoginAttempt(userId, txtDeleteUserAccountPassword.Text) == false)
+           /* if (Security.LoginAttempt(userId, txtDeleteUserAccountPassword.Text) == false)
             {
                 MessageBox.Show("Viga salasõnas!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -520,14 +525,14 @@ namespace ApexFit_desktop_UI
                 {
                     MessageBox.Show("Konto kustutamine õnnestus!", "Konto kustutamine", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    ApexFit_login login = new ApexFit_login();
+                    ApexFit_login login = new ApexFit_login(_dbContext);
                     login.Show();
                 }
                 else
                 {
                     MessageBox.Show("Konto kustutamine ebaõnnestus!", "Tõrge", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
+            }*/
         }
 
         private void pnlAppLogo_Click(object sender, EventArgs e)
@@ -599,7 +604,7 @@ namespace ApexFit_desktop_UI
         private void btnAnalysisSleep_Click(object sender, EventArgs e)
         {
 
-            if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
+            /*if ((int)UserProfile.GetDataFromUserData(userId, "premium_unlocked") == 0)
             {
                 MessageBox.Show("See funktsioon on saadaval ainult rakenduse PRO-versioonil. PRO-versiooni ostmiseks klõpsake 'Profiili seaded'. ", "PRO-versioon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 AnalysisSubPanelButtonsDefaultColor();
@@ -613,7 +618,7 @@ namespace ApexFit_desktop_UI
                 HideAnalysisSubPanels();
                 subpnlAnalysisSleep.Visible = true;
                 btnAnalysisSleep.BackColor = Color.FromArgb(235, 247, 246);
-            } 
+            }*/ 
         }
 
         private void pnlAnalysis_VisibleChanged(object sender, EventArgs e)

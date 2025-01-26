@@ -139,8 +139,8 @@
             this.txtLoginEmail.Size = new System.Drawing.Size(312, 27);
             this.txtLoginEmail.TabIndex = 80;
             this.txtLoginEmail.Text = "Meiliaadress";
-            this.txtLoginEmail.Enter += new System.EventHandler(this.txtLoginUsername_Enter);
-            this.txtLoginEmail.Leave += new System.EventHandler(this.txtLoginUsername_Leave);
+            this.txtLoginEmail.Enter += new System.EventHandler(this.txtLoginEmail_Enter);
+            this.txtLoginEmail.Leave += new System.EventHandler(this.txtLoginEmail_Leave);
             // 
             // txtLoginPassword
             // 
@@ -674,10 +674,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 661);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlCreateAccount2);
             this.Controls.Add(this.pnlCreateAccount1);
             this.Controls.Add(this.pnlForgotPassword1);
-            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlForgotPassword2);
             this.Controls.Add(this.pnlLoginLogo);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

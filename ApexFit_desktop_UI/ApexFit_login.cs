@@ -11,8 +11,9 @@ namespace ApexFit_desktop_UI
     public partial class ApexFit_login : Form
     {
         private static AppDbContext _context;
-        private UserMainRepository userRepo = new UserMainRepository(_context);
-        private CoreHelpers coreHelpers = new CoreHelpers();
+
+        private UserMainRepository userRepo;
+        private CoreHelpers coreHelpers;
 
         private UserMainEntity userMainData = new UserMainEntity();
         private UserFitnessEntity userFitnessData = new UserFitnessEntity();
@@ -22,6 +23,9 @@ namespace ApexFit_desktop_UI
         public ApexFit_login(AppDbContext dbContext)
         {
             _context = dbContext;
+            userRepo = new UserMainRepository(dbContext);
+            coreHelpers = new CoreHelpers();
+
             InitializeComponent();
             ResetForm();
             pnlCreateAccount2.Visible = false;
@@ -29,7 +33,7 @@ namespace ApexFit_desktop_UI
             pnlForgotPassword2.Visible = false;
             pnlForgotPassword1.Visible = false;
             pnlLogin.Visible = true;
-            TryLoginWithToken();
+            //TryLoginWithToken();
         }
         private void ResetForm()
         {
@@ -71,19 +75,12 @@ namespace ApexFit_desktop_UI
                 }
             }
 
-            if (recoveryQuestions == null)
+            recoveryQuestions = userRepo.GetRecoveryQuestions();
+            foreach (var question in recoveryQuestions)
             {
-                this.Close();
+                cmbCreateAccountSecurityQuestion.Items.Add(question.Question);
             }
-            else
-            {
-                recoveryQuestions = userRepo.GetRecoveryQuestions();
-                foreach (var question in recoveryQuestions)
-                {
-                    cmbCreateAccountSecurityQuestion.Items.Add(question.Question);
-                }
-                cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
-            }
+            cmbCreateAccountSecurityQuestion.SelectedIndex = 0;
         }
 
         public void ClearControls(Control parentControl)
@@ -155,9 +152,9 @@ namespace ApexFit_desktop_UI
             UserMainEntity user = userRepo.TokenLoginAttempt();            
             return user ?? null;
         }
-        private void txtLoginUsername_Enter(object sender, EventArgs e)
+        private void txtLoginEmail_Enter(object sender, EventArgs e)
         {
-            if (txtLoginEmail.Text == "Kasutajanimi")
+            if (txtLoginEmail.Text == "Meiliaadress")
             {
                 txtLoginEmail.Text = "";
                 txtLoginEmail.ForeColor = Color.Black;
@@ -174,11 +171,11 @@ namespace ApexFit_desktop_UI
             }
         }
 
-        private void txtLoginUsername_Leave(object sender, EventArgs e)
+        private void txtLoginEmail_Leave(object sender, EventArgs e)
         {
             if (txtLoginEmail.Text == "")
             {
-                txtLoginEmail.Text = "Kasutajanimi";
+                txtLoginEmail.Text = "Meiliaadress";
                 txtLoginEmail.ForeColor = Color.DarkGray;
             }
         }

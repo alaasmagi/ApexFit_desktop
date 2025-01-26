@@ -23,12 +23,14 @@ namespace ApexFit_desktop_UI
         {   
             AppDbContextFactory contextFactory = new AppDbContextFactory();
             var dbContext = contextFactory.CreateDbContext();
+
             ApexFit_login login = new ApexFit_login(dbContext);
             Application.EnableVisualStyles();
             UserMainEntity user = login.TryLoginWithToken();
             if (user == null)
             {
-                Application.Run(new ApexFit_login(dbContext));
+
+                Application.Run(login);
             }
             else
             {

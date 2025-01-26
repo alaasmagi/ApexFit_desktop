@@ -15,9 +15,9 @@ namespace DataAccess
         private SecurityHelpers security = new SecurityHelpers();
         private CoreHelpers coreHelpers = new CoreHelpers();
 
-        public UserMainRepository(AppDbContext ctx)
+        public UserMainRepository(AppDbContext dbContext)
         {
-            this.ctx = ctx;
+            ctx = dbContext;
         }
 
         public List<RecoveryQuestionEntity> GetRecoveryQuestions()
@@ -121,8 +121,8 @@ namespace DataAccess
         public UserMainEntity TokenLoginAttempt()
         {
             string currentToken = security.GenerateLoginToken();
-            
-            Guid userId = ctx.UserTokenData.FirstOrDefault(t => t.TokenEnc == currentToken).UserId;
+
+            Guid userId = ctx.UserTokenData.FirstOrDefault(t => t.TokenEnc == currentToken)?.UserId ?? Guid.Empty;
 
             if (userId == Guid.Empty)
             {

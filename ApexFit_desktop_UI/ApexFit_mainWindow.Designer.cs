@@ -31,34 +31,34 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pbGoalsSetComputedSleepGoalSuccess;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApexFit_mainWindow));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title13 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title14 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pnlLeftBar = new System.Windows.Forms.Panel();
             this.pbPremiumFeatures = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
@@ -305,7 +305,7 @@
             this.lblGoalsSetFoodGoalOwnGoalLabel = new System.Windows.Forms.Label();
             this.pbGoalsSetFoodGoalOwnGoal = new System.Windows.Forms.PictureBox();
             this.btnGoalsSetFoodGoalOwnGoal = new System.Windows.Forms.Button();
-            this.txtGoalsSetFoodGoalOwn = new System.Windows.Forms.TextBox();
+            this.txtChangeCalorieGoal = new System.Windows.Forms.TextBox();
             this.lblGoalsSlogan = new System.Windows.Forms.Label();
             this.lblGoalsTitle = new System.Windows.Forms.Label();
             this.pnlSleep = new System.Windows.Forms.Panel();
@@ -927,33 +927,33 @@
             // chrDailyCalories
             // 
             this.chrDailyCalories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chrDailyCalories.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.Transparent;
-            legend1.Name = "Legend1";
-            legend1.Title = "Toidukord";
-            this.chrDailyCalories.Legends.Add(legend1);
+            chartArea8.BackColor = System.Drawing.Color.Transparent;
+            chartArea8.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea8.Name = "ChartArea1";
+            this.chrDailyCalories.ChartAreas.Add(chartArea8);
+            legend8.BackColor = System.Drawing.Color.Transparent;
+            legend8.Name = "Legend1";
+            legend8.Title = "Toidukord";
+            this.chrDailyCalories.Legends.Add(legend8);
             this.chrDailyCalories.Location = new System.Drawing.Point(28, 76);
             this.chrDailyCalories.Name = "chrDailyCalories";
             this.chrDailyCalories.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series1.BorderColor = System.Drawing.Color.Transparent;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Color = System.Drawing.Color.Transparent;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chrDailyCalories.Series.Add(series1);
+            series8.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series8.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series8.BorderColor = System.Drawing.Color.Transparent;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.Color = System.Drawing.Color.Transparent;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chrDailyCalories.Series.Add(series8);
             this.chrDailyCalories.Size = new System.Drawing.Size(582, 302);
             this.chrDailyCalories.TabIndex = 59;
             this.chrDailyCalories.Text = "Toitumine";
-            title1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Title1";
-            title1.Text = "Päevane kaloraaž";
-            this.chrDailyCalories.Titles.Add(title1);
+            title8.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title8.Name = "Title1";
+            title8.Text = "Päevane kaloraaž";
+            this.chrDailyCalories.Titles.Add(title8);
             // 
             // gbHomePageTrainingSessionEntry
             // 
@@ -2194,32 +2194,32 @@
             // chrNightSleepLength
             // 
             this.chrNightSleepLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea2.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chrNightSleepLength.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.Transparent;
-            legend2.Name = "Legend1";
-            this.chrNightSleepLength.Legends.Add(legend2);
+            chartArea9.BackColor = System.Drawing.Color.Transparent;
+            chartArea9.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea9.Name = "ChartArea1";
+            this.chrNightSleepLength.ChartAreas.Add(chartArea9);
+            legend9.BackColor = System.Drawing.Color.Transparent;
+            legend9.Name = "Legend1";
+            this.chrNightSleepLength.Legends.Add(legend9);
             this.chrNightSleepLength.Location = new System.Drawing.Point(25, 167);
             this.chrNightSleepLength.Name = "chrNightSleepLength";
             this.chrNightSleepLength.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series2.BorderColor = System.Drawing.Color.Transparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Color = System.Drawing.Color.Transparent;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chrNightSleepLength.Series.Add(series2);
+            series9.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series9.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series9.BorderColor = System.Drawing.Color.Transparent;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Color = System.Drawing.Color.Transparent;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chrNightSleepLength.Series.Add(series9);
             this.chrNightSleepLength.Size = new System.Drawing.Size(500, 179);
             this.chrNightSleepLength.TabIndex = 76;
             this.chrNightSleepLength.Text = "chart3";
-            title2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "chrAnalysisOverallBodyweightTitle";
-            title2.Text = "Une pikkus ajas";
-            this.chrNightSleepLength.Titles.Add(title2);
+            title9.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title9.Name = "chrAnalysisOverallBodyweightTitle";
+            title9.Text = "Une pikkus ajas";
+            this.chrNightSleepLength.Titles.Add(title9);
             // 
             // lblAnalysisSleepAwakeTimeData
             // 
@@ -2314,32 +2314,32 @@
             // chrAnalysisSleepData
             // 
             this.chrAnalysisSleepData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea3.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chrAnalysisSleepData.ChartAreas.Add(chartArea3);
-            legend3.BackColor = System.Drawing.Color.Transparent;
-            legend3.Name = "Legend1";
-            this.chrAnalysisSleepData.Legends.Add(legend3);
+            chartArea10.BackColor = System.Drawing.Color.Transparent;
+            chartArea10.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea10.Name = "ChartArea1";
+            this.chrAnalysisSleepData.ChartAreas.Add(chartArea10);
+            legend10.BackColor = System.Drawing.Color.Transparent;
+            legend10.Name = "Legend1";
+            this.chrAnalysisSleepData.Legends.Add(legend10);
             this.chrAnalysisSleepData.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisSleepData.Name = "chrAnalysisSleepData";
             this.chrAnalysisSleepData.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series3.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series3.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series3.BorderColor = System.Drawing.Color.Transparent;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Color = System.Drawing.Color.Transparent;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chrAnalysisSleepData.Series.Add(series3);
+            series10.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series10.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series10.BorderColor = System.Drawing.Color.Transparent;
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series10.Color = System.Drawing.Color.Transparent;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chrAnalysisSleepData.Series.Add(series10);
             this.chrAnalysisSleepData.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisSleepData.TabIndex = 1;
             this.chrAnalysisSleepData.Text = "chrAnalysisSleepData";
-            title3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "chrAnalysisSleepDataTitle";
-            title3.Text = "Ööpäevane uni:";
-            this.chrAnalysisSleepData.Titles.Add(title3);
+            title10.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title10.Name = "chrAnalysisSleepDataTitle";
+            title10.Text = "Ööpäevane uni:";
+            this.chrAnalysisSleepData.Titles.Add(title10);
             // 
             // subpnlAnalysisOverall
             // 
@@ -2553,32 +2553,32 @@
             // chrAnalysisOverallBodyweight
             // 
             this.chrAnalysisOverallBodyweight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea4.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea4.Name = "ChartArea1";
-            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea4);
-            legend4.BackColor = System.Drawing.Color.Transparent;
-            legend4.Name = "Legend1";
-            this.chrAnalysisOverallBodyweight.Legends.Add(legend4);
+            chartArea11.BackColor = System.Drawing.Color.Transparent;
+            chartArea11.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea11.Name = "ChartArea1";
+            this.chrAnalysisOverallBodyweight.ChartAreas.Add(chartArea11);
+            legend11.BackColor = System.Drawing.Color.Transparent;
+            legend11.Name = "Legend1";
+            this.chrAnalysisOverallBodyweight.Legends.Add(legend11);
             this.chrAnalysisOverallBodyweight.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisOverallBodyweight.Name = "chrAnalysisOverallBodyweight";
             this.chrAnalysisOverallBodyweight.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series4.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series4.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series4.BorderColor = System.Drawing.Color.Transparent;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Color = System.Drawing.Color.Transparent;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chrAnalysisOverallBodyweight.Series.Add(series4);
+            series11.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series11.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series11.BorderColor = System.Drawing.Color.Transparent;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Color = System.Drawing.Color.Transparent;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chrAnalysisOverallBodyweight.Series.Add(series11);
             this.chrAnalysisOverallBodyweight.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallBodyweight.TabIndex = 2;
             this.chrAnalysisOverallBodyweight.Text = "chart3";
-            title4.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "chrAnalysisOverallBodyweightTitle";
-            title4.Text = "Kehakaalu muutus";
-            this.chrAnalysisOverallBodyweight.Titles.Add(title4);
+            title11.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title11.Name = "chrAnalysisOverallBodyweightTitle";
+            title11.Text = "Kehakaalu muutus";
+            this.chrAnalysisOverallBodyweight.Titles.Add(title11);
             // 
             // subpnlAnalysisFoods
             // 
@@ -2774,53 +2774,53 @@
             // chrAnalysisOverallDailyCalories
             // 
             this.chrAnalysisOverallDailyCalories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea5.BackColor = System.Drawing.Color.Transparent;
-            chartArea5.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea5.Name = "ChartArea1";
-            chartArea6.BackColor = System.Drawing.Color.Transparent;
-            chartArea6.Name = "ChartArea2";
-            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea5);
-            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea6);
-            legend5.BackColor = System.Drawing.Color.Transparent;
-            legend5.Name = "Legend1";
-            legend5.Title = "Makroained";
-            legend6.BackColor = System.Drawing.Color.Transparent;
-            legend6.Name = "Legend2";
-            legend6.Title = "Toidukorrad";
-            this.chrAnalysisOverallDailyCalories.Legends.Add(legend5);
-            this.chrAnalysisOverallDailyCalories.Legends.Add(legend6);
+            chartArea12.BackColor = System.Drawing.Color.Transparent;
+            chartArea12.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea12.Name = "ChartArea1";
+            chartArea13.BackColor = System.Drawing.Color.Transparent;
+            chartArea13.Name = "ChartArea2";
+            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea12);
+            this.chrAnalysisOverallDailyCalories.ChartAreas.Add(chartArea13);
+            legend12.BackColor = System.Drawing.Color.Transparent;
+            legend12.Name = "Legend1";
+            legend12.Title = "Makroained";
+            legend13.BackColor = System.Drawing.Color.Transparent;
+            legend13.Name = "Legend2";
+            legend13.Title = "Toidukorrad";
+            this.chrAnalysisOverallDailyCalories.Legends.Add(legend12);
+            this.chrAnalysisOverallDailyCalories.Legends.Add(legend13);
             this.chrAnalysisOverallDailyCalories.Location = new System.Drawing.Point(557, 25);
             this.chrAnalysisOverallDailyCalories.Name = "chrAnalysisOverallDailyCalories";
             this.chrAnalysisOverallDailyCalories.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series5.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series5.BorderColor = System.Drawing.Color.Transparent;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series5.Color = System.Drawing.Color.Transparent;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            series6.ChartArea = "ChartArea2";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend2";
-            series6.Name = "Series2";
-            this.chrAnalysisOverallDailyCalories.Series.Add(series5);
-            this.chrAnalysisOverallDailyCalories.Series.Add(series6);
+            series12.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series12.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series12.BorderColor = System.Drawing.Color.Transparent;
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series12.Color = System.Drawing.Color.Transparent;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            series13.ChartArea = "ChartArea2";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series13.Legend = "Legend2";
+            series13.Name = "Series2";
+            this.chrAnalysisOverallDailyCalories.Series.Add(series12);
+            this.chrAnalysisOverallDailyCalories.Series.Add(series13);
             this.chrAnalysisOverallDailyCalories.Size = new System.Drawing.Size(442, 333);
             this.chrAnalysisOverallDailyCalories.TabIndex = 58;
             this.chrAnalysisOverallDailyCalories.Text = "Toitumine";
-            title5.DockedToChartArea = "ChartArea1";
-            title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title5.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.Name = "Toitumine";
-            title5.Text = "Toitained";
-            title6.DockedToChartArea = "ChartArea2";
-            title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
-            title6.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.Name = "Title1";
-            title6.Text = "Kalorid";
-            this.chrAnalysisOverallDailyCalories.Titles.Add(title5);
-            this.chrAnalysisOverallDailyCalories.Titles.Add(title6);
+            title12.DockedToChartArea = "ChartArea1";
+            title12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title12.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title12.Name = "Toitumine";
+            title12.Text = "Toitained";
+            title13.DockedToChartArea = "ChartArea2";
+            title13.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
+            title13.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title13.Name = "Title1";
+            title13.Text = "Kalorid";
+            this.chrAnalysisOverallDailyCalories.Titles.Add(title12);
+            this.chrAnalysisOverallDailyCalories.Titles.Add(title13);
             // 
             // subpnlAnalysisTrainings
             // 
@@ -2951,32 +2951,32 @@
             // chAnalysisTrainings
             // 
             this.chAnalysisTrainings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            chartArea7.BackColor = System.Drawing.Color.Transparent;
-            chartArea7.BackSecondaryColor = System.Drawing.Color.Transparent;
-            chartArea7.Name = "ChartArea1";
-            this.chAnalysisTrainings.ChartAreas.Add(chartArea7);
-            legend7.BackColor = System.Drawing.Color.Transparent;
-            legend7.Name = "Legend1";
-            this.chAnalysisTrainings.Legends.Add(legend7);
+            chartArea14.BackColor = System.Drawing.Color.Transparent;
+            chartArea14.BackSecondaryColor = System.Drawing.Color.Transparent;
+            chartArea14.Name = "ChartArea1";
+            this.chAnalysisTrainings.ChartAreas.Add(chartArea14);
+            legend14.BackColor = System.Drawing.Color.Transparent;
+            legend14.Name = "Legend1";
+            this.chAnalysisTrainings.Legends.Add(legend14);
             this.chAnalysisTrainings.Location = new System.Drawing.Point(557, 25);
             this.chAnalysisTrainings.Name = "chAnalysisTrainings";
             this.chAnalysisTrainings.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series7.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series7.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series7.BorderColor = System.Drawing.Color.Transparent;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series7.Color = System.Drawing.Color.Transparent;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chAnalysisTrainings.Series.Add(series7);
+            series14.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series14.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series14.BorderColor = System.Drawing.Color.Transparent;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series14.Color = System.Drawing.Color.Transparent;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chAnalysisTrainings.Series.Add(series14);
             this.chAnalysisTrainings.Size = new System.Drawing.Size(442, 333);
             this.chAnalysisTrainings.TabIndex = 2;
             this.chAnalysisTrainings.Text = "chart1";
-            title7.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title7.Name = "chrAnalysisTrainingsCaloriesTitle";
-            title7.Text = "Päevane kaloritarve";
-            this.chAnalysisTrainings.Titles.Add(title7);
+            title14.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title14.Name = "chrAnalysisTrainingsCaloriesTitle";
+            title14.Text = "Päevane kaloritarve";
+            this.chAnalysisTrainings.Titles.Add(title14);
             // 
             // lvAnalysisTrainings
             // 
@@ -3475,7 +3475,7 @@
             this.gbGoalsFoodGoals.Controls.Add(this.lblGoalsSetFoodGoalOwnGoalLabel);
             this.gbGoalsFoodGoals.Controls.Add(this.pbGoalsSetFoodGoalOwnGoal);
             this.gbGoalsFoodGoals.Controls.Add(this.btnGoalsSetFoodGoalOwnGoal);
-            this.gbGoalsFoodGoals.Controls.Add(this.txtGoalsSetFoodGoalOwn);
+            this.gbGoalsFoodGoals.Controls.Add(this.txtChangeCalorieGoal);
             this.gbGoalsFoodGoals.Font = new System.Drawing.Font("Century Gothic", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbGoalsFoodGoals.Location = new System.Drawing.Point(30, 189);
             this.gbGoalsFoodGoals.Margin = new System.Windows.Forms.Padding(2);
@@ -3806,16 +3806,16 @@
             this.btnGoalsSetFoodGoalOwnGoal.Text = "Sisesta";
             this.btnGoalsSetFoodGoalOwnGoal.UseVisualStyleBackColor = false;
             // 
-            // txtGoalsSetFoodGoalOwn
+            // txtChangeCalorieGoal
             // 
-            this.txtGoalsSetFoodGoalOwn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGoalsSetFoodGoalOwn.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtGoalsSetFoodGoalOwn.Location = new System.Drawing.Point(695, 195);
-            this.txtGoalsSetFoodGoalOwn.Margin = new System.Windows.Forms.Padding(2);
-            this.txtGoalsSetFoodGoalOwn.Name = "txtGoalsSetFoodGoalOwn";
-            this.txtGoalsSetFoodGoalOwn.Size = new System.Drawing.Size(130, 27);
-            this.txtGoalsSetFoodGoalOwn.TabIndex = 25;
-            this.txtGoalsSetFoodGoalOwn.Text = "Eesmärk(kcal)";
+            this.txtChangeCalorieGoal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChangeCalorieGoal.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtChangeCalorieGoal.Location = new System.Drawing.Point(695, 195);
+            this.txtChangeCalorieGoal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtChangeCalorieGoal.Name = "txtChangeCalorieGoal";
+            this.txtChangeCalorieGoal.Size = new System.Drawing.Size(130, 27);
+            this.txtChangeCalorieGoal.TabIndex = 25;
+            this.txtChangeCalorieGoal.Text = "Eesmärk(kcal)";
             // 
             // lblGoalsSlogan
             // 
@@ -4825,14 +4825,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(241)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.pnlProfileSettings);
-            this.Controls.Add(this.pnlTrainings);
-            this.Controls.Add(this.pnlApplicationInfo);
-            this.Controls.Add(this.pnlGoals);
+            this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlAnalysis);
+            this.Controls.Add(this.pnlApplicationInfo);
+            this.Controls.Add(this.pnlTrainings);
+            this.Controls.Add(this.pnlProfileSettings);
+            this.Controls.Add(this.pnlGoals);
             this.Controls.Add(this.pnlFoods);
             this.Controls.Add(this.pnlSleep);
-            this.Controls.Add(this.pnlHomePage);
             this.Controls.Add(this.pnlTopBar);
             this.Controls.Add(this.pnlLeftBar);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5235,7 +5235,7 @@
         internal System.Windows.Forms.GroupBox gbGoalsFoodGoals;
         internal System.Windows.Forms.PictureBox pbGoalsSetFoodGoalOwnGoal;
         internal System.Windows.Forms.Button btnGoalsSetFoodGoalOwnGoal;
-        internal System.Windows.Forms.TextBox txtGoalsSetFoodGoalOwn;
+        internal System.Windows.Forms.TextBox txtChangeCalorieGoal;
         internal System.Windows.Forms.GroupBox gbGoalsBodyweightGoal;
         internal System.Windows.Forms.PictureBox pbGoalsSetBodyweightGoalSuccess;
         internal System.Windows.Forms.Button btnGoalsSetBodyweightGoal;
